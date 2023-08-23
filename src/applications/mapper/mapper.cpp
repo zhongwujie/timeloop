@@ -332,7 +332,7 @@ void Application::Run()
   // std::streambuf* streambuf_cout = std::cout.rdbuf();
   std::streambuf* streambuf_cerr = std::cerr.rdbuf();
 
-  if (live_status_)
+  if (live_status_) // is false by default
   {
     log_file.open(log_file_name);
     // std::cout.rdbuf(log_file.rdbuf());
@@ -417,7 +417,7 @@ void Application::Run()
   }
 
   // Diagnostics.
-  if (diagnostics_on_)
+  if (diagnostics_on_) // is false by default
   {
     // Aggregate diagnostic data from all threads.
     std::map<FailClass, std::map<unsigned, FailInfo>> fail_stats;

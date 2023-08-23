@@ -28,7 +28,7 @@
 import os
 
 Import('env')
-
+# print("BUILD_BASE_DIR: ", env["BUILD_BASE_DIR"])
 env.Append(CPPDEFINES = [('BUILD_BASE_DIR', '\\"' + env["BUILD_BASE_DIR"] + '\\"')])
 env.Append(CPPPATH = [os.path.join(env['BUILD_BASE_DIR'], 'include')])
 #env.Append(CPPPATH = ['src/include'])

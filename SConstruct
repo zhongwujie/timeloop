@@ -28,7 +28,7 @@
 
 import os
 
-VariantDir('build', 'src', duplicate=0)
+VariantDir('build', 'src', duplicate=0) # associate build/ with src/
 
 AddOption('--static', dest='link_static', default=False, action='store_true', help='Use static linking (default is dynamic)')
 AddOption('--accelergy', dest='use_accelergy', default=False, action='store_true', help='Build Timeloop with Accelergy (default is to use pat/src)')
@@ -46,4 +46,4 @@ if not GetOption('clang'):
   env.Replace(RANLIB = "gcc-ranlib")
 
 env.Append(BUILD_BASE_DIR = Dir('.').abspath)
-env.SConscript('build/SConscript', exports='env')
+env.SConscript('build/SConscript', exports='env') # load and execute SConscript
