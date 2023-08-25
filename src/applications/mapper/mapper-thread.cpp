@@ -351,7 +351,7 @@ void MapperThread::Run()
   // =================
   while (true)
   {
-    if (live_status_)
+    if (live_status_) // is false by default
     {
       std::stringstream msg;
 
@@ -430,7 +430,7 @@ void MapperThread::Run()
       terminate = true;
     }
 
-    if (log_oaves_ && terminate)
+    if (log_oaves_ && terminate) // log_oaves_ is false by default
     {
       for (auto &index_factor_best : index_factor_best_vec)
       {
@@ -456,7 +456,7 @@ void MapperThread::Run()
       if (live_status_)
       {
         mutex_->lock();
-        mvaddstr(thread_id_ + ncurses_line_offset, 0, "-");
+        mvaddstr(thread_id_ + ncurses_line_offset, 0, "-"); // move the cursor
         refresh();
         mutex_->unlock();
       }
@@ -494,7 +494,7 @@ void MapperThread::Run()
     // dimension. This is useful later.
     //
     bool only_bypass_changed = false;
-    if (total_mappings > 1)
+    if (total_mappings > 1) // total_mappings is 0 by default
     {
       bool match = true;
       for (unsigned idim = 0; idim < unsigned(mapspace::Dimension::Num); idim++)

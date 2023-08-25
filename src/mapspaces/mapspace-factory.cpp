@@ -45,7 +45,7 @@ MapSpace* ParseAndConstruct(config::CompoundConfigNode config,
 {
   MapSpace* mapspace = nullptr;
   
-  std::string mapspace_template = "uber";
+  std::string mapspace_template = "uber"; // default template is "uber"
   config.lookupValue("template", mapspace_template);
     
   if (mapspace_template == "uber")

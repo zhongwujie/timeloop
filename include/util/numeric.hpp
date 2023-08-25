@@ -134,17 +134,17 @@ class ResidualFactors
 //        Cartesian Counter
 //------------------------------------
 
-template <int order>
+template <int order> // the order is the dimension
 class CartesianCounter
 {
  private:
   // Note: base is variable for each position!
-  std::array<uint128_t, order> base_;
-  std::array<uint128_t, order> value_;
+  std::array<uint128_t, order> base_; // the maximum value of each dimension
+  std::array<uint128_t, order> value_; // each dimension has a value
   checked_uint128_t integer_;
-  checked_uint128_t endint_;
+  checked_uint128_t endint_; // The maximum integer value the counter can reach
 
-  bool IncrementRecursive_(int position)
+  bool IncrementRecursive_(int position) // increase the coordinates by 1
   {
     if (value_[position] < base_[position] - 1)
     {
@@ -167,6 +167,8 @@ class CartesianCounter
     }
   }
 
+// integer_ = value_[0] + value_[1] * base_[0] + value_[2] * base_[0] * base_[1] 
+// + ...
   void UpdateIntegerFromValue()
   {
     integer_ = 0;
@@ -189,7 +191,7 @@ class CartesianCounter
   }
 
  public:
-  CartesianCounter(std::array<uint128_t, order> base = {})
+  CartesianCounter(std::array<uint128_t, order> base = {}) // initialized with 0?
   {
     Init(base);
   }
