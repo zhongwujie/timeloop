@@ -14,6 +14,7 @@ Sparse optimization configuration complete.
 Using all available hardware threads = 20
 Mapper configuration complete.
 WARNING: Constraint C=64 exceeds problem dimension C=1, ignoring.
+user max factors are empty
 Initializing Index Factorization subspace.
   Factorization options along problem dimension R = 2
   Factorization options along problem dimension S = 2
@@ -29,58 +30,58 @@ Mapspace Dimension [DatatypeBypass] Size: 8
 Mapspace split! Per-split Mapping Dimension [IndexFactorization] Size: 48 Residue: 0
 Mapspace construction complete.
 Search configuration complete.
-[  0] Utilization = 0.02 | pJ/Compute =   19.723 | L3[WIO] Q480 - L2[WI] S3 R3 K16X - L1[O] N1 - L0[] P48 
 [  2] Utilization = 0.02 | pJ/Compute =   23.487 | L3[WIO] Q480 S3 - L2[WI] R3 K16X - L1[O] N1 - L0[] P48 
 [  1] Utilization = 0.02 | pJ/Compute =   23.487 | L3[WIO] Q480 R3 - L2[WI] S3 K16X - L1[O] N1 - L0[] P48 
+[  0] Utilization = 0.02 | pJ/Compute =   19.723 | L3[WIO] Q480 - L2[WI] S3 R3 K16X - L1[O] N1 - L0[] P48 
 [  3] Utilization = 0.02 | pJ/Compute =   23.487 | L3[WIO] Q480 S3 R3 - L2[WI] N1 K16X - L1[O] N1 - L0[] P48 
-[  0] Utilization = 0.02 | pJ/Compute =   13.447 | L3[WIO] Q480 - L2[WI] S3 R3 K16X - L1[O] N1 - L0[W] P48 
-[  9] Utilization = 0.02 | pJ/Compute =   25.807 | L3[WIO] Q480 P2 R3 - L2[WI] S3 K16X - L1[O] N1 - L0[] P24 
 [  2] Utilization = 0.02 | pJ/Compute =   17.211 | L3[WIO] Q480 S3 - L2[WI] R3 K16X - L1[O] N1 - L0[W] P48 
-[  4] Utilization = 0.02 | pJ/Compute =   21.266 | L3[WIO] Q480 P48 - L2[WI] S3 R3 K16X - L1[O] N1 - L0[] N1 
-[  3] Utilization = 0.02 | pJ/Compute =   17.211 | L3[WIO] Q480 S3 R3 - L2[WI] N1 K16X - L1[O] N1 - L0[W] P48 
 [  1] Utilization = 0.02 | pJ/Compute =   17.211 | L3[WIO] Q480 R3 - L2[WI] S3 K16X - L1[O] N1 - L0[W] P48 
-[ 15] Utilization = 0.01 | pJ/Compute =   76.854 | L3[WIO] Q480 P24 S3 R3 - L2[WI] N1 K16X - L1[O] N1 - L0[] P2 
-[  7] Utilization = 0.00 | pJ/Compute =  132.541 | L3[WIO] Q480 P48 S3 R3 - L2[WI] N1 K16X - L1[O] N1 - L0[] N1 
-[ 12] Utilization = 0.02 | pJ/Compute =   21.266 | L3[WIO] Q480 P24 - L2[WI] S3 R3 K16X - L1[O] N1 - L0[] P2 
-[  8] Utilization = 0.02 | pJ/Compute =   21.266 | L3[WIO] Q480 P2 - L2[WI] S3 R3 K16X - L1[O] N1 - L0[] P24 
-[ 18] Utilization = 0.02 | pJ/Compute =   28.128 | L3[WIO] Q480 P3 S3 - L2[WI] R3 K16X - L1[O] N1 - L0[] P16 
-[ 17] Utilization = 0.02 | pJ/Compute =   28.128 | L3[WIO] Q480 P3 R3 - L2[WI] S3 K16X - L1[O] N1 - L0[] P16 
-[ 11] Utilization = 0.02 | pJ/Compute =   25.807 | L3[WIO] Q480 P2 S3 R3 - L2[WI] N1 K16X - L1[O] N1 - L0[] P24 
-[  5] Utilization = 0.00 | pJ/Compute =  132.541 | L3[WIO] Q480 P48 R3 - L2[WI] S3 K16X - L1[O] N1 - L0[] N1 
+[  3] Utilization = 0.02 | pJ/Compute =   17.211 | L3[WIO] Q480 S3 R3 - L2[WI] N1 K16X - L1[O] N1 - L0[W] P48 
+[  0] Utilization = 0.02 | pJ/Compute =   13.447 | L3[WIO] Q480 - L2[WI] S3 R3 K16X - L1[O] N1 - L0[W] P48 
 [  6] Utilization = 0.00 | pJ/Compute =  132.541 | L3[WIO] Q480 P48 S3 - L2[WI] R3 K16X - L1[O] N1 - L0[] N1 
+[  9] Utilization = 0.02 | pJ/Compute =   25.807 | L3[WIO] Q480 P2 R3 - L2[WI] S3 K16X - L1[O] N1 - L0[] P24 
+[  8] Utilization = 0.02 | pJ/Compute =   21.266 | L3[WIO] Q480 P2 - L2[WI] S3 R3 K16X - L1[O] N1 - L0[] P24 
+[  4] Utilization = 0.02 | pJ/Compute =   21.266 | L3[WIO] Q480 P48 - L2[WI] S3 R3 K16X - L1[O] N1 - L0[] N1 
+[ 18] Utilization = 0.02 | pJ/Compute =   28.128 | L3[WIO] Q480 P3 S3 - L2[WI] R3 K16X - L1[O] N1 - L0[] P16 
+[ 14] Utilization = 0.01 | pJ/Compute =   76.854 | L3[WIO] Q480 P24 S3 - L2[WI] R3 K16X - L1[O] N1 - L0[] P2 
+[  5] Utilization = 0.00 | pJ/Compute =  132.541 | L3[WIO] Q480 P48 R3 - L2[WI] S3 K16X - L1[O] N1 - L0[] N1 
 [ 13] Utilization = 0.01 | pJ/Compute =   75.788 | L3[WIO] Q480 P24 R3 - L2[WI] S3 K16X - L1[O] N1 - L0[] P2 
+[ 11] Utilization = 0.02 | pJ/Compute =   25.807 | L3[WIO] Q480 P2 S3 R3 - L2[WI] N1 K16X - L1[O] N1 - L0[] P24 
+[ 12] Utilization = 0.02 | pJ/Compute =   21.266 | L3[WIO] Q480 P24 - L2[WI] S3 R3 K16X - L1[O] N1 - L0[] P2 
+[ 15] Utilization = 0.01 | pJ/Compute =   76.854 | L3[WIO] Q480 P24 S3 R3 - L2[WI] N1 K16X - L1[O] N1 - L0[] P2 
+[ 17] Utilization = 0.02 | pJ/Compute =   28.128 | L3[WIO] Q480 P3 R3 - L2[WI] S3 K16X - L1[O] N1 - L0[] P16 
+[ 16] Utilization = 0.02 | pJ/Compute =   21.266 | L3[WIO] Q480 P3 - L2[WI] S3 R3 K16X - L1[O] N1 - L0[] P16 
 [ 19] Utilization = 0.02 | pJ/Compute =   28.128 | L3[WIO] Q480 P3 S3 R3 - L2[WI] N1 K16X - L1[O] N1 - L0[] P16 
 [ 10] Utilization = 0.02 | pJ/Compute =   25.807 | L3[WIO] Q480 P2 S3 - L2[WI] R3 K16X - L1[O] N1 - L0[] P24 
-[ 16] Utilization = 0.02 | pJ/Compute =   21.266 | L3[WIO] Q480 P3 - L2[WI] S3 R3 K16X - L1[O] N1 - L0[] P16 
-[ 15] Utilization = 0.01 | pJ/Compute =   74.128 | L3[WIO] Q480 P24 S3 R3 - L2[WI] N1 K16X - L1[O] N1 - L0[W] P2 
-[ 12] Utilization = 0.02 | pJ/Compute =   18.539 | L3[WIO] Q480 P24 - L2[WI] S3 R3 K16X - L1[O] N1 - L0[W] P2 
-[  8] Utilization = 0.02 | pJ/Compute =   15.144 | L3[WIO] Q480 P2 - L2[WI] S3 R3 K16X - L1[O] N1 - L0[W] P24 
-[ 17] Utilization = 0.02 | pJ/Compute =   22.160 | L3[WIO] Q480 P3 R3 - L2[WI] S3 K16X - L1[O] N1 - L0[W] P16 
-[ 18] Utilization = 0.02 | pJ/Compute =   22.160 | L3[WIO] Q480 P3 S3 - L2[WI] R3 K16X - L1[O] N1 - L0[W] P16 
-[ 11] Utilization = 0.02 | pJ/Compute =   19.685 | L3[WIO] Q480 P2 S3 R3 - L2[WI] N1 K16X - L1[O] N1 - L0[W] P24 
-[ 14] Utilization = 0.01 | pJ/Compute =   76.854 | L3[WIO] Q480 P24 S3 - L2[WI] R3 K16X - L1[O] N1 - L0[] P2 
-[ 19] Utilization = 0.02 | pJ/Compute =   22.160 | L3[WIO] Q480 P3 S3 R3 - L2[WI] N1 K16X - L1[O] N1 - L0[W] P16 
-[ 13] Utilization = 0.01 | pJ/Compute =   73.061 | L3[WIO] Q480 P24 R3 - L2[WI] S3 K16X - L1[O] N1 - L0[W] P2 
-[ 10] Utilization = 0.02 | pJ/Compute =   19.685 | L3[WIO] Q480 P2 S3 - L2[WI] R3 K16X - L1[O] N1 - L0[W] P24 
-[ 16] Utilization = 0.02 | pJ/Compute =   15.298 | L3[WIO] Q480 P3 - L2[WI] S3 R3 K16X - L1[O] N1 - L0[W] P16 
-[ 14] Utilization = 0.01 | pJ/Compute =   74.128 | L3[WIO] Q480 P24 S3 - L2[WI] R3 K16X - L1[O] N1 - L0[W] P2 
+[  7] Utilization = 0.00 | pJ/Compute =  132.541 | L3[WIO] Q480 P48 S3 R3 - L2[WI] N1 K16X - L1[O] N1 - L0[] N1 
 [  9] Utilization = 0.02 | pJ/Compute =   19.685 | L3[WIO] Q480 P2 R3 - L2[WI] S3 K16X - L1[O] N1 - L0[W] P24 
-[ 19] STATEMENT: 100 suboptimal mappings found since the last upgrade, terminating search.
-[ 10] STATEMENT: 100 suboptimal mappings found since the last upgrade, terminating search.
-[  0] STATEMENT: 100 suboptimal mappings found since the last upgrade, terminating search.
+[  8] Utilization = 0.02 | pJ/Compute =   15.144 | L3[WIO] Q480 P2 - L2[WI] S3 R3 K16X - L1[O] N1 - L0[W] P24 
+[ 14] Utilization = 0.01 | pJ/Compute =   74.128 | L3[WIO] Q480 P24 S3 - L2[WI] R3 K16X - L1[O] N1 - L0[W] P2 
+[ 11] Utilization = 0.02 | pJ/Compute =   19.685 | L3[WIO] Q480 P2 S3 R3 - L2[WI] N1 K16X - L1[O] N1 - L0[W] P24 
+[ 12] Utilization = 0.02 | pJ/Compute =   18.539 | L3[WIO] Q480 P24 - L2[WI] S3 R3 K16X - L1[O] N1 - L0[W] P2 
+[ 15] Utilization = 0.01 | pJ/Compute =   74.128 | L3[WIO] Q480 P24 S3 R3 - L2[WI] N1 K16X - L1[O] N1 - L0[W] P2 
+[ 16] Utilization = 0.02 | pJ/Compute =   15.298 | L3[WIO] Q480 P3 - L2[WI] S3 R3 K16X - L1[O] N1 - L0[W] P16 
+[ 17] Utilization = 0.02 | pJ/Compute =   22.160 | L3[WIO] Q480 P3 R3 - L2[WI] S3 K16X - L1[O] N1 - L0[W] P16 
+[ 19] Utilization = 0.02 | pJ/Compute =   22.160 | L3[WIO] Q480 P3 S3 R3 - L2[WI] N1 K16X - L1[O] N1 - L0[W] P16 
+[ 10] Utilization = 0.02 | pJ/Compute =   19.685 | L3[WIO] Q480 P2 S3 - L2[WI] R3 K16X - L1[O] N1 - L0[W] P24 
+[ 18] Utilization = 0.02 | pJ/Compute =   22.160 | L3[WIO] Q480 P3 S3 - L2[WI] R3 K16X - L1[O] N1 - L0[W] P16 
+[ 13] Utilization = 0.01 | pJ/Compute =   73.061 | L3[WIO] Q480 P24 R3 - L2[WI] S3 K16X - L1[O] N1 - L0[W] P2 
 [  8] STATEMENT: 100 suboptimal mappings found since the last upgrade, terminating search.
-[  1] STATEMENT: 100 suboptimal mappings found since the last upgrade, terminating search.
-[  3] STATEMENT: 100 suboptimal mappings found since the last upgrade, terminating search.
-[ 11] STATEMENT: 100 suboptimal mappings found since the last upgrade, terminating search.
 [  2] STATEMENT: 100 suboptimal mappings found since the last upgrade, terminating search.
+[ 10] STATEMENT: 100 suboptimal mappings found since the last upgrade, terminating search.
+[  3] STATEMENT: 100 suboptimal mappings found since the last upgrade, terminating search.
 [ 12] STATEMENT: 100 suboptimal mappings found since the last upgrade, terminating search.
-[ 14] STATEMENT: 100 suboptimal mappings found since the last upgrade, terminating search.
-[ 17] STATEMENT: 100 suboptimal mappings found since the last upgrade, terminating search.
+[  1] STATEMENT: 100 suboptimal mappings found since the last upgrade, terminating search.
 [ 16] STATEMENT: 100 suboptimal mappings found since the last upgrade, terminating search.
-[ 18] STATEMENT: 100 suboptimal mappings found since the last upgrade, terminating search.
-[ 15] STATEMENT: 100 suboptimal mappings found since the last upgrade, terminating search.
-[ 13] STATEMENT: 100 suboptimal mappings found since the last upgrade, terminating search.
+[ 11] STATEMENT: 100 suboptimal mappings found since the last upgrade, terminating search.
 [  9] STATEMENT: 100 suboptimal mappings found since the last upgrade, terminating search.
+[ 19] STATEMENT: 100 suboptimal mappings found since the last upgrade, terminating search.
+[ 14] STATEMENT: 100 suboptimal mappings found since the last upgrade, terminating search.
+[ 15] STATEMENT: 100 suboptimal mappings found since the last upgrade, terminating search.
+[  0] STATEMENT: 100 suboptimal mappings found since the last upgrade, terminating search.
+[ 17] STATEMENT: 100 suboptimal mappings found since the last upgrade, terminating search.
+[ 18] STATEMENT: 100 suboptimal mappings found since the last upgrade, terminating search.
+[ 13] STATEMENT: 100 suboptimal mappings found since the last upgrade, terminating search.
 [  5] STATEMENT: 100 suboptimal mappings found since the last upgrade, terminating search.
 [  6] STATEMENT: 100 suboptimal mappings found since the last upgrade, terminating search.
 [  4] STATEMENT: 100 suboptimal mappings found since the last upgrade, terminating search.

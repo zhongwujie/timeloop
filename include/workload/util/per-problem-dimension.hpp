@@ -70,7 +70,7 @@ class PerFlattenedDimension : public DynamicArray<T>
   {
     if (version == 0)
     {
-      ar << boost::serialization::make_nvp(
+      ar << boost::serialization::make_nvp( // named-value pair
         "PerFlattenedDimension",
         boost::serialization::make_array(this->begin(), this->size()));
     }

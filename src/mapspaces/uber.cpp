@@ -117,8 +117,12 @@ void Uber::Init(config::CompoundConfigNode config, config::CompoundConfigNode ar
 //
 void Uber::InitIndexFactorizationSpace()
 {
-  auto user_factors = constraints_.Factors();
+  auto user_factors = constraints_.Factors(); // I'm afraid this is empty.
   auto user_max_factors = constraints_.MaxFactors();
+
+  if(user_max_factors.empty()) {
+    std::cout << "user max factors are empty" << std::endl;
+  }
 
   assert(user_factors.size() <= arch_props_.TilingLevels());
 
