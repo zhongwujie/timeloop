@@ -1,0 +1,117 @@
+\hypertarget{classAxisAlignedHyperRectangle}{}\doxysection{Axis\+Aligned\+Hyper\+Rectangle Class Reference}
+\label{classAxisAlignedHyperRectangle}\index{AxisAlignedHyperRectangle@{AxisAlignedHyperRectangle}}
+
+
+Collaboration diagram for Axis\+Aligned\+Hyper\+Rectangle\+:
+% FIG 0
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classAxisAlignedHyperRectangle_a877b2d1c7977d26990c3ffd2b6368b18}\label{classAxisAlignedHyperRectangle_a877b2d1c7977d26990c3ffd2b6368b18}} 
+{\bfseries Axis\+Aligned\+Hyper\+Rectangle} (std\+::uint32\+\_\+t order)
+\item 
+\mbox{\Hypertarget{classAxisAlignedHyperRectangle_add7869bc61d5bc86813010b52317f0ad}\label{classAxisAlignedHyperRectangle_add7869bc61d5bc86813010b52317f0ad}} 
+{\bfseries Axis\+Aligned\+Hyper\+Rectangle} (std\+::uint32\+\_\+t order, const \mbox{\hyperlink{classPoint}{Point}} unit)
+\item 
+\mbox{\Hypertarget{classAxisAlignedHyperRectangle_af2620fc364e9305d0a8572634d00edfd}\label{classAxisAlignedHyperRectangle_af2620fc364e9305d0a8572634d00edfd}} 
+{\bfseries Axis\+Aligned\+Hyper\+Rectangle} (std\+::uint32\+\_\+t order, const \mbox{\hyperlink{classPoint}{Point}} min, const \mbox{\hyperlink{classPoint}{Point}} max)
+\item 
+\mbox{\Hypertarget{classAxisAlignedHyperRectangle_ac927853266575def3c5bae4be661300d}\label{classAxisAlignedHyperRectangle_ac927853266575def3c5bae4be661300d}} 
+{\bfseries Axis\+Aligned\+Hyper\+Rectangle} (std\+::uint32\+\_\+t order, const std\+::vector$<$ std\+::pair$<$ \mbox{\hyperlink{classPoint}{Point}}, \mbox{\hyperlink{classPoint}{Point}} $>$$>$ corner\+\_\+sets)
+\item 
+\mbox{\Hypertarget{classAxisAlignedHyperRectangle_af7d932845a254f9397373786a8616e22}\label{classAxisAlignedHyperRectangle_af7d932845a254f9397373786a8616e22}} 
+{\bfseries Axis\+Aligned\+Hyper\+Rectangle} (const \mbox{\hyperlink{classAxisAlignedHyperRectangle}{Axis\+Aligned\+Hyper\+Rectangle}} \&a)
+\item 
+\mbox{\Hypertarget{classAxisAlignedHyperRectangle_a5aec0259299611805594dde38e0bf363}\label{classAxisAlignedHyperRectangle_a5aec0259299611805594dde38e0bf363}} 
+\mbox{\hyperlink{classAxisAlignedHyperRectangle}{Axis\+Aligned\+Hyper\+Rectangle}} \& {\bfseries operator=} (\mbox{\hyperlink{classAxisAlignedHyperRectangle}{Axis\+Aligned\+Hyper\+Rectangle}} other)
+\item 
+\mbox{\Hypertarget{classAxisAlignedHyperRectangle_ad678ef265a7520f5f7f6a01b911e4ed2}\label{classAxisAlignedHyperRectangle_ad678ef265a7520f5f7f6a01b911e4ed2}} 
+\mbox{\hyperlink{classPoint}{Point}} {\bfseries Min} () const
+\item 
+\mbox{\Hypertarget{classAxisAlignedHyperRectangle_a72486f2c0846c4e06c0db285a512229b}\label{classAxisAlignedHyperRectangle_a72486f2c0846c4e06c0db285a512229b}} 
+\mbox{\hyperlink{classPoint}{Point}} {\bfseries Max} () const
+\item 
+\mbox{\Hypertarget{classAxisAlignedHyperRectangle_a10e85b695219a2e2b36a66bd62500752}\label{classAxisAlignedHyperRectangle_a10e85b695219a2e2b36a66bd62500752}} 
+std\+::size\+\_\+t {\bfseries size} () const
+\item 
+\mbox{\Hypertarget{classAxisAlignedHyperRectangle_a8ff8c36faad8487324aeab0e0699def1}\label{classAxisAlignedHyperRectangle_a8ff8c36faad8487324aeab0e0699def1}} 
+bool {\bfseries empty} () const
+\item 
+\mbox{\Hypertarget{classAxisAlignedHyperRectangle_ae4285f2bd9543d75e72459474f7d1a26}\label{classAxisAlignedHyperRectangle_ae4285f2bd9543d75e72459474f7d1a26}} 
+void {\bfseries Reset} ()
+\item 
+\mbox{\Hypertarget{classAxisAlignedHyperRectangle_a0378439e69954a22a6e6f5fea0ca0c3a}\label{classAxisAlignedHyperRectangle_a0378439e69954a22a6e6f5fea0ca0c3a}} 
+void {\bfseries Add} (const \mbox{\hyperlink{classPoint}{Point}} \&p, bool extrude\+\_\+if\+\_\+discontiguous=false)
+\item 
+\mbox{\Hypertarget{classAxisAlignedHyperRectangle_a7d0a109bdef24ff4133b1fd66f9dc14f}\label{classAxisAlignedHyperRectangle_a7d0a109bdef24ff4133b1fd66f9dc14f}} 
+void {\bfseries Extrude\+Add} (const \mbox{\hyperlink{classAxisAlignedHyperRectangle}{Axis\+Aligned\+Hyper\+Rectangle}} \&s)
+\item 
+\mbox{\Hypertarget{classAxisAlignedHyperRectangle_a518e1630cdac0e0d235129aae3c3565f}\label{classAxisAlignedHyperRectangle_a518e1630cdac0e0d235129aae3c3565f}} 
+void {\bfseries Add} (const \mbox{\hyperlink{classAxisAlignedHyperRectangle}{Axis\+Aligned\+Hyper\+Rectangle}} \&s, bool extrude\+\_\+if\+\_\+discontiguous=false)
+\item 
+\mbox{\Hypertarget{classAxisAlignedHyperRectangle_a95155de5ed4579ad4de98114523dc8f7}\label{classAxisAlignedHyperRectangle_a95155de5ed4579ad4de98114523dc8f7}} 
+\mbox{\hyperlink{structGradient}{Gradient}} {\bfseries Subtract} (const \mbox{\hyperlink{classAxisAlignedHyperRectangle}{Axis\+Aligned\+Hyper\+Rectangle}} \&s)
+\item 
+\mbox{\Hypertarget{classAxisAlignedHyperRectangle_a832ce6222620c79d0106186e03f3b8b7}\label{classAxisAlignedHyperRectangle_a832ce6222620c79d0106186e03f3b8b7}} 
+std\+::vector$<$ \mbox{\hyperlink{classAxisAlignedHyperRectangle}{Axis\+Aligned\+Hyper\+Rectangle}} $>$ {\bfseries Multi\+Subtract} (const \mbox{\hyperlink{classAxisAlignedHyperRectangle}{Axis\+Aligned\+Hyper\+Rectangle}} \&b)
+\item 
+\mbox{\Hypertarget{classAxisAlignedHyperRectangle_a90893ba8f9cc28e04e6b9b79415b9b35}\label{classAxisAlignedHyperRectangle_a90893ba8f9cc28e04e6b9b79415b9b35}} 
+bool {\bfseries Merge\+If\+Adjacent} (const \mbox{\hyperlink{classPoint}{Point}} \&p)
+\item 
+\mbox{\Hypertarget{classAxisAlignedHyperRectangle_a3d8137bc09c26874562a0bdc730baf98}\label{classAxisAlignedHyperRectangle_a3d8137bc09c26874562a0bdc730baf98}} 
+\mbox{\hyperlink{classAxisAlignedHyperRectangle}{Axis\+Aligned\+Hyper\+Rectangle}} \& {\bfseries operator+=} (const \mbox{\hyperlink{classPoint}{Point}} \&p)
+\item 
+\mbox{\Hypertarget{classAxisAlignedHyperRectangle_a13c79945a83ecbf4a905f0318780323f}\label{classAxisAlignedHyperRectangle_a13c79945a83ecbf4a905f0318780323f}} 
+\mbox{\hyperlink{classAxisAlignedHyperRectangle}{Axis\+Aligned\+Hyper\+Rectangle}} \& {\bfseries operator+=} (const \mbox{\hyperlink{classAxisAlignedHyperRectangle}{Axis\+Aligned\+Hyper\+Rectangle}} \&s)
+\item 
+\mbox{\Hypertarget{classAxisAlignedHyperRectangle_af56678bf0ab8811171624df03abfae88}\label{classAxisAlignedHyperRectangle_af56678bf0ab8811171624df03abfae88}} 
+\mbox{\hyperlink{classAxisAlignedHyperRectangle}{Axis\+Aligned\+Hyper\+Rectangle}} {\bfseries operator-\/} (const \mbox{\hyperlink{classAxisAlignedHyperRectangle}{Axis\+Aligned\+Hyper\+Rectangle}} \&s)
+\item 
+\mbox{\Hypertarget{classAxisAlignedHyperRectangle_a622ac857525387d963585258ea79f2a9}\label{classAxisAlignedHyperRectangle_a622ac857525387d963585258ea79f2a9}} 
+bool {\bfseries operator==} (const \mbox{\hyperlink{classAxisAlignedHyperRectangle}{Axis\+Aligned\+Hyper\+Rectangle}} \&s) const
+\item 
+\mbox{\Hypertarget{classAxisAlignedHyperRectangle_ab7b926512d6c5a974fb8c670df15ac3b}\label{classAxisAlignedHyperRectangle_ab7b926512d6c5a974fb8c670df15ac3b}} 
+bool {\bfseries Contains} (const \mbox{\hyperlink{classPoint}{Point}} \&p) const
+\item 
+\mbox{\Hypertarget{classAxisAlignedHyperRectangle_a4880da8388a89a5e8b064ceb97599caa}\label{classAxisAlignedHyperRectangle_a4880da8388a89a5e8b064ceb97599caa}} 
+\mbox{\hyperlink{classPoint}{Point}} {\bfseries Get\+Translation} (const \mbox{\hyperlink{classAxisAlignedHyperRectangle}{Axis\+Aligned\+Hyper\+Rectangle}} \&s) const
+\item 
+\mbox{\Hypertarget{classAxisAlignedHyperRectangle_a7cd90e0207389235415c52589eb2285e}\label{classAxisAlignedHyperRectangle_a7cd90e0207389235415c52589eb2285e}} 
+void {\bfseries Translate} (const \mbox{\hyperlink{classPoint}{Point}} \&p)
+\item 
+\mbox{\Hypertarget{classAxisAlignedHyperRectangle_a7296048518f564ffb2490777b2f0d790}\label{classAxisAlignedHyperRectangle_a7296048518f564ffb2490777b2f0d790}} 
+std\+::vector$<$ double $>$ {\bfseries Centroid} () const
+\item 
+\mbox{\Hypertarget{classAxisAlignedHyperRectangle_abbeae7b69593d582c3a01f75a8cf3903}\label{classAxisAlignedHyperRectangle_abbeae7b69593d582c3a01f75a8cf3903}} 
+void {\bfseries Print} (std\+::ostream \&out=std\+::cout) const
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classAxisAlignedHyperRectangle_ab0e2733984841ce64edf0033f82fb102}\label{classAxisAlignedHyperRectangle_ab0e2733984841ce64edf0033f82fb102}} 
+std\+::uint32\+\_\+t {\bfseries order\+\_\+}
+\item 
+\mbox{\Hypertarget{classAxisAlignedHyperRectangle_a84c143668ce4b3b4f2819d3532d27ae9}\label{classAxisAlignedHyperRectangle_a84c143668ce4b3b4f2819d3532d27ae9}} 
+\mbox{\hyperlink{classPoint}{Point}} {\bfseries min\+\_\+}
+\item 
+\mbox{\Hypertarget{classAxisAlignedHyperRectangle_a75c867ecb5601152e3ad376d925ac626}\label{classAxisAlignedHyperRectangle_a75c867ecb5601152e3ad376d925ac626}} 
+\mbox{\hyperlink{classPoint}{Point}} {\bfseries max\+\_\+}
+\item 
+\mbox{\Hypertarget{classAxisAlignedHyperRectangle_af1400882623150936604ba9abe1e4ef7}\label{classAxisAlignedHyperRectangle_af1400882623150936604ba9abe1e4ef7}} 
+\mbox{\hyperlink{structGradient}{Gradient}} {\bfseries gradient\+\_\+}
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classAxisAlignedHyperRectangle_a08218835ddda3dfd82978f618baa3923}\label{classAxisAlignedHyperRectangle_a08218835ddda3dfd82978f618baa3923}} 
+void {\bfseries swap} (\mbox{\hyperlink{classAxisAlignedHyperRectangle}{Axis\+Aligned\+Hyper\+Rectangle}} \&first, \mbox{\hyperlink{classAxisAlignedHyperRectangle}{Axis\+Aligned\+Hyper\+Rectangle}} \&second)
+\item 
+\mbox{\Hypertarget{classAxisAlignedHyperRectangle_a16117aaa83a508092c64ab165d06a546}\label{classAxisAlignedHyperRectangle_a16117aaa83a508092c64ab165d06a546}} 
+std\+::ostream \& {\bfseries operator$<$$<$} (std\+::ostream \&out, const \mbox{\hyperlink{classAxisAlignedHyperRectangle}{Axis\+Aligned\+Hyper\+Rectangle}} \&x)
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/loop-\/analysis/point-\/set-\/aahr.\+hpp\item 
+src/loop-\/analysis/point-\/set-\/aahr.\+cpp\end{DoxyCompactItemize}

@@ -117,8 +117,8 @@ void Uber::Init(config::CompoundConfigNode config, config::CompoundConfigNode ar
 //
 void Uber::InitIndexFactorizationSpace()
 {
-  auto user_factors = constraints_.Factors(); // I'm afraid this is empty.
-  auto user_max_factors = constraints_.MaxFactors();
+  auto user_factors = constraints_.Factors();
+  auto user_max_factors = constraints_.MaxFactors(); // This is empty.
 
   if(user_max_factors.empty()) {
     std::cout << "user max factors are empty" << std::endl;
@@ -201,7 +201,9 @@ void Uber::InitLoopPermutationSpace(std::map<unsigned, std::vector<problem::Shap
   auto user_permutations = constraints_.Permutations();
 
   permutation_space_.Init(arch_props_.TilingLevels());
-    
+  
+  std::cout << "Initializing Loop Permutation subspace" << std::endl;
+
   for (uint64_t level = 0; level < arch_props_.TilingLevels(); level++)
   {
     // Extract the user-provided pattern for this level.
@@ -241,7 +243,7 @@ void Uber::InitLoopPermutationSpace(std::map<unsigned, std::vector<problem::Shap
       else
         permutation_space_.InitLevel(level, user_prefix, user_suffix);
     }
-  }    
+  }
 
   size_[int(mapspace::Dimension::LoopPermutation)] = permutation_space_.Size();
 }
@@ -257,7 +259,9 @@ void Uber::InitSpatialSpace(std::map<unsigned, unsigned> unit_factors)
   // to Y dimension occurs. Obviously, this is limited by hardware fanout
   // capabilities at this spatial level.
   spatial_split_space_.Init(arch_props_.TilingLevels());
-    
+  
+  std::cout << "Initializing Spatial subspace" << std::endl;
+  
   for (uint64_t level = 0; level < arch_props_.TilingLevels(); level++)
   {
     if (arch_props_.IsSpatial(level))
@@ -285,6 +289,8 @@ void Uber::InitSpatialSpace(std::map<unsigned, unsigned> unit_factors)
 void Uber::InitDatatypeBypassNestSpace()
 {
   auto user_bypass_strings = constraints_.BypassStrings();
+
+  std::cout << "Initializing Datatype Bypass Nest subspace" << std::endl;
 
   // The user_mask input is a set of per-datatype strings. Each string has a length
   // equal to num_storage_levels, and contains the characters 0 (bypass), 1 (keep),
@@ -340,6 +346,8 @@ void Uber::InitDatatypeBypassNestSpace()
             
         case 'X':
         {
+          std::cout << "  Datatype Bypass subspace: double at dataspace id " << pvi << 
+            " storage level: " << level << std::endl;
           auto copy = datatype_bypass_nest_space_;
           for (auto& compound_mask_nest: datatype_bypass_nest_space_)
           {
@@ -368,6 +376,8 @@ void Uber::InitDatatypeBypassNestSpace()
     // user already overrode that in the provided string).
     for (; level < arch_specs_.topology.NumStorageLevels()-1; level++)
     {
+      std::cout << "  double at un-specified dataspace id " << pvi << " storage level " << 
+        level << std::endl; 
       auto copy = datatype_bypass_nest_space_;
       for (auto& compound_mask_nest: datatype_bypass_nest_space_)
       {

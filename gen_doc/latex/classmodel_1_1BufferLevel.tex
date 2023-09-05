@@ -1,0 +1,149 @@
+\hypertarget{classmodel_1_1BufferLevel}{}\doxysection{model\+::Buffer\+Level Class Reference}
+\label{classmodel_1_1BufferLevel}\index{model::BufferLevel@{model::BufferLevel}}
+
+
+Inheritance diagram for model\+::Buffer\+Level\+:
+% FIG 0
+
+
+Collaboration diagram for model\+::Buffer\+Level\+:
+% FIG 1
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structmodel_1_1BufferLevel_1_1Specs}{Specs}}
+\item 
+struct \mbox{\hyperlink{structmodel_1_1BufferLevel_1_1Stats}{Stats}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmodel_1_1BufferLevel_afff109d83696fcf26be54f1fa648a951}\label{classmodel_1_1BufferLevel_afff109d83696fcf26be54f1fa648a951}} 
+enum {\bfseries Technology} \{ {\bfseries S\+R\+AM}, 
+{\bfseries D\+R\+AM}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmodel_1_1BufferLevel_a61ddbc0569980403b7e24b0b9cb4f9ba}\label{classmodel_1_1BufferLevel_a61ddbc0569980403b7e24b0b9cb4f9ba}} 
+{\bfseries Buffer\+Level} (const \mbox{\hyperlink{structmodel_1_1BufferLevel_1_1Specs}{Specs}} \&specs)
+\item 
+\mbox{\Hypertarget{classmodel_1_1BufferLevel_a9ab7782bfe14999ffaa970307075d9e1}\label{classmodel_1_1BufferLevel_a9ab7782bfe14999ffaa970307075d9e1}} 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classmodel_1_1Level}{Level}} $>$ {\bfseries Clone} () const override
+\item 
+\mbox{\Hypertarget{classmodel_1_1BufferLevel_ad07bdf481c4939b37e7d24ced75f7fcf}\label{classmodel_1_1BufferLevel_ad07bdf481c4939b37e7d24ced75f7fcf}} 
+void {\bfseries Populate\+Energy\+Per\+Op} (unsigned num\+\_\+ops)
+\item 
+\mbox{\Hypertarget{classmodel_1_1BufferLevel_a0f54b8f00355c8bf4812a200c8710c61}\label{classmodel_1_1BufferLevel_a0f54b8f00355c8bf4812a200c8710c61}} 
+\mbox{\hyperlink{structmodel_1_1BufferLevel_1_1Specs}{Specs}} \& {\bfseries Get\+Specs} ()
+\item 
+\mbox{\Hypertarget{classmodel_1_1BufferLevel_aa693b347582e7c98dc9f4c5af768e2e9}\label{classmodel_1_1BufferLevel_aa693b347582e7c98dc9f4c5af768e2e9}} 
+\mbox{\hyperlink{structmodel_1_1BufferLevel_1_1Stats}{Stats}} \& {\bfseries Get\+Stats} ()
+\item 
+\mbox{\Hypertarget{classmodel_1_1BufferLevel_aab8bf8a543e7373dc3379fcda9e213d2}\label{classmodel_1_1BufferLevel_aab8bf8a543e7373dc3379fcda9e213d2}} 
+bool {\bfseries Hardware\+Reduction\+Supported} () override
+\item 
+\mbox{\Hypertarget{classmodel_1_1BufferLevel_a8bc9643f2a6fd1957f76a37ba5624c43}\label{classmodel_1_1BufferLevel_a8bc9643f2a6fd1957f76a37ba5624c43}} 
+void {\bfseries Connect\+Read} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classmodel_1_1Network}{Network}} $>$ network)
+\item 
+\mbox{\Hypertarget{classmodel_1_1BufferLevel_a9244b9bf9cc38ff498ec55fbbdc340dd}\label{classmodel_1_1BufferLevel_a9244b9bf9cc38ff498ec55fbbdc340dd}} 
+void {\bfseries Connect\+Fill} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classmodel_1_1Network}{Network}} $>$ network)
+\item 
+\mbox{\Hypertarget{classmodel_1_1BufferLevel_aedf547b97063846295ad3ef3fa2d9fa2}\label{classmodel_1_1BufferLevel_aedf547b97063846295ad3ef3fa2d9fa2}} 
+void {\bfseries Connect\+Update} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classmodel_1_1Network}{Network}} $>$ network)
+\item 
+\mbox{\Hypertarget{classmodel_1_1BufferLevel_a899e193cc0ee663334fc70a0af60d54c}\label{classmodel_1_1BufferLevel_a899e193cc0ee663334fc70a0af60d54c}} 
+void {\bfseries Connect\+Drain} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classmodel_1_1Network}{Network}} $>$ network)
+\item 
+\mbox{\Hypertarget{classmodel_1_1BufferLevel_a30697549e809587a45e34196bc6e8544}\label{classmodel_1_1BufferLevel_a30697549e809587a45e34196bc6e8544}} 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classmodel_1_1Network}{Network}} $>$ {\bfseries Get\+Read\+Network} ()
+\item 
+\mbox{\Hypertarget{classmodel_1_1BufferLevel_af5d5533937fd95e035b0157586dc1009}\label{classmodel_1_1BufferLevel_af5d5533937fd95e035b0157586dc1009}} 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classmodel_1_1Network}{Network}} $>$ {\bfseries Get\+Update\+Network} ()
+\item 
+\mbox{\Hypertarget{classmodel_1_1BufferLevel_a96c8e9adfcf641579bc5f6a7dc38693f}\label{classmodel_1_1BufferLevel_a96c8e9adfcf641579bc5f6a7dc38693f}} 
+\mbox{\hyperlink{structmodel_1_1EvalStatus}{Eval\+Status}} {\bfseries Pre\+Evaluation\+Check} (const \mbox{\hyperlink{classproblem_1_1PerDataSpace}{problem\+::\+Per\+Data\+Space}}$<$ std\+::size\+\_\+t $>$ working\+\_\+set\+\_\+sizes, const \mbox{\hyperlink{classproblem_1_1PerDataSpace}{tiling\+::\+Compound\+Mask}} mask, const \mbox{\hyperlink{classproblem_1_1Workload}{problem\+::\+Workload}} $\ast$workload, const sparse\+::\+Per\+Storage\+Level\+Compression\+Info per\+\_\+level\+\_\+compression\+\_\+info, const double confidence\+\_\+threshold, const bool break\+\_\+on\+\_\+failure) override
+\item 
+\mbox{\Hypertarget{classmodel_1_1BufferLevel_a9d7b44b8b3a9ee54986e263db4d998f5}\label{classmodel_1_1BufferLevel_a9d7b44b8b3a9ee54986e263db4d998f5}} 
+\mbox{\hyperlink{structmodel_1_1EvalStatus}{Eval\+Status}} {\bfseries Evaluate} (const \mbox{\hyperlink{structtiling_1_1CompoundTile}{tiling\+::\+Compound\+Tile}} \&tile, const \mbox{\hyperlink{classproblem_1_1PerDataSpace}{tiling\+::\+Compound\+Mask}} \&mask, const double confidence\+\_\+threshold, const std\+::uint64\+\_\+t compute\+\_\+cycles, const bool break\+\_\+on\+\_\+failure) override
+\item 
+\mbox{\Hypertarget{classmodel_1_1BufferLevel_a98959aad2b4c65298ee6a2f50c42db92}\label{classmodel_1_1BufferLevel_a98959aad2b4c65298ee6a2f50c42db92}} 
+void {\bfseries Compute\+Energy\+Due\+To\+Child\+Level\+Overflow} (\mbox{\hyperlink{structmodel_1_1BufferLevel_1_1Stats}{Stats}} child\+\_\+level\+\_\+stats, unsigned data\+\_\+space\+\_\+id)
+\item 
+\mbox{\Hypertarget{classmodel_1_1BufferLevel_aa60a2501fdae312ec033068f63b9b9e9}\label{classmodel_1_1BufferLevel_aa60a2501fdae312ec033068f63b9b9e9}} 
+void {\bfseries Finalize\+Buffer\+Energy} ()
+\item 
+\mbox{\Hypertarget{classmodel_1_1BufferLevel_ad8911fafbe94e1a47545de7e70d8e6ef}\label{classmodel_1_1BufferLevel_ad8911fafbe94e1a47545de7e70d8e6ef}} 
+double {\bfseries Operational\+Intensity} (std\+::uint64\+\_\+t total\+\_\+ops)
+\item 
+\mbox{\Hypertarget{classmodel_1_1BufferLevel_a76671b066f943a5086a843b90e55dc17}\label{classmodel_1_1BufferLevel_a76671b066f943a5086a843b90e55dc17}} 
+double {\bfseries Energy} (problem\+::\+Shape\+::\+Data\+Space\+ID pv=problem\+::\+Get\+Shape() -\/$>$Num\+Data\+Spaces) const override
+\item 
+\mbox{\Hypertarget{classmodel_1_1BufferLevel_af2fe9dbf5a99ed1755ea40e541323e04}\label{classmodel_1_1BufferLevel_af2fe9dbf5a99ed1755ea40e541323e04}} 
+std\+::string {\bfseries Name} () const override
+\item 
+\mbox{\Hypertarget{classmodel_1_1BufferLevel_a06bfd9454801f122f51e1830345d960b}\label{classmodel_1_1BufferLevel_a06bfd9454801f122f51e1830345d960b}} 
+double {\bfseries Area} () const override
+\item 
+\mbox{\Hypertarget{classmodel_1_1BufferLevel_aac76084f26b79dc42272193a21836955}\label{classmodel_1_1BufferLevel_aac76084f26b79dc42272193a21836955}} 
+double {\bfseries Area\+Per\+Instance} () const override
+\item 
+\mbox{\Hypertarget{classmodel_1_1BufferLevel_a4559dad3be9703d54abe30b356344913}\label{classmodel_1_1BufferLevel_a4559dad3be9703d54abe30b356344913}} 
+double {\bfseries Size} () const
+\item 
+\mbox{\Hypertarget{classmodel_1_1BufferLevel_a667e1b0d70edca635ded2fb2b0ab4c69}\label{classmodel_1_1BufferLevel_a667e1b0d70edca635ded2fb2b0ab4c69}} 
+std\+::uint64\+\_\+t {\bfseries Cycles} () const override
+\item 
+\mbox{\Hypertarget{classmodel_1_1BufferLevel_ad38c20075e0e31a3d0727818f1f5c994}\label{classmodel_1_1BufferLevel_ad38c20075e0e31a3d0727818f1f5c994}} 
+std\+::uint64\+\_\+t {\bfseries Accesses} (problem\+::\+Shape\+::\+Data\+Space\+ID pv=problem\+::\+Get\+Shape() -\/$>$Num\+Data\+Spaces) const override
+\item 
+\mbox{\Hypertarget{classmodel_1_1BufferLevel_a8fe215e37c80902ba9df222356e4daab}\label{classmodel_1_1BufferLevel_a8fe215e37c80902ba9df222356e4daab}} 
+double {\bfseries Capacity\+Utilization} () const override
+\item 
+\mbox{\Hypertarget{classmodel_1_1BufferLevel_a03a88842fb6cc5990cda0fda36d4c072}\label{classmodel_1_1BufferLevel_a03a88842fb6cc5990cda0fda36d4c072}} 
+std\+::uint64\+\_\+t {\bfseries Utilized\+Capacity} (problem\+::\+Shape\+::\+Data\+Space\+ID pv=problem\+::\+Get\+Shape() -\/$>$Num\+Data\+Spaces) const override
+\item 
+\mbox{\Hypertarget{classmodel_1_1BufferLevel_a07a7b63aee07da035c1002ef213261ac}\label{classmodel_1_1BufferLevel_a07a7b63aee07da035c1002ef213261ac}} 
+std\+::uint64\+\_\+t {\bfseries Tile\+Size} (problem\+::\+Shape\+::\+Data\+Space\+ID pv=problem\+::\+Get\+Shape() -\/$>$Num\+Data\+Spaces) const override
+\item 
+\mbox{\Hypertarget{classmodel_1_1BufferLevel_af841eaf51a838f1b6442865e62893e39}\label{classmodel_1_1BufferLevel_af841eaf51a838f1b6442865e62893e39}} 
+std\+::uint64\+\_\+t {\bfseries Utilized\+Instances} (problem\+::\+Shape\+::\+Data\+Space\+ID pv=problem\+::\+Get\+Shape() -\/$>$Num\+Data\+Spaces) const override
+\item 
+\mbox{\Hypertarget{classmodel_1_1BufferLevel_a548f23050e85694b41ca25dd59c2c5e9}\label{classmodel_1_1BufferLevel_a548f23050e85694b41ca25dd59c2c5e9}} 
+std\+::uint64\+\_\+t {\bfseries Total\+Utilized\+Bytes} (problem\+::\+Shape\+::\+Data\+Space\+ID pv=problem\+::\+Get\+Shape() -\/$>$Num\+Data\+Spaces) const
+\item 
+\mbox{\Hypertarget{classmodel_1_1BufferLevel_a15db556ebd264f23629bc45fb67aba5e}\label{classmodel_1_1BufferLevel_a15db556ebd264f23629bc45fb67aba5e}} 
+void {\bfseries Print} (std\+::ostream \&out) const override
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmodel_1_1BufferLevel_a81e564d7c300852f6c1774652f1d6f75}\label{classmodel_1_1BufferLevel_a81e564d7c300852f6c1774652f1d6f75}} 
+static \mbox{\hyperlink{structmodel_1_1BufferLevel_1_1Specs}{Specs}} {\bfseries Parse\+Specs} (\mbox{\hyperlink{classconfig_1_1CompoundConfigNode}{config\+::\+Compound\+Config\+Node}} setting, std\+::uint64\+\_\+t n\+\_\+elements, bool is\+\_\+sparse\+\_\+module)
+\item 
+\mbox{\Hypertarget{classmodel_1_1BufferLevel_a852198627d2c65ea10a4821e04568a70}\label{classmodel_1_1BufferLevel_a852198627d2c65ea10a4821e04568a70}} 
+static void {\bfseries Parse\+Buffer\+Specs} (\mbox{\hyperlink{classconfig_1_1CompoundConfigNode}{config\+::\+Compound\+Config\+Node}} buffer, std\+::uint64\+\_\+t n\+\_\+elements, problem\+::\+Shape\+::\+Data\+Space\+ID pv, \mbox{\hyperlink{structmodel_1_1BufferLevel_1_1Specs}{Specs}} \&specs)
+\item 
+\mbox{\Hypertarget{classmodel_1_1BufferLevel_abf73229641fa26a135b6773aa1dd3bda}\label{classmodel_1_1BufferLevel_abf73229641fa26a135b6773aa1dd3bda}} 
+static void {\bfseries Validate\+Topology} (\mbox{\hyperlink{structmodel_1_1BufferLevel_1_1Specs}{Buffer\+Level\+::\+Specs}} \&specs)
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmodel_1_1BufferLevel_ac98d07dd8f7b70e16ccb9a01abf56b9c}\label{classmodel_1_1BufferLevel_ac98d07dd8f7b70e16ccb9a01abf56b9c}} 
+class {\bfseries boost\+::serialization\+::access}
+\item 
+\mbox{\Hypertarget{classmodel_1_1BufferLevel_a833190c66dd44cdd401cc42d50681e18}\label{classmodel_1_1BufferLevel_a833190c66dd44cdd401cc42d50681e18}} 
+std\+::ostream \& {\bfseries operator$<$$<$} (std\+::ostream \&out, const Technology \&tech)
+\item 
+\mbox{\Hypertarget{classmodel_1_1BufferLevel_a7cd96873f263c497a65ffc79d078a49b}\label{classmodel_1_1BufferLevel_a7cd96873f263c497a65ffc79d078a49b}} 
+std\+::ostream \& {\bfseries operator$<$$<$} (std\+::ostream \&out, const \mbox{\hyperlink{classmodel_1_1BufferLevel}{Buffer\+Level}} \&buffer\+\_\+level)
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/model/buffer.\+hpp\item 
+src/model/buffer.\+cpp\end{DoxyCompactItemize}

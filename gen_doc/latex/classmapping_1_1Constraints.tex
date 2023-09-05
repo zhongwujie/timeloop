@@ -1,0 +1,135 @@
+\hypertarget{classmapping_1_1Constraints}{}\doxysection{mapping\+::Constraints Class Reference}
+\label{classmapping_1_1Constraints}\index{mapping::Constraints@{mapping::Constraints}}
+
+
+Collaboration diagram for mapping\+::Constraints\+:
+% FIG 0
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmapping_1_1Constraints_abe4b45612a8378b0c915cb9208af0933}\label{classmapping_1_1Constraints_abe4b45612a8378b0c915cb9208af0933}} 
+{\bfseries Constraints} (const \mbox{\hyperlink{classArchProperties}{Arch\+Properties}} \&arch\+\_\+props, const \mbox{\hyperlink{classproblem_1_1Workload}{problem\+::\+Workload}} \&workload)
+\item 
+\mbox{\Hypertarget{classmapping_1_1Constraints_aab623a72f53ddb24991ff45280e65ff5}\label{classmapping_1_1Constraints_aab623a72f53ddb24991ff45280e65ff5}} 
+const std\+::map$<$ unsigned, std\+::map$<$ problem\+::\+Shape\+::\+Flattened\+Dimension\+ID, int $>$ $>$ \& {\bfseries Factors} () const
+\item 
+\mbox{\Hypertarget{classmapping_1_1Constraints_a9f6d28cf7f7c45d7d4129a79a1e78bad}\label{classmapping_1_1Constraints_a9f6d28cf7f7c45d7d4129a79a1e78bad}} 
+const std\+::map$<$ unsigned, std\+::map$<$ problem\+::\+Shape\+::\+Flattened\+Dimension\+ID, int $>$ $>$ \& {\bfseries Max\+Factors} () const
+\item 
+\mbox{\Hypertarget{classmapping_1_1Constraints_afa1d2ea34bedd680f225fc81b49cafd9}\label{classmapping_1_1Constraints_afa1d2ea34bedd680f225fc81b49cafd9}} 
+const std\+::map$<$ unsigned, std\+::pair$<$ std\+::vector$<$ problem\+::\+Shape\+::\+Flattened\+Dimension\+ID $>$, std\+::vector$<$ problem\+::\+Shape\+::\+Flattened\+Dimension\+ID $>$ $>$ $>$ \& {\bfseries Permutations} () const
+\item 
+\mbox{\Hypertarget{classmapping_1_1Constraints_a77bfdf4360717f741b212ef41c8bb20e}\label{classmapping_1_1Constraints_a77bfdf4360717f741b212ef41c8bb20e}} 
+const std\+::map$<$ unsigned, std\+::uint32\+\_\+t $>$ \& {\bfseries Spatial\+Splits} () const
+\item 
+\mbox{\Hypertarget{classmapping_1_1Constraints_aa19346193229bf7813ad3ddb2f1fb5b7}\label{classmapping_1_1Constraints_aa19346193229bf7813ad3ddb2f1fb5b7}} 
+const std\+::map$<$ unsigned, std\+::uint32\+\_\+t $>$ \& {\bfseries Max\+Remainders} () const
+\item 
+\mbox{\Hypertarget{classmapping_1_1Constraints_aa9738c12bef53fd01109dc47a1055354}\label{classmapping_1_1Constraints_aa9738c12bef53fd01109dc47a1055354}} 
+const \mbox{\hyperlink{classproblem_1_1PerDataSpace}{problem\+::\+Per\+Data\+Space}}$<$ std\+::string $>$ \& {\bfseries Bypass\+Strings} () const
+\item 
+\mbox{\Hypertarget{classmapping_1_1Constraints_ac7e95ef7b43c0d274479f2c9e81620f7}\label{classmapping_1_1Constraints_ac7e95ef7b43c0d274479f2c9e81620f7}} 
+double {\bfseries Min\+Parallelism} () const
+\item 
+\mbox{\Hypertarget{classmapping_1_1Constraints_a487862f19b2113e763afc8eccd34fc99}\label{classmapping_1_1Constraints_a487862f19b2113e763afc8eccd34fc99}} 
+const std\+::map$<$ unsigned, double $>$ \& {\bfseries Confidence\+Thresholds} () const
+\item 
+\mbox{\Hypertarget{classmapping_1_1Constraints_a3857f4934b66a38244541de011c79554}\label{classmapping_1_1Constraints_a3857f4934b66a38244541de011c79554}} 
+const std\+::unordered\+\_\+map$<$ unsigned, \mbox{\hyperlink{structloop_1_1Nest_1_1SkewDescriptor}{loop\+::\+Nest\+::\+Skew\+Descriptor}} $>$ {\bfseries Skews} () const
+\item 
+\mbox{\Hypertarget{classmapping_1_1Constraints_a4f0b09dde633ea0add5d035801919312}\label{classmapping_1_1Constraints_a4f0b09dde633ea0add5d035801919312}} 
+const std\+::unordered\+\_\+map$<$ unsigned, \mbox{\hyperlink{classproblem_1_1PerDataSpace}{problem\+::\+Per\+Data\+Space}}$<$ bool $>$ $>$ {\bfseries No\+Link\+Transfers} () const
+\item 
+\mbox{\Hypertarget{classmapping_1_1Constraints_a384b7668708b09ee7a2d3f658d8d768c}\label{classmapping_1_1Constraints_a384b7668708b09ee7a2d3f658d8d768c}} 
+const std\+::unordered\+\_\+map$<$ unsigned, \mbox{\hyperlink{classproblem_1_1PerDataSpace}{problem\+::\+Per\+Data\+Space}}$<$ bool $>$ $>$ {\bfseries No\+Multicast} () const
+\item 
+\mbox{\Hypertarget{classmapping_1_1Constraints_a7c099c987b4e43e4add4ccacfcce8bcb}\label{classmapping_1_1Constraints_a7c099c987b4e43e4add4ccacfcce8bcb}} 
+const std\+::unordered\+\_\+map$<$ unsigned, \mbox{\hyperlink{classproblem_1_1PerDataSpace}{problem\+::\+Per\+Data\+Space}}$<$ bool $>$ $>$ {\bfseries No\+Temporal\+Reuse} () const
+\item 
+\mbox{\Hypertarget{classmapping_1_1Constraints_a364076657b9fd61aba20bb531f2faab3}\label{classmapping_1_1Constraints_a364076657b9fd61aba20bb531f2faab3}} 
+void {\bfseries Generate} (\mbox{\hyperlink{structMapping}{Mapping}} $\ast$mapping)
+\item 
+\mbox{\Hypertarget{classmapping_1_1Constraints_a562f9995934f485fe08aedb4a5f619c7}\label{classmapping_1_1Constraints_a562f9995934f485fe08aedb4a5f619c7}} 
+bool {\bfseries operator$>$=} (const \mbox{\hyperlink{classmapping_1_1Constraints}{Constraints}} \&other) const
+\item 
+\mbox{\Hypertarget{classmapping_1_1Constraints_a12b4d99dd5f9ab5c7ab75b619d32ee7a}\label{classmapping_1_1Constraints_a12b4d99dd5f9ab5c7ab75b619d32ee7a}} 
+bool {\bfseries Satisfied\+By} (\mbox{\hyperlink{structMapping}{Mapping}} $\ast$mapping) const
+\item 
+\mbox{\Hypertarget{classmapping_1_1Constraints_aa2c7861966d635babea3eec5da38b905}\label{classmapping_1_1Constraints_aa2c7861966d635babea3eec5da38b905}} 
+void {\bfseries Parse} (\mbox{\hyperlink{classconfig_1_1CompoundConfigNode}{config\+::\+Compound\+Config\+Node}} config)
+\item 
+\mbox{\Hypertarget{classmapping_1_1Constraints_aaa72fd307b768d8e9b2f41daf74bc3eb}\label{classmapping_1_1Constraints_aaa72fd307b768d8e9b2f41daf74bc3eb}} 
+void {\bfseries Parse\+List} (\mbox{\hyperlink{classconfig_1_1CompoundConfigNode}{config\+::\+Compound\+Config\+Node}} constraints)
+\item 
+\mbox{\Hypertarget{classmapping_1_1Constraints_acdb74e4ffb4d8c234199bca260f4a40e}\label{classmapping_1_1Constraints_acdb74e4ffb4d8c234199bca260f4a40e}} 
+void {\bfseries Parse\+Single\+Constraint} (\mbox{\hyperlink{classconfig_1_1CompoundConfigNode}{config\+::\+Compound\+Config\+Node}} target, \mbox{\hyperlink{classconfig_1_1CompoundConfigNode}{config\+::\+Compound\+Config\+Node}} constraint, \mbox{\hyperlink{classconfig_1_1CompoundConfigNode}{config\+::\+Compound\+Config\+Node}} attributes)
+\item 
+\mbox{\Hypertarget{classmapping_1_1Constraints_a5239933ae7d07278342b97bf0b62b62a}\label{classmapping_1_1Constraints_a5239933ae7d07278342b97bf0b62b62a}} 
+unsigned {\bfseries Find\+Target\+Tiling\+Level} (\mbox{\hyperlink{classconfig_1_1CompoundConfigNode}{config\+::\+Compound\+Config\+Node}} constraint, std\+::string type)
+\item 
+\mbox{\Hypertarget{classmapping_1_1Constraints_a69ead434ff987c131877577e9865ad45}\label{classmapping_1_1Constraints_a69ead434ff987c131877577e9865ad45}} 
+std\+::map$<$ problem\+::\+Shape\+::\+Flattened\+Dimension\+ID, int $>$ {\bfseries Parse\+Factors} (\mbox{\hyperlink{classconfig_1_1CompoundConfigNode}{config\+::\+Compound\+Config\+Node}} constraint)
+\item 
+\mbox{\Hypertarget{classmapping_1_1Constraints_a67317753546c17b34759c1370587268a}\label{classmapping_1_1Constraints_a67317753546c17b34759c1370587268a}} 
+std\+::map$<$ problem\+::\+Shape\+::\+Flattened\+Dimension\+ID, int $>$ {\bfseries Parse\+Max\+Factors} (\mbox{\hyperlink{classconfig_1_1CompoundConfigNode}{config\+::\+Compound\+Config\+Node}} constraint)
+\item 
+\mbox{\Hypertarget{classmapping_1_1Constraints_a3df359dba0ef81d90888c26a4f1b8b07}\label{classmapping_1_1Constraints_a3df359dba0ef81d90888c26a4f1b8b07}} 
+std\+::pair$<$ std\+::vector$<$ problem\+::\+Shape\+::\+Flattened\+Dimension\+ID $>$, std\+::vector$<$ problem\+::\+Shape\+::\+Flattened\+Dimension\+ID $>$ $>$ {\bfseries Parse\+Permutations} (\mbox{\hyperlink{classconfig_1_1CompoundConfigNode}{config\+::\+Compound\+Config\+Node}} constraint)
+\item 
+\mbox{\Hypertarget{classmapping_1_1Constraints_a59764719c57b5a06af6050e54ae99251}\label{classmapping_1_1Constraints_a59764719c57b5a06af6050e54ae99251}} 
+void {\bfseries Parse\+Datatype\+Bypass\+Settings} (\mbox{\hyperlink{classconfig_1_1CompoundConfigNode}{config\+::\+Compound\+Config\+Node}} constraint, unsigned level)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmapping_1_1Constraints_a2876396cfcce3ec3671e7327bbd3762e}\label{classmapping_1_1Constraints_a2876396cfcce3ec3671e7327bbd3762e}} 
+const \mbox{\hyperlink{classArchProperties}{Arch\+Properties}} \& {\bfseries arch\+\_\+props\+\_\+}
+\item 
+\mbox{\Hypertarget{classmapping_1_1Constraints_a838812bb0562294b7564d8b66eb78881}\label{classmapping_1_1Constraints_a838812bb0562294b7564d8b66eb78881}} 
+const \mbox{\hyperlink{classproblem_1_1Workload}{problem\+::\+Workload}} \& {\bfseries workload\+\_\+}
+\item 
+\mbox{\Hypertarget{classmapping_1_1Constraints_a8cf31e500661f9cfc72db3a5368e7d7c}\label{classmapping_1_1Constraints_a8cf31e500661f9cfc72db3a5368e7d7c}} 
+std\+::map$<$ unsigned, std\+::map$<$ problem\+::\+Shape\+::\+Flattened\+Dimension\+ID, int $>$ $>$ {\bfseries factors\+\_\+}
+\item 
+\mbox{\Hypertarget{classmapping_1_1Constraints_a48d23fded77cefea4ceeeac23a44b735}\label{classmapping_1_1Constraints_a48d23fded77cefea4ceeeac23a44b735}} 
+std\+::map$<$ unsigned, std\+::map$<$ problem\+::\+Shape\+::\+Flattened\+Dimension\+ID, int $>$ $>$ {\bfseries max\+\_\+factors\+\_\+}
+\item 
+\mbox{\Hypertarget{classmapping_1_1Constraints_a548b30bb749b09347cee96824ebad81a}\label{classmapping_1_1Constraints_a548b30bb749b09347cee96824ebad81a}} 
+std\+::map$<$ unsigned, std\+::pair$<$ std\+::vector$<$ problem\+::\+Shape\+::\+Flattened\+Dimension\+ID $>$, std\+::vector$<$ problem\+::\+Shape\+::\+Flattened\+Dimension\+ID $>$ $>$ $>$ {\bfseries permutations\+\_\+}
+\item 
+\mbox{\Hypertarget{classmapping_1_1Constraints_a6c0405a505d13fcb830b8d72c2d2f415}\label{classmapping_1_1Constraints_a6c0405a505d13fcb830b8d72c2d2f415}} 
+std\+::map$<$ unsigned, std\+::uint32\+\_\+t $>$ {\bfseries spatial\+\_\+splits\+\_\+}
+\item 
+\mbox{\Hypertarget{classmapping_1_1Constraints_a5df6b75e32b0f85e9d44ba2bec7f6006}\label{classmapping_1_1Constraints_a5df6b75e32b0f85e9d44ba2bec7f6006}} 
+std\+::map$<$ unsigned, std\+::uint32\+\_\+t $>$ {\bfseries max\+\_\+remainders\+\_\+}
+\item 
+\mbox{\Hypertarget{classmapping_1_1Constraints_ac3018e09175c91a8b2d623727eae6f8e}\label{classmapping_1_1Constraints_ac3018e09175c91a8b2d623727eae6f8e}} 
+std\+::map$<$ unsigned, double $>$ {\bfseries confidence\+\_\+thresholds\+\_\+}
+\item 
+\mbox{\Hypertarget{classmapping_1_1Constraints_aaf60402b2164aee7672db696871da320}\label{classmapping_1_1Constraints_aaf60402b2164aee7672db696871da320}} 
+\mbox{\hyperlink{classproblem_1_1PerDataSpace}{problem\+::\+Per\+Data\+Space}}$<$ std\+::string $>$ {\bfseries bypass\+\_\+strings\+\_\+}
+\item 
+\mbox{\Hypertarget{classmapping_1_1Constraints_afb6534cbdc68ab417743862b893626f3}\label{classmapping_1_1Constraints_afb6534cbdc68ab417743862b893626f3}} 
+double {\bfseries min\+\_\+parallelism\+\_\+}
+\item 
+\mbox{\Hypertarget{classmapping_1_1Constraints_a6db4fbabb2c664f9a7b80db26d0d17a9}\label{classmapping_1_1Constraints_a6db4fbabb2c664f9a7b80db26d0d17a9}} 
+bool {\bfseries min\+\_\+parallelism\+\_\+isset\+\_\+}
+\item 
+\mbox{\Hypertarget{classmapping_1_1Constraints_aed258ce01e2697c727b116ae196b3da1}\label{classmapping_1_1Constraints_aed258ce01e2697c727b116ae196b3da1}} 
+std\+::unordered\+\_\+map$<$ unsigned, \mbox{\hyperlink{structloop_1_1Nest_1_1SkewDescriptor}{loop\+::\+Nest\+::\+Skew\+Descriptor}} $>$ {\bfseries skews\+\_\+}
+\item 
+\mbox{\Hypertarget{classmapping_1_1Constraints_a72b5e94ca238716e4bf9aaf686925e76}\label{classmapping_1_1Constraints_a72b5e94ca238716e4bf9aaf686925e76}} 
+std\+::unordered\+\_\+map$<$ unsigned, \mbox{\hyperlink{classproblem_1_1PerDataSpace}{problem\+::\+Per\+Data\+Space}}$<$ bool $>$ $>$ {\bfseries no\+\_\+link\+\_\+transfer\+\_\+}
+\item 
+\mbox{\Hypertarget{classmapping_1_1Constraints_a4b080acfc322c3752109c8fe8e645c40}\label{classmapping_1_1Constraints_a4b080acfc322c3752109c8fe8e645c40}} 
+std\+::unordered\+\_\+map$<$ unsigned, \mbox{\hyperlink{classproblem_1_1PerDataSpace}{problem\+::\+Per\+Data\+Space}}$<$ bool $>$ $>$ {\bfseries no\+\_\+multicast\+\_\+}
+\item 
+\mbox{\Hypertarget{classmapping_1_1Constraints_aeebca58204b14c54a4491e8558f13a3c}\label{classmapping_1_1Constraints_aeebca58204b14c54a4491e8558f13a3c}} 
+std\+::unordered\+\_\+map$<$ unsigned, \mbox{\hyperlink{classproblem_1_1PerDataSpace}{problem\+::\+Per\+Data\+Space}}$<$ bool $>$ $>$ {\bfseries no\+\_\+temporal\+\_\+reuse\+\_\+}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/mapping/constraints.\+hpp\item 
+src/mapping/constraints.\+cpp\end{DoxyCompactItemize}

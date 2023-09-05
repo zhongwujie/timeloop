@@ -1,0 +1,109 @@
+\hypertarget{classmapspace_1_1Ruby}{}\doxysection{mapspace\+::Ruby Class Reference}
+\label{classmapspace_1_1Ruby}\index{mapspace::Ruby@{mapspace::Ruby}}
+
+
+Inheritance diagram for mapspace\+::Ruby\+:
+% FIG 0
+
+
+Collaboration diagram for mapspace\+::Ruby\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmapspace_1_1Ruby_a88e1a2408391b617c5495af85e00f996}\label{classmapspace_1_1Ruby_a88e1a2408391b617c5495af85e00f996}} 
+{\bfseries Ruby} (\mbox{\hyperlink{classconfig_1_1CompoundConfigNode}{config\+::\+Compound\+Config\+Node}} config, \mbox{\hyperlink{classconfig_1_1CompoundConfigNode}{config\+::\+Compound\+Config\+Node}} arch\+\_\+constraints, \mbox{\hyperlink{structmodel_1_1Engine_1_1Specs}{model\+::\+Engine\+::\+Specs}} arch\+\_\+specs, const \mbox{\hyperlink{classproblem_1_1Workload}{problem\+::\+Workload}} \&workload, bool filter\+\_\+spatial\+\_\+fanout=true, bool skip\+\_\+init=false)
+\item 
+\mbox{\Hypertarget{classmapspace_1_1Ruby_a92db91e42e2086c71b28b0eafd4e887c}\label{classmapspace_1_1Ruby_a92db91e42e2086c71b28b0eafd4e887c}} 
+{\bfseries Ruby} (const \mbox{\hyperlink{classmapspace_1_1Ruby}{Ruby}} \&other)=default
+\item 
+\mbox{\Hypertarget{classmapspace_1_1Ruby_a893833d750c988c4ac1f669e684c701f}\label{classmapspace_1_1Ruby_a893833d750c988c4ac1f669e684c701f}} 
+void {\bfseries Init} (\mbox{\hyperlink{classconfig_1_1CompoundConfigNode}{config\+::\+Compound\+Config\+Node}} config, \mbox{\hyperlink{classconfig_1_1CompoundConfigNode}{config\+::\+Compound\+Config\+Node}} arch\+\_\+constraints)
+\item 
+\mbox{\Hypertarget{classmapspace_1_1Ruby_aba54e97bd061f94f139b48b952fbade9}\label{classmapspace_1_1Ruby_aba54e97bd061f94f139b48b952fbade9}} 
+void {\bfseries Init\+Index\+Factorization\+Space} ()
+\item 
+\mbox{\Hypertarget{classmapspace_1_1Ruby_a47df6b28667933eeaf2dfbd35ebd179a}\label{classmapspace_1_1Ruby_a47df6b28667933eeaf2dfbd35ebd179a}} 
+void {\bfseries Init\+Loop\+Permutation\+Space} (std\+::map$<$ unsigned, std\+::vector$<$ problem\+::\+Shape\+::\+Flattened\+Dimension\+ID $>$$>$ pruned\+\_\+dimensions=\{\})
+\item 
+\mbox{\Hypertarget{classmapspace_1_1Ruby_a66358037319ee2fab83231283bbbe877}\label{classmapspace_1_1Ruby_a66358037319ee2fab83231283bbbe877}} 
+void {\bfseries Init\+Spatial\+Space} (std\+::map$<$ unsigned, unsigned $>$ unit\+\_\+factors=\{\})
+\item 
+\mbox{\Hypertarget{classmapspace_1_1Ruby_ad050280287e545e811a6bfc03c13d3db}\label{classmapspace_1_1Ruby_ad050280287e545e811a6bfc03c13d3db}} 
+void {\bfseries Init\+Datatype\+Bypass\+Nest\+Space} ()
+\item 
+\mbox{\Hypertarget{classmapspace_1_1Ruby_a062475802e5ccd5cbee16ea606a0055a}\label{classmapspace_1_1Ruby_a062475802e5ccd5cbee16ea606a0055a}} 
+void {\bfseries Init\+Pruned} (uint128\+\_\+t index\+\_\+factorization\+\_\+id)
+\item 
+\mbox{\Hypertarget{classmapspace_1_1Ruby_af965392abb5e8d4016b52aa4f517f356}\label{classmapspace_1_1Ruby_af965392abb5e8d4016b52aa4f517f356}} 
+std\+::vector$<$ \mbox{\hyperlink{classmapspace_1_1MapSpace}{Map\+Space}} $\ast$ $>$ {\bfseries Split} (std\+::uint64\+\_\+t num\+\_\+splits)
+\item 
+\mbox{\Hypertarget{classmapspace_1_1Ruby_a918c3117013bcf04ee7f4aea6646fe3a}\label{classmapspace_1_1Ruby_a918c3117013bcf04ee7f4aea6646fe3a}} 
+void {\bfseries Init\+Split} (std\+::uint64\+\_\+t split\+\_\+id, uint128\+\_\+t split\+\_\+if\+\_\+size, std\+::uint64\+\_\+t num\+\_\+parent\+\_\+splits)
+\item 
+\mbox{\Hypertarget{classmapspace_1_1Ruby_a3d4d299616bab0360ce77c0456216493}\label{classmapspace_1_1Ruby_a3d4d299616bab0360ce77c0456216493}} 
+bool {\bfseries Is\+Split} ()
+\item 
+\mbox{\Hypertarget{classmapspace_1_1Ruby_aab10701a6a7466ebcdbdd29d533ce553}\label{classmapspace_1_1Ruby_aab10701a6a7466ebcdbdd29d533ce553}} 
+std\+::vector$<$ \mbox{\hyperlink{structmapspace_1_1Status}{Status}} $>$ {\bfseries Construct\+Mapping} (\mbox{\hyperlink{classCartesianCounter}{mapspace\+::\+ID}} mapping\+\_\+id, \mbox{\hyperlink{structMapping}{Mapping}} $\ast$mapping, bool break\+\_\+on\+\_\+failure=true)
+\item 
+\mbox{\Hypertarget{classmapspace_1_1Ruby_a58b7f5bce54c275d621d25d472240547}\label{classmapspace_1_1Ruby_a58b7f5bce54c275d621d25d472240547}} 
+void {\bfseries Init\+Subnests} (loop\+::\+Nest\+Config \&subnests)
+\item 
+\mbox{\Hypertarget{classmapspace_1_1Ruby_a2473143f23f0e41f0b59cd3d0df2295e}\label{classmapspace_1_1Ruby_a2473143f23f0e41f0b59cd3d0df2295e}} 
+void {\bfseries Permute\+Subnests} (uint128\+\_\+t mapping\+\_\+permutation\+\_\+id, loop\+::\+Nest\+Config \&subnests)
+\item 
+\mbox{\Hypertarget{classmapspace_1_1Ruby_a523d7116547002cf9d1eec121f9a208f}\label{classmapspace_1_1Ruby_a523d7116547002cf9d1eec121f9a208f}} 
+void {\bfseries Assign\+Index\+Factors} (uint128\+\_\+t mapping\+\_\+index\+\_\+factorization\+\_\+id, loop\+::\+Nest\+Config \&subnests)
+\item 
+\mbox{\Hypertarget{classmapspace_1_1Ruby_ac4ac0eb1f69f4bab6771106bb2186a6d}\label{classmapspace_1_1Ruby_ac4ac0eb1f69f4bab6771106bb2186a6d}} 
+std\+::vector$<$ \mbox{\hyperlink{structmapspace_1_1Status}{Status}} $>$ {\bfseries Assign\+Spatial\+Tiling\+Directions} (uint128\+\_\+t mapping\+\_\+spatial\+\_\+id, loop\+::\+Nest\+Config \&subnests, \mbox{\hyperlink{classproblem_1_1PerDataSpace}{tiling\+::\+Compound\+Mask\+Nest}} datatype\+\_\+bypass\+\_\+nest, bool break\+\_\+on\+\_\+failure)
+\item 
+\mbox{\Hypertarget{classmapspace_1_1Ruby_af442c91a147a9d5173dfda4252216ade}\label{classmapspace_1_1Ruby_af442c91a147a9d5173dfda4252216ade}} 
+\mbox{\hyperlink{structmapspace_1_1Status}{Status}} {\bfseries Assign\+Spatial\+Tiling\+Directions\+\_\+\+Level\+\_\+\+Expand} (std\+::uint32\+\_\+t spatial\+\_\+split, std\+::vector$<$ \mbox{\hyperlink{classloop_1_1Descriptor}{loop\+::\+Descriptor}} $>$ \&level\+\_\+nest, unsigned tiling\+\_\+level\+\_\+id, double \&fanout\+\_\+utilization)
+\item 
+\mbox{\Hypertarget{classmapspace_1_1Ruby_a17f0b22ed9eb831f9658a54905cec6ae}\label{classmapspace_1_1Ruby_a17f0b22ed9eb831f9658a54905cec6ae}} 
+\mbox{\hyperlink{classproblem_1_1PerDataSpace}{tiling\+::\+Compound\+Mask\+Nest}} {\bfseries Construct\+Datatype\+Bypass\+Nest} (uint128\+\_\+t mapping\+\_\+datatype\+\_\+bypass\+\_\+id)
+\item 
+\mbox{\Hypertarget{classmapspace_1_1Ruby_a71d0aa93486a200ab0a9c3607970e153}\label{classmapspace_1_1Ruby_a71d0aa93486a200ab0a9c3607970e153}} 
+void {\bfseries Parse} (\mbox{\hyperlink{classconfig_1_1CompoundConfigNode}{config\+::\+Compound\+Config\+Node}} config, \mbox{\hyperlink{classconfig_1_1CompoundConfigNode}{config\+::\+Compound\+Config\+Node}} arch\+\_\+constraints)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmapspace_1_1Ruby_ae11e833a2f55870a0fed015c163415d8}\label{classmapspace_1_1Ruby_ae11e833a2f55870a0fed015c163415d8}} 
+\mbox{\hyperlink{classmapspace_1_1RubyPermutationSpace}{Ruby\+Permutation\+Space}} {\bfseries permutation\+\_\+space\+\_\+}
+\item 
+\mbox{\Hypertarget{classmapspace_1_1Ruby_a9ed5b5e6ee1ec9824a7aa430f41933a3}\label{classmapspace_1_1Ruby_a9ed5b5e6ee1ec9824a7aa430f41933a3}} 
+\mbox{\hyperlink{classmapspace_1_1ResidualIndexFactorizationSpace}{Residual\+Index\+Factorization\+Space}} {\bfseries index\+\_\+factorization\+\_\+space\+\_\+}
+\item 
+\mbox{\Hypertarget{classmapspace_1_1Ruby_acef5be1f1d0c249176eb5ed32df1780d}\label{classmapspace_1_1Ruby_acef5be1f1d0c249176eb5ed32df1780d}} 
+\mbox{\hyperlink{classmapspace_1_1SpatialSplitSpace}{Spatial\+Split\+Space}} {\bfseries spatial\+\_\+split\+\_\+space\+\_\+}
+\item 
+\mbox{\Hypertarget{classmapspace_1_1Ruby_a3b2845b12311124bd30763488b73a696}\label{classmapspace_1_1Ruby_a3b2845b12311124bd30763488b73a696}} 
+std\+::vector$<$ \mbox{\hyperlink{classproblem_1_1PerDataSpace}{tiling\+::\+Compound\+Mask\+Nest}} $>$ {\bfseries datatype\+\_\+bypass\+\_\+nest\+\_\+space\+\_\+}
+\item 
+\mbox{\Hypertarget{classmapspace_1_1Ruby_a306160fa07a890cffdab2bf3e40c3350}\label{classmapspace_1_1Ruby_a306160fa07a890cffdab2bf3e40c3350}} 
+std\+::vector$<$ \mbox{\hyperlink{classmapspace_1_1Ruby}{Ruby}} $\ast$ $>$ {\bfseries splits\+\_\+}
+\item 
+\mbox{\Hypertarget{classmapspace_1_1Ruby_acc5eb7a7682634e2e3012fc1518c914b}\label{classmapspace_1_1Ruby_acc5eb7a7682634e2e3012fc1518c914b}} 
+std\+::uint64\+\_\+t {\bfseries split\+\_\+id\+\_\+}
+\item 
+\mbox{\Hypertarget{classmapspace_1_1Ruby_a7ca43ae3849f88e1c61f91a550293572}\label{classmapspace_1_1Ruby_a7ca43ae3849f88e1c61f91a550293572}} 
+std\+::uint64\+\_\+t {\bfseries num\+\_\+parent\+\_\+splits\+\_\+}
+\item 
+\mbox{\Hypertarget{classmapspace_1_1Ruby_a76294edbf68bfa0acfc474cf34fd7efb}\label{classmapspace_1_1Ruby_a76294edbf68bfa0acfc474cf34fd7efb}} 
+\mbox{\hyperlink{classArchProperties}{Arch\+Properties}} {\bfseries arch\+\_\+props\+\_\+}
+\item 
+\mbox{\Hypertarget{classmapspace_1_1Ruby_a42b6a4afd9d7a37bda1e8d87f67e9ed8}\label{classmapspace_1_1Ruby_a42b6a4afd9d7a37bda1e8d87f67e9ed8}} 
+\mbox{\hyperlink{classmapping_1_1Constraints}{mapping\+::\+Constraints}} {\bfseries constraints\+\_\+}
+\item 
+\mbox{\Hypertarget{classmapspace_1_1Ruby_af8450b4ab88607834b60ab4d410190e4}\label{classmapspace_1_1Ruby_af8450b4ab88607834b60ab4d410190e4}} 
+bool {\bfseries filter\+\_\+spatial\+\_\+fanout\+\_\+}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/mapspaces/ruby.\+hpp\item 
+src/mapspaces/ruby.\+cpp\end{DoxyCompactItemize}

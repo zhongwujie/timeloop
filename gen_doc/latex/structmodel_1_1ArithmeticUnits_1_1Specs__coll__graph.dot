@@ -1,0 +1,18 @@
+digraph "model::ArithmeticUnits::Specs"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="model::ArithmeticUnits\l::Specs",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="model::LevelSpecs",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structmodel_1_1LevelSpecs.html",tooltip=" "];
+  Node3 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" energy_per_op\narea" ];
+  Node3 [label="model::Attribute\< double \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classmodel_1_1Attribute.html",tooltip=" "];
+  Node4 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" is_sparse_module" ];
+  Node4 [label="model::Attribute\< bool \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classmodel_1_1Attribute.html",tooltip=" "];
+  Node5 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" meshX\nmeshY\nword_bits\ninstances" ];
+  Node5 [label="model::Attribute\< std\l::uint64_t \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classmodel_1_1Attribute.html",tooltip=" "];
+  Node6 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" result_network_name\noperand_network_name\nname" ];
+  Node6 [label="model::Attribute\< std\l::string \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classmodel_1_1Attribute.html",tooltip=" "];
+}

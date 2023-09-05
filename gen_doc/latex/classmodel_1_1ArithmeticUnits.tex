@@ -1,0 +1,106 @@
+\hypertarget{classmodel_1_1ArithmeticUnits}{}\doxysection{model\+::Arithmetic\+Units Class Reference}
+\label{classmodel_1_1ArithmeticUnits}\index{model::ArithmeticUnits@{model::ArithmeticUnits}}
+
+
+Inheritance diagram for model\+::Arithmetic\+Units\+:
+% FIG 0
+
+
+Collaboration diagram for model\+::Arithmetic\+Units\+:
+% FIG 1
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structmodel_1_1ArithmeticUnits_1_1Specs}{Specs}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmodel_1_1ArithmeticUnits_ab786a327344fa14695facc0d1426f8c0}\label{classmodel_1_1ArithmeticUnits_ab786a327344fa14695facc0d1426f8c0}} 
+{\bfseries Arithmetic\+Units} (const \mbox{\hyperlink{structmodel_1_1ArithmeticUnits_1_1Specs}{Specs}} \&specs)
+\item 
+\mbox{\Hypertarget{classmodel_1_1ArithmeticUnits_aa70b00a867ff4f1497e2e0090699461a}\label{classmodel_1_1ArithmeticUnits_aa70b00a867ff4f1497e2e0090699461a}} 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classmodel_1_1Level}{Level}} $>$ {\bfseries Clone} () const override
+\item 
+\mbox{\Hypertarget{classmodel_1_1ArithmeticUnits_ae8ee37d076627520745fa4b0c5f88f83}\label{classmodel_1_1ArithmeticUnits_ae8ee37d076627520745fa4b0c5f88f83}} 
+\mbox{\hyperlink{structmodel_1_1ArithmeticUnits_1_1Specs}{Specs}} \& {\bfseries Get\+Specs} ()
+\item 
+\mbox{\Hypertarget{classmodel_1_1ArithmeticUnits_a1e866b045de02e494e0d97fac3a77637}\label{classmodel_1_1ArithmeticUnits_a1e866b045de02e494e0d97fac3a77637}} 
+void {\bfseries Connect\+Operand} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classmodel_1_1Network}{Network}} $>$ network)
+\item 
+\mbox{\Hypertarget{classmodel_1_1ArithmeticUnits_ade408431da52c18858b2b6a8071d07d8}\label{classmodel_1_1ArithmeticUnits_ade408431da52c18858b2b6a8071d07d8}} 
+void {\bfseries Connect\+Result} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classmodel_1_1Network}{Network}} $>$ network)
+\item 
+\mbox{\Hypertarget{classmodel_1_1ArithmeticUnits_a7cded28219c02d1ae4fe1a7a519b3fe3}\label{classmodel_1_1ArithmeticUnits_a7cded28219c02d1ae4fe1a7a519b3fe3}} 
+std\+::string {\bfseries Name} () const override
+\item 
+\mbox{\Hypertarget{classmodel_1_1ArithmeticUnits_ae875dfa532c5d63bb5f2e4271ecc930b}\label{classmodel_1_1ArithmeticUnits_ae875dfa532c5d63bb5f2e4271ecc930b}} 
+double {\bfseries Energy} (problem\+::\+Shape\+::\+Data\+Space\+ID pv=problem\+::\+Get\+Shape() -\/$>$Num\+Data\+Spaces) const override
+\item 
+\mbox{\Hypertarget{classmodel_1_1ArithmeticUnits_a9ecb640c93542fdd5db5ce297fbfa6bb}\label{classmodel_1_1ArithmeticUnits_a9ecb640c93542fdd5db5ce297fbfa6bb}} 
+double {\bfseries Area} () const override
+\item 
+\mbox{\Hypertarget{classmodel_1_1ArithmeticUnits_a9612e937db75403c0d8a36bc34b670bd}\label{classmodel_1_1ArithmeticUnits_a9612e937db75403c0d8a36bc34b670bd}} 
+double {\bfseries Area\+Per\+Instance} () const override
+\item 
+\mbox{\Hypertarget{classmodel_1_1ArithmeticUnits_a44ff7847bc979a18214007c50aad38b9}\label{classmodel_1_1ArithmeticUnits_a44ff7847bc979a18214007c50aad38b9}} 
+std\+::uint64\+\_\+t {\bfseries Cycles} () const override
+\item 
+\mbox{\Hypertarget{classmodel_1_1ArithmeticUnits_a051eab107ac7e8298385ad69163fb498}\label{classmodel_1_1ArithmeticUnits_a051eab107ac7e8298385ad69163fb498}} 
+std\+::uint64\+\_\+t {\bfseries Utilized\+Instances} (problem\+::\+Shape\+::\+Data\+Space\+ID pv=problem\+::\+Get\+Shape() -\/$>$Num\+Data\+Spaces) const override
+\item 
+\mbox{\Hypertarget{classmodel_1_1ArithmeticUnits_aa170b3df6231a3a8faa174f6d314d8c8}\label{classmodel_1_1ArithmeticUnits_aa170b3df6231a3a8faa174f6d314d8c8}} 
+void {\bfseries Print} (std\+::ostream \&out) const override
+\item 
+\mbox{\Hypertarget{classmodel_1_1ArithmeticUnits_a5b40d2ba7948d9cbd8d8537c8cf31392}\label{classmodel_1_1ArithmeticUnits_a5b40d2ba7948d9cbd8d8537c8cf31392}} 
+bool {\bfseries Hardware\+Reduction\+Supported} () override
+\item 
+\mbox{\Hypertarget{classmodel_1_1ArithmeticUnits_aa73386044310c23c3e3e4bc0551c42e7}\label{classmodel_1_1ArithmeticUnits_aa73386044310c23c3e3e4bc0551c42e7}} 
+\mbox{\hyperlink{structmodel_1_1EvalStatus}{Eval\+Status}} {\bfseries Pre\+Evaluation\+Check} (const \mbox{\hyperlink{classproblem_1_1PerDataSpace}{problem\+::\+Per\+Data\+Space}}$<$ std\+::size\+\_\+t $>$ working\+\_\+set\+\_\+sizes, const \mbox{\hyperlink{classproblem_1_1PerDataSpace}{tiling\+::\+Compound\+Mask}} mask, const \mbox{\hyperlink{classproblem_1_1Workload}{problem\+::\+Workload}} $\ast$workload, const sparse\+::\+Per\+Storage\+Level\+Compression\+Info per\+\_\+level\+\_\+compression\+\_\+info, const double confidence\+\_\+threshold, const bool break\+\_\+on\+\_\+failure) override
+\item 
+\mbox{\Hypertarget{classmodel_1_1ArithmeticUnits_a4ee98d0a9cc1055a17eea52153ee5434}\label{classmodel_1_1ArithmeticUnits_a4ee98d0a9cc1055a17eea52153ee5434}} 
+std\+::uint64\+\_\+t {\bfseries Accesses} (problem\+::\+Shape\+::\+Data\+Space\+ID pv=problem\+::\+Get\+Shape() -\/$>$Num\+Data\+Spaces) const override
+\item 
+\mbox{\Hypertarget{classmodel_1_1ArithmeticUnits_a5b6be02a9b21c47b05aab880eb13a6b1}\label{classmodel_1_1ArithmeticUnits_a5b6be02a9b21c47b05aab880eb13a6b1}} 
+double {\bfseries Capacity\+Utilization} () const override
+\item 
+\mbox{\Hypertarget{classmodel_1_1ArithmeticUnits_ab485041abf6435010a4783b88fc4103c}\label{classmodel_1_1ArithmeticUnits_ab485041abf6435010a4783b88fc4103c}} 
+std\+::uint64\+\_\+t {\bfseries Tile\+Size} (problem\+::\+Shape\+::\+Data\+Space\+ID pv=problem\+::\+Get\+Shape() -\/$>$Num\+Data\+Spaces) const override
+\item 
+\mbox{\Hypertarget{classmodel_1_1ArithmeticUnits_a3420bc6d36f6c7040117792604d5262e}\label{classmodel_1_1ArithmeticUnits_a3420bc6d36f6c7040117792604d5262e}} 
+std\+::uint64\+\_\+t {\bfseries Utilized\+Capacity} (problem\+::\+Shape\+::\+Data\+Space\+ID pv=problem\+::\+Get\+Shape() -\/$>$Num\+Data\+Spaces) const override
+\item 
+\mbox{\Hypertarget{classmodel_1_1ArithmeticUnits_adccc82ddb61626c2a8b5811bcc24f1dc}\label{classmodel_1_1ArithmeticUnits_adccc82ddb61626c2a8b5811bcc24f1dc}} 
+\mbox{\hyperlink{structmodel_1_1EvalStatus}{Eval\+Status}} {\bfseries Evaluate} (const \mbox{\hyperlink{structtiling_1_1CompoundTile}{tiling\+::\+Compound\+Tile}} \&tile, const \mbox{\hyperlink{classproblem_1_1PerDataSpace}{tiling\+::\+Compound\+Mask}} \&mask, const double confidence\+\_\+threshold, const std\+::uint64\+\_\+t compute\+\_\+cycles, const bool break\+\_\+on\+\_\+failure) override
+\item 
+\mbox{\Hypertarget{classmodel_1_1ArithmeticUnits_a3bc5c3abfb2b0e9a71a81aea418537bf}\label{classmodel_1_1ArithmeticUnits_a3bc5c3abfb2b0e9a71a81aea418537bf}} 
+std\+::uint64\+\_\+t {\bfseries Algorithmic\+Computes} () const
+\item 
+\mbox{\Hypertarget{classmodel_1_1ArithmeticUnits_a544fb979cf68fca2d6c03a29f9c98b23}\label{classmodel_1_1ArithmeticUnits_a544fb979cf68fca2d6c03a29f9c98b23}} 
+std\+::uint64\+\_\+t {\bfseries Actual\+Computes} () const
+\item 
+\mbox{\Hypertarget{classmodel_1_1ArithmeticUnits_a22716c9a9a926eed81db41c10c23b340}\label{classmodel_1_1ArithmeticUnits_a22716c9a9a926eed81db41c10c23b340}} 
+double {\bfseries Ideal\+Cycles} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmodel_1_1ArithmeticUnits_a245eb7cd59560132c49d63f8c1e55f76}\label{classmodel_1_1ArithmeticUnits_a245eb7cd59560132c49d63f8c1e55f76}} 
+static \mbox{\hyperlink{structmodel_1_1ArithmeticUnits_1_1Specs}{Specs}} {\bfseries Parse\+Specs} (\mbox{\hyperlink{classconfig_1_1CompoundConfigNode}{config\+::\+Compound\+Config\+Node}} setting, std\+::uint64\+\_\+t n\+Elements, bool is\+\_\+sparse\+\_\+module)
+\item 
+\mbox{\Hypertarget{classmodel_1_1ArithmeticUnits_aa4450c1b40a7f5d07a305e01ca8437cd}\label{classmodel_1_1ArithmeticUnits_aa4450c1b40a7f5d07a305e01ca8437cd}} 
+static void {\bfseries Validate\+Topology} (\mbox{\hyperlink{structmodel_1_1ArithmeticUnits_1_1Specs}{Arithmetic\+Units\+::\+Specs}} \&specs)
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmodel_1_1ArithmeticUnits_ac98d07dd8f7b70e16ccb9a01abf56b9c}\label{classmodel_1_1ArithmeticUnits_ac98d07dd8f7b70e16ccb9a01abf56b9c}} 
+class {\bfseries boost\+::serialization\+::access}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/model/arithmetic.\+hpp\item 
+src/model/arithmetic.\+cpp\end{DoxyCompactItemize}

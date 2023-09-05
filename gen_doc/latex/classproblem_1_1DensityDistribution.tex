@@ -1,0 +1,54 @@
+\hypertarget{classproblem_1_1DensityDistribution}{}\doxysection{problem\+::Density\+Distribution Class Reference}
+\label{classproblem_1_1DensityDistribution}\index{problem::DensityDistribution@{problem::DensityDistribution}}
+
+
+Inheritance diagram for problem\+::Density\+Distribution\+:
+% FIG 0
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classproblem_1_1DensityDistribution_a87f6ecdcd25d6737e0098da814a2f057}\label{classproblem_1_1DensityDistribution_a87f6ecdcd25d6737e0098da814a2f057}} 
+virtual void {\bfseries Set\+Workload\+Tensor\+Size} (const Point\+Set \&point\+\_\+set)=0
+\item 
+\mbox{\Hypertarget{classproblem_1_1DensityDistribution_a20e633a6c42e9632c6bad1b762a46ab1}\label{classproblem_1_1DensityDistribution_a20e633a6c42e9632c6bad1b762a46ab1}} 
+virtual std\+::uint64\+\_\+t {\bfseries Get\+Workload\+Tensor\+Size} () const =0
+\item 
+\mbox{\Hypertarget{classproblem_1_1DensityDistribution_ac189af5ee1b55ff91449f679747911ec}\label{classproblem_1_1DensityDistribution_ac189af5ee1b55ff91449f679747911ec}} 
+virtual std\+::string {\bfseries Get\+Distribution\+Type} () const =0
+\item 
+\mbox{\Hypertarget{classproblem_1_1DensityDistribution_a6400381c40d349cbc0d6dbbeeb00d022}\label{classproblem_1_1DensityDistribution_a6400381c40d349cbc0d6dbbeeb00d022}} 
+virtual std\+::uint64\+\_\+t {\bfseries Get\+Max\+Tile\+Occupancy\+By\+Confidence} (const \mbox{\hyperlink{structtiling_1_1CoordinateSpaceTileInfo}{tiling\+::\+Coordinate\+Space\+Tile\+Info}} \&tile, const double confidence=1.\+0)=0
+\item 
+\mbox{\Hypertarget{classproblem_1_1DensityDistribution_a68e7cb9aed9dccf81981a6ebbefb09a8}\label{classproblem_1_1DensityDistribution_a68e7cb9aed9dccf81981a6ebbefb09a8}} 
+virtual std\+::uint64\+\_\+t {\bfseries Get\+Max\+Tile\+Occupancy\+By\+Confidence\+\_\+\+L\+TW} (const std\+::uint64\+\_\+t tile\+\_\+shape, const double confidence=1.\+0)=0
+\item 
+\mbox{\Hypertarget{classproblem_1_1DensityDistribution_aeffc758108fa8cdfb975badccdce903e}\label{classproblem_1_1DensityDistribution_aeffc758108fa8cdfb975badccdce903e}} 
+virtual std\+::uint64\+\_\+t {\bfseries Get\+Max\+Num\+Element\+By\+Confidence} (const \mbox{\hyperlink{structtiling_1_1CoordinateSpaceTileInfo}{tiling\+::\+Coordinate\+Space\+Tile\+Info}} \&fiber\+\_\+tile, const \mbox{\hyperlink{structtiling_1_1CoordinateSpaceTileInfo}{tiling\+::\+Coordinate\+Space\+Tile\+Info}} \&element\+\_\+tile, const double confidence=1.\+0)=0
+\item 
+\mbox{\Hypertarget{classproblem_1_1DensityDistribution_a40522e4740acb719ee39f321b32cd0a8}\label{classproblem_1_1DensityDistribution_a40522e4740acb719ee39f321b32cd0a8}} 
+virtual double {\bfseries Get\+Max\+Tile\+Density\+By\+Confidence} (const \mbox{\hyperlink{structtiling_1_1CoordinateSpaceTileInfo}{tiling\+::\+Coordinate\+Space\+Tile\+Info}} tile, const double confidence=1.\+0)=0
+\item 
+\mbox{\Hypertarget{classproblem_1_1DensityDistribution_af754669e0a2415d672cf0552bf036068}\label{classproblem_1_1DensityDistribution_af754669e0a2415d672cf0552bf036068}} 
+virtual double {\bfseries Get\+Min\+Tile\+Density} (const \mbox{\hyperlink{structtiling_1_1CoordinateSpaceTileInfo}{tiling\+::\+Coordinate\+Space\+Tile\+Info}} tile)=0
+\item 
+\mbox{\Hypertarget{classproblem_1_1DensityDistribution_a602f1814e02c9911c9d1870f538dba3b}\label{classproblem_1_1DensityDistribution_a602f1814e02c9911c9d1870f538dba3b}} 
+virtual double {\bfseries Get\+Tile\+Occupancy\+Probability} (const \mbox{\hyperlink{structtiling_1_1CoordinateSpaceTileInfo}{tiling\+::\+Coordinate\+Space\+Tile\+Info}} \&tile, const std\+::uint64\+\_\+t occupancy)=0
+\item 
+\mbox{\Hypertarget{classproblem_1_1DensityDistribution_af97542cb2a39a7047ae6fe68da13ad4e}\label{classproblem_1_1DensityDistribution_af97542cb2a39a7047ae6fe68da13ad4e}} 
+virtual double {\bfseries Get\+Expected\+Tile\+Occupancy} (const \mbox{\hyperlink{structtiling_1_1CoordinateSpaceTileInfo}{tiling\+::\+Coordinate\+Space\+Tile\+Info}} tile)=0
+\item 
+\mbox{\Hypertarget{classproblem_1_1DensityDistribution_af22277e92a25f09e0cadd3d1daf78ef0}\label{classproblem_1_1DensityDistribution_af22277e92a25f09e0cadd3d1daf78ef0}} 
+{\footnotesize template$<$class Archive $>$ }\\void {\bfseries serialize} (Archive \&ar, const unsigned int version=0)
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classproblem_1_1DensityDistribution_ac98d07dd8f7b70e16ccb9a01abf56b9c}\label{classproblem_1_1DensityDistribution_ac98d07dd8f7b70e16ccb9a01abf56b9c}} 
+class {\bfseries boost\+::serialization\+::access}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/workload/density-\/models/density-\/distribution.\+hpp\item 
+src/workload/density-\/models/density-\/distribution.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,73 @@
+\hypertarget{structmodel_1_1ReductionTreeNetwork_1_1Specs}{}\doxysection{model\+::Reduction\+Tree\+Network\+::Specs Struct Reference}
+\label{structmodel_1_1ReductionTreeNetwork_1_1Specs}\index{model::ReductionTreeNetwork::Specs@{model::ReductionTreeNetwork::Specs}}
+
+
+Inheritance diagram for model\+::Reduction\+Tree\+Network\+::Specs\+:
+% FIG 0
+
+
+Collaboration diagram for model\+::Reduction\+Tree\+Network\+::Specs\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structmodel_1_1ReductionTreeNetwork_1_1Specs_a27e842835c9fc9caec218912d6e7b89c}\label{structmodel_1_1ReductionTreeNetwork_1_1Specs_a27e842835c9fc9caec218912d6e7b89c}} 
+const std\+::string {\bfseries Type} () const override
+\item 
+\mbox{\Hypertarget{structmodel_1_1ReductionTreeNetwork_1_1Specs_ab8a7997b08481ee197e285b6a0cf7a33}\label{structmodel_1_1ReductionTreeNetwork_1_1Specs_ab8a7997b08481ee197e285b6a0cf7a33}} 
+bool {\bfseries Support\+Accelergy\+Tables} () const override
+\item 
+\mbox{\Hypertarget{structmodel_1_1ReductionTreeNetwork_1_1Specs_a8b90432247769c144b8774844d4d592a}\label{structmodel_1_1ReductionTreeNetwork_1_1Specs_a8b90432247769c144b8774844d4d592a}} 
+void {\bfseries Process\+E\+RT} (const \mbox{\hyperlink{classconfig_1_1CompoundConfigNode}{config\+::\+Compound\+Config\+Node}} \&E\+RT) override
+\item 
+\mbox{\Hypertarget{structmodel_1_1ReductionTreeNetwork_1_1Specs_a9fae13fbc9aff183212c24d467a812d0}\label{structmodel_1_1ReductionTreeNetwork_1_1Specs_a9fae13fbc9aff183212c24d467a812d0}} 
+{\footnotesize template$<$class Archive $>$ }\\void {\bfseries serialize} (Archive \&ar, const unsigned int version=0)
+\item 
+\mbox{\Hypertarget{structmodel_1_1ReductionTreeNetwork_1_1Specs_a2d5c44ff5338e653ffd196eb1de37b1d}\label{structmodel_1_1ReductionTreeNetwork_1_1Specs_a2d5c44ff5338e653ffd196eb1de37b1d}} 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structmodel_1_1NetworkSpecs}{Network\+Specs}} $>$ {\bfseries Clone} () const override
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structmodel_1_1ReductionTreeNetwork_1_1Specs_a523c7390a57a05e5d515745b5676a0d4}\label{structmodel_1_1ReductionTreeNetwork_1_1Specs_a523c7390a57a05e5d515745b5676a0d4}} 
+std\+::string {\bfseries type}
+\item 
+\mbox{\Hypertarget{structmodel_1_1ReductionTreeNetwork_1_1Specs_ad0eb1625f5501fffd36da9d291dfdaac}\label{structmodel_1_1ReductionTreeNetwork_1_1Specs_ad0eb1625f5501fffd36da9d291dfdaac}} 
+\mbox{\hyperlink{classmodel_1_1Attribute}{Attribute}}$<$ std\+::uint64\+\_\+t $>$ {\bfseries word\+\_\+bits}
+\item 
+\mbox{\Hypertarget{structmodel_1_1ReductionTreeNetwork_1_1Specs_a079361cdf18c8bfdbd48a49acb053979}\label{structmodel_1_1ReductionTreeNetwork_1_1Specs_a079361cdf18c8bfdbd48a49acb053979}} 
+\mbox{\hyperlink{classmodel_1_1Attribute}{Attribute}}$<$ double $>$ {\bfseries adder\+\_\+energy}
+\item 
+\mbox{\Hypertarget{structmodel_1_1ReductionTreeNetwork_1_1Specs_afc7c62a088da9bce45e010a217495d3d}\label{structmodel_1_1ReductionTreeNetwork_1_1Specs_afc7c62a088da9bce45e010a217495d3d}} 
+\mbox{\hyperlink{classmodel_1_1Attribute}{Attribute}}$<$ double $>$ {\bfseries wire\+\_\+energy}
+\item 
+\mbox{\Hypertarget{structmodel_1_1ReductionTreeNetwork_1_1Specs_a25db84735182d7efaf910aeb97d98b42}\label{structmodel_1_1ReductionTreeNetwork_1_1Specs_a25db84735182d7efaf910aeb97d98b42}} 
+\mbox{\hyperlink{classmodel_1_1Attribute}{Attribute}}$<$ std\+::uint64\+\_\+t $>$ {\bfseries fill\+\_\+latency}
+\item 
+\mbox{\Hypertarget{structmodel_1_1ReductionTreeNetwork_1_1Specs_aabff59e6b9a66ea4604f8091afe1fde6}\label{structmodel_1_1ReductionTreeNetwork_1_1Specs_aabff59e6b9a66ea4604f8091afe1fde6}} 
+\mbox{\hyperlink{classmodel_1_1Attribute}{Attribute}}$<$ std\+::uint64\+\_\+t $>$ {\bfseries drain\+\_\+latency}
+\item 
+\mbox{\Hypertarget{structmodel_1_1ReductionTreeNetwork_1_1Specs_a8f357ecd2e4ac4d03d1d24f5f0394f4c}\label{structmodel_1_1ReductionTreeNetwork_1_1Specs_a8f357ecd2e4ac4d03d1d24f5f0394f4c}} 
+\mbox{\hyperlink{classmodel_1_1Attribute}{Attribute}}$<$ double $>$ {\bfseries tile\+\_\+width}
+\item 
+\mbox{\Hypertarget{structmodel_1_1ReductionTreeNetwork_1_1Specs_abc4c776c1f53eada00d9af4a22edde0f}\label{structmodel_1_1ReductionTreeNetwork_1_1Specs_abc4c776c1f53eada00d9af4a22edde0f}} 
+\mbox{\hyperlink{classmodel_1_1Attribute}{Attribute}}$<$ bool $>$ {\bfseries is\+\_\+sparse\+\_\+module}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structmodel_1_1ReductionTreeNetwork_1_1Specs_acfa8fec168322f0c4929a471b6daa466}\label{structmodel_1_1ReductionTreeNetwork_1_1Specs_acfa8fec168322f0c4929a471b6daa466}} 
+static const std\+::uint64\+\_\+t {\bfseries k\+Default\+Word\+Bits} = 16
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structmodel_1_1ReductionTreeNetwork_1_1Specs_ac98d07dd8f7b70e16ccb9a01abf56b9c}\label{structmodel_1_1ReductionTreeNetwork_1_1Specs_ac98d07dd8f7b70e16ccb9a01abf56b9c}} 
+class {\bfseries boost\+::serialization\+::access}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/model/network-\/reduction-\/tree.\+hpp\item 
+src/model/network-\/reduction-\/tree.\+cpp\end{DoxyCompactItemize}

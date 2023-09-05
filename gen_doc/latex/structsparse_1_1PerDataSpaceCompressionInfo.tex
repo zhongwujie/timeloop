@@ -1,0 +1,50 @@
+\hypertarget{structsparse_1_1PerDataSpaceCompressionInfo}{}\doxysection{sparse\+::Per\+Data\+Space\+Compression\+Info Struct Reference}
+\label{structsparse_1_1PerDataSpaceCompressionInfo}\index{sparse::PerDataSpaceCompressionInfo@{sparse::PerDataSpaceCompressionInfo}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structsparse_1_1PerDataSpaceCompressionInfo_ab227e092391e34616315e560539ed224}\label{structsparse_1_1PerDataSpaceCompressionInfo_ab227e092391e34616315e560539ed224}} 
+bool {\bfseries Has\+Meta\+Data} () const
+\item 
+\mbox{\Hypertarget{structsparse_1_1PerDataSpaceCompressionInfo_a213a00c59ece4c2bc93979fe24e66001}\label{structsparse_1_1PerDataSpaceCompressionInfo_a213a00c59ece4c2bc93979fe24e66001}} 
+bool {\bfseries Exist\+Flattening\+Rule} (std\+::uint64\+\_\+t rank\+\_\+id) const
+\item 
+\mbox{\Hypertarget{structsparse_1_1PerDataSpaceCompressionInfo_a796913ba8d92ff71df6f5080a7bd0aa4}\label{structsparse_1_1PerDataSpaceCompressionInfo_a796913ba8d92ff71df6f5080a7bd0aa4}} 
+bool {\bfseries Found\+Dimension\+In\+Flattening\+Rule} (std\+::uint64\+\_\+t rank\+\_\+id, problem\+::\+Shape\+::\+Flattened\+Dimension\+ID dim\+\_\+id, std\+::vector$<$ problem\+::\+Shape\+::\+Flattened\+Dimension\+ID $>$ \&rule\+\_\+item) const
+\item 
+\mbox{\Hypertarget{structsparse_1_1PerDataSpaceCompressionInfo_a51f609d149b3bfab15c59042ed9ab462}\label{structsparse_1_1PerDataSpaceCompressionInfo_a51f609d149b3bfab15c59042ed9ab462}} 
+problem\+::\+Shape\+::\+Flattened\+Dimension\+ID {\bfseries Get\+Flattening\+Rule} (std\+::uint64\+\_\+t rank\+\_\+id, std\+::uint64\+\_\+t rule\+\_\+idx=0) const
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structsparse_1_1PerDataSpaceCompressionInfo_a2982e1b4a1bf3377a793c136478c9a2d}\label{structsparse_1_1PerDataSpaceCompressionInfo_a2982e1b4a1bf3377a793c136478c9a2d}} 
+bool {\bfseries tensor\+\_\+compressed} = false
+\item 
+\mbox{\Hypertarget{structsparse_1_1PerDataSpaceCompressionInfo_ab70d43e14af3bfb40d669b099d19806b}\label{structsparse_1_1PerDataSpaceCompressionInfo_ab70d43e14af3bfb40d669b099d19806b}} 
+bool {\bfseries apply\+\_\+rank\+\_\+inner\+\_\+to\+\_\+outer} = false
+\item 
+\mbox{\Hypertarget{structsparse_1_1PerDataSpaceCompressionInfo_a5ad229ac99043ebd62bd2e1e2c07c42e}\label{structsparse_1_1PerDataSpaceCompressionInfo_a5ad229ac99043ebd62bd2e1e2c07c42e}} 
+std\+::vector$<$ bool $>$ {\bfseries rank\+\_\+compressed}
+\item 
+\mbox{\Hypertarget{structsparse_1_1PerDataSpaceCompressionInfo_ac7e3d64ee0c1db8d6ca7417ac95336d6}\label{structsparse_1_1PerDataSpaceCompressionInfo_ac7e3d64ee0c1db8d6ca7417ac95336d6}} 
+std\+::vector$<$ bool $>$ {\bfseries coordinates\+\_\+implicit}
+\item 
+\mbox{\Hypertarget{structsparse_1_1PerDataSpaceCompressionInfo_a84870b016a268f791edabf091d107d59}\label{structsparse_1_1PerDataSpaceCompressionInfo_a84870b016a268f791edabf091d107d59}} 
+std\+::vector$<$ std\+::string $>$ {\bfseries rank\+\_\+formats}
+\item 
+\mbox{\Hypertarget{structsparse_1_1PerDataSpaceCompressionInfo_a78e5c6e8553adbfe6cf49f42b8d739a9}\label{structsparse_1_1PerDataSpaceCompressionInfo_a78e5c6e8553adbfe6cf49f42b8d739a9}} 
+std\+::vector$<$ std\+::vector$<$ std\+::vector$<$ problem\+::\+Shape\+::\+Flattened\+Dimension\+ID $>$ $>$ $>$ {\bfseries flattened\+\_\+rank\+I\+Ds}
+\item 
+\mbox{\Hypertarget{structsparse_1_1PerDataSpaceCompressionInfo_af9c9d2b7ca4360067b3e548800677461}\label{structsparse_1_1PerDataSpaceCompressionInfo_af9c9d2b7ca4360067b3e548800677461}} 
+std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classproblem_1_1MetaDataFormat}{problem\+::\+Meta\+Data\+Format}} $>$ $>$ {\bfseries metadata\+\_\+models}
+\item 
+\mbox{\Hypertarget{structsparse_1_1PerDataSpaceCompressionInfo_a6f6571e8aae3ee150a003ed86d152f75}\label{structsparse_1_1PerDataSpaceCompressionInfo_a6f6571e8aae3ee150a003ed86d152f75}} 
+double {\bfseries compression\+\_\+rate}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/model/sparse-\/optimization-\/info.\+hpp\item 
+src/model/sparse-\/optimization-\/info.\+cpp\end{DoxyCompactItemize}

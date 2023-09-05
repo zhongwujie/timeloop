@@ -904,6 +904,7 @@ Constraints::ParseFactors(config::CompoundConfigNode constraint)
   {
     buffer = buffer.substr(0, buffer.find("#"));
 
+    // [[:space:]] represents any whitespace character.
     std::regex re("([A-Za-z]+)[[:space:]]*[=]*[[:space:]]*([0-9]+)", std::regex::extended);
     std::smatch sm;
     std::string str = std::string(buffer);

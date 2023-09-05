@@ -270,6 +270,9 @@ void PermutationSpace::InitLevel(uint64_t level,
 
   patterns_[level] = { baked_prefix, permutable_infix, baked_suffix };
   size_[level] = factoradic_.Factorial(permutable_infix.size());
+
+  std::cout << "  Loop Permutation subspace size at tiling level " << level << " = " << 
+    size_[level] << std::endl;
 }
 
 std::vector<std::vector<problem::Shape::FlattenedDimensionID>>
@@ -398,6 +401,8 @@ void SpatialSplitSpace::InitLevel(uint64_t level, unsigned unit_factors)
   is_user_specified_[level] = false;
   unit_factors_[level] = unit_factors;
   size_[level] = int(problem::GetShape()->NumFlattenedDimensions) + 1 - unit_factors;
+  std::cout << "  Spatial split subspace size at tiling level " << level << " = " 
+    << size_[level] << std::endl;
 }
 
 void SpatialSplitSpace::InitLevelUserSpecified(uint64_t level, std::uint32_t user_split)

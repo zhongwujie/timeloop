@@ -1,0 +1,72 @@
+\hypertarget{classproblem_1_1BandedDistribution}{}\doxysection{problem\+::Banded\+Distribution Class Reference}
+\label{classproblem_1_1BandedDistribution}\index{problem::BandedDistribution@{problem::BandedDistribution}}
+
+
+Inheritance diagram for problem\+::Banded\+Distribution\+:
+% FIG 0
+
+
+Collaboration diagram for problem\+::Banded\+Distribution\+:
+% FIG 1
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structproblem_1_1BandedDistribution_1_1Specs}{Specs}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classproblem_1_1BandedDistribution_af5fa21fadd3bc129185298e2bf86cabc}\label{classproblem_1_1BandedDistribution_af5fa21fadd3bc129185298e2bf86cabc}} 
+{\footnotesize template$<$class Archive $>$ }\\void {\bfseries serialize} (Archive \&ar, const unsigned int version=0)
+\item 
+\mbox{\Hypertarget{classproblem_1_1BandedDistribution_ae2d6d45326adf36499f95f7b24684421}\label{classproblem_1_1BandedDistribution_ae2d6d45326adf36499f95f7b24684421}} 
+{\bfseries Banded\+Distribution} (const \mbox{\hyperlink{structproblem_1_1BandedDistribution_1_1Specs}{Specs}} \&specs)
+\item 
+\mbox{\Hypertarget{classproblem_1_1BandedDistribution_ac9d03c2c62c19e7a381a08d3a111a4a2}\label{classproblem_1_1BandedDistribution_ac9d03c2c62c19e7a381a08d3a111a4a2}} 
+void {\bfseries Set\+Workload\+Tensor\+Size} (const Point\+Set \&point\+\_\+set)
+\item 
+\mbox{\Hypertarget{classproblem_1_1BandedDistribution_a53ed0eb8503f9abc978933bd92ccf0fe}\label{classproblem_1_1BandedDistribution_a53ed0eb8503f9abc978933bd92ccf0fe}} 
+std\+::uint64\+\_\+t {\bfseries Get\+Workload\+Tensor\+Size} () const
+\item 
+\mbox{\Hypertarget{classproblem_1_1BandedDistribution_a89929326b5b2ee371d9c3efaccbe4de9}\label{classproblem_1_1BandedDistribution_a89929326b5b2ee371d9c3efaccbe4de9}} 
+std\+::string {\bfseries Get\+Distribution\+Type} () const
+\item 
+\mbox{\Hypertarget{classproblem_1_1BandedDistribution_a7adb08e3a810b693267dadc9ea0df8ae}\label{classproblem_1_1BandedDistribution_a7adb08e3a810b693267dadc9ea0df8ae}} 
+std\+::uint64\+\_\+t {\bfseries Get\+Max\+Tile\+Occupancy\+By\+Confidence} (const \mbox{\hyperlink{structtiling_1_1CoordinateSpaceTileInfo}{tiling\+::\+Coordinate\+Space\+Tile\+Info}} \&tensor, const double confidence)
+\item 
+\mbox{\Hypertarget{classproblem_1_1BandedDistribution_a861997b419272099349231bf68f08be5}\label{classproblem_1_1BandedDistribution_a861997b419272099349231bf68f08be5}} 
+std\+::uint64\+\_\+t {\bfseries Get\+Max\+Tile\+Occupancy\+By\+Confidence\+\_\+\+L\+TW} (const std\+::uint64\+\_\+t tile\+\_\+shape, const double confidence)
+\item 
+\mbox{\Hypertarget{classproblem_1_1BandedDistribution_a43247c24327fa884f6552cefcb3a1044}\label{classproblem_1_1BandedDistribution_a43247c24327fa884f6552cefcb3a1044}} 
+std\+::uint64\+\_\+t {\bfseries Get\+Max\+Num\+Element\+By\+Confidence} (const \mbox{\hyperlink{structtiling_1_1CoordinateSpaceTileInfo}{tiling\+::\+Coordinate\+Space\+Tile\+Info}} \&fiber\+\_\+tile, const \mbox{\hyperlink{structtiling_1_1CoordinateSpaceTileInfo}{tiling\+::\+Coordinate\+Space\+Tile\+Info}} \&element\+\_\+tile, const double confidence)
+\item 
+\mbox{\Hypertarget{classproblem_1_1BandedDistribution_afc7f3c509dbfeab087a9b8bcaaeb798b}\label{classproblem_1_1BandedDistribution_afc7f3c509dbfeab087a9b8bcaaeb798b}} 
+double {\bfseries Get\+Max\+Tile\+Density\+By\+Confidence} (const \mbox{\hyperlink{structtiling_1_1CoordinateSpaceTileInfo}{tiling\+::\+Coordinate\+Space\+Tile\+Info}} tile, const double confidence=1.\+0)
+\item 
+\mbox{\Hypertarget{classproblem_1_1BandedDistribution_a095e022bec40b39cf8b0139fccf1afe2}\label{classproblem_1_1BandedDistribution_a095e022bec40b39cf8b0139fccf1afe2}} 
+double {\bfseries Get\+Min\+Tile\+Density} (const \mbox{\hyperlink{structtiling_1_1CoordinateSpaceTileInfo}{tiling\+::\+Coordinate\+Space\+Tile\+Info}} tile)
+\item 
+\mbox{\Hypertarget{classproblem_1_1BandedDistribution_ac1ed445eecb10a9e5775393d830887d1}\label{classproblem_1_1BandedDistribution_ac1ed445eecb10a9e5775393d830887d1}} 
+double {\bfseries Get\+Tile\+Occupancy\+Probability} (const \mbox{\hyperlink{structtiling_1_1CoordinateSpaceTileInfo}{tiling\+::\+Coordinate\+Space\+Tile\+Info}} \&tile, const std\+::uint64\+\_\+t occupancy)
+\item 
+\mbox{\Hypertarget{classproblem_1_1BandedDistribution_a4c230f54e75809ddeb4cb166762957db}\label{classproblem_1_1BandedDistribution_a4c230f54e75809ddeb4cb166762957db}} 
+double {\bfseries Get\+Expected\+Tile\+Occupancy} (const \mbox{\hyperlink{structtiling_1_1CoordinateSpaceTileInfo}{tiling\+::\+Coordinate\+Space\+Tile\+Info}} tile)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classproblem_1_1BandedDistribution_a00a1afea81bf82acf510855ba55795ff}\label{classproblem_1_1BandedDistribution_a00a1afea81bf82acf510855ba55795ff}} 
+static \mbox{\hyperlink{structproblem_1_1BandedDistribution_1_1Specs}{Specs}} {\bfseries Parse\+Specs} (\mbox{\hyperlink{classconfig_1_1CompoundConfigNode}{config\+::\+Compound\+Config\+Node}} density\+\_\+config)
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classproblem_1_1BandedDistribution_ac98d07dd8f7b70e16ccb9a01abf56b9c}\label{classproblem_1_1BandedDistribution_ac98d07dd8f7b70e16ccb9a01abf56b9c}} 
+class {\bfseries boost\+::serialization\+::access}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/workload/density-\/models/banded-\/distribution.\+hpp\item 
+src/workload/density-\/models/banded-\/distribution.\+cpp\end{DoxyCompactItemize}

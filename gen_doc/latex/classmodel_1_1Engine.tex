@@ -1,0 +1,64 @@
+\hypertarget{classmodel_1_1Engine}{}\doxysection{model\+::Engine Class Reference}
+\label{classmodel_1_1Engine}\index{model::Engine@{model::Engine}}
+
+
+Inheritance diagram for model\+::Engine\+:
+% FIG 0
+
+
+Collaboration diagram for model\+::Engine\+:
+% FIG 1
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structmodel_1_1Engine_1_1Specs}{Specs}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmodel_1_1Engine_a6471d5e17ce4316842cedbffe39d20f5}\label{classmodel_1_1Engine_a6471d5e17ce4316842cedbffe39d20f5}} 
+void {\bfseries Spec} (\mbox{\hyperlink{structmodel_1_1Engine_1_1Specs}{Specs}} specs)
+\item 
+\mbox{\Hypertarget{classmodel_1_1Engine_a73d04c7c0677d8f58bee07568553f5a4}\label{classmodel_1_1Engine_a73d04c7c0677d8f58bee07568553f5a4}} 
+const \mbox{\hyperlink{classmodel_1_1Topology}{Topology}} \& {\bfseries Get\+Topology} () const
+\item 
+\mbox{\Hypertarget{classmodel_1_1Engine_ab0bf3cf0f21040dd0df3e17433ec2549}\label{classmodel_1_1Engine_ab0bf3cf0f21040dd0df3e17433ec2549}} 
+std\+::vector$<$ \mbox{\hyperlink{structmodel_1_1EvalStatus}{Eval\+Status}} $>$ {\bfseries Pre\+Evaluation\+Check} (const \mbox{\hyperlink{structMapping}{Mapping}} \&mapping, \mbox{\hyperlink{classproblem_1_1Workload}{problem\+::\+Workload}} \&workload, \mbox{\hyperlink{structsparse_1_1SparseOptimizationInfo}{sparse\+::\+Sparse\+Optimization\+Info}} $\ast$sparse\+\_\+optimizations, bool break\+\_\+on\+\_\+failure=true)
+\item 
+\mbox{\Hypertarget{classmodel_1_1Engine_aad72ee0356972907fe3bcd86a73fb501}\label{classmodel_1_1Engine_aad72ee0356972907fe3bcd86a73fb501}} 
+std\+::vector$<$ \mbox{\hyperlink{structmodel_1_1EvalStatus}{Eval\+Status}} $>$ {\bfseries Evaluate} (\mbox{\hyperlink{structMapping}{Mapping}} \&mapping, \mbox{\hyperlink{classproblem_1_1Workload}{problem\+::\+Workload}} \&workload, \mbox{\hyperlink{structsparse_1_1SparseOptimizationInfo}{sparse\+::\+Sparse\+Optimization\+Info}} $\ast$sparse\+\_\+optimizations, bool break\+\_\+on\+\_\+failure=true)
+\item 
+\mbox{\Hypertarget{classmodel_1_1Engine_a7dc14ff3dcc0987e08da9c627df6f4d4}\label{classmodel_1_1Engine_a7dc14ff3dcc0987e08da9c627df6f4d4}} 
+double {\bfseries Energy} () const
+\item 
+\mbox{\Hypertarget{classmodel_1_1Engine_a4e9ec46299a842da2b9417f847c34a9a}\label{classmodel_1_1Engine_a4e9ec46299a842da2b9417f847c34a9a}} 
+double {\bfseries Area} () const
+\item 
+\mbox{\Hypertarget{classmodel_1_1Engine_a0424a93a2ea02a5d706ec8f260ada220}\label{classmodel_1_1Engine_a0424a93a2ea02a5d706ec8f260ada220}} 
+std\+::uint64\+\_\+t {\bfseries Cycles} () const
+\item 
+\mbox{\Hypertarget{classmodel_1_1Engine_aa899e6e99b8f4126091b4dcc9fd8285a}\label{classmodel_1_1Engine_aa899e6e99b8f4126091b4dcc9fd8285a}} 
+double {\bfseries Utilization} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmodel_1_1Engine_a5ec10c85ab3653e1b2f686f543666173}\label{classmodel_1_1Engine_a5ec10c85ab3653e1b2f686f543666173}} 
+static \mbox{\hyperlink{structmodel_1_1Engine_1_1Specs}{Specs}} {\bfseries Parse\+Specs} (\mbox{\hyperlink{classconfig_1_1CompoundConfigNode}{config\+::\+Compound\+Config\+Node}} setting, bool is\+\_\+sparse\+\_\+topology)
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmodel_1_1Engine_ac98d07dd8f7b70e16ccb9a01abf56b9c}\label{classmodel_1_1Engine_ac98d07dd8f7b70e16ccb9a01abf56b9c}} 
+class {\bfseries boost\+::serialization\+::access}
+\item 
+\mbox{\Hypertarget{classmodel_1_1Engine_adf1e12f244afeefc2cef18467ab9fbde}\label{classmodel_1_1Engine_adf1e12f244afeefc2cef18467ab9fbde}} 
+std\+::ostream \& {\bfseries operator$<$$<$} (std\+::ostream \&out, \mbox{\hyperlink{classmodel_1_1Engine}{Engine}} \&engine)
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/model/engine.\+hpp\item 
+src/model/engine.\+cpp\end{DoxyCompactItemize}

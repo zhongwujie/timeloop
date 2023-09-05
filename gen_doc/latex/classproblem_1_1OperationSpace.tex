@@ -1,0 +1,56 @@
+\hypertarget{classproblem_1_1OperationSpace}{}\doxysection{problem\+::Operation\+Space Class Reference}
+\label{classproblem_1_1OperationSpace}\index{problem::OperationSpace@{problem::OperationSpace}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classproblem_1_1OperationSpace_ab531825e22894bbc89d4870f5f02bc83}\label{classproblem_1_1OperationSpace_ab531825e22894bbc89d4870f5f02bc83}} 
+{\bfseries Operation\+Space} (const \mbox{\hyperlink{classproblem_1_1Workload}{Workload}} $\ast$wc)
+\item 
+\mbox{\Hypertarget{classproblem_1_1OperationSpace_a093b8a6dcd24256bc29e258e4ec0803f}\label{classproblem_1_1OperationSpace_a093b8a6dcd24256bc29e258e4ec0803f}} 
+{\bfseries Operation\+Space} (const \mbox{\hyperlink{classproblem_1_1Workload}{Workload}} $\ast$wc, const \mbox{\hyperlink{classproblem_1_1OperationPoint}{Operation\+Point}} \&flattened\+\_\+low, const \mbox{\hyperlink{classproblem_1_1OperationPoint}{Operation\+Point}} \&flattened\+\_\+high)
+\item 
+\mbox{\Hypertarget{classproblem_1_1OperationSpace_aaaa52d62170c953e10c69f5c4134313b}\label{classproblem_1_1OperationSpace_aaaa52d62170c953e10c69f5c4134313b}} 
+void {\bfseries Reset} ()
+\item 
+\mbox{\Hypertarget{classproblem_1_1OperationSpace_af0b66015dca14aa265fb8d88f930b4e5}\label{classproblem_1_1OperationSpace_af0b66015dca14aa265fb8d88f930b4e5}} 
+\mbox{\hyperlink{classproblem_1_1OperationSpace}{Operation\+Space}} \& {\bfseries operator+=} (const \mbox{\hyperlink{classproblem_1_1OperationPoint}{Operation\+Point}} \&p)
+\item 
+\mbox{\Hypertarget{classproblem_1_1OperationSpace_aedd4c5c2addcd4398de702d344b6b335}\label{classproblem_1_1OperationSpace_aedd4c5c2addcd4398de702d344b6b335}} 
+\mbox{\hyperlink{classproblem_1_1OperationSpace}{Operation\+Space}} {\bfseries operator-\/} (const \mbox{\hyperlink{classproblem_1_1OperationSpace}{Operation\+Space}} \&p)
+\item 
+\mbox{\Hypertarget{classproblem_1_1OperationSpace_aef5e39bb4753bc246f2fd390413e0c05}\label{classproblem_1_1OperationSpace_aef5e39bb4753bc246f2fd390413e0c05}} 
+void {\bfseries Save\+And\+Subtract} (\mbox{\hyperlink{classproblem_1_1OperationSpace}{Operation\+Space}} \&prev, \mbox{\hyperlink{classproblem_1_1PerDataSpace}{problem\+::\+Per\+Data\+Space}}$<$ bool $>$ no\+\_\+temporal\+\_\+reuse)
+\item 
+\mbox{\Hypertarget{classproblem_1_1OperationSpace_aa804d9858c6b55c22672b59f04b8a376}\label{classproblem_1_1OperationSpace_aa804d9858c6b55c22672b59f04b8a376}} 
+void {\bfseries Save\+And\+Subtract\+If\+Same\+Stride} (\mbox{\hyperlink{classproblem_1_1OperationSpace}{Operation\+Space}} \&prev, \mbox{\hyperlink{classproblem_1_1PerDataSpace}{problem\+::\+Per\+Data\+Space}}$<$ \mbox{\hyperlink{classPoint}{Point}} $>$ \&prev\+\_\+translation, \mbox{\hyperlink{classproblem_1_1PerDataSpace}{problem\+::\+Per\+Data\+Space}}$<$ bool $>$ no\+\_\+temporal\+\_\+reuse)
+\item 
+\mbox{\Hypertarget{classproblem_1_1OperationSpace_a414c057a89e108df33df35de9fe4e72e}\label{classproblem_1_1OperationSpace_a414c057a89e108df33df35de9fe4e72e}} 
+Data\+Space \& {\bfseries Get\+Data\+Space} (Shape\+::\+Data\+Space\+ID pv)
+\item 
+\mbox{\Hypertarget{classproblem_1_1OperationSpace_a0cf4c3fe4bd3eec6778b78d2590facc5}\label{classproblem_1_1OperationSpace_a0cf4c3fe4bd3eec6778b78d2590facc5}} 
+\mbox{\hyperlink{classproblem_1_1PerDataSpace}{Per\+Data\+Space}}$<$ std\+::size\+\_\+t $>$ {\bfseries Get\+Sizes} () const
+\item 
+\mbox{\Hypertarget{classproblem_1_1OperationSpace_a0075dece7a0e1000c47fa48db96100a7}\label{classproblem_1_1OperationSpace_a0075dece7a0e1000c47fa48db96100a7}} 
+std\+::size\+\_\+t {\bfseries Get\+Size} (const int t) const
+\item 
+\mbox{\Hypertarget{classproblem_1_1OperationSpace_a16492845e64e748e28263f2c5023c35a}\label{classproblem_1_1OperationSpace_a16492845e64e748e28263f2c5023c35a}} 
+bool {\bfseries Is\+Empty} (const int t) const
+\item 
+\mbox{\Hypertarget{classproblem_1_1OperationSpace_a2546e0eba51a28b0828833af21a9205b}\label{classproblem_1_1OperationSpace_a2546e0eba51a28b0828833af21a9205b}} 
+bool {\bfseries Check\+Equality} (const \mbox{\hyperlink{classproblem_1_1OperationSpace}{Operation\+Space}} \&rhs, const int t) const
+\item 
+\mbox{\Hypertarget{classproblem_1_1OperationSpace_a87e277e13805c9235c1b1d670f0a3979}\label{classproblem_1_1OperationSpace_a87e277e13805c9235c1b1d670f0a3979}} 
+void {\bfseries Print\+Sizes} ()
+\item 
+\mbox{\Hypertarget{classproblem_1_1OperationSpace_a3bec89ba3c376afdbea6c7cd28dfb5d4}\label{classproblem_1_1OperationSpace_a3bec89ba3c376afdbea6c7cd28dfb5d4}} 
+void {\bfseries Print} (std\+::ostream \&out=std\+::cerr) const
+\item 
+\mbox{\Hypertarget{classproblem_1_1OperationSpace_a7396ace30fbff835e0ae480b62d99634}\label{classproblem_1_1OperationSpace_a7396ace30fbff835e0ae480b62d99634}} 
+void {\bfseries Print} (Shape\+::\+Data\+Space\+ID pv, std\+::ostream \&out=std\+::cerr) const
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/workload/shape-\/models/operation-\/space.\+hpp\item 
+src/workload/shape-\/models/operation-\/space.\+cpp\end{DoxyCompactItemize}

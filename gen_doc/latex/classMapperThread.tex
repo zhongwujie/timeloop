@@ -1,0 +1,31 @@
+\hypertarget{classMapperThread}{}\doxysection{Mapper\+Thread Class Reference}
+\label{classMapperThread}\index{MapperThread@{MapperThread}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structMapperThread_1_1Stats}{Stats}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classMapperThread_aae4683488ead3bbfe60dbb667bd7dc49}\label{classMapperThread_aae4683488ead3bbfe60dbb667bd7dc49}} 
+{\bfseries Mapper\+Thread} (unsigned thread\+\_\+id, \mbox{\hyperlink{classsearch_1_1SearchAlgorithm}{search\+::\+Search\+Algorithm}} $\ast$search, \mbox{\hyperlink{classmapspace_1_1MapSpace}{mapspace\+::\+Map\+Space}} $\ast$mapspace, std\+::mutex $\ast$mutex, uint128\+\_\+t search\+\_\+size, std\+::uint32\+\_\+t timeout, std\+::uint32\+\_\+t victory\+\_\+condition, uint128\+\_\+t sync\+\_\+interval, uint128\+\_\+t log\+\_\+interval, bool log\+\_\+oaves, bool log\+\_\+oaves\+\_\+mappings, bool log\+\_\+stats, bool log\+\_\+suboptimal, std\+::ostream \&log\+\_\+stream, std\+::ostream \&oaves\+\_\+csv\+\_\+file, std\+::string oaves\+\_\+prefix, bool live\+\_\+status, bool diagnostics\+\_\+on, bool penalize\+\_\+consecutive\+\_\+bypass\+\_\+fails, std\+::vector$<$ std\+::string $>$ optimization\+\_\+metrics, \mbox{\hyperlink{structmodel_1_1Engine_1_1Specs}{model\+::\+Engine\+::\+Specs}} arch\+\_\+specs, \mbox{\hyperlink{classproblem_1_1Workload}{problem\+::\+Workload}} \&workload, \mbox{\hyperlink{structsparse_1_1SparseOptimizationInfo}{sparse\+::\+Sparse\+Optimization\+Info}} $\ast$sparse\+\_\+optimizations, \mbox{\hyperlink{structEvaluationResult}{Evaluation\+Result}} $\ast$best)
+\item 
+\mbox{\Hypertarget{classMapperThread_a27f7dfc2e4f055ef0d3fa2553c4a7abc}\label{classMapperThread_a27f7dfc2e4f055ef0d3fa2553c4a7abc}} 
+void {\bfseries Start} ()
+\item 
+\mbox{\Hypertarget{classMapperThread_af623d5958231a2f01afbd1ed7bacc0d4}\label{classMapperThread_af623d5958231a2f01afbd1ed7bacc0d4}} 
+void {\bfseries Join} ()
+\item 
+\mbox{\Hypertarget{classMapperThread_a028641aed6a0c5cab8ce70e743de38e2}\label{classMapperThread_a028641aed6a0c5cab8ce70e743de38e2}} 
+const \mbox{\hyperlink{structMapperThread_1_1Stats}{Stats}} \& {\bfseries Get\+Stats} () const
+\item 
+\mbox{\Hypertarget{classMapperThread_ab1c02b9f9b92ec12dd5abdfb3ea553a5}\label{classMapperThread_ab1c02b9f9b92ec12dd5abdfb3ea553a5}} 
+void {\bfseries Run} ()
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/applications/mapper/mapper-\/thread.\+hpp\item 
+src/applications/mapper/mapper-\/thread.\+cpp\end{DoxyCompactItemize}

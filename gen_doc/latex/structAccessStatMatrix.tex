@@ -1,0 +1,70 @@
+\hypertarget{structAccessStatMatrix}{}\doxysection{Access\+Stat\+Matrix Struct Reference}
+\label{structAccessStatMatrix}\index{AccessStatMatrix@{AccessStatMatrix}}
+
+
+A histogram containing accesses and hops for (multicast, scatter) tuples.  
+
+
+
+
+{\ttfamily \#include $<$nest-\/analysis-\/tile-\/info.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structAccessStatMatrix_ad2d95fbca57378d8e9dddeba42fba879}\label{structAccessStatMatrix_ad2d95fbca57378d8e9dddeba42fba879}} 
+void {\bfseries clear} ()
+\item 
+\mbox{\Hypertarget{structAccessStatMatrix_aa43ab9f7fcde090f777b0f4393d29ac2}\label{structAccessStatMatrix_aa43ab9f7fcde090f777b0f4393d29ac2}} 
+double {\bfseries Total\+Accesses} () const
+\item 
+\mbox{\Hypertarget{structAccessStatMatrix_a85442d612f30036d4742d3bec06e9944}\label{structAccessStatMatrix_a85442d612f30036d4742d3bec06e9944}} 
+double {\bfseries Weighted\+Accesses} () const
+\item 
+\mbox{\Hypertarget{structAccessStatMatrix_afe9be8a59049f16a42ced2c7e013751b}\label{structAccessStatMatrix_afe9be8a59049f16a42ced2c7e013751b}} 
+void {\bfseries Accumulate} (const \mbox{\hyperlink{structAccessStatMatrix}{Access\+Stat\+Matrix}} \&other)
+\item 
+\mbox{\Hypertarget{structAccessStatMatrix_a4539a19d13d179b2c1f809268bafa935}\label{structAccessStatMatrix_a4539a19d13d179b2c1f809268bafa935}} 
+void {\bfseries Divide} (const std\+::uint64\+\_\+t divisor)
+\item 
+\mbox{\Hypertarget{structAccessStatMatrix_af158b289e03b8b2d2513518f25af0966}\label{structAccessStatMatrix_af158b289e03b8b2d2513518f25af0966}} 
+\mbox{\hyperlink{structAccessStats}{Access\+Stats}} \& {\bfseries at} (std\+::uint64\+\_\+t multicast, std\+::uint64\+\_\+t scatter)
+\item 
+\mbox{\Hypertarget{structAccessStatMatrix_ac027c65f3ad3d3bd7dcdbc70e62528f2}\label{structAccessStatMatrix_ac027c65f3ad3d3bd7dcdbc70e62528f2}} 
+\mbox{\hyperlink{structAccessStats}{Access\+Stats}} \& {\bfseries operator()} (std\+::uint64\+\_\+t multicast, std\+::uint64\+\_\+t scatter)
+\item 
+\mbox{\Hypertarget{structAccessStatMatrix_a1e6b232d1f9b7876a70b0ead1b631a28}\label{structAccessStatMatrix_a1e6b232d1f9b7876a70b0ead1b631a28}} 
+bool {\bfseries operator==} (const \mbox{\hyperlink{structAccessStatMatrix}{Access\+Stat\+Matrix}} \&other)
+\item 
+\mbox{\Hypertarget{structAccessStatMatrix_af716019e9dc9a35dde07759c08845846}\label{structAccessStatMatrix_af716019e9dc9a35dde07759c08845846}} 
+{\footnotesize template$<$class Archive $>$ }\\void {\bfseries serialize} (Archive \&ar, const unsigned int version=0)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structAccessStatMatrix_a4ab39d243f7ad48caea3727682adeace}\label{structAccessStatMatrix_a4ab39d243f7ad48caea3727682adeace}} 
+std\+::map$<$ std\+::pair$<$ std\+::uint64\+\_\+t, std\+::uint64\+\_\+t $>$, \mbox{\hyperlink{structAccessStats}{Access\+Stats}} $>$ \mbox{\hyperlink{structAccessStatMatrix_a4ab39d243f7ad48caea3727682adeace}{stats}}
+\begin{DoxyCompactList}\small\item\em A map from (multicast, scatter) tuple to access stats containing accesses and hops. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structAccessStatMatrix_ac98d07dd8f7b70e16ccb9a01abf56b9c}\label{structAccessStatMatrix_ac98d07dd8f7b70e16ccb9a01abf56b9c}} 
+class {\bfseries boost\+::serialization\+::access}
+\item 
+\mbox{\Hypertarget{structAccessStatMatrix_afbd1f7498334a34bdbb3fd90120c5c76}\label{structAccessStatMatrix_afbd1f7498334a34bdbb3fd90120c5c76}} 
+std\+::ostream \& {\bfseries operator$<$$<$} (std\+::ostream \&out, const \mbox{\hyperlink{structAccessStatMatrix}{Access\+Stat\+Matrix}} \&m)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A histogram containing accesses and hops for (multicast, scatter) tuples. 
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{structAccessStats}{Access\+Stats}} 
+\end{DoxySeeAlso}
+
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/loop-\/analysis/nest-\/analysis-\/tile-\/info.\+hpp\item 
+src/loop-\/analysis/nest-\/analysis-\/tile-\/info.\+cpp\end{DoxyCompactItemize}

@@ -90,7 +90,7 @@ ArithmeticUnits::Specs ArithmeticUnits::ParseSpecs(config::CompoundConfigNode se
   std::string name = "__ARITH__";
   setting.lookupValue("name", name);
   specs.name = config::parseName(name);
-  specs.level_name = specs.name.Get();
+  specs.level_name = specs.name.Get(); // the level name is the same as the name
   if (setting.exists("attributes"))
   { // parse v0.2, tree like description
     setting = setting.lookup("attributes");

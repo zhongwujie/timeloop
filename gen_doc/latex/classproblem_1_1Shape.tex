@@ -1,0 +1,113 @@
+\hypertarget{classproblem_1_1Shape}{}\doxysection{problem\+::Shape Class Reference}
+\label{classproblem_1_1Shape}\index{problem::Shape@{problem::Shape}}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classproblem_1_1Shape_a8b2582fada4f087a6e6d7089cd8ce3d3}\label{classproblem_1_1Shape_a8b2582fada4f087a6e6d7089cd8ce3d3}} 
+typedef unsigned {\bfseries Factorized\+Dimension\+ID}
+\item 
+\mbox{\Hypertarget{classproblem_1_1Shape_a732b5686dad7816f4663a27888ab0858}\label{classproblem_1_1Shape_a732b5686dad7816f4663a27888ab0858}} 
+typedef unsigned {\bfseries Flattened\+Dimension\+ID}
+\item 
+\mbox{\Hypertarget{classproblem_1_1Shape_a8b572c1f903fba1e8bb07e22f4d89f55}\label{classproblem_1_1Shape_a8b572c1f903fba1e8bb07e22f4d89f55}} 
+typedef int {\bfseries Coefficient}
+\item 
+\mbox{\Hypertarget{classproblem_1_1Shape_a0f51e74208681db048c9fa792de83203}\label{classproblem_1_1Shape_a0f51e74208681db048c9fa792de83203}} 
+typedef unsigned {\bfseries Coefficient\+ID}
+\item 
+\mbox{\Hypertarget{classproblem_1_1Shape_a432b46bfeee0004a509d65edd2442e30}\label{classproblem_1_1Shape_a432b46bfeee0004a509d65edd2442e30}} 
+typedef std\+::map$<$ Coefficient\+ID, int $>$ {\bfseries Coefficients}
+\item 
+\mbox{\Hypertarget{classproblem_1_1Shape_a32234c8d1558d37547dd1501dcca0fdc}\label{classproblem_1_1Shape_a32234c8d1558d37547dd1501dcca0fdc}} 
+typedef unsigned {\bfseries Data\+Space\+ID}
+\item 
+\mbox{\Hypertarget{classproblem_1_1Shape_a682e06a0035dd9064915a89b08e6d0ca}\label{classproblem_1_1Shape_a682e06a0035dd9064915a89b08e6d0ca}} 
+typedef std\+::pair$<$ Coefficient\+ID, Factorized\+Dimension\+ID $>$ {\bfseries Projection\+Term}
+\item 
+\mbox{\Hypertarget{classproblem_1_1Shape_a2bf14c66913ede40141e3952dcd3eaaa}\label{classproblem_1_1Shape_a2bf14c66913ede40141e3952dcd3eaaa}} 
+typedef std\+::list$<$ Projection\+Term $>$ {\bfseries Projection\+Expression}
+\item 
+\mbox{\Hypertarget{classproblem_1_1Shape_ac328c6f1f666c098273aa4b0cf4dcbdf}\label{classproblem_1_1Shape_ac328c6f1f666c098273aa4b0cf4dcbdf}} 
+typedef std\+::vector$<$ Projection\+Expression $>$ {\bfseries Projection}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classproblem_1_1Shape_a857432e70a3abf7a9945511ab0f57ca5}\label{classproblem_1_1Shape_a857432e70a3abf7a9945511ab0f57ca5}} 
+void {\bfseries Parse} (\mbox{\hyperlink{classconfig_1_1CompoundConfigNode}{config\+::\+Compound\+Config\+Node}} config)
+\item 
+\mbox{\Hypertarget{classproblem_1_1Shape_a65122b832529f22720cd71512921dea3}\label{classproblem_1_1Shape_a65122b832529f22720cd71512921dea3}} 
+std\+::set$<$ Flattened\+Dimension\+ID $>$ {\bfseries Get\+Co\+Iterated\+Dimensions} (const std\+::vector$<$ Data\+Space\+ID $>$ dataspace\+\_\+pair) const
+\item 
+\mbox{\Hypertarget{classproblem_1_1Shape_af65cfe34450b3611c13ea558a657cab9}\label{classproblem_1_1Shape_af65cfe34450b3611c13ea558a657cab9}} 
+std\+::set$<$ Flattened\+Dimension\+ID $>$ {\bfseries Get\+Fully\+Contracted\+Dimensions} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classproblem_1_1Shape_ae6b99aa7f80d0c0408bbd322881bc66a}\label{classproblem_1_1Shape_ae6b99aa7f80d0c0408bbd322881bc66a}} 
+unsigned {\bfseries Num\+Factorized\+Dimensions} = 0
+\item 
+\mbox{\Hypertarget{classproblem_1_1Shape_af3261b70d9615c05cbbbaf6ab287281f}\label{classproblem_1_1Shape_af3261b70d9615c05cbbbaf6ab287281f}} 
+std\+::map$<$ Factorized\+Dimension\+ID, std\+::string $>$ {\bfseries Factorized\+Dimension\+I\+D\+To\+Name}
+\item 
+\mbox{\Hypertarget{classproblem_1_1Shape_aed4cacb493cbeb6ef7782751e519333c}\label{classproblem_1_1Shape_aed4cacb493cbeb6ef7782751e519333c}} 
+std\+::map$<$ std\+::string, Factorized\+Dimension\+ID $>$ {\bfseries Factorized\+Dimension\+Name\+To\+ID}
+\item 
+\mbox{\Hypertarget{classproblem_1_1Shape_a59a1b9faa744716282c0e49549d6e312}\label{classproblem_1_1Shape_a59a1b9faa744716282c0e49549d6e312}} 
+bool {\bfseries Uses\+Flattening}
+\item 
+\mbox{\Hypertarget{classproblem_1_1Shape_af5a3cec415bc2067d061f362b46d244a}\label{classproblem_1_1Shape_af5a3cec415bc2067d061f362b46d244a}} 
+unsigned {\bfseries Num\+Flattened\+Dimensions} = 0
+\item 
+\mbox{\Hypertarget{classproblem_1_1Shape_aec74a432ed278e131bcb99d26f151d3b}\label{classproblem_1_1Shape_aec74a432ed278e131bcb99d26f151d3b}} 
+std\+::map$<$ Flattened\+Dimension\+ID, std\+::string $>$ {\bfseries Flattened\+Dimension\+I\+D\+To\+Name}
+\item 
+\mbox{\Hypertarget{classproblem_1_1Shape_a3a71e050b16f7e8cdbe5c86f6431a6fb}\label{classproblem_1_1Shape_a3a71e050b16f7e8cdbe5c86f6431a6fb}} 
+std\+::map$<$ std\+::string, Flattened\+Dimension\+ID $>$ {\bfseries Flattened\+Dimension\+Name\+To\+ID}
+\item 
+\mbox{\Hypertarget{classproblem_1_1Shape_adc48e6da4f0ea11ff7a1b55034c3ff5f}\label{classproblem_1_1Shape_adc48e6da4f0ea11ff7a1b55034c3ff5f}} 
+std\+::vector$<$ std\+::vector$<$ Factorized\+Dimension\+ID $>$ $>$ {\bfseries Flattened\+To\+Factorized}
+\item 
+\mbox{\Hypertarget{classproblem_1_1Shape_af909881a14fd7ab4c79be96d4b9a5c38}\label{classproblem_1_1Shape_af909881a14fd7ab4c79be96d4b9a5c38}} 
+std\+::map$<$ Factorized\+Dimension\+ID, Flattened\+Dimension\+ID $>$ {\bfseries Factorized\+To\+Flattened}
+\item 
+\mbox{\Hypertarget{classproblem_1_1Shape_a05f13b6f5655bb9e0ecb9d8eba0e6fb5}\label{classproblem_1_1Shape_a05f13b6f5655bb9e0ecb9d8eba0e6fb5}} 
+unsigned {\bfseries Num\+Coefficients} = 0
+\item 
+\mbox{\Hypertarget{classproblem_1_1Shape_a4148eac75de33e267a9f51b806050902}\label{classproblem_1_1Shape_a4148eac75de33e267a9f51b806050902}} 
+std\+::map$<$ std\+::string, Coefficient\+ID $>$ {\bfseries Coefficient\+Name\+To\+ID}
+\item 
+\mbox{\Hypertarget{classproblem_1_1Shape_a5cf8bdc684f30ffd4bfdd4b5dcd6e4c7}\label{classproblem_1_1Shape_a5cf8bdc684f30ffd4bfdd4b5dcd6e4c7}} 
+std\+::map$<$ Coefficient\+ID, std\+::string $>$ {\bfseries Coefficient\+I\+D\+To\+Name}
+\item 
+\mbox{\Hypertarget{classproblem_1_1Shape_aa78beed6997d098ae82f4b890be26949}\label{classproblem_1_1Shape_aa78beed6997d098ae82f4b890be26949}} 
+std\+::map$<$ Coefficient\+ID, int $>$ {\bfseries Default\+Coefficients}
+\item 
+\mbox{\Hypertarget{classproblem_1_1Shape_ab5453a94bc7a5e04df51eb3282404c03}\label{classproblem_1_1Shape_ab5453a94bc7a5e04df51eb3282404c03}} 
+unsigned {\bfseries Num\+Data\+Spaces} = 0
+\item 
+\mbox{\Hypertarget{classproblem_1_1Shape_a23a12516eae9e7d62a82354f682f2233}\label{classproblem_1_1Shape_a23a12516eae9e7d62a82354f682f2233}} 
+std\+::map$<$ std\+::string, Data\+Space\+ID $>$ {\bfseries Data\+Space\+Name\+To\+ID}
+\item 
+\mbox{\Hypertarget{classproblem_1_1Shape_ab44c63820a2afb86ab6b679a9c86bd5f}\label{classproblem_1_1Shape_ab44c63820a2afb86ab6b679a9c86bd5f}} 
+std\+::map$<$ Data\+Space\+ID, std\+::string $>$ {\bfseries Data\+Space\+I\+D\+To\+Name}
+\item 
+\mbox{\Hypertarget{classproblem_1_1Shape_ae548205b3330657b7ae24a09ea15686a}\label{classproblem_1_1Shape_ae548205b3330657b7ae24a09ea15686a}} 
+std\+::map$<$ Data\+Space\+ID, unsigned $>$ {\bfseries Data\+Space\+Order}
+\item 
+\mbox{\Hypertarget{classproblem_1_1Shape_a35c52f2a592e18bb97484cd21b1018cd}\label{classproblem_1_1Shape_a35c52f2a592e18bb97484cd21b1018cd}} 
+std\+::map$<$ Data\+Space\+ID, bool $>$ {\bfseries Is\+Read\+Write\+Data\+Space}
+\item 
+\mbox{\Hypertarget{classproblem_1_1Shape_aa8687149d203e1616ce5531c254ac438}\label{classproblem_1_1Shape_aa8687149d203e1616ce5531c254ac438}} 
+std\+::vector$<$ Projection $>$ {\bfseries Projections}
+\item 
+\mbox{\Hypertarget{classproblem_1_1Shape_a9a3e0d6dc62f39961c78c13854ad9097}\label{classproblem_1_1Shape_a9a3e0d6dc62f39961c78c13854ad9097}} 
+std\+::vector$<$ std\+::set$<$ Flattened\+Dimension\+ID $>$ $>$ {\bfseries Data\+Space\+I\+D\+To\+Dimension\+I\+D\+Vector}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/workload/shape-\/models/problem-\/shape.\+hpp\item 
+src/workload/shape-\/models/problem-\/shape.\+cpp\end{DoxyCompactItemize}

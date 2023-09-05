@@ -1,0 +1,193 @@
+\hypertarget{structmodel_1_1BufferLevel_1_1Specs}{}\doxysection{model\+::Buffer\+Level\+::Specs Struct Reference}
+\label{structmodel_1_1BufferLevel_1_1Specs}\index{model::BufferLevel::Specs@{model::BufferLevel::Specs}}
+
+
+Inheritance diagram for model\+::Buffer\+Level\+::Specs\+:
+% FIG 0
+
+
+Collaboration diagram for model\+::Buffer\+Level\+::Specs\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structmodel_1_1BufferLevel_1_1Specs_ab260ba64059a7625121ecf6c3184c3e6}\label{structmodel_1_1BufferLevel_1_1Specs_ab260ba64059a7625121ecf6c3184c3e6}} 
+const std\+::string {\bfseries Type} () const override
+\item 
+\mbox{\Hypertarget{structmodel_1_1BufferLevel_1_1Specs_aa8a4bed248308aa937d4b383efc93d0e}\label{structmodel_1_1BufferLevel_1_1Specs_aa8a4bed248308aa937d4b383efc93d0e}} 
+{\footnotesize template$<$class Archive $>$ }\\void {\bfseries serialize} (Archive \&ar, const unsigned int version=0)
+\item 
+\mbox{\Hypertarget{structmodel_1_1BufferLevel_1_1Specs_aadd989aa4a5b22c12c8f64bafceeddde}\label{structmodel_1_1BufferLevel_1_1Specs_aadd989aa4a5b22c12c8f64bafceeddde}} 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structmodel_1_1LevelSpecs}{Level\+Specs}} $>$ {\bfseries Clone} () const override
+\item 
+\mbox{\Hypertarget{structmodel_1_1BufferLevel_1_1Specs_a92ddec58935498be9638a91c9ecc1909}\label{structmodel_1_1BufferLevel_1_1Specs_a92ddec58935498be9638a91c9ecc1909}} 
+void {\bfseries Update\+Op\+Energy\+Via\+E\+RT} (const std\+::map$<$ std\+::string, double $>$ \&E\+R\+T\+\_\+entries, const double max\+\_\+energy) override
+\item 
+\mbox{\Hypertarget{structmodel_1_1BufferLevel_1_1Specs_af5c165b5dcbff7e9f19fe7a27bb1eb39}\label{structmodel_1_1BufferLevel_1_1Specs_af5c165b5dcbff7e9f19fe7a27bb1eb39}} 
+void {\bfseries Update\+Area\+Via\+A\+RT} (const double component\+\_\+area) override
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structmodel_1_1BufferLevel_1_1Specs_ac8bfb3f7d542d033114def71d972d6fc}\label{structmodel_1_1BufferLevel_1_1Specs_ac8bfb3f7d542d033114def71d972d6fc}} 
+\mbox{\hyperlink{classmodel_1_1Attribute}{Attribute}}$<$ std\+::string $>$ {\bfseries name}
+\item 
+\mbox{\Hypertarget{structmodel_1_1BufferLevel_1_1Specs_acf9343c90186835946b5e2d043fdc817}\label{structmodel_1_1BufferLevel_1_1Specs_acf9343c90186835946b5e2d043fdc817}} 
+\mbox{\hyperlink{classmodel_1_1Attribute}{Attribute}}$<$ Technology $>$ {\bfseries technology}
+\item 
+\mbox{\Hypertarget{structmodel_1_1BufferLevel_1_1Specs_a67a69daa9aab384d04b6f5fc5fde801d}\label{structmodel_1_1BufferLevel_1_1Specs_a67a69daa9aab384d04b6f5fc5fde801d}} 
+\mbox{\hyperlink{classmodel_1_1Attribute}{Attribute}}$<$ std\+::uint64\+\_\+t $>$ {\bfseries size}
+\item 
+\mbox{\Hypertarget{structmodel_1_1BufferLevel_1_1Specs_ac78dce37a327640ef9f1c37ca0bfd6c6}\label{structmodel_1_1BufferLevel_1_1Specs_ac78dce37a327640ef9f1c37ca0bfd6c6}} 
+\mbox{\hyperlink{classmodel_1_1Attribute}{Attribute}}$<$ std\+::uint64\+\_\+t $>$ {\bfseries md\+\_\+size}
+\item 
+\mbox{\Hypertarget{structmodel_1_1BufferLevel_1_1Specs_abed773324a77d2243e4f4b59ae68b767}\label{structmodel_1_1BufferLevel_1_1Specs_abed773324a77d2243e4f4b59ae68b767}} 
+\mbox{\hyperlink{classmodel_1_1Attribute}{Attribute}}$<$ std\+::uint64\+\_\+t $>$ {\bfseries md\+\_\+size\+\_\+bits}
+\item 
+\mbox{\Hypertarget{structmodel_1_1BufferLevel_1_1Specs_a64a606fcb2cd77bd87b7c48b73a615cf}\label{structmodel_1_1BufferLevel_1_1Specs_a64a606fcb2cd77bd87b7c48b73a615cf}} 
+\mbox{\hyperlink{classmodel_1_1Attribute}{Attribute}}$<$ std\+::uint64\+\_\+t $>$ {\bfseries word\+\_\+bits}
+\item 
+\mbox{\Hypertarget{structmodel_1_1BufferLevel_1_1Specs_a03171de08188cf63e9f2b87587b46f68}\label{structmodel_1_1BufferLevel_1_1Specs_a03171de08188cf63e9f2b87587b46f68}} 
+\mbox{\hyperlink{classmodel_1_1Attribute}{Attribute}}$<$ std\+::uint64\+\_\+t $>$ {\bfseries addr\+\_\+gen\+\_\+bits}
+\item 
+\mbox{\Hypertarget{structmodel_1_1BufferLevel_1_1Specs_ac93eb9ce0a46339bf2f0836859abe16f}\label{structmodel_1_1BufferLevel_1_1Specs_ac93eb9ce0a46339bf2f0836859abe16f}} 
+\mbox{\hyperlink{classmodel_1_1Attribute}{Attribute}}$<$ std\+::uint64\+\_\+t $>$ {\bfseries block\+\_\+size}
+\item 
+\mbox{\Hypertarget{structmodel_1_1BufferLevel_1_1Specs_a68d4f0953a10da0d7538b82360942ad3}\label{structmodel_1_1BufferLevel_1_1Specs_a68d4f0953a10da0d7538b82360942ad3}} 
+\mbox{\hyperlink{classmodel_1_1Attribute}{Attribute}}$<$ std\+::uint64\+\_\+t $>$ {\bfseries cluster\+\_\+size}
+\item 
+\mbox{\Hypertarget{structmodel_1_1BufferLevel_1_1Specs_a951250977601fc4caa35bf0264e77b34}\label{structmodel_1_1BufferLevel_1_1Specs_a951250977601fc4caa35bf0264e77b34}} 
+\mbox{\hyperlink{classmodel_1_1Attribute}{Attribute}}$<$ std\+::uint64\+\_\+t $>$ {\bfseries instances}
+\item 
+\mbox{\Hypertarget{structmodel_1_1BufferLevel_1_1Specs_ac72b65fc8ac46e872c151bd5e3bd70e3}\label{structmodel_1_1BufferLevel_1_1Specs_ac72b65fc8ac46e872c151bd5e3bd70e3}} 
+\mbox{\hyperlink{classmodel_1_1Attribute}{Attribute}}$<$ std\+::uint64\+\_\+t $>$ {\bfseries meshX}
+\item 
+\mbox{\Hypertarget{structmodel_1_1BufferLevel_1_1Specs_afc0c3b966494a41cd1e588921b08a108}\label{structmodel_1_1BufferLevel_1_1Specs_afc0c3b966494a41cd1e588921b08a108}} 
+\mbox{\hyperlink{classmodel_1_1Attribute}{Attribute}}$<$ std\+::uint64\+\_\+t $>$ {\bfseries meshY}
+\item 
+\mbox{\Hypertarget{structmodel_1_1BufferLevel_1_1Specs_ab2fc72aac10c49267cadc028a1503092}\label{structmodel_1_1BufferLevel_1_1Specs_ab2fc72aac10c49267cadc028a1503092}} 
+\mbox{\hyperlink{classmodel_1_1Attribute}{Attribute}}$<$ double $>$ {\bfseries shared\+\_\+bandwidth}
+\item 
+\mbox{\Hypertarget{structmodel_1_1BufferLevel_1_1Specs_a4c766fea95c3033203479c67a8d6a60c}\label{structmodel_1_1BufferLevel_1_1Specs_a4c766fea95c3033203479c67a8d6a60c}} 
+\mbox{\hyperlink{classmodel_1_1Attribute}{Attribute}}$<$ double $>$ {\bfseries read\+\_\+bandwidth}
+\item 
+\mbox{\Hypertarget{structmodel_1_1BufferLevel_1_1Specs_a8565b35f04c46c2d0f1fbdbd369859a2}\label{structmodel_1_1BufferLevel_1_1Specs_a8565b35f04c46c2d0f1fbdbd369859a2}} 
+\mbox{\hyperlink{classmodel_1_1Attribute}{Attribute}}$<$ double $>$ {\bfseries write\+\_\+bandwidth}
+\item 
+\mbox{\Hypertarget{structmodel_1_1BufferLevel_1_1Specs_a53f303b7be7e0206cc4d6c0bbe09a90d}\label{structmodel_1_1BufferLevel_1_1Specs_a53f303b7be7e0206cc4d6c0bbe09a90d}} 
+\mbox{\hyperlink{classmodel_1_1Attribute}{Attribute}}$<$ double $>$ {\bfseries multiple\+\_\+buffering}
+\item 
+\mbox{\Hypertarget{structmodel_1_1BufferLevel_1_1Specs_af5d21b495080a2bb69c9edfbbbce4914}\label{structmodel_1_1BufferLevel_1_1Specs_af5d21b495080a2bb69c9edfbbbce4914}} 
+\mbox{\hyperlink{classmodel_1_1Attribute}{Attribute}}$<$ std\+::uint64\+\_\+t $>$ {\bfseries effective\+\_\+size}
+\item 
+\mbox{\Hypertarget{structmodel_1_1BufferLevel_1_1Specs_ae52d6fb7b1ae1b3d4c785290d3b19058}\label{structmodel_1_1BufferLevel_1_1Specs_ae52d6fb7b1ae1b3d4c785290d3b19058}} 
+\mbox{\hyperlink{classmodel_1_1Attribute}{Attribute}}$<$ std\+::uint64\+\_\+t $>$ {\bfseries effective\+\_\+md\+\_\+size}
+\item 
+\mbox{\Hypertarget{structmodel_1_1BufferLevel_1_1Specs_ab2ce375dc37d4ebec0d153052661ae43}\label{structmodel_1_1BufferLevel_1_1Specs_ab2ce375dc37d4ebec0d153052661ae43}} 
+\mbox{\hyperlink{classmodel_1_1Attribute}{Attribute}}$<$ std\+::uint64\+\_\+t $>$ {\bfseries effective\+\_\+md\+\_\+size\+\_\+bits}
+\item 
+\mbox{\Hypertarget{structmodel_1_1BufferLevel_1_1Specs_a204a08998d985783ebad72d060c372c6}\label{structmodel_1_1BufferLevel_1_1Specs_a204a08998d985783ebad72d060c372c6}} 
+\mbox{\hyperlink{classmodel_1_1Attribute}{Attribute}}$<$ double $>$ {\bfseries min\+\_\+utilization}
+\item 
+\mbox{\Hypertarget{structmodel_1_1BufferLevel_1_1Specs_acf2141b41c4038c1787d0804d098de39}\label{structmodel_1_1BufferLevel_1_1Specs_acf2141b41c4038c1787d0804d098de39}} 
+\mbox{\hyperlink{classmodel_1_1Attribute}{Attribute}}$<$ std\+::uint64\+\_\+t $>$ {\bfseries num\+\_\+ports}
+\item 
+\mbox{\Hypertarget{structmodel_1_1BufferLevel_1_1Specs_a71216749ec1129d3baac6a2b8a9ef6a1}\label{structmodel_1_1BufferLevel_1_1Specs_a71216749ec1129d3baac6a2b8a9ef6a1}} 
+\mbox{\hyperlink{classmodel_1_1Attribute}{Attribute}}$<$ std\+::uint64\+\_\+t $>$ {\bfseries num\+\_\+banks}
+\item 
+\mbox{\Hypertarget{structmodel_1_1BufferLevel_1_1Specs_ae2c38e6ec0d4a8b582454aefa1887487}\label{structmodel_1_1BufferLevel_1_1Specs_ae2c38e6ec0d4a8b582454aefa1887487}} 
+\mbox{\hyperlink{classmodel_1_1Attribute}{Attribute}}$<$ bool $>$ {\bfseries reduction\+\_\+supported}
+\item 
+\mbox{\Hypertarget{structmodel_1_1BufferLevel_1_1Specs_a9b8cae27648d8ef3ddfa6d29b18f0b17}\label{structmodel_1_1BufferLevel_1_1Specs_a9b8cae27648d8ef3ddfa6d29b18f0b17}} 
+\mbox{\hyperlink{classmodel_1_1Attribute}{Attribute}}$<$ std\+::uint64\+\_\+t $>$ {\bfseries network\+\_\+fill\+\_\+latency}
+\item 
+\mbox{\Hypertarget{structmodel_1_1BufferLevel_1_1Specs_ab194d0a3a361b1a30e8a5e185503a113}\label{structmodel_1_1BufferLevel_1_1Specs_ab194d0a3a361b1a30e8a5e185503a113}} 
+\mbox{\hyperlink{classmodel_1_1Attribute}{Attribute}}$<$ std\+::uint64\+\_\+t $>$ {\bfseries network\+\_\+drain\+\_\+latency}
+\item 
+\mbox{\Hypertarget{structmodel_1_1BufferLevel_1_1Specs_a5bd3a5c95430d3a4bba0822ce32d7ec6}\label{structmodel_1_1BufferLevel_1_1Specs_a5bd3a5c95430d3a4bba0822ce32d7ec6}} 
+\mbox{\hyperlink{classmodel_1_1Attribute}{Attribute}}$<$ bool $>$ {\bfseries concordant\+\_\+compressed\+\_\+tile\+\_\+traversal}
+\item 
+\mbox{\Hypertarget{structmodel_1_1BufferLevel_1_1Specs_ae7f323b8f16d07fc93b3247fe57adb7f}\label{structmodel_1_1BufferLevel_1_1Specs_ae7f323b8f16d07fc93b3247fe57adb7f}} 
+\mbox{\hyperlink{classmodel_1_1Attribute}{Attribute}}$<$ bool $>$ {\bfseries tile\+\_\+partition\+\_\+supported}
+\item 
+\mbox{\Hypertarget{structmodel_1_1BufferLevel_1_1Specs_a05db4c02612de9d0a4f0fe60202edcb4}\label{structmodel_1_1BufferLevel_1_1Specs_a05db4c02612de9d0a4f0fe60202edcb4}} 
+\mbox{\hyperlink{classmodel_1_1Attribute}{Attribute}}$<$ bool $>$ {\bfseries decompression\+\_\+supported}
+\item 
+\mbox{\Hypertarget{structmodel_1_1BufferLevel_1_1Specs_a2c6f4f11194c50c86616dac191fa0fd0}\label{structmodel_1_1BufferLevel_1_1Specs_a2c6f4f11194c50c86616dac191fa0fd0}} 
+\mbox{\hyperlink{classmodel_1_1Attribute}{Attribute}}$<$ bool $>$ {\bfseries compression\+\_\+supported}
+\item 
+\mbox{\Hypertarget{structmodel_1_1BufferLevel_1_1Specs_aaaf86d81307d7028fe978333b4d281cd}\label{structmodel_1_1BufferLevel_1_1Specs_aaaf86d81307d7028fe978333b4d281cd}} 
+\mbox{\hyperlink{classmodel_1_1Attribute}{Attribute}}$<$ std\+::uint64\+\_\+t $>$ {\bfseries metadata\+\_\+storage\+\_\+width}
+\item 
+\mbox{\Hypertarget{structmodel_1_1BufferLevel_1_1Specs_a21c167377e3bf72de7fad93cb58d0815}\label{structmodel_1_1BufferLevel_1_1Specs_a21c167377e3bf72de7fad93cb58d0815}} 
+\mbox{\hyperlink{classmodel_1_1Attribute}{Attribute}}$<$ std\+::uint64\+\_\+t $>$ {\bfseries metadata\+\_\+storage\+\_\+depth}
+\item 
+\mbox{\Hypertarget{structmodel_1_1BufferLevel_1_1Specs_ae916d801f30ae48ea14bbe40aea1ca0e}\label{structmodel_1_1BufferLevel_1_1Specs_ae916d801f30ae48ea14bbe40aea1ca0e}} 
+\mbox{\hyperlink{classmodel_1_1Attribute}{Attribute}}$<$ bool $>$ {\bfseries unified\+\_\+data\+\_\+md\+\_\+storage}
+\item 
+\mbox{\Hypertarget{structmodel_1_1BufferLevel_1_1Specs_a12012a4c0eae72c13e50d9b20086bad3}\label{structmodel_1_1BufferLevel_1_1Specs_a12012a4c0eae72c13e50d9b20086bad3}} 
+\mbox{\hyperlink{classmodel_1_1Attribute}{Attribute}}$<$ std\+::uint64\+\_\+t $>$ {\bfseries default\+\_\+md\+\_\+block\+\_\+size}
+\item 
+\mbox{\Hypertarget{structmodel_1_1BufferLevel_1_1Specs_ab3245641410a48b867a310c66023892c}\label{structmodel_1_1BufferLevel_1_1Specs_ab3245641410a48b867a310c66023892c}} 
+\mbox{\hyperlink{classmodel_1_1Attribute}{Attribute}}$<$ std\+::uint64\+\_\+t $>$ {\bfseries default\+\_\+md\+\_\+word\+\_\+bits}
+\item 
+\mbox{\Hypertarget{structmodel_1_1BufferLevel_1_1Specs_a9687e902316e961539bb4e5d0963536c}\label{structmodel_1_1BufferLevel_1_1Specs_a9687e902316e961539bb4e5d0963536c}} 
+\mbox{\hyperlink{classmodel_1_1Attribute}{Attribute}}$<$ std\+::string $>$ {\bfseries read\+\_\+network\+\_\+name}
+\item 
+\mbox{\Hypertarget{structmodel_1_1BufferLevel_1_1Specs_a6b50f287b4c6ebce47456105415324d6}\label{structmodel_1_1BufferLevel_1_1Specs_a6b50f287b4c6ebce47456105415324d6}} 
+\mbox{\hyperlink{classmodel_1_1Attribute}{Attribute}}$<$ std\+::string $>$ {\bfseries fill\+\_\+network\+\_\+name}
+\item 
+\mbox{\Hypertarget{structmodel_1_1BufferLevel_1_1Specs_a99bab60152018cfc21f195b83f034f84}\label{structmodel_1_1BufferLevel_1_1Specs_a99bab60152018cfc21f195b83f034f84}} 
+\mbox{\hyperlink{classmodel_1_1Attribute}{Attribute}}$<$ std\+::string $>$ {\bfseries drain\+\_\+network\+\_\+name}
+\item 
+\mbox{\Hypertarget{structmodel_1_1BufferLevel_1_1Specs_a31b3b712279dc591e48d4bfb3d523896}\label{structmodel_1_1BufferLevel_1_1Specs_a31b3b712279dc591e48d4bfb3d523896}} 
+\mbox{\hyperlink{classmodel_1_1Attribute}{Attribute}}$<$ std\+::string $>$ {\bfseries update\+\_\+network\+\_\+name}
+\item 
+\mbox{\Hypertarget{structmodel_1_1BufferLevel_1_1Specs_a6d21eb236c5b38662aa02e3059169b85}\label{structmodel_1_1BufferLevel_1_1Specs_a6d21eb236c5b38662aa02e3059169b85}} 
+std\+::map$<$ std\+::string, double $>$ {\bfseries E\+R\+T\+\_\+entries}
+\item 
+\mbox{\Hypertarget{structmodel_1_1BufferLevel_1_1Specs_ae6974ac6b0ac99dad9ea6218178e994f}\label{structmodel_1_1BufferLevel_1_1Specs_ae6974ac6b0ac99dad9ea6218178e994f}} 
+std\+::map$<$ std\+::string, double $>$ {\bfseries op\+\_\+energy\+\_\+map}
+\item 
+\mbox{\Hypertarget{structmodel_1_1BufferLevel_1_1Specs_a0cdf7024d3f0b703bca1794d94ee4f82}\label{structmodel_1_1BufferLevel_1_1Specs_a0cdf7024d3f0b703bca1794d94ee4f82}} 
+\mbox{\hyperlink{classmodel_1_1Attribute}{Attribute}}$<$ bool $>$ {\bfseries allow\+\_\+overbooking}
+\item 
+\mbox{\Hypertarget{structmodel_1_1BufferLevel_1_1Specs_a9915802f664cb16360237876dbbe8f5a}\label{structmodel_1_1BufferLevel_1_1Specs_a9915802f664cb16360237876dbbe8f5a}} 
+\mbox{\hyperlink{classmodel_1_1Attribute}{Attribute}}$<$ double $>$ {\bfseries vector\+\_\+access\+\_\+energy}
+\item 
+\mbox{\Hypertarget{structmodel_1_1BufferLevel_1_1Specs_ad3d101fab176905382be5930f12f7e45}\label{structmodel_1_1BufferLevel_1_1Specs_ad3d101fab176905382be5930f12f7e45}} 
+\mbox{\hyperlink{classmodel_1_1Attribute}{Attribute}}$<$ double $>$ {\bfseries storage\+\_\+area}
+\item 
+\mbox{\Hypertarget{structmodel_1_1BufferLevel_1_1Specs_ab351ddc3500c1927a818673ed91317b6}\label{structmodel_1_1BufferLevel_1_1Specs_ab351ddc3500c1927a818673ed91317b6}} 
+\mbox{\hyperlink{classmodel_1_1Attribute}{Attribute}}$<$ double $>$ {\bfseries addr\+\_\+gen\+\_\+energy}
+\item 
+\mbox{\Hypertarget{structmodel_1_1BufferLevel_1_1Specs_a401007c20ddaa60f12039a4e16c89a21}\label{structmodel_1_1BufferLevel_1_1Specs_a401007c20ddaa60f12039a4e16c89a21}} 
+std\+::string {\bfseries access\+\_\+energy\+\_\+source}
+\item 
+\mbox{\Hypertarget{structmodel_1_1BufferLevel_1_1Specs_a24e2fc1f252c28bef11cdca21b12c821}\label{structmodel_1_1BufferLevel_1_1Specs_a24e2fc1f252c28bef11cdca21b12c821}} 
+std\+::string {\bfseries addr\+\_\+gen\+\_\+energy\+\_\+source}
+\item 
+\mbox{\Hypertarget{structmodel_1_1BufferLevel_1_1Specs_a95e5ec1c39a713bc1ea0fac0bd73e80b}\label{structmodel_1_1BufferLevel_1_1Specs_a95e5ec1c39a713bc1ea0fac0bd73e80b}} 
+std\+::string {\bfseries storage\+\_\+area\+\_\+source}
+\item 
+\mbox{\Hypertarget{structmodel_1_1BufferLevel_1_1Specs_ab784fe6853e689e04ab1ab7feecc0949}\label{structmodel_1_1BufferLevel_1_1Specs_ab784fe6853e689e04ab1ab7feecc0949}} 
+\mbox{\hyperlink{classmodel_1_1Attribute}{Attribute}}$<$ bool $>$ {\bfseries is\+\_\+sparse\+\_\+module}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structmodel_1_1BufferLevel_1_1Specs_acbca552db0f14491445591f27f473b64}\label{structmodel_1_1BufferLevel_1_1Specs_acbca552db0f14491445591f27f473b64}} 
+static const std\+::uint64\+\_\+t {\bfseries k\+Default\+Word\+Bits} = 16
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structmodel_1_1BufferLevel_1_1Specs_ac98d07dd8f7b70e16ccb9a01abf56b9c}\label{structmodel_1_1BufferLevel_1_1Specs_ac98d07dd8f7b70e16ccb9a01abf56b9c}} 
+class {\bfseries boost\+::serialization\+::access}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/model/buffer.\+hpp\item 
+src/model/buffer.\+cpp\end{DoxyCompactItemize}

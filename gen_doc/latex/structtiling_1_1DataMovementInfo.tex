@@ -1,0 +1,246 @@
+\hypertarget{structtiling_1_1DataMovementInfo}{}\doxysection{tiling\+::Data\+Movement\+Info Struct Reference}
+\label{structtiling_1_1DataMovementInfo}\index{tiling::DataMovementInfo@{tiling::DataMovementInfo}}
+
+
+Collaboration diagram for tiling\+::Data\+Movement\+Info\+:
+% FIG 0
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structtiling_1_1DataMovementInfo_a903fad00093e06b8e1228cf648fd5428}\label{structtiling_1_1DataMovementInfo_a903fad00093e06b8e1228cf648fd5428}} 
+{\footnotesize template$<$class Archive $>$ }\\void {\bfseries serialize} (Archive \&ar, const unsigned int version=0)
+\item 
+\mbox{\Hypertarget{structtiling_1_1DataMovementInfo_af477099cbdefadfca2ed09ce4fc449c4}\label{structtiling_1_1DataMovementInfo_af477099cbdefadfca2ed09ce4fc449c4}} 
+void {\bfseries Reset} ()
+\item 
+\mbox{\Hypertarget{structtiling_1_1DataMovementInfo_ae86d102742f622daae5adb50f2b87550}\label{structtiling_1_1DataMovementInfo_ae86d102742f622daae5adb50f2b87550}} 
+void {\bfseries Validate} ()
+\item 
+\mbox{\Hypertarget{structtiling_1_1DataMovementInfo_aadc894a14d2badb6fe352268385cb728}\label{structtiling_1_1DataMovementInfo_aadc894a14d2badb6fe352268385cb728}} 
+void {\bfseries Set\+Density\+Model} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classproblem_1_1DensityDistribution}{problem\+::\+Density\+Distribution}} $>$ tile\+\_\+density\+\_\+ptr)
+\item 
+\mbox{\Hypertarget{structtiling_1_1DataMovementInfo_a4687be2a07d8d3bf935b5b059abc0df4}\label{structtiling_1_1DataMovementInfo_a4687be2a07d8d3bf935b5b059abc0df4}} 
+void {\bfseries Set\+Tensor\+Representation} (const \mbox{\hyperlink{structsparse_1_1PerDataSpaceCompressionInfo}{sparse\+::\+Per\+Data\+Space\+Compression\+Info}} \&compression\+\_\+opt\+\_\+spec)
+\item 
+\mbox{\Hypertarget{structtiling_1_1DataMovementInfo_a89c31744f39bb37d40cf5bb3fba7fde4}\label{structtiling_1_1DataMovementInfo_a89c31744f39bb37d40cf5bb3fba7fde4}} 
+void {\bfseries Set\+Tensor\+Representation} ()
+\item 
+\mbox{\Hypertarget{structtiling_1_1DataMovementInfo_a7e7aca7993d5aa89a8183c4be0fe4a48}\label{structtiling_1_1DataMovementInfo_a7e7aca7993d5aa89a8183c4be0fe4a48}} 
+std\+::string {\bfseries Get\+Data\+Space\+Name} () const
+\item 
+\mbox{\Hypertarget{structtiling_1_1DataMovementInfo_aa170c0f4747f442480e06c7943e67ab8}\label{structtiling_1_1DataMovementInfo_aa170c0f4747f442480e06c7943e67ab8}} 
+bool {\bfseries Get\+Has\+Meta\+Data} () const
+\item 
+\mbox{\Hypertarget{structtiling_1_1DataMovementInfo_ac83c232fd5764d275a91c9c1bc214210}\label{structtiling_1_1DataMovementInfo_ac83c232fd5764d275a91c9c1bc214210}} 
+std\+::string {\bfseries Get\+Density\+Type} () const
+\item 
+\mbox{\Hypertarget{structtiling_1_1DataMovementInfo_a65abe6cad4cbaa5674f657d4d48e9cd7}\label{structtiling_1_1DataMovementInfo_a65abe6cad4cbaa5674f657d4d48e9cd7}} 
+std\+::string {\bfseries Get\+Meta\+Data\+Format\+Name} () const
+\item 
+\mbox{\Hypertarget{structtiling_1_1DataMovementInfo_a5a6b8535ad8be94c4a475480cd8abe66}\label{structtiling_1_1DataMovementInfo_a5a6b8535ad8be94c4a475480cd8abe66}} 
+std\+::uint64\+\_\+t {\bfseries Get\+Num\+Meta\+Data\+Ranks} () const
+\item 
+\mbox{\Hypertarget{structtiling_1_1DataMovementInfo_aec1a01e5871bdf56e428a22e30dcb9b5}\label{structtiling_1_1DataMovementInfo_aec1a01e5871bdf56e428a22e30dcb9b5}} 
+\mbox{\hyperlink{structtiling_1_1CoordinateSpaceTileInfo}{Coordinate\+Space\+Tile\+Info}} {\bfseries Get\+Coordinate\+Space\+Info} () const
+\item 
+\mbox{\Hypertarget{structtiling_1_1DataMovementInfo_ade11c8328f1e40399da7df3938fcb765}\label{structtiling_1_1DataMovementInfo_ade11c8328f1e40399da7df3938fcb765}} 
+\mbox{\hyperlink{structtiling_1_1CoordinateSpaceTileInfo}{Coordinate\+Space\+Tile\+Info}} {\bfseries Get\+Child\+Tile\+Coordinate\+Space\+Info} () const
+\item 
+\mbox{\Hypertarget{structtiling_1_1DataMovementInfo_a28ae3aad102949a306d0e04f3ccb6dea}\label{structtiling_1_1DataMovementInfo_a28ae3aad102949a306d0e04f3ccb6dea}} 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classproblem_1_1DensityDistribution}{problem\+::\+Density\+Distribution}} $>$ {\bfseries Get\+Tile\+Density\+Model} () const
+\item 
+\mbox{\Hypertarget{structtiling_1_1DataMovementInfo_a041f69186e45410638c27e2acaa7b8cd}\label{structtiling_1_1DataMovementInfo_a041f69186e45410638c27e2acaa7b8cd}} 
+std\+::uint64\+\_\+t {\bfseries Get\+Max\+Data\+Tile\+Occupancy\+By\+Confidence} (const double confidence=1.\+0) const
+\item 
+\mbox{\Hypertarget{structtiling_1_1DataMovementInfo_aa70a799bc0e459ee0911c9594791d819}\label{structtiling_1_1DataMovementInfo_aa70a799bc0e459ee0911c9594791d819}} 
+double {\bfseries Get\+Data\+Tile\+Occupancy\+Probability} (const std\+::uint64\+\_\+t occupancy) const
+\item 
+\mbox{\Hypertarget{structtiling_1_1DataMovementInfo_aafb1831a9761e86931ab741f65ab2c59}\label{structtiling_1_1DataMovementInfo_aafb1831a9761e86931ab741f65ab2c59}} 
+double {\bfseries Get\+Child\+Level\+Data\+Tile\+Occupancy\+Probability} (const std\+::uint64\+\_\+t occupancy) const
+\item 
+\mbox{\Hypertarget{structtiling_1_1DataMovementInfo_a61018ea43260d7cf5e33f2d78692f825}\label{structtiling_1_1DataMovementInfo_a61018ea43260d7cf5e33f2d78692f825}} 
+std\+::uint64\+\_\+t {\bfseries Get\+Min\+Data\+Tile\+Occupancy} () const
+\item 
+\mbox{\Hypertarget{structtiling_1_1DataMovementInfo_a3c14ec0eb62801147e365dc207b7f4f6}\label{structtiling_1_1DataMovementInfo_a3c14ec0eb62801147e365dc207b7f4f6}} 
+Meta\+Data\+Tile\+Occupancy {\bfseries Get\+Meta\+Data\+Tile\+Occupancy\+Given\+Data\+Tile} (const \mbox{\hyperlink{structtiling_1_1CoordinateSpaceTileInfo}{Coordinate\+Space\+Tile\+Info}} \&cur\+\_\+coord\+\_\+tile) const
+\item 
+\mbox{\Hypertarget{structtiling_1_1DataMovementInfo_a2b4f626a255ae4d59ceb9fc88c152b38}\label{structtiling_1_1DataMovementInfo_a2b4f626a255ae4d59ceb9fc88c152b38}} 
+Meta\+Data\+Tile\+Occupancy {\bfseries Get\+Max\+Meta\+Data\+Tile\+Occupancy\+By\+Confidence} (const double confidence=1.\+0) const
+\item 
+\mbox{\Hypertarget{structtiling_1_1DataMovementInfo_a774995831128c6385888444150cddde3}\label{structtiling_1_1DataMovementInfo_a774995831128c6385888444150cddde3}} 
+double {\bfseries Get\+Expected\+Aggregated\+Meta\+Data\+Tile\+Occupancy} () const
+\item 
+\mbox{\Hypertarget{structtiling_1_1DataMovementInfo_a579e8f5f89f347b496261f558914298a}\label{structtiling_1_1DataMovementInfo_a579e8f5f89f347b496261f558914298a}} 
+double {\bfseries Get\+Max\+Tile\+Density\+By\+Confidence} (const double confidence=1.\+0) const
+\item 
+\mbox{\Hypertarget{structtiling_1_1DataMovementInfo_a7e881f02d6a291d1c67fcf8330fa4805}\label{structtiling_1_1DataMovementInfo_a7e881f02d6a291d1c67fcf8330fa4805}} 
+double {\bfseries Get\+Expected\+Tile\+Density} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structtiling_1_1DataMovementInfo_aa1c8b98a4bdda6bdfd9efb7f4a2ef37d}\label{structtiling_1_1DataMovementInfo_aa1c8b98a4bdda6bdfd9efb7f4a2ef37d}} 
+\mbox{\hyperlink{structtiling_1_1CoordinateSpaceTileInfo}{Coordinate\+Space\+Tile\+Info}} {\bfseries coord\+\_\+space\+\_\+info}
+\item 
+\mbox{\Hypertarget{structtiling_1_1DataMovementInfo_ad355e8a9bd8503ebdbad18a83cb159c4}\label{structtiling_1_1DataMovementInfo_ad355e8a9bd8503ebdbad18a83cb159c4}} 
+std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classproblem_1_1MetaDataFormat}{problem\+::\+Meta\+Data\+Format}} $>$ $>$ {\bfseries metadata\+\_\+models}
+\item 
+\mbox{\Hypertarget{structtiling_1_1DataMovementInfo_a16ec9059531f08ab71dac5d9e0af324c}\label{structtiling_1_1DataMovementInfo_a16ec9059531f08ab71dac5d9e0af324c}} 
+std\+::vector$<$ bool $>$ {\bfseries rank\+\_\+compressed}
+\item 
+\mbox{\Hypertarget{structtiling_1_1DataMovementInfo_aa13e7af1b6481defc5c00494c8242878}\label{structtiling_1_1DataMovementInfo_aa13e7af1b6481defc5c00494c8242878}} 
+std\+::vector$<$ std\+::string $>$ {\bfseries rank\+\_\+formats}
+\item 
+\mbox{\Hypertarget{structtiling_1_1DataMovementInfo_ae44315acb190684030c0a4a16bc7b59c}\label{structtiling_1_1DataMovementInfo_ae44315acb190684030c0a4a16bc7b59c}} 
+bool {\bfseries apply\+\_\+rank\+\_\+inner\+\_\+to\+\_\+outer}
+\item 
+\mbox{\Hypertarget{structtiling_1_1DataMovementInfo_ab60e1eb5c22f27eea25975c04fa4831d}\label{structtiling_1_1DataMovementInfo_ab60e1eb5c22f27eea25975c04fa4831d}} 
+std\+::size\+\_\+t {\bfseries size}
+\item 
+\mbox{\Hypertarget{structtiling_1_1DataMovementInfo_a4c88180e12feca22c38348505a4c71c0}\label{structtiling_1_1DataMovementInfo_a4c88180e12feca22c38348505a4c71c0}} 
+std\+::size\+\_\+t {\bfseries shape}
+\item 
+\mbox{\Hypertarget{structtiling_1_1DataMovementInfo_ae8253f58cd010498b484829a40e33e42}\label{structtiling_1_1DataMovementInfo_ae8253f58cd010498b484829a40e33e42}} 
+double {\bfseries expected\+\_\+data\+\_\+occupancy}
+\item 
+\mbox{\Hypertarget{structtiling_1_1DataMovementInfo_a2f5dc66381c1a4432b06ca3f81df216b}\label{structtiling_1_1DataMovementInfo_a2f5dc66381c1a4432b06ca3f81df216b}} 
+Meta\+Data\+Tile\+Occupancy {\bfseries expected\+\_\+metadata\+\_\+occupancy}
+\item 
+\mbox{\Hypertarget{structtiling_1_1DataMovementInfo_a6e67ea33148873a2c6a502b6aa1547d1}\label{structtiling_1_1DataMovementInfo_a6e67ea33148873a2c6a502b6aa1547d1}} 
+problem\+::\+Shape\+::\+Data\+Space\+ID {\bfseries dataspace\+\_\+id}
+\item 
+\mbox{\Hypertarget{structtiling_1_1DataMovementInfo_ae00343f7c19a342a462d831b6f0761f6}\label{structtiling_1_1DataMovementInfo_ae00343f7c19a342a462d831b6f0761f6}} 
+std\+::size\+\_\+t {\bfseries partition\+\_\+size}
+\item 
+\mbox{\Hypertarget{structtiling_1_1DataMovementInfo_a7f387e18ee34767c4ae92a79d45fe4ae}\label{structtiling_1_1DataMovementInfo_a7f387e18ee34767c4ae92a79d45fe4ae}} 
+double {\bfseries parent\+\_\+access\+\_\+share}
+\item 
+\mbox{\Hypertarget{structtiling_1_1DataMovementInfo_a9f72ba9c8bcbfd1d71c87381934a0d81}\label{structtiling_1_1DataMovementInfo_a9f72ba9c8bcbfd1d71c87381934a0d81}} 
+bool {\bfseries distributed\+\_\+multicast}
+\item 
+\mbox{\Hypertarget{structtiling_1_1DataMovementInfo_af496762c731e9bb7c80c7df684d01435}\label{structtiling_1_1DataMovementInfo_af496762c731e9bb7c80c7df684d01435}} 
+\mbox{\hyperlink{structAccessStatMatrix}{Access\+Stat\+Matrix}} {\bfseries access\+\_\+stats}
+\item 
+\mbox{\Hypertarget{structtiling_1_1DataMovementInfo_a1dfab562430226e15125346629c2bb73}\label{structtiling_1_1DataMovementInfo_a1dfab562430226e15125346629c2bb73}} 
+double {\bfseries content\+\_\+accesses}
+\item 
+\mbox{\Hypertarget{structtiling_1_1DataMovementInfo_a4125b76c8f31ab70b6265018613a81e3}\label{structtiling_1_1DataMovementInfo_a4125b76c8f31ab70b6265018613a81e3}} 
+std\+::uint64\+\_\+t {\bfseries fills}
+\item 
+\mbox{\Hypertarget{structtiling_1_1DataMovementInfo_af649985e7efcffccd18ade12ace69276}\label{structtiling_1_1DataMovementInfo_af649985e7efcffccd18ade12ace69276}} 
+std\+::uint64\+\_\+t {\bfseries reads}
+\item 
+\mbox{\Hypertarget{structtiling_1_1DataMovementInfo_a77d16fccea1eb2c8bc53c2b27d551f3d}\label{structtiling_1_1DataMovementInfo_a77d16fccea1eb2c8bc53c2b27d551f3d}} 
+std\+::uint64\+\_\+t {\bfseries updates}
+\item 
+\mbox{\Hypertarget{structtiling_1_1DataMovementInfo_a7fb82b26bbd8b2e4091bd66d9ae0ba6b}\label{structtiling_1_1DataMovementInfo_a7fb82b26bbd8b2e4091bd66d9ae0ba6b}} 
+double {\bfseries temporal\+\_\+reductions}
+\item 
+\mbox{\Hypertarget{structtiling_1_1DataMovementInfo_a6582260edee644b7fefc978c7e7327f0}\label{structtiling_1_1DataMovementInfo_a6582260edee644b7fefc978c7e7327f0}} 
+double {\bfseries link\+\_\+transfers}
+\item 
+\mbox{\Hypertarget{structtiling_1_1DataMovementInfo_a8f11a2970bb33f30fea6f9e6c3bf6423}\label{structtiling_1_1DataMovementInfo_a8f11a2970bb33f30fea6f9e6c3bf6423}} 
+double {\bfseries peer\+\_\+accesses}
+\item 
+\mbox{\Hypertarget{structtiling_1_1DataMovementInfo_ac9a6f19f1bdf4cf28807f081fb819ae6}\label{structtiling_1_1DataMovementInfo_ac9a6f19f1bdf4cf28807f081fb819ae6}} 
+double {\bfseries peer\+\_\+fills}
+\item 
+\mbox{\Hypertarget{structtiling_1_1DataMovementInfo_aa23a0872c3b61b28e8ac8bf0d16eb60b}\label{structtiling_1_1DataMovementInfo_aa23a0872c3b61b28e8ac8bf0d16eb60b}} 
+Per\+Tile\+Format\+Accesses {\bfseries format\+\_\+fills}
+\item 
+\mbox{\Hypertarget{structtiling_1_1DataMovementInfo_a0cfae39abcf36465ec5914072aa2ef40}\label{structtiling_1_1DataMovementInfo_a0cfae39abcf36465ec5914072aa2ef40}} 
+Per\+Tile\+Format\+Accesses {\bfseries format\+\_\+reads}
+\item 
+\mbox{\Hypertarget{structtiling_1_1DataMovementInfo_af2f1ff6ee603ef491cf2d78d38af0cd8}\label{structtiling_1_1DataMovementInfo_af2f1ff6ee603ef491cf2d78d38af0cd8}} 
+Per\+Tile\+Format\+Accesses {\bfseries format\+\_\+updates}
+\item 
+\mbox{\Hypertarget{structtiling_1_1DataMovementInfo_a728d0ee43c862940f67d9ffc5de4b32d}\label{structtiling_1_1DataMovementInfo_a728d0ee43c862940f67d9ffc5de4b32d}} 
+std\+::vector$<$ \mbox{\hyperlink{classloop_1_1Descriptor}{loop\+::\+Descriptor}} $>$ {\bfseries subnest}
+\item 
+\mbox{\Hypertarget{structtiling_1_1DataMovementInfo_af9b3462f954093ca1abec74e9cd33690}\label{structtiling_1_1DataMovementInfo_af9b3462f954093ca1abec74e9cd33690}} 
+std\+::uint64\+\_\+t {\bfseries replication\+\_\+factor}
+\item 
+\mbox{\Hypertarget{structtiling_1_1DataMovementInfo_ad60ad8156d3f7b59bdba20894714e547}\label{structtiling_1_1DataMovementInfo_ad60ad8156d3f7b59bdba20894714e547}} 
+double {\bfseries avg\+\_\+replication\+\_\+factor}
+\item 
+\mbox{\Hypertarget{structtiling_1_1DataMovementInfo_a1b7c390c4a41d2b7890a85aca8dec855}\label{structtiling_1_1DataMovementInfo_a1b7c390c4a41d2b7890a85aca8dec855}} 
+std\+::uint64\+\_\+t {\bfseries max\+\_\+replication\+\_\+factor}
+\item 
+\mbox{\Hypertarget{structtiling_1_1DataMovementInfo_a34ebb7a796b6a994d45138177835e311}\label{structtiling_1_1DataMovementInfo_a34ebb7a796b6a994d45138177835e311}} 
+std\+::uint64\+\_\+t {\bfseries max\+\_\+x\+\_\+expansion}
+\item 
+\mbox{\Hypertarget{structtiling_1_1DataMovementInfo_ad344af93e7278ebd72475303bbcbddd2}\label{structtiling_1_1DataMovementInfo_ad344af93e7278ebd72475303bbcbddd2}} 
+std\+::uint64\+\_\+t {\bfseries max\+\_\+y\+\_\+expansion}
+\item 
+\mbox{\Hypertarget{structtiling_1_1DataMovementInfo_a45061a867d5b16b6a8627421c24416a7}\label{structtiling_1_1DataMovementInfo_a45061a867d5b16b6a8627421c24416a7}} 
+std\+::uint64\+\_\+t {\bfseries fanout}
+\item 
+\mbox{\Hypertarget{structtiling_1_1DataMovementInfo_ac441b1169fb4042e6ca8a2a34ef7d6e2}\label{structtiling_1_1DataMovementInfo_ac441b1169fb4042e6ca8a2a34ef7d6e2}} 
+std\+::uint64\+\_\+t {\bfseries distributed\+\_\+fanout}
+\item 
+\mbox{\Hypertarget{structtiling_1_1DataMovementInfo_aeb568815660259b7d0aff78d1adc5a72}\label{structtiling_1_1DataMovementInfo_aeb568815660259b7d0aff78d1adc5a72}} 
+bool {\bfseries is\+\_\+on\+\_\+storage\+\_\+boundary}
+\item 
+\mbox{\Hypertarget{structtiling_1_1DataMovementInfo_ac9e508f6510b6037e0b30f6f2f57eea1}\label{structtiling_1_1DataMovementInfo_ac9e508f6510b6037e0b30f6f2f57eea1}} 
+bool {\bfseries is\+\_\+master\+\_\+spatial}
+\item 
+\mbox{\Hypertarget{structtiling_1_1DataMovementInfo_a556abc91550776bea2030d870603721b}\label{structtiling_1_1DataMovementInfo_a556abc91550776bea2030d870603721b}} 
+std\+::size\+\_\+t {\bfseries partition\+\_\+fraction\+\_\+denominator}
+\item 
+\mbox{\Hypertarget{structtiling_1_1DataMovementInfo_a3b4a68ae555198a796a7d83280aa8f6d}\label{structtiling_1_1DataMovementInfo_a3b4a68ae555198a796a7d83280aa8f6d}} 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classproblem_1_1DensityDistribution}{problem\+::\+Density\+Distribution}} $>$ {\bfseries tile\+\_\+density}
+\item 
+\mbox{\Hypertarget{structtiling_1_1DataMovementInfo_adfef6f04f7adcf2b408e9e33169d7520}\label{structtiling_1_1DataMovementInfo_adfef6f04f7adcf2b408e9e33169d7520}} 
+std\+::map$<$ std\+::string, std\+::uint64\+\_\+t $>$ {\bfseries fine\+\_\+grained\+\_\+data\+\_\+accesses}
+\item 
+\mbox{\Hypertarget{structtiling_1_1DataMovementInfo_a2adf92e4375712c7393d80c8983016a2}\label{structtiling_1_1DataMovementInfo_a2adf92e4375712c7393d80c8983016a2}} 
+std\+::map$<$ std\+::string, Per\+Tile\+Format\+Accesses $>$ {\bfseries fine\+\_\+grained\+\_\+format\+\_\+accesses}
+\item 
+\mbox{\Hypertarget{structtiling_1_1DataMovementInfo_a08c5d08c2baf3a4d369e6466d8fd067f}\label{structtiling_1_1DataMovementInfo_a08c5d08c2baf3a4d369e6466d8fd067f}} 
+double {\bfseries expected\+\_\+density}
+\item 
+\mbox{\Hypertarget{structtiling_1_1DataMovementInfo_a8f5f2090df34115420838e758d4144ff}\label{structtiling_1_1DataMovementInfo_a8f5f2090df34115420838e758d4144ff}} 
+bool {\bfseries compressed}
+\item 
+\mbox{\Hypertarget{structtiling_1_1DataMovementInfo_a1f1adca2f25797506cbdf96b422b91f9}\label{structtiling_1_1DataMovementInfo_a1f1adca2f25797506cbdf96b422b91f9}} 
+bool {\bfseries has\+\_\+metadata}
+\item 
+\mbox{\Hypertarget{structtiling_1_1DataMovementInfo_a394b22dbd09b96b36218cf349e56a298}\label{structtiling_1_1DataMovementInfo_a394b22dbd09b96b36218cf349e56a298}} 
+std\+::vector$<$ std\+::vector$<$ \mbox{\hyperlink{classloop_1_1Descriptor}{loop\+::\+Descriptor}} $>$ $>$ {\bfseries metadata\+\_\+subnest}
+\item 
+\mbox{\Hypertarget{structtiling_1_1DataMovementInfo_a9e053f190cacff3b8117dd70e7da7635}\label{structtiling_1_1DataMovementInfo_a9e053f190cacff3b8117dd70e7da7635}} 
+std\+::vector$<$ Point\+Set $>$ {\bfseries metadata\+\_\+subtile\+\_\+point\+\_\+set}
+\item 
+\mbox{\Hypertarget{structtiling_1_1DataMovementInfo_ad5ae714b0bf7542400d3b4c27be45d45}\label{structtiling_1_1DataMovementInfo_ad5ae714b0bf7542400d3b4c27be45d45}} 
+std\+::vector$<$ std\+::uint64\+\_\+t $>$ {\bfseries fiber\+\_\+shape}
+\item 
+\mbox{\Hypertarget{structtiling_1_1DataMovementInfo_ae630b98e1c09389c1b751408c1d0bd11}\label{structtiling_1_1DataMovementInfo_ae630b98e1c09389c1b751408c1d0bd11}} 
+double {\bfseries child\+\_\+level\+\_\+metadata\+\_\+occupancy\+\_\+ratio}
+\item 
+\mbox{\Hypertarget{structtiling_1_1DataMovementInfo_a3155d96280c15d93cd0784564aa484d6}\label{structtiling_1_1DataMovementInfo_a3155d96280c15d93cd0784564aa484d6}} 
+unsigned {\bfseries parent\+\_\+level}
+\item 
+\mbox{\Hypertarget{structtiling_1_1DataMovementInfo_ac853357165737add52334b020ed1fed6}\label{structtiling_1_1DataMovementInfo_ac853357165737add52334b020ed1fed6}} 
+std\+::string {\bfseries parent\+\_\+level\+\_\+name}
+\item 
+\mbox{\Hypertarget{structtiling_1_1DataMovementInfo_a8a4535ac0db148633ba7485fc3437f8e}\label{structtiling_1_1DataMovementInfo_a8a4535ac0db148633ba7485fc3437f8e}} 
+unsigned {\bfseries child\+\_\+level}
+\item 
+\mbox{\Hypertarget{structtiling_1_1DataMovementInfo_abe7b69c8fdd72df458adcc0f27faa30f}\label{structtiling_1_1DataMovementInfo_abe7b69c8fdd72df458adcc0f27faa30f}} 
+\mbox{\hyperlink{structtiling_1_1DataMovementInfo}{Data\+Movement\+Info}} $\ast$ {\bfseries child\+\_\+level\+\_\+ptr}
+\item 
+\mbox{\Hypertarget{structtiling_1_1DataMovementInfo_ac4b247e81e027e2b00d5460181f323ef}\label{structtiling_1_1DataMovementInfo_ac4b247e81e027e2b00d5460181f323ef}} 
+\mbox{\hyperlink{structtiling_1_1DataMovementInfo}{Data\+Movement\+Info}} $\ast$ {\bfseries parent\+\_\+level\+\_\+ptr}
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structtiling_1_1DataMovementInfo_ac98d07dd8f7b70e16ccb9a01abf56b9c}\label{structtiling_1_1DataMovementInfo_ac98d07dd8f7b70e16ccb9a01abf56b9c}} 
+class {\bfseries boost\+::serialization\+::access}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/loop-\/analysis/tiling-\/tile-\/info.\+hpp\item 
+src/loop-\/analysis/tiling-\/tile-\/info.\+cpp\end{DoxyCompactItemize}

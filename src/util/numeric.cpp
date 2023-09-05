@@ -34,7 +34,7 @@ using namespace boost::multiprecision;
 //------------------------------------
 //              Factors
 //------------------------------------
-
+// Integer square root： find the largest integer 'res' that 'res * res <= x'
 unsigned long Factors::ISqrt_(unsigned long x)
 {
   unsigned long op, res, one;
@@ -75,6 +75,8 @@ void Factors::CalculateAllFactors_()
 }
 
 // Return a vector of all order-way cofactor sets of n.
+// Split the factors in all_factors_ into order sets. For example, n is 8 and order
+// is 3, then the retval is {{1, 2, 4}, {1, 1, 8}}. And there may be some repetitions.
 std::vector<std::vector<unsigned long>>
 Factors::MultiplicativeSplitRecursive_(unsigned long n, int order)
 {

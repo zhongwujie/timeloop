@@ -1,0 +1,83 @@
+\hypertarget{classloop_1_1Nest}{}\doxysection{loop\+::Nest Class Reference}
+\label{classloop_1_1Nest}\index{loop::Nest@{loop::Nest}}
+
+
+A nest of loops.  
+
+
+
+
+{\ttfamily \#include $<$nest.\+hpp$>$}
+
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structloop_1_1Nest_1_1SkewDescriptor}{Skew\+Descriptor}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classloop_1_1Nest_a360065ab2f5e96f8521c91a1d6d4de09}\label{classloop_1_1Nest_a360065ab2f5e96f8521c91a1d6d4de09}} 
+bool {\bfseries operator==} (const \mbox{\hyperlink{classloop_1_1Nest}{Nest}} \&n) const
+\item 
+\mbox{\Hypertarget{classloop_1_1Nest_a168154014ac6ca2bddc80e3cf68ce872}\label{classloop_1_1Nest_a168154014ac6ca2bddc80e3cf68ce872}} 
+void {\bfseries Add\+Loop} (\mbox{\hyperlink{classloop_1_1Descriptor}{Descriptor}} descriptor)
+\item 
+\mbox{\Hypertarget{classloop_1_1Nest_a27749db19f283b1a2b35efc63e8b781f}\label{classloop_1_1Nest_a27749db19f283b1a2b35efc63e8b781f}} 
+void {\bfseries Add\+Loop} (problem\+::\+Shape\+::\+Flattened\+Dimension\+ID dimension, int start, int end, int stride, spacetime\+::\+Dimension spacetime\+\_\+dimension, int residual\+\_\+end=0)
+\item 
+\mbox{\Hypertarget{classloop_1_1Nest_ae242d6cd564893c594ce73bb6e98f0a6}\label{classloop_1_1Nest_ae242d6cd564893c594ce73bb6e98f0a6}} 
+bool {\bfseries Add\+Storage\+Tiling\+Boundary} ()
+\item 
+\mbox{\Hypertarget{classloop_1_1Nest_a3399918a49820c99ca3fb7f71c8183b8}\label{classloop_1_1Nest_a3399918a49820c99ca3fb7f71c8183b8}} 
+void {\bfseries Pretty\+Print} (std\+::ostream \&out, const std\+::vector$<$ std\+::string $>$ \&storage\+\_\+level\+\_\+names, const tiling\+::\+Nest\+Of\+Compound\+Masks \&mask\+\_\+nest, const std\+::vector$<$ \mbox{\hyperlink{classproblem_1_1PerDataSpace}{problem\+::\+Per\+Data\+Space}}$<$ std\+::uint64\+\_\+t $>$$>$ \&utilized\+\_\+capacities, const std\+::vector$<$ \mbox{\hyperlink{classproblem_1_1PerDataSpace}{problem\+::\+Per\+Data\+Space}}$<$ std\+::uint64\+\_\+t $>$$>$ \&tile\+\_\+sizes, const std\+::string \+\_\+indent=\char`\"{}\char`\"{})
+\item 
+\mbox{\Hypertarget{classloop_1_1Nest_a431b1be9c483cf22c531744ce5b2508a}\label{classloop_1_1Nest_a431b1be9c483cf22c531744ce5b2508a}} 
+void {\bfseries Print\+Whoop\+Nest} (std\+::ostream \&out, const std\+::vector$<$ std\+::string $>$ \&storage\+\_\+level\+\_\+names, const tiling\+::\+Nest\+Of\+Compound\+Masks \&mask\+\_\+nest, const std\+::vector$<$ \mbox{\hyperlink{classproblem_1_1PerDataSpace}{problem\+::\+Per\+Data\+Space}}$<$ std\+::uint64\+\_\+t $>$$>$ \&tile\+\_\+sizes, const std\+::vector$<$ \mbox{\hyperlink{classproblem_1_1PerDataSpace}{problem\+::\+Per\+Data\+Space}}$<$ std\+::uint64\+\_\+t $>$$>$ \&utilized\+\_\+instances)
+\item 
+\mbox{\Hypertarget{classloop_1_1Nest_a9181b810d7deb3496cb5b269f3367bf8}\label{classloop_1_1Nest_a9181b810d7deb3496cb5b269f3367bf8}} 
+std\+::string {\bfseries Print\+Compact} (const tiling\+::\+Nest\+Of\+Compound\+Masks \&mask\+\_\+nest)
+\item 
+\mbox{\Hypertarget{classloop_1_1Nest_a8b66b93692aa8271928775757232806c}\label{classloop_1_1Nest_a8b66b93692aa8271928775757232806c}} 
+void {\bfseries Print\+Tenssella} (std\+::ostream \&out, const tiling\+::\+Nest\+Of\+Compound\+Masks \&mask\+\_\+nest)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classloop_1_1Nest_a5bdbf0e865833f0ac63837e2955d4079}\label{classloop_1_1Nest_a5bdbf0e865833f0ac63837e2955d4079}} 
+std\+::vector$<$ \mbox{\hyperlink{classloop_1_1Descriptor}{Descriptor}} $>$ \mbox{\hyperlink{classloop_1_1Nest_a5bdbf0e865833f0ac63837e2955d4079}{loops}}
+\begin{DoxyCompactList}\small\item\em Loops in order or inner to outer. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classloop_1_1Nest_abcccac9ca54871aa2ecdc3fd7c0f7a68}\label{classloop_1_1Nest_abcccac9ca54871aa2ecdc3fd7c0f7a68}} 
+std\+::vector$<$ uint64\+\_\+t $>$ \mbox{\hyperlink{classloop_1_1Nest_abcccac9ca54871aa2ecdc3fd7c0f7a68}{storage\+\_\+tiling\+\_\+boundaries}}
+\begin{DoxyCompactList}\small\item\em Indices of loops just below storage levels. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classloop_1_1Nest_a2200c31c0fb82a2fef1815466b6cd9bb}\label{classloop_1_1Nest_a2200c31c0fb82a2fef1815466b6cd9bb}} 
+std\+::unordered\+\_\+map$<$ unsigned, \mbox{\hyperlink{structloop_1_1Nest_1_1SkewDescriptor}{Skew\+Descriptor}} $>$ {\bfseries skew\+\_\+descriptors}
+\item 
+\mbox{\Hypertarget{classloop_1_1Nest_a98c0f0b7c57bd101023fbc25fdd38d18}\label{classloop_1_1Nest_a98c0f0b7c57bd101023fbc25fdd38d18}} 
+std\+::unordered\+\_\+map$<$ unsigned, \mbox{\hyperlink{classproblem_1_1PerDataSpace}{problem\+::\+Per\+Data\+Space}}$<$ bool $>$ $>$ \mbox{\hyperlink{classloop_1_1Nest_a98c0f0b7c57bd101023fbc25fdd38d18}{no\+\_\+link\+\_\+transfer}}
+\begin{DoxyCompactList}\small\item\em A mapping from loop index to link transfer flags per data space. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classloop_1_1Nest_ad06471a438aba99fdf1f1c5d6120f98c}\label{classloop_1_1Nest_ad06471a438aba99fdf1f1c5d6120f98c}} 
+std\+::unordered\+\_\+map$<$ unsigned, \mbox{\hyperlink{classproblem_1_1PerDataSpace}{problem\+::\+Per\+Data\+Space}}$<$ bool $>$ $>$ {\bfseries no\+\_\+multicast}
+\item 
+\mbox{\Hypertarget{classloop_1_1Nest_a1b110a3a69a834a9b5d5c31106428746}\label{classloop_1_1Nest_a1b110a3a69a834a9b5d5c31106428746}} 
+std\+::unordered\+\_\+map$<$ unsigned, \mbox{\hyperlink{classproblem_1_1PerDataSpace}{problem\+::\+Per\+Data\+Space}}$<$ bool $>$ $>$ {\bfseries no\+\_\+temporal\+\_\+reuse}
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classloop_1_1Nest_a62b44520fa350388ba3b64bbfc36c5d7}\label{classloop_1_1Nest_a62b44520fa350388ba3b64bbfc36c5d7}} 
+std\+::ostream \& {\bfseries operator$<$$<$} (std\+::ostream \&out, const \mbox{\hyperlink{classloop_1_1Nest}{Nest}} \&nest)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A nest of loops. 
+
+Loops are organized in order of inner to outer.
+
+Also holds storage boundaries (i.\+e., indices of loops just under storage levels), skew descriptors, link transfer, multicast, and temporal reuse flags. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/mapping/nest.\+hpp\item 
+src/mapping/nest.\+cpp\end{DoxyCompactItemize}

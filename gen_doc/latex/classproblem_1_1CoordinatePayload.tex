@@ -1,0 +1,63 @@
+\hypertarget{classproblem_1_1CoordinatePayload}{}\doxysection{problem\+::Coordinate\+Payload Class Reference}
+\label{classproblem_1_1CoordinatePayload}\index{problem::CoordinatePayload@{problem::CoordinatePayload}}
+
+
+Inheritance diagram for problem\+::Coordinate\+Payload\+:
+% FIG 0
+
+
+Collaboration diagram for problem\+::Coordinate\+Payload\+:
+% FIG 1
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structproblem_1_1CoordinatePayload_1_1Specs}{Specs}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classproblem_1_1CoordinatePayload_aff8e41b4489b754a17fed204c2155e89}\label{classproblem_1_1CoordinatePayload_aff8e41b4489b754a17fed204c2155e89}} 
+{\footnotesize template$<$class Archive $>$ }\\void {\bfseries serialize} (Archive \&ar, const unsigned int version=0)
+\item 
+\mbox{\Hypertarget{classproblem_1_1CoordinatePayload_aa8731822956701c04274f92456225060}\label{classproblem_1_1CoordinatePayload_aa8731822956701c04274f92456225060}} 
+{\bfseries Coordinate\+Payload} (const \mbox{\hyperlink{structproblem_1_1CoordinatePayload_1_1Specs}{Specs}} \&specs)
+\item 
+\mbox{\Hypertarget{classproblem_1_1CoordinatePayload_a641d728e26a2d19a025951d102692ab1}\label{classproblem_1_1CoordinatePayload_a641d728e26a2d19a025951d102692ab1}} 
+\mbox{\hyperlink{structproblem_1_1PerRankMetaDataTileOccupancy}{Per\+Rank\+Meta\+Data\+Tile\+Occupancy}} {\bfseries Get\+Occupancy} (const \mbox{\hyperlink{structproblem_1_1MetaDataOccupancyQuery}{Meta\+Data\+Occupancy\+Query}} \&query) const
+\item 
+\mbox{\Hypertarget{classproblem_1_1CoordinatePayload_a184bdbb560fc441fa07138abb4d37644}\label{classproblem_1_1CoordinatePayload_a184bdbb560fc441fa07138abb4d37644}} 
+bool {\bfseries Rank\+Compressed} () const
+\item 
+\mbox{\Hypertarget{classproblem_1_1CoordinatePayload_ab457480a3de23234b76251a7cbb6afb9}\label{classproblem_1_1CoordinatePayload_ab457480a3de23234b76251a7cbb6afb9}} 
+bool {\bfseries Coordinates\+Implicit} () const
+\item 
+\mbox{\Hypertarget{classproblem_1_1CoordinatePayload_a65a28dd51dfc0d39c8acc3995dd6fe0f}\label{classproblem_1_1CoordinatePayload_a65a28dd51dfc0d39c8acc3995dd6fe0f}} 
+std\+::vector$<$ problem\+::\+Shape\+::\+Flattened\+Dimension\+ID $>$ {\bfseries Get\+Dimension\+I\+Ds} () const
+\item 
+\mbox{\Hypertarget{classproblem_1_1CoordinatePayload_ad2d0b58f5dea60518f47f51ec0778eba}\label{classproblem_1_1CoordinatePayload_ad2d0b58f5dea60518f47f51ec0778eba}} 
+std\+::string {\bfseries Get\+Format\+Name} () const
+\item 
+\mbox{\Hypertarget{classproblem_1_1CoordinatePayload_a9fc8aa23e82d02e04053267aa010b2fb}\label{classproblem_1_1CoordinatePayload_a9fc8aa23e82d02e04053267aa010b2fb}} 
+bool {\bfseries Meta\+Data\+Implicit\+As\+Lowest\+Rank} () const
+\item 
+\mbox{\Hypertarget{classproblem_1_1CoordinatePayload_a0ab5b7a1da7d2361cafff3407f79df11}\label{classproblem_1_1CoordinatePayload_a0ab5b7a1da7d2361cafff3407f79df11}} 
+const \mbox{\hyperlink{structproblem_1_1MetaDataFormatSpecs}{Meta\+Data\+Format\+Specs}} \& {\bfseries Get\+Specs} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classproblem_1_1CoordinatePayload_a8a864e1b23acd5ffb8cb17782b7b5c0e}\label{classproblem_1_1CoordinatePayload_a8a864e1b23acd5ffb8cb17782b7b5c0e}} 
+static \mbox{\hyperlink{structproblem_1_1CoordinatePayload_1_1Specs}{Specs}} {\bfseries Parse\+Specs} (\mbox{\hyperlink{classconfig_1_1CompoundConfigNode}{config\+::\+Compound\+Config\+Node}} metadata\+\_\+config)
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classproblem_1_1CoordinatePayload_ac98d07dd8f7b70e16ccb9a01abf56b9c}\label{classproblem_1_1CoordinatePayload_ac98d07dd8f7b70e16ccb9a01abf56b9c}} 
+class {\bfseries boost\+::serialization\+::access}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/workload/format-\/models/coordinate-\/payload.\+hpp\item 
+src/workload/format-\/models/coordinate-\/payload.\+cpp\end{DoxyCompactItemize}

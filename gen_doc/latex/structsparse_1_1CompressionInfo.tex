@@ -1,0 +1,44 @@
+\hypertarget{structsparse_1_1CompressionInfo}{}\doxysection{sparse\+::Compression\+Info Struct Reference}
+\label{structsparse_1_1CompressionInfo}\index{sparse::CompressionInfo@{sparse::CompressionInfo}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structsparse_1_1CompressionInfo_abe4fa03069ff5d87f031d002f7ea5db6}\label{structsparse_1_1CompressionInfo_abe4fa03069ff5d87f031d002f7ea5db6}} 
+bool {\bfseries Get\+Data\+Space\+Compression\+Info} (unsigned level, unsigned pv, \mbox{\hyperlink{structsparse_1_1PerDataSpaceCompressionInfo}{Per\+Data\+Space\+Compression\+Info}} \&info)
+\item 
+\mbox{\Hypertarget{structsparse_1_1CompressionInfo_a33a9f8c2d1d5e3f5a65ea4746a9bcf09}\label{structsparse_1_1CompressionInfo_a33a9f8c2d1d5e3f5a65ea4746a9bcf09}} 
+bool {\bfseries Get\+Storage\+Level\+Compression\+Info} (unsigned level, Per\+Storage\+Level\+Compression\+Info \&info)
+\item 
+\mbox{\Hypertarget{structsparse_1_1CompressionInfo_a9917f692ce574b25b63e4fb014a792cb}\label{structsparse_1_1CompressionInfo_a9917f692ce574b25b63e4fb014a792cb}} 
+bool {\bfseries Get\+Data\+Space\+Compressed} (unsigned level, unsigned pv)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structsparse_1_1CompressionInfo_afa5a3dc3c2d9941d4adb33fd35ccf01e}\label{structsparse_1_1CompressionInfo_afa5a3dc3c2d9941d4adb33fd35ccf01e}} 
+std\+::map$<$ unsigned, Per\+Storage\+Level\+Compression\+Info $>$ {\bfseries per\+\_\+level\+\_\+info\+\_\+map}
+\item 
+\mbox{\Hypertarget{structsparse_1_1CompressionInfo_a77c4d09f2043f87d8df3a04c339d972f}\label{structsparse_1_1CompressionInfo_a77c4d09f2043f87d8df3a04c339d972f}} 
+std\+::vector$<$ \mbox{\hyperlink{classproblem_1_1PerDataSpace}{problem\+::\+Per\+Data\+Space}}$<$ bool $>$ $>$ {\bfseries has\+\_\+metadata\+\_\+masks}
+\item 
+\mbox{\Hypertarget{structsparse_1_1CompressionInfo_a0ceaf03dd2a2ae6bd284bef2758784bb}\label{structsparse_1_1CompressionInfo_a0ceaf03dd2a2ae6bd284bef2758784bb}} 
+std\+::vector$<$ \mbox{\hyperlink{classproblem_1_1PerDataSpace}{problem\+::\+Per\+Data\+Space}}$<$ bool $>$ $>$ {\bfseries compressed\+\_\+masks}
+\item 
+\mbox{\Hypertarget{structsparse_1_1CompressionInfo_a53a5be38b03cf6a56746769bcbcaa3b1}\label{structsparse_1_1CompressionInfo_a53a5be38b03cf6a56746769bcbcaa3b1}} 
+std\+::vector$<$ bool $>$ {\bfseries tile\+\_\+partition\+\_\+supported\+\_\+masks}
+\item 
+\mbox{\Hypertarget{structsparse_1_1CompressionInfo_a05c8d47744dfc4f63994b04832edfa10}\label{structsparse_1_1CompressionInfo_a05c8d47744dfc4f63994b04832edfa10}} 
+std\+::vector$<$ bool $>$ {\bfseries decompression\+\_\+supported\+\_\+masks}
+\item 
+\mbox{\Hypertarget{structsparse_1_1CompressionInfo_a931ebd9d9a3de8b9ba163eff2dbc9039}\label{structsparse_1_1CompressionInfo_a931ebd9d9a3de8b9ba163eff2dbc9039}} 
+std\+::vector$<$ bool $>$ {\bfseries compression\+\_\+supported\+\_\+masks}
+\item 
+\mbox{\Hypertarget{structsparse_1_1CompressionInfo_a4cbad78b86cd6657e6b776ff6bd3f39d}\label{structsparse_1_1CompressionInfo_a4cbad78b86cd6657e6b776ff6bd3f39d}} 
+bool {\bfseries all\+\_\+ranks\+\_\+default\+\_\+dense}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/model/sparse-\/optimization-\/info.\+hpp\item 
+src/model/sparse-\/optimization-\/info.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,54 @@
+\hypertarget{classmapspace_1_1MapSpace}{}\doxysection{mapspace\+::Map\+Space Class Reference}
+\label{classmapspace_1_1MapSpace}\index{mapspace::MapSpace@{mapspace::MapSpace}}
+
+
+Inheritance diagram for mapspace\+::Map\+Space\+:
+% FIG 0
+
+
+Collaboration diagram for mapspace\+::Map\+Space\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmapspace_1_1MapSpace_a7eaa99f276f4810b42001eb0d90b1fb3}\label{classmapspace_1_1MapSpace_a7eaa99f276f4810b42001eb0d90b1fb3}} 
+{\bfseries Map\+Space} (\mbox{\hyperlink{structmodel_1_1Engine_1_1Specs}{model\+::\+Engine\+::\+Specs}} arch\+\_\+specs, const \mbox{\hyperlink{classproblem_1_1Workload}{problem\+::\+Workload}} \&workload)
+\item 
+\mbox{\Hypertarget{classmapspace_1_1MapSpace_a81f026d3fbb3d83a19c697a9b9d42745}\label{classmapspace_1_1MapSpace_a81f026d3fbb3d83a19c697a9b9d42745}} 
+virtual std\+::vector$<$ \mbox{\hyperlink{classmapspace_1_1MapSpace}{Map\+Space}} $\ast$ $>$ {\bfseries Split} (std\+::uint64\+\_\+t num\+\_\+splits)=0
+\item 
+\mbox{\Hypertarget{classmapspace_1_1MapSpace_a39cef1c37ffcd55198f571b1748852dd}\label{classmapspace_1_1MapSpace_a39cef1c37ffcd55198f571b1748852dd}} 
+virtual void {\bfseries Init\+Pruned} (uint128\+\_\+t local\+\_\+index\+\_\+factorization\+\_\+id)=0
+\item 
+\mbox{\Hypertarget{classmapspace_1_1MapSpace_a2300d6829e430635e8f141922c26617b}\label{classmapspace_1_1MapSpace_a2300d6829e430635e8f141922c26617b}} 
+virtual std\+::vector$<$ \mbox{\hyperlink{structmapspace_1_1Status}{Status}} $>$ {\bfseries Construct\+Mapping} (\mbox{\hyperlink{classCartesianCounter}{ID}} mapping\+\_\+id, \mbox{\hyperlink{structMapping}{Mapping}} $\ast$mapping, bool break\+\_\+on\+\_\+failure=true)=0
+\item 
+\mbox{\Hypertarget{classmapspace_1_1MapSpace_a36b5c97081c844c30a8b6bc7f0592da8}\label{classmapspace_1_1MapSpace_a36b5c97081c844c30a8b6bc7f0592da8}} 
+std\+::vector$<$ \mbox{\hyperlink{structmapspace_1_1Status}{Status}} $>$ {\bfseries Construct\+Mapping} (const uint128\+\_\+t mapping\+\_\+id, \mbox{\hyperlink{structMapping}{Mapping}} $\ast$mapping, bool break\+\_\+on\+\_\+failure=true)
+\item 
+\mbox{\Hypertarget{classmapspace_1_1MapSpace_a7ac4fafd2da6b7d0b320a5bf25421bea}\label{classmapspace_1_1MapSpace_a7ac4fafd2da6b7d0b320a5bf25421bea}} 
+uint128\+\_\+t {\bfseries Size} (Dimension dim)
+\item 
+\mbox{\Hypertarget{classmapspace_1_1MapSpace_a8bdf55791697e98a502fe8fc59e1a8ad}\label{classmapspace_1_1MapSpace_a8bdf55791697e98a502fe8fc59e1a8ad}} 
+uint128\+\_\+t {\bfseries Size} ()
+\item 
+\mbox{\Hypertarget{classmapspace_1_1MapSpace_a4602961f7481a307d1973f1d7a52d298}\label{classmapspace_1_1MapSpace_a4602961f7481a307d1973f1d7a52d298}} 
+std\+::array$<$ uint128\+\_\+t, int(Dimension\+::\+Num)$>$ {\bfseries All\+Sizes} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmapspace_1_1MapSpace_a47bd489468479e2de427bc3a87795fee}\label{classmapspace_1_1MapSpace_a47bd489468479e2de427bc3a87795fee}} 
+\mbox{\hyperlink{structmodel_1_1Engine_1_1Specs}{model\+::\+Engine\+::\+Specs}} {\bfseries arch\+\_\+specs\+\_\+}
+\item 
+\mbox{\Hypertarget{classmapspace_1_1MapSpace_ae0e40ca24d1379b06ae175a62a6b1408}\label{classmapspace_1_1MapSpace_ae0e40ca24d1379b06ae175a62a6b1408}} 
+const \mbox{\hyperlink{classproblem_1_1Workload}{problem\+::\+Workload}} \& {\bfseries workload\+\_\+}
+\item 
+\mbox{\Hypertarget{classmapspace_1_1MapSpace_a3d06c8ddd2836725c2d6a096750ba27d}\label{classmapspace_1_1MapSpace_a3d06c8ddd2836725c2d6a096750ba27d}} 
+std\+::array$<$ uint128\+\_\+t, int(Dimension\+::\+Num)$>$ {\bfseries size\+\_\+}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/mapspaces/mapspace-\/base.\+hpp\end{DoxyCompactItemize}

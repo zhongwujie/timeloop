@@ -1,0 +1,60 @@
+\hypertarget{structproblem_1_1MetaDataFormatSpecs}{}\doxysection{problem\+::Meta\+Data\+Format\+Specs Struct Reference}
+\label{structproblem_1_1MetaDataFormatSpecs}\index{problem::MetaDataFormatSpecs@{problem::MetaDataFormatSpecs}}
+
+
+Inheritance diagram for problem\+::Meta\+Data\+Format\+Specs\+:
+% FIG 0
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structproblem_1_1MetaDataFormatSpecs_ae93dce52d83757ac4e2e6a320fed6b68}\label{structproblem_1_1MetaDataFormatSpecs_ae93dce52d83757ac4e2e6a320fed6b68}} 
+virtual std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structproblem_1_1MetaDataFormatSpecs}{Meta\+Data\+Format\+Specs}} $>$ {\bfseries Clone} () const =0
+\item 
+\mbox{\Hypertarget{structproblem_1_1MetaDataFormatSpecs_afae66316347c12597d6bf2417b0dbabe}\label{structproblem_1_1MetaDataFormatSpecs_afae66316347c12597d6bf2417b0dbabe}} 
+virtual const std\+::string {\bfseries Name} () const =0
+\item 
+\mbox{\Hypertarget{structproblem_1_1MetaDataFormatSpecs_a383039ddecea0f7f69261902684c9f38}\label{structproblem_1_1MetaDataFormatSpecs_a383039ddecea0f7f69261902684c9f38}} 
+virtual bool {\bfseries Rank\+Compressed} () const =0
+\item 
+\mbox{\Hypertarget{structproblem_1_1MetaDataFormatSpecs_af1d98ea115411914456ef0250d7aa92c}\label{structproblem_1_1MetaDataFormatSpecs_af1d98ea115411914456ef0250d7aa92c}} 
+virtual std\+::vector$<$ problem\+::\+Shape\+::\+Flattened\+Dimension\+ID $>$ {\bfseries Dimension\+I\+Ds} () const =0
+\item 
+\mbox{\Hypertarget{structproblem_1_1MetaDataFormatSpecs_ae07b60b6445446f97f72ce40669c15e3}\label{structproblem_1_1MetaDataFormatSpecs_ae07b60b6445446f97f72ce40669c15e3}} 
+virtual std\+::uint32\+\_\+t {\bfseries Meta\+Data\+Word\+Bits} () const =0
+\item 
+\mbox{\Hypertarget{structproblem_1_1MetaDataFormatSpecs_ada27b9e8eec9bd5e149fa3b7e539b27f}\label{structproblem_1_1MetaDataFormatSpecs_ada27b9e8eec9bd5e149fa3b7e539b27f}} 
+virtual std\+::uint32\+\_\+t {\bfseries Payload\+Word\+Bits} () const =0
+\item 
+\mbox{\Hypertarget{structproblem_1_1MetaDataFormatSpecs_af7a72707ad91a51eb5a6c43e75ac3124}\label{structproblem_1_1MetaDataFormatSpecs_af7a72707ad91a51eb5a6c43e75ac3124}} 
+virtual void {\bfseries Set\+Meta\+Data\+Word\+Bits} (std\+::uint32\+\_\+t word\+\_\+bits)=0
+\item 
+\mbox{\Hypertarget{structproblem_1_1MetaDataFormatSpecs_a408a2aaa0a822eb97a2c5aa2134e6751}\label{structproblem_1_1MetaDataFormatSpecs_a408a2aaa0a822eb97a2c5aa2134e6751}} 
+virtual void {\bfseries Set\+Payload\+Word\+Bits} (std\+::uint32\+\_\+t word\+\_\+bits)=0
+\item 
+\mbox{\Hypertarget{structproblem_1_1MetaDataFormatSpecs_ac711c6f339f61ad337bb3cbe22c73390}\label{structproblem_1_1MetaDataFormatSpecs_ac711c6f339f61ad337bb3cbe22c73390}} 
+{\footnotesize template$<$class Archive $>$ }\\void {\bfseries serialize} (Archive \&ar, const unsigned int version=0)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structproblem_1_1MetaDataFormatSpecs_a4d2b5a8a10e02bdaedd0af2c1a186518}\label{structproblem_1_1MetaDataFormatSpecs_a4d2b5a8a10e02bdaedd0af2c1a186518}} 
+std\+::string {\bfseries name} = \char`\"{}U\+N\+S\+ET\char`\"{}
+\item 
+\mbox{\Hypertarget{structproblem_1_1MetaDataFormatSpecs_a5a20ffba928e32634f8d65028b4102f3}\label{structproblem_1_1MetaDataFormatSpecs_a5a20ffba928e32634f8d65028b4102f3}} 
+std\+::uint32\+\_\+t {\bfseries payload\+\_\+word\+\_\+bits} = std\+::numeric\+\_\+limits$<$std\+::uint32\+\_\+t$>$\+::max()
+\item 
+\mbox{\Hypertarget{structproblem_1_1MetaDataFormatSpecs_acc55fc96c8127df678f909366b928967}\label{structproblem_1_1MetaDataFormatSpecs_acc55fc96c8127df678f909366b928967}} 
+std\+::uint32\+\_\+t {\bfseries metadata\+\_\+word\+\_\+bits} = std\+::numeric\+\_\+limits$<$std\+::uint32\+\_\+t$>$\+::max()
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structproblem_1_1MetaDataFormatSpecs_ac98d07dd8f7b70e16ccb9a01abf56b9c}\label{structproblem_1_1MetaDataFormatSpecs_ac98d07dd8f7b70e16ccb9a01abf56b9c}} 
+class {\bfseries boost\+::serialization\+::access}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/workload/format-\/models/metadata-\/format.\+hpp\item 
+src/workload/format-\/models/metadata-\/format.\+cpp\end{DoxyCompactItemize}

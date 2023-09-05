@@ -1,0 +1,117 @@
+\hypertarget{classmodel_1_1Topology}{}\doxysection{model\+::Topology Class Reference}
+\label{classmodel_1_1Topology}\index{model::Topology@{model::Topology}}
+
+
+Inheritance diagram for model\+::Topology\+:
+% FIG 0
+
+
+Collaboration diagram for model\+::Topology\+:
+% FIG 1
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classmodel_1_1Topology_1_1Specs}{Specs}}
+\item 
+struct \mbox{\hyperlink{structmodel_1_1Topology_1_1Stats}{Stats}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmodel_1_1Topology_a87aa0e7d9da0fc8bca2c0753267a4a6d}\label{classmodel_1_1Topology_a87aa0e7d9da0fc8bca2c0753267a4a6d}} 
+{\bfseries Topology} (const \mbox{\hyperlink{classmodel_1_1Topology}{Topology}} \&other)
+\item 
+\mbox{\Hypertarget{classmodel_1_1Topology_a39a14ac2b565cace352f67926ac7beab}\label{classmodel_1_1Topology_a39a14ac2b565cace352f67926ac7beab}} 
+\mbox{\hyperlink{classmodel_1_1Topology}{Topology}} \& {\bfseries operator=} (\mbox{\hyperlink{classmodel_1_1Topology}{Topology}} other)
+\item 
+\mbox{\Hypertarget{classmodel_1_1Topology_a23c194d78b360d71297e181a5e5f2696}\label{classmodel_1_1Topology_a23c194d78b360d71297e181a5e5f2696}} 
+void {\bfseries Spec} (const \mbox{\hyperlink{classmodel_1_1Topology_1_1Specs}{Specs}} \&specs)
+\item 
+\mbox{\Hypertarget{classmodel_1_1Topology_a16b127c3de0d4497d6da5a877de0712f}\label{classmodel_1_1Topology_a16b127c3de0d4497d6da5a877de0712f}} 
+void {\bfseries Reset} ()
+\item 
+\mbox{\Hypertarget{classmodel_1_1Topology_a770b4275099a5074905e78a6c5920a75}\label{classmodel_1_1Topology_a770b4275099a5074905e78a6c5920a75}} 
+unsigned {\bfseries Num\+Levels} () const
+\item 
+\mbox{\Hypertarget{classmodel_1_1Topology_a6481152cf8a2c6e5bb2aaf826ab82ab0}\label{classmodel_1_1Topology_a6481152cf8a2c6e5bb2aaf826ab82ab0}} 
+unsigned {\bfseries Num\+Storage\+Levels} () const
+\item 
+\mbox{\Hypertarget{classmodel_1_1Topology_a3f06b293b1e22b5ae37a163344661ea3}\label{classmodel_1_1Topology_a3f06b293b1e22b5ae37a163344661ea3}} 
+unsigned {\bfseries Num\+Networks} () const
+\item 
+\mbox{\Hypertarget{classmodel_1_1Topology_a7da7bd1487fbb69c2f3bfc4a2e89c0d8}\label{classmodel_1_1Topology_a7da7bd1487fbb69c2f3bfc4a2e89c0d8}} 
+std\+::vector$<$ \mbox{\hyperlink{structmodel_1_1EvalStatus}{Eval\+Status}} $>$ {\bfseries Pre\+Evaluation\+Check} (const \mbox{\hyperlink{structMapping}{Mapping}} \&mapping, \mbox{\hyperlink{classanalysis_1_1NestAnalysis}{analysis\+::\+Nest\+Analysis}} $\ast$analysis, \mbox{\hyperlink{structsparse_1_1SparseOptimizationInfo}{sparse\+::\+Sparse\+Optimization\+Info}} $\ast$sparse\+\_\+optimizations, bool break\+\_\+on\+\_\+failure)
+\item 
+\mbox{\Hypertarget{classmodel_1_1Topology_adcacbe49f693c4e4d03ff31aa0bad86d}\label{classmodel_1_1Topology_adcacbe49f693c4e4d03ff31aa0bad86d}} 
+std\+::vector$<$ \mbox{\hyperlink{structmodel_1_1EvalStatus}{Eval\+Status}} $>$ {\bfseries Evaluate} (\mbox{\hyperlink{structMapping}{Mapping}} \&mapping, \mbox{\hyperlink{classanalysis_1_1NestAnalysis}{analysis\+::\+Nest\+Analysis}} $\ast$analysis, \mbox{\hyperlink{structsparse_1_1SparseOptimizationInfo}{sparse\+::\+Sparse\+Optimization\+Info}} $\ast$sparse\+\_\+optimizations, bool break\+\_\+on\+\_\+failure)
+\item 
+\mbox{\Hypertarget{classmodel_1_1Topology_a634b120e8ce291a7824714b285455534}\label{classmodel_1_1Topology_a634b120e8ce291a7824714b285455534}} 
+const \mbox{\hyperlink{structmodel_1_1Topology_1_1Stats}{Stats}} \& {\bfseries Get\+Stats} () const
+\item 
+\mbox{\Hypertarget{classmodel_1_1Topology_add16fbc56294614b0322ebeac77a3ac0}\label{classmodel_1_1Topology_add16fbc56294614b0322ebeac77a3ac0}} 
+const \mbox{\hyperlink{classmodel_1_1Topology_1_1Specs}{Specs}} \& {\bfseries Get\+Specs} () const
+\item 
+\mbox{\Hypertarget{classmodel_1_1Topology_ab3aa0526677bbe8bc122db293e3b8380}\label{classmodel_1_1Topology_ab3aa0526677bbe8bc122db293e3b8380}} 
+double {\bfseries Energy} () const
+\item 
+\mbox{\Hypertarget{classmodel_1_1Topology_a8d30944a61a8321b6687f8cbd9963966}\label{classmodel_1_1Topology_a8d30944a61a8321b6687f8cbd9963966}} 
+double {\bfseries Area} () const
+\item 
+\mbox{\Hypertarget{classmodel_1_1Topology_a79f68b0073acf39f256e11c34987d639}\label{classmodel_1_1Topology_a79f68b0073acf39f256e11c34987d639}} 
+std\+::uint64\+\_\+t {\bfseries Cycles} () const
+\item 
+\mbox{\Hypertarget{classmodel_1_1Topology_a868d45513149631b1747ddba554ee3c5}\label{classmodel_1_1Topology_a868d45513149631b1747ddba554ee3c5}} 
+double {\bfseries Utilization} () const
+\item 
+\mbox{\Hypertarget{classmodel_1_1Topology_ac271f8ff06e5df3cb3c128caa0434bdb}\label{classmodel_1_1Topology_ac271f8ff06e5df3cb3c128caa0434bdb}} 
+std\+::vector$<$ \mbox{\hyperlink{classproblem_1_1PerDataSpace}{problem\+::\+Per\+Data\+Space}}$<$ std\+::uint64\+\_\+t $>$ $>$ {\bfseries Tile\+Sizes} () const
+\item 
+\mbox{\Hypertarget{classmodel_1_1Topology_ac4619419f4c84d427e1a6c41d61db97d}\label{classmodel_1_1Topology_ac4619419f4c84d427e1a6c41d61db97d}} 
+std\+::vector$<$ \mbox{\hyperlink{classproblem_1_1PerDataSpace}{problem\+::\+Per\+Data\+Space}}$<$ std\+::uint64\+\_\+t $>$ $>$ {\bfseries Utilized\+Capacities} () const
+\item 
+\mbox{\Hypertarget{classmodel_1_1Topology_a86e7fc26ff9140399de75a895136a6b9}\label{classmodel_1_1Topology_a86e7fc26ff9140399de75a895136a6b9}} 
+std\+::vector$<$ \mbox{\hyperlink{classproblem_1_1PerDataSpace}{problem\+::\+Per\+Data\+Space}}$<$ std\+::uint64\+\_\+t $>$ $>$ {\bfseries Utilized\+Instances} () const
+\item 
+\mbox{\Hypertarget{classmodel_1_1Topology_a3d869312467220d1171de7ca8bb2cb54}\label{classmodel_1_1Topology_a3d869312467220d1171de7ca8bb2cb54}} 
+std\+::uint64\+\_\+t {\bfseries Algorithmic\+Computes} () const
+\item 
+\mbox{\Hypertarget{classmodel_1_1Topology_a55bd6802cb773da7a90da815c3eb14b2}\label{classmodel_1_1Topology_a55bd6802cb773da7a90da815c3eb14b2}} 
+std\+::uint64\+\_\+t {\bfseries Actual\+Computes} () const
+\item 
+\mbox{\Hypertarget{classmodel_1_1Topology_aea1e75a21dac57753d42c7504559213c}\label{classmodel_1_1Topology_aea1e75a21dac57753d42c7504559213c}} 
+std\+::uint64\+\_\+t {\bfseries Last\+Level\+Accesses} () const
+\item 
+\mbox{\Hypertarget{classmodel_1_1Topology_a02fcd1549a079ec0173631976500686c}\label{classmodel_1_1Topology_a02fcd1549a079ec0173631976500686c}} 
+void {\bfseries Print\+O\+A\+V\+ES} (std\+::ostream \&out, \mbox{\hyperlink{structMapping}{Mapping}} \&mapping, bool log\+\_\+oaves\+\_\+mappings, std\+::string oaves\+\_\+prefix, unsigned thread\+\_\+id) const
+\item 
+\mbox{\Hypertarget{classmodel_1_1Topology_a2ed1bbba53c71eedb4800480f19f3d01}\label{classmodel_1_1Topology_a2ed1bbba53c71eedb4800480f19f3d01}} 
+void {\bfseries Output\+O\+A\+V\+E\+S\+Mapping\+Y\+A\+ML} (\mbox{\hyperlink{structMapping}{Mapping}} \&mapping, std\+::string map\+\_\+yaml\+\_\+file\+\_\+name) const
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmodel_1_1Topology_a0b4caadbc2990ae10bbcd84aa66d56c3}\label{classmodel_1_1Topology_a0b4caadbc2990ae10bbcd84aa66d56c3}} 
+static \mbox{\hyperlink{classmodel_1_1Topology_1_1Specs}{Specs}} {\bfseries Parse\+Specs} (\mbox{\hyperlink{classconfig_1_1CompoundConfigNode}{config\+::\+Compound\+Config\+Node}} setting, \mbox{\hyperlink{classconfig_1_1CompoundConfigNode}{config\+::\+Compound\+Config\+Node}} arithmetic\+\_\+specs, bool is\+\_\+sparse\+\_\+topology)
+\item 
+\mbox{\Hypertarget{classmodel_1_1Topology_a3c24092fff05b9c09b8670a21c7df885}\label{classmodel_1_1Topology_a3c24092fff05b9c09b8670a21c7df885}} 
+static \mbox{\hyperlink{classmodel_1_1Topology_1_1Specs}{Specs}} {\bfseries Parse\+Tree\+Specs} (\mbox{\hyperlink{classconfig_1_1CompoundConfigNode}{config\+::\+Compound\+Config\+Node}} design\+Root, bool is\+\_\+sparse\+\_\+topology)
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmodel_1_1Topology_ac98d07dd8f7b70e16ccb9a01abf56b9c}\label{classmodel_1_1Topology_ac98d07dd8f7b70e16ccb9a01abf56b9c}} 
+class {\bfseries boost\+::serialization\+::access}
+\item 
+\mbox{\Hypertarget{classmodel_1_1Topology_abcf4e19fa21b02acc1cf86f9dea32292}\label{classmodel_1_1Topology_abcf4e19fa21b02acc1cf86f9dea32292}} 
+void {\bfseries swap} (\mbox{\hyperlink{classmodel_1_1Topology}{Topology}} \&first, \mbox{\hyperlink{classmodel_1_1Topology}{Topology}} \&second)
+\item 
+\mbox{\Hypertarget{classmodel_1_1Topology_ae808e8e3c2601e443475b6fe6e106bc4}\label{classmodel_1_1Topology_ae808e8e3c2601e443475b6fe6e106bc4}} 
+std\+::ostream \& {\bfseries operator$<$$<$} (std\+::ostream \&out, const \mbox{\hyperlink{classmodel_1_1Topology}{Topology}} \&sh)
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/model/topology.\+hpp\item 
+src/model/topology.\+cpp\end{DoxyCompactItemize}

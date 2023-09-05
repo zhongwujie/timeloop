@@ -1,0 +1,63 @@
+\hypertarget{classproblem_1_1RunLengthEncoding}{}\doxysection{problem\+::Run\+Length\+Encoding Class Reference}
+\label{classproblem_1_1RunLengthEncoding}\index{problem::RunLengthEncoding@{problem::RunLengthEncoding}}
+
+
+Inheritance diagram for problem\+::Run\+Length\+Encoding\+:
+% FIG 0
+
+
+Collaboration diagram for problem\+::Run\+Length\+Encoding\+:
+% FIG 1
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structproblem_1_1RunLengthEncoding_1_1Specs}{Specs}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classproblem_1_1RunLengthEncoding_acf8fcf664f9419ddd114fed6d940e659}\label{classproblem_1_1RunLengthEncoding_acf8fcf664f9419ddd114fed6d940e659}} 
+{\footnotesize template$<$class Archive $>$ }\\void {\bfseries serialize} (Archive \&ar, const unsigned int version=0)
+\item 
+\mbox{\Hypertarget{classproblem_1_1RunLengthEncoding_aaba651f75ac697f74ef01a4be6635523}\label{classproblem_1_1RunLengthEncoding_aaba651f75ac697f74ef01a4be6635523}} 
+{\bfseries Run\+Length\+Encoding} (const \mbox{\hyperlink{structproblem_1_1RunLengthEncoding_1_1Specs}{Specs}} \&specs)
+\item 
+\mbox{\Hypertarget{classproblem_1_1RunLengthEncoding_a3ea9aaf2b2b5451a2eb96de5c3fa801f}\label{classproblem_1_1RunLengthEncoding_a3ea9aaf2b2b5451a2eb96de5c3fa801f}} 
+\mbox{\hyperlink{structproblem_1_1PerRankMetaDataTileOccupancy}{Per\+Rank\+Meta\+Data\+Tile\+Occupancy}} {\bfseries Get\+Occupancy} (const \mbox{\hyperlink{structproblem_1_1MetaDataOccupancyQuery}{Meta\+Data\+Occupancy\+Query}} \&query) const
+\item 
+\mbox{\Hypertarget{classproblem_1_1RunLengthEncoding_aa73a969b17ca19646882b35084e793ec}\label{classproblem_1_1RunLengthEncoding_aa73a969b17ca19646882b35084e793ec}} 
+bool {\bfseries Rank\+Compressed} () const
+\item 
+\mbox{\Hypertarget{classproblem_1_1RunLengthEncoding_a8bf70eb09b5738bff54ad093a28fd338}\label{classproblem_1_1RunLengthEncoding_a8bf70eb09b5738bff54ad093a28fd338}} 
+bool {\bfseries Coordinates\+Implicit} () const
+\item 
+\mbox{\Hypertarget{classproblem_1_1RunLengthEncoding_a72092ba6ffbb146c2a5f0fe51e12456c}\label{classproblem_1_1RunLengthEncoding_a72092ba6ffbb146c2a5f0fe51e12456c}} 
+std\+::vector$<$ problem\+::\+Shape\+::\+Flattened\+Dimension\+ID $>$ {\bfseries Get\+Dimension\+I\+Ds} () const
+\item 
+\mbox{\Hypertarget{classproblem_1_1RunLengthEncoding_a4db5aa73df376bc3629a8a42d96de574}\label{classproblem_1_1RunLengthEncoding_a4db5aa73df376bc3629a8a42d96de574}} 
+std\+::string {\bfseries Get\+Format\+Name} () const
+\item 
+\mbox{\Hypertarget{classproblem_1_1RunLengthEncoding_a6a5f65952a24b14a9adae27695f2d77b}\label{classproblem_1_1RunLengthEncoding_a6a5f65952a24b14a9adae27695f2d77b}} 
+bool {\bfseries Meta\+Data\+Implicit\+As\+Lowest\+Rank} () const
+\item 
+\mbox{\Hypertarget{classproblem_1_1RunLengthEncoding_a02380aedc2a6058156ee099c5ea90622}\label{classproblem_1_1RunLengthEncoding_a02380aedc2a6058156ee099c5ea90622}} 
+const \mbox{\hyperlink{structproblem_1_1MetaDataFormatSpecs}{Meta\+Data\+Format\+Specs}} \& {\bfseries Get\+Specs} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classproblem_1_1RunLengthEncoding_a30becb5bcd02c59c9e32a7c133c00d04}\label{classproblem_1_1RunLengthEncoding_a30becb5bcd02c59c9e32a7c133c00d04}} 
+static \mbox{\hyperlink{structproblem_1_1RunLengthEncoding_1_1Specs}{Specs}} {\bfseries Parse\+Specs} (\mbox{\hyperlink{classconfig_1_1CompoundConfigNode}{config\+::\+Compound\+Config\+Node}} metadata\+\_\+config)
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classproblem_1_1RunLengthEncoding_ac98d07dd8f7b70e16ccb9a01abf56b9c}\label{classproblem_1_1RunLengthEncoding_ac98d07dd8f7b70e16ccb9a01abf56b9c}} 
+class {\bfseries boost\+::serialization\+::access}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/workload/format-\/models/run-\/length-\/encoding.\+hpp\item 
+src/workload/format-\/models/run-\/length-\/encoding.\+cpp\end{DoxyCompactItemize}

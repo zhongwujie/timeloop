@@ -1,0 +1,34 @@
+digraph "model::LegacyNetwork"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="model::LegacyNetwork",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="model::Network",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classmodel_1_1Network.html",tooltip=" "];
+  Node3 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="model::Module",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classmodel_1_1Module.html",tooltip=" "];
+  Node4 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" stats_" ];
+  Node4 [label="model::LegacyNetwork\l::Stats",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structmodel_1_1LegacyNetwork_1_1Stats.html",tooltip=" "];
+  Node5 -> Node4 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" num_hops\nspatial_reduction\l_energy\nenergy_per_hop\nlink_transfer_energy\nenergy" ];
+  Node5 [label="problem::PerDataSpace\l\< double \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classproblem_1_1PerDataSpace.html",tooltip=" "];
+  Node6 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="DynamicArray\< double \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classDynamicArray.html",tooltip=" "];
+  Node7 -> Node4 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" spatial_reductions\nlink_transfers" ];
+  Node7 [label="problem::PerDataSpace\l\< unsigned long \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classproblem_1_1PerDataSpace.html",tooltip=" "];
+  Node8 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node8 [label="DynamicArray\< unsigned\l long \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classDynamicArray.html",tooltip=" "];
+  Node9 -> Node4 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" distributed_multicast" ];
+  Node9 [label="problem::PerDataSpace\l\< bool \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classproblem_1_1PerDataSpace.html",tooltip=" "];
+  Node10 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node10 [label="DynamicArray\< bool \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classDynamicArray.html",tooltip=" "];
+  Node11 -> Node4 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" multicast_factor\ndistributed_fanout\nutilized_instances\nfanout" ];
+  Node11 [label="problem::PerDataSpace\l\< std::uint64_t \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classproblem_1_1PerDataSpace.html",tooltip=" "];
+  Node12 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node12 [label="DynamicArray\< std::\luint64_t \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classDynamicArray.html",tooltip=" "];
+  Node13 -> Node4 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" ingresses" ];
+  Node13 [label="problem::PerDataSpace\l\< AccessStatMatrix \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classproblem_1_1PerDataSpace.html",tooltip=" "];
+  Node14 -> Node13 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node14 [label="DynamicArray\< AccessStat\lMatrix \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classDynamicArray.html",tooltip=" "];
+}

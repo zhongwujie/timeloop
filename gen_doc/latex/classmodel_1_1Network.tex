@@ -1,0 +1,82 @@
+\hypertarget{classmodel_1_1Network}{}\doxysection{model\+::Network Class Reference}
+\label{classmodel_1_1Network}\index{model::Network@{model::Network}}
+
+
+Inheritance diagram for model\+::Network\+:
+% FIG 0
+
+
+Collaboration diagram for model\+::Network\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmodel_1_1Network_a3f8d168499cb008dc7d946040ae7d985}\label{classmodel_1_1Network_a3f8d168499cb008dc7d946040ae7d985}} 
+virtual std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classmodel_1_1Network}{Network}} $>$ {\bfseries Clone} () const =0
+\item 
+\mbox{\Hypertarget{classmodel_1_1Network_a894cd8b28ff6c4fa46a24ed94bd44cd2}\label{classmodel_1_1Network_a894cd8b28ff6c4fa46a24ed94bd44cd2}} 
+virtual void {\bfseries Connect\+Source} (std\+::weak\+\_\+ptr$<$ \mbox{\hyperlink{classmodel_1_1Level}{Level}} $>$ source)=0
+\item 
+\mbox{\Hypertarget{classmodel_1_1Network_aaf07d04af2efe2595eca89405dc59604}\label{classmodel_1_1Network_aaf07d04af2efe2595eca89405dc59604}} 
+virtual void {\bfseries Connect\+Sink} (std\+::weak\+\_\+ptr$<$ \mbox{\hyperlink{classmodel_1_1Level}{Level}} $>$ sink)=0
+\item 
+\mbox{\Hypertarget{classmodel_1_1Network_aa388f27116f9ff3d644acdbd9c7d56be}\label{classmodel_1_1Network_aa388f27116f9ff3d644acdbd9c7d56be}} 
+virtual void {\bfseries Set\+Name} (std\+::string name)=0
+\item 
+\mbox{\Hypertarget{classmodel_1_1Network_adc9d5e8933f40d3eefd6d06ac03239d6}\label{classmodel_1_1Network_adc9d5e8933f40d3eefd6d06ac03239d6}} 
+virtual void {\bfseries Add\+Connection\+Type} (Connection\+Type ct)=0
+\item 
+\mbox{\Hypertarget{classmodel_1_1Network_aacb9f387e941d55cc258105a26c67fa6}\label{classmodel_1_1Network_aacb9f387e941d55cc258105a26c67fa6}} 
+virtual void {\bfseries Reset\+Connection\+Type} ()=0
+\item 
+\mbox{\Hypertarget{classmodel_1_1Network_a96244e593cd0b2e5260ceee5100255e1}\label{classmodel_1_1Network_a96244e593cd0b2e5260ceee5100255e1}} 
+virtual double {\bfseries Energy} (problem\+::\+Shape\+::\+Data\+Space\+ID pv=problem\+::\+Get\+Shape() -\/$>$Num\+Data\+Spaces) const =0
+\item 
+\mbox{\Hypertarget{classmodel_1_1Network_a8af9167e56dc08fcceb058bf527500b0}\label{classmodel_1_1Network_a8af9167e56dc08fcceb058bf527500b0}} 
+virtual std\+::string {\bfseries Name} () const =0
+\item 
+\mbox{\Hypertarget{classmodel_1_1Network_a250ad3fd0ab521a311780d8de463ebaa}\label{classmodel_1_1Network_a250ad3fd0ab521a311780d8de463ebaa}} 
+virtual bool {\bfseries Distributed\+Multicast\+Supported} () const =0
+\item 
+\mbox{\Hypertarget{classmodel_1_1Network_aae58323967064fd86842907d2f2f5f38}\label{classmodel_1_1Network_aae58323967064fd86842907d2f2f5f38}} 
+virtual void {\bfseries Set\+Tile\+Width} (double width\+\_\+um)=0
+\item 
+\mbox{\Hypertarget{classmodel_1_1Network_a9e0d1d42564146632a90beab3abc17b5}\label{classmodel_1_1Network_a9e0d1d42564146632a90beab3abc17b5}} 
+virtual \mbox{\hyperlink{structmodel_1_1EvalStatus}{Eval\+Status}} {\bfseries Evaluate} (const \mbox{\hyperlink{structtiling_1_1CompoundTile}{tiling\+::\+Compound\+Tile}} \&tile, const bool break\+\_\+on\+\_\+failure)=0
+\item 
+\mbox{\Hypertarget{classmodel_1_1Network_aa2d7f696700ed71c22461827b2c6e280}\label{classmodel_1_1Network_aa2d7f696700ed71c22461827b2c6e280}} 
+virtual void {\bfseries Print} (std\+::ostream \&out) const =0
+\item 
+\mbox{\Hypertarget{classmodel_1_1Network_aa04c5557478b07fbb6180588fdcd0f94}\label{classmodel_1_1Network_aa04c5557478b07fbb6180588fdcd0f94}} 
+virtual std\+::uint64\+\_\+t {\bfseries Word\+Bits} () const =0
+\item 
+\mbox{\Hypertarget{classmodel_1_1Network_addb36c06ca6a1e5070bd82b1fa134ff2}\label{classmodel_1_1Network_addb36c06ca6a1e5070bd82b1fa134ff2}} 
+virtual std\+::uint64\+\_\+t {\bfseries Fill\+Latency} () const =0
+\item 
+\mbox{\Hypertarget{classmodel_1_1Network_a740f9b557a6de1c124fa551be5af0892}\label{classmodel_1_1Network_a740f9b557a6de1c124fa551be5af0892}} 
+virtual std\+::uint64\+\_\+t {\bfseries Drain\+Latency} () const =0
+\item 
+\mbox{\Hypertarget{classmodel_1_1Network_a1eca0751c2cb1743741fec27c73d332f}\label{classmodel_1_1Network_a1eca0751c2cb1743741fec27c73d332f}} 
+virtual void {\bfseries Set\+Fill\+Latency} (std\+::uint64\+\_\+t)=0
+\item 
+\mbox{\Hypertarget{classmodel_1_1Network_adbe3afaed1fa75abab5b33e0d5d3c754}\label{classmodel_1_1Network_adbe3afaed1fa75abab5b33e0d5d3c754}} 
+virtual void {\bfseries Set\+Drain\+Latency} (std\+::uint64\+\_\+t)=0
+\item 
+\mbox{\Hypertarget{classmodel_1_1Network_a03d1ce0a167e33bd7d7a6cd10907d5a9}\label{classmodel_1_1Network_a03d1ce0a167e33bd7d7a6cd10907d5a9}} 
+{\footnotesize template$<$class Archive $>$ }\\void {\bfseries serialize} (Archive \&ar, const unsigned int version=0)
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmodel_1_1Network_ac98d07dd8f7b70e16ccb9a01abf56b9c}\label{classmodel_1_1Network_ac98d07dd8f7b70e16ccb9a01abf56b9c}} 
+class {\bfseries boost\+::serialization\+::access}
+\item 
+\mbox{\Hypertarget{classmodel_1_1Network_ae5931f02f05398ff4d835dbf6b7ba918}\label{classmodel_1_1Network_ae5931f02f05398ff4d835dbf6b7ba918}} 
+std\+::ostream \& {\bfseries operator$<$$<$} (std\+::ostream \&out, const \mbox{\hyperlink{classmodel_1_1Network}{Network}} \&network)
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/model/network.\+hpp\end{DoxyCompactItemize}

@@ -1,0 +1,72 @@
+\hypertarget{structproblem_1_1RunLengthEncoding_1_1Specs}{}\doxysection{problem\+::Run\+Length\+Encoding\+::Specs Struct Reference}
+\label{structproblem_1_1RunLengthEncoding_1_1Specs}\index{problem::RunLengthEncoding::Specs@{problem::RunLengthEncoding::Specs}}
+
+
+Inheritance diagram for problem\+::Run\+Length\+Encoding\+::Specs\+:
+% FIG 0
+
+
+Collaboration diagram for problem\+::Run\+Length\+Encoding\+::Specs\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structproblem_1_1RunLengthEncoding_1_1Specs_a70dc3946a622e18f7f4daf6181aa3ae4}\label{structproblem_1_1RunLengthEncoding_1_1Specs_a70dc3946a622e18f7f4daf6181aa3ae4}} 
+const std\+::string {\bfseries Name} () const override
+\item 
+\mbox{\Hypertarget{structproblem_1_1RunLengthEncoding_1_1Specs_adcf46a3c8f8dfe4f203566d0b8a5193a}\label{structproblem_1_1RunLengthEncoding_1_1Specs_adcf46a3c8f8dfe4f203566d0b8a5193a}} 
+bool {\bfseries Rank\+Compressed} () const override
+\item 
+\mbox{\Hypertarget{structproblem_1_1RunLengthEncoding_1_1Specs_ace4e0c380dedf9546c6885d67f33482f}\label{structproblem_1_1RunLengthEncoding_1_1Specs_ace4e0c380dedf9546c6885d67f33482f}} 
+std\+::vector$<$ problem\+::\+Shape\+::\+Flattened\+Dimension\+ID $>$ {\bfseries Dimension\+I\+Ds} () const override
+\item 
+\mbox{\Hypertarget{structproblem_1_1RunLengthEncoding_1_1Specs_af13eb90e4c968b579fd0144b1b8d9ffa}\label{structproblem_1_1RunLengthEncoding_1_1Specs_af13eb90e4c968b579fd0144b1b8d9ffa}} 
+std\+::uint32\+\_\+t {\bfseries Meta\+Data\+Word\+Bits} () const override
+\item 
+\mbox{\Hypertarget{structproblem_1_1RunLengthEncoding_1_1Specs_a1f14c28062cb99424ac4f184aa2d9484}\label{structproblem_1_1RunLengthEncoding_1_1Specs_a1f14c28062cb99424ac4f184aa2d9484}} 
+std\+::uint32\+\_\+t {\bfseries Payload\+Word\+Bits} () const override
+\item 
+\mbox{\Hypertarget{structproblem_1_1RunLengthEncoding_1_1Specs_a8e647c4bd5ca38a9fb309d9c130eceae}\label{structproblem_1_1RunLengthEncoding_1_1Specs_a8e647c4bd5ca38a9fb309d9c130eceae}} 
+void {\bfseries Set\+Meta\+Data\+Word\+Bits} (std\+::uint32\+\_\+t word\+\_\+bits) override
+\item 
+\mbox{\Hypertarget{structproblem_1_1RunLengthEncoding_1_1Specs_a1c61b2408ea60d6d6ffb0fd90c7445d5}\label{structproblem_1_1RunLengthEncoding_1_1Specs_a1c61b2408ea60d6d6ffb0fd90c7445d5}} 
+void {\bfseries Set\+Payload\+Word\+Bits} (std\+::uint32\+\_\+t word\+\_\+bits) override
+\item 
+\mbox{\Hypertarget{structproblem_1_1RunLengthEncoding_1_1Specs_a6e4c0c3519dc9e981a4b53c1eb8f99c3}\label{structproblem_1_1RunLengthEncoding_1_1Specs_a6e4c0c3519dc9e981a4b53c1eb8f99c3}} 
+{\footnotesize template$<$class Archive $>$ }\\void {\bfseries serialize} (Archive \&ar, const unsigned int version=0)
+\item 
+\mbox{\Hypertarget{structproblem_1_1RunLengthEncoding_1_1Specs_a922ea3e142b100706b57fb8aacf45110}\label{structproblem_1_1RunLengthEncoding_1_1Specs_a922ea3e142b100706b57fb8aacf45110}} 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structproblem_1_1MetaDataFormatSpecs}{Meta\+Data\+Format\+Specs}} $>$ {\bfseries Clone} () const override
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structproblem_1_1RunLengthEncoding_1_1Specs_aaa0e8d0ff7a57895865b8f431ae27da0}\label{structproblem_1_1RunLengthEncoding_1_1Specs_aaa0e8d0ff7a57895865b8f431ae27da0}} 
+std\+::string {\bfseries name} = \char`\"{}rle\char`\"{}
+\item 
+\mbox{\Hypertarget{structproblem_1_1RunLengthEncoding_1_1Specs_a4b7d0ebd670d3895c5d0ddf10335a250}\label{structproblem_1_1RunLengthEncoding_1_1Specs_a4b7d0ebd670d3895c5d0ddf10335a250}} 
+bool {\bfseries rank\+\_\+compressed} = true
+\item 
+\mbox{\Hypertarget{structproblem_1_1RunLengthEncoding_1_1Specs_affbc66fd03d654b0107036d12332259a}\label{structproblem_1_1RunLengthEncoding_1_1Specs_affbc66fd03d654b0107036d12332259a}} 
+bool {\bfseries coordinates\+\_\+implicit} = false
+\item 
+\mbox{\Hypertarget{structproblem_1_1RunLengthEncoding_1_1Specs_a6f0c04b3d61bb0c87d86e50a73e6e1c6}\label{structproblem_1_1RunLengthEncoding_1_1Specs_a6f0c04b3d61bb0c87d86e50a73e6e1c6}} 
+std\+::vector$<$ problem\+::\+Shape\+::\+Flattened\+Dimension\+ID $>$ {\bfseries dimension\+\_\+ids}
+\item 
+\mbox{\Hypertarget{structproblem_1_1RunLengthEncoding_1_1Specs_a4eb8ef0615fe1aad4c75c050b47f6b8c}\label{structproblem_1_1RunLengthEncoding_1_1Specs_a4eb8ef0615fe1aad4c75c050b47f6b8c}} 
+std\+::uint32\+\_\+t {\bfseries metadata\+\_\+width}
+\item 
+\mbox{\Hypertarget{structproblem_1_1RunLengthEncoding_1_1Specs_a6374a2c31f6848409324a2a8297262db}\label{structproblem_1_1RunLengthEncoding_1_1Specs_a6374a2c31f6848409324a2a8297262db}} 
+std\+::uint32\+\_\+t {\bfseries payload\+\_\+word\+\_\+bits}
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structproblem_1_1RunLengthEncoding_1_1Specs_ac98d07dd8f7b70e16ccb9a01abf56b9c}\label{structproblem_1_1RunLengthEncoding_1_1Specs_ac98d07dd8f7b70e16ccb9a01abf56b9c}} 
+class {\bfseries boost\+::serialization\+::access}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/workload/format-\/models/run-\/length-\/encoding.\+hpp\end{DoxyCompactItemize}

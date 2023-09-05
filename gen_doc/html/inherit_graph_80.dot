@@ -1,0 +1,14 @@
+digraph "Graphical Class Hierarchy"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node0 [label="model::NetworkSpecs",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structmodel_1_1NetworkSpecs.html",tooltip=" "];
+  Node0 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 [label="model::LegacyNetwork\l::Specs",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structmodel_1_1LegacyNetwork_1_1Specs.html",tooltip=" "];
+  Node0 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="model::ReductionTreeNetwork\l::Specs",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structmodel_1_1ReductionTreeNetwork_1_1Specs.html",tooltip=" "];
+  Node0 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="model::SimpleMulticastNetwork\l::Specs",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structmodel_1_1SimpleMulticastNetwork_1_1Specs.html",tooltip=" "];
+}

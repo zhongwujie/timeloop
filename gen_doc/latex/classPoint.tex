@@ -1,0 +1,81 @@
+\hypertarget{classPoint}{}\doxysection{Point Class Reference}
+\label{classPoint}\index{Point@{Point}}
+
+
+Inheritance diagram for Point\+:
+% FIG 0
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classPoint_af0c0f20db1616447bc78184ed537ef6e}\label{classPoint_af0c0f20db1616447bc78184ed537ef6e}} 
+{\bfseries Point} (const \mbox{\hyperlink{classPoint}{Point}} \&p)
+\item 
+\mbox{\Hypertarget{classPoint_ac31aa66c95f114a7e51019087c6862a6}\label{classPoint_ac31aa66c95f114a7e51019087c6862a6}} 
+{\bfseries Point} (std\+::uint32\+\_\+t order)
+\item 
+\mbox{\Hypertarget{classPoint_a0b0e04d65b127ceee7635cd8e8d00624}\label{classPoint_a0b0e04d65b127ceee7635cd8e8d00624}} 
+{\bfseries Point} (std\+::vector$<$ Coordinate $>$ coordinates)
+\item 
+\mbox{\Hypertarget{classPoint_a56c3e8397953e89fcc698c7b9cbc6bfe}\label{classPoint_a56c3e8397953e89fcc698c7b9cbc6bfe}} 
+\mbox{\hyperlink{classPoint}{Point}} \& {\bfseries operator=} (\mbox{\hyperlink{classPoint}{Point}} other)
+\item 
+\mbox{\Hypertarget{classPoint_af1930c3580530ecd95d0ef38da0e74ff}\label{classPoint_af1930c3580530ecd95d0ef38da0e74ff}} 
+bool {\bfseries operator==} (const \mbox{\hyperlink{classPoint}{Point}} \&other)
+\item 
+\mbox{\Hypertarget{classPoint_afe37f7943710c6ad33d10c960252e285}\label{classPoint_afe37f7943710c6ad33d10c960252e285}} 
+\mbox{\hyperlink{classPoint}{Point}} {\bfseries Discard\+Top\+Rank} () const
+\item 
+\mbox{\Hypertarget{classPoint_a8067f05c172b64b89b96fee582d56e79}\label{classPoint_a8067f05c172b64b89b96fee582d56e79}} 
+void {\bfseries Add\+Top\+Rank} (Coordinate x)
+\item 
+\mbox{\Hypertarget{classPoint_a81db5da9d0f495f5d996cbdb85f875f0}\label{classPoint_a81db5da9d0f495f5d996cbdb85f875f0}} 
+void {\bfseries Reset} ()
+\item 
+\mbox{\Hypertarget{classPoint_abc06f4b8cd8dffce0182939f0a9c8cad}\label{classPoint_abc06f4b8cd8dffce0182939f0a9c8cad}} 
+std\+::uint32\+\_\+t {\bfseries Order} () const
+\item 
+\mbox{\Hypertarget{classPoint_ae1cd3eea041528d14c2281defb110755}\label{classPoint_ae1cd3eea041528d14c2281defb110755}} 
+std\+::vector$<$ Coordinate $>$ {\bfseries Get\+Coordinates} () const
+\item 
+\mbox{\Hypertarget{classPoint_a6003ad95d3ac631dd321f159df9f0763}\label{classPoint_a6003ad95d3ac631dd321f159df9f0763}} 
+Coordinate \& {\bfseries operator\mbox{[}$\,$\mbox{]}} (std\+::uint32\+\_\+t i)
+\item 
+\mbox{\Hypertarget{classPoint_aacebffe3143133c72c95344cb8f3f644}\label{classPoint_aacebffe3143133c72c95344cb8f3f644}} 
+const Coordinate \& {\bfseries operator\mbox{[}$\,$\mbox{]}} (std\+::uint32\+\_\+t i) const
+\item 
+\mbox{\Hypertarget{classPoint_a5c721f006d7ccd19dc9c7f7f6a1dd9ef}\label{classPoint_a5c721f006d7ccd19dc9c7f7f6a1dd9ef}} 
+void {\bfseries Increment\+All\+Dimensions} (Coordinate m=1)
+\item 
+\mbox{\Hypertarget{classPoint_a0271fff46721ca4f4299449b91c84e07}\label{classPoint_a0271fff46721ca4f4299449b91c84e07}} 
+\mbox{\hyperlink{classPoint}{Point}} {\bfseries operator+} (\mbox{\hyperlink{classPoint}{Point}} \&other)
+\item 
+\mbox{\Hypertarget{classPoint_aee549c6c1b66404ea308eeceed1294f2}\label{classPoint_aee549c6c1b66404ea308eeceed1294f2}} 
+void {\bfseries Scale} (unsigned factor)
+\item 
+\mbox{\Hypertarget{classPoint_a72ecd2ee1e87bda97db253b251e18f70}\label{classPoint_a72ecd2ee1e87bda97db253b251e18f70}} 
+std\+::ostream \& {\bfseries Print} (std\+::ostream \&out=std\+::cout) const
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classPoint_a5cdd6740137f6c18dcfc98aafe7fe98d}\label{classPoint_a5cdd6740137f6c18dcfc98aafe7fe98d}} 
+std\+::uint32\+\_\+t {\bfseries order\+\_\+}
+\item 
+\mbox{\Hypertarget{classPoint_afc11dabd3136e9d8baf6f72f1689105a}\label{classPoint_afc11dabd3136e9d8baf6f72f1689105a}} 
+std\+::vector$<$ Coordinate $>$ {\bfseries coordinates\+\_\+}
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classPoint_a20cb8cbb25a27b463d92d8510e9930fb}\label{classPoint_a20cb8cbb25a27b463d92d8510e9930fb}} 
+void {\bfseries swap} (\mbox{\hyperlink{classPoint}{Point}} \&first, \mbox{\hyperlink{classPoint}{Point}} \&second)
+\item 
+\mbox{\Hypertarget{classPoint_aa818efa680e0d94ce91173ccb4b7aa08}\label{classPoint_aa818efa680e0d94ce91173ccb4b7aa08}} 
+std\+::ostream \& {\bfseries operator$<$$<$} (std\+::ostream \&out, const \mbox{\hyperlink{classPoint}{Point}} \&p)
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/loop-\/analysis/point.\+hpp\item 
+src/loop-\/analysis/point.\+cpp\end{DoxyCompactItemize}

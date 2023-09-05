@@ -1,0 +1,41 @@
+\hypertarget{classanalysis_1_1NestAnalysis}{}\doxysection{analysis\+::Nest\+Analysis Class Reference}
+\label{classanalysis_1_1NestAnalysis}\index{analysis::NestAnalysis@{analysis::NestAnalysis}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classanalysis_1_1NestAnalysis_a4416c786ccc4e79a37579b0bc8528b2b}\label{classanalysis_1_1NestAnalysis_a4416c786ccc4e79a37579b0bc8528b2b}} 
+void {\bfseries Init} (\mbox{\hyperlink{classproblem_1_1Workload}{problem\+::\+Workload}} $\ast$wc, const \mbox{\hyperlink{classloop_1_1Nest}{loop\+::\+Nest}} $\ast$nest, std\+::map$<$ unsigned, std\+::uint64\+\_\+t $>$ fanout\+X\+\_\+map, std\+::map$<$ unsigned, std\+::uint64\+\_\+t $>$ fanout\+Y\+\_\+map)
+\item 
+\mbox{\Hypertarget{classanalysis_1_1NestAnalysis_ae8cb71908fa7e5976cce903a60b147b2}\label{classanalysis_1_1NestAnalysis_ae8cb71908fa7e5976cce903a60b147b2}} 
+void {\bfseries Reset} ()
+\item 
+\mbox{\Hypertarget{classanalysis_1_1NestAnalysis_a9b267b95504b6dbd1967194981e52f5b}\label{classanalysis_1_1NestAnalysis_a9b267b95504b6dbd1967194981e52f5b}} 
+std\+::vector$<$ \mbox{\hyperlink{classproblem_1_1PerDataSpace}{problem\+::\+Per\+Data\+Space}}$<$ std\+::size\+\_\+t $>$ $>$ {\bfseries Get\+Working\+Set\+Sizes\+\_\+\+L\+TW} () const
+\item 
+\mbox{\Hypertarget{classanalysis_1_1NestAnalysis_a0c78d7a88a16b3e60492bf088173bc76}\label{classanalysis_1_1NestAnalysis_a0c78d7a88a16b3e60492bf088173bc76}} 
+\mbox{\hyperlink{classproblem_1_1PerDataSpace}{Compound\+Data\+Movement\+Nest}} {\bfseries Get\+Working\+Sets} ()
+\item 
+\mbox{\Hypertarget{classanalysis_1_1NestAnalysis_a2561052c21b11df9cf526a95e27a8aa9}\label{classanalysis_1_1NestAnalysis_a2561052c21b11df9cf526a95e27a8aa9}} 
+Compound\+Compute\+Nest {\bfseries Get\+Compute\+Info} ()
+\item 
+\mbox{\Hypertarget{classanalysis_1_1NestAnalysis_ae359229be6f5fbcc5f335cf13793acc2}\label{classanalysis_1_1NestAnalysis_ae359229be6f5fbcc5f335cf13793acc2}} 
+\mbox{\hyperlink{classproblem_1_1Workload}{problem\+::\+Workload}} $\ast$ {\bfseries Get\+Workload} ()
+\item 
+\mbox{\Hypertarget{classanalysis_1_1NestAnalysis_a66119fece21e0ba8d4c4f6b8301646ee}\label{classanalysis_1_1NestAnalysis_a66119fece21e0ba8d4c4f6b8301646ee}} 
+{\footnotesize template$<$class Archive $>$ }\\void {\bfseries serialize} (Archive \&ar, const unsigned int version=0)
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classanalysis_1_1NestAnalysis_ac98d07dd8f7b70e16ccb9a01abf56b9c}\label{classanalysis_1_1NestAnalysis_ac98d07dd8f7b70e16ccb9a01abf56b9c}} 
+class {\bfseries boost\+::serialization\+::access}
+\item 
+\mbox{\Hypertarget{classanalysis_1_1NestAnalysis_a42762a87d5d971980e4545af9938a29d}\label{classanalysis_1_1NestAnalysis_a42762a87d5d971980e4545af9938a29d}} 
+std\+::ostream \& {\bfseries operator$<$$<$} (std\+::ostream \&out, const \mbox{\hyperlink{classanalysis_1_1NestAnalysis}{Nest\+Analysis}} \&n)
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/loop-\/analysis/nest-\/analysis.\+hpp\item 
+src/loop-\/analysis/nest-\/analysis.\+cpp\end{DoxyCompactItemize}

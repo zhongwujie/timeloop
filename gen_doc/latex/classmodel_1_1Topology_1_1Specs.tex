@@ -1,0 +1,74 @@
+\hypertarget{classmodel_1_1Topology_1_1Specs}{}\doxysection{model\+::Topology\+::Specs Class Reference}
+\label{classmodel_1_1Topology_1_1Specs}\index{model::Topology::Specs@{model::Topology::Specs}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmodel_1_1Topology_1_1Specs_a137c18666c40d4b3ed6fb1b6d938c0e0}\label{classmodel_1_1Topology_1_1Specs_a137c18666c40d4b3ed6fb1b6d938c0e0}} 
+{\bfseries Specs} (const \mbox{\hyperlink{classmodel_1_1Topology_1_1Specs}{Specs}} \&other)
+\item 
+\mbox{\Hypertarget{classmodel_1_1Topology_1_1Specs_aa7f5da9177ef37250e8c6d94cc46a812}\label{classmodel_1_1Topology_1_1Specs_aa7f5da9177ef37250e8c6d94cc46a812}} 
+\mbox{\hyperlink{classmodel_1_1Topology_1_1Specs}{Specs}} \& {\bfseries operator=} (\mbox{\hyperlink{classmodel_1_1Topology_1_1Specs}{Specs}} other)
+\item 
+\mbox{\Hypertarget{classmodel_1_1Topology_1_1Specs_a219e6e368979deaeb46bb2d1a152c2be}\label{classmodel_1_1Topology_1_1Specs_a219e6e368979deaeb46bb2d1a152c2be}} 
+unsigned {\bfseries Num\+Levels} () const
+\item 
+\mbox{\Hypertarget{classmodel_1_1Topology_1_1Specs_a84f6f4359f58bd9dfe5205e41640aa0b}\label{classmodel_1_1Topology_1_1Specs_a84f6f4359f58bd9dfe5205e41640aa0b}} 
+unsigned {\bfseries Num\+Storage\+Levels} () const
+\item 
+\mbox{\Hypertarget{classmodel_1_1Topology_1_1Specs_af0c467df2678358770cc432641c606e7}\label{classmodel_1_1Topology_1_1Specs_af0c467df2678358770cc432641c606e7}} 
+unsigned {\bfseries Num\+Networks} () const
+\item 
+\mbox{\Hypertarget{classmodel_1_1Topology_1_1Specs_a59418d62b8f83f1e7e0a935cda292940}\label{classmodel_1_1Topology_1_1Specs_a59418d62b8f83f1e7e0a935cda292940}} 
+std\+::vector$<$ std\+::string $>$ {\bfseries Level\+Names} () const
+\item 
+\mbox{\Hypertarget{classmodel_1_1Topology_1_1Specs_a196028330dc4300b26e719abf046b4f5}\label{classmodel_1_1Topology_1_1Specs_a196028330dc4300b26e719abf046b4f5}} 
+std\+::vector$<$ std\+::string $>$ {\bfseries Storage\+Level\+Names} () const
+\item 
+\mbox{\Hypertarget{classmodel_1_1Topology_1_1Specs_a8d70efd229b3db9cb00734b710b62be7}\label{classmodel_1_1Topology_1_1Specs_a8d70efd229b3db9cb00734b710b62be7}} 
+void {\bfseries Parse\+Accelergy\+E\+RT} (\mbox{\hyperlink{classconfig_1_1CompoundConfigNode}{config\+::\+Compound\+Config\+Node}} ert)
+\item 
+\mbox{\Hypertarget{classmodel_1_1Topology_1_1Specs_adddb00ddeb194f0c84f61911af3cc3a8}\label{classmodel_1_1Topology_1_1Specs_adddb00ddeb194f0c84f61911af3cc3a8}} 
+void {\bfseries Parse\+Accelergy\+A\+RT} (\mbox{\hyperlink{classconfig_1_1CompoundConfigNode}{config\+::\+Compound\+Config\+Node}} art)
+\item 
+\mbox{\Hypertarget{classmodel_1_1Topology_1_1Specs_ae5207f3c9b4544b7d655a74fe4ac6df7}\label{classmodel_1_1Topology_1_1Specs_ae5207f3c9b4544b7d655a74fe4ac6df7}} 
+void {\bfseries Add\+Level} (unsigned typed\+\_\+id, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structmodel_1_1LevelSpecs}{Level\+Specs}} $>$ level\+\_\+specs)
+\item 
+\mbox{\Hypertarget{classmodel_1_1Topology_1_1Specs_af6c2feb92b7ba5956b4ef5ec2170ca4f}\label{classmodel_1_1Topology_1_1Specs_af6c2feb92b7ba5956b4ef5ec2170ca4f}} 
+void {\bfseries Add\+Inferred\+Network} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structmodel_1_1LegacyNetwork_1_1Specs}{Legacy\+Network\+::\+Specs}} $>$ specs)
+\item 
+\mbox{\Hypertarget{classmodel_1_1Topology_1_1Specs_a3157b17ba8e55bc2164a531853b08ac6}\label{classmodel_1_1Topology_1_1Specs_a3157b17ba8e55bc2164a531853b08ac6}} 
+void {\bfseries Add\+Network} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structmodel_1_1NetworkSpecs}{Network\+Specs}} $>$ specs)
+\item 
+\mbox{\Hypertarget{classmodel_1_1Topology_1_1Specs_a7d4af28bb016236567a5e24311582131}\label{classmodel_1_1Topology_1_1Specs_a7d4af28bb016236567a5e24311582131}} 
+unsigned {\bfseries Storage\+Map} (unsigned i) const
+\item 
+\mbox{\Hypertarget{classmodel_1_1Topology_1_1Specs_a960e86e45351deee1bbca632a5951b0d}\label{classmodel_1_1Topology_1_1Specs_a960e86e45351deee1bbca632a5951b0d}} 
+unsigned {\bfseries Arithmetic\+Map} () const
+\item 
+\mbox{\Hypertarget{classmodel_1_1Topology_1_1Specs_a41676d10ba9f03f8d8ed4682235f2edf}\label{classmodel_1_1Topology_1_1Specs_a41676d10ba9f03f8d8ed4682235f2edf}} 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structmodel_1_1LevelSpecs}{Level\+Specs}} $>$ {\bfseries Get\+Level} (unsigned level\+\_\+id) const
+\item 
+\mbox{\Hypertarget{classmodel_1_1Topology_1_1Specs_a1833e93504b8b3a803cd8edf73d62a27}\label{classmodel_1_1Topology_1_1Specs_a1833e93504b8b3a803cd8edf73d62a27}} 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structmodel_1_1BufferLevel_1_1Specs}{Buffer\+Level\+::\+Specs}} $>$ {\bfseries Get\+Storage\+Level} (unsigned storage\+\_\+level\+\_\+id) const
+\item 
+\mbox{\Hypertarget{classmodel_1_1Topology_1_1Specs_a538076c986035848d2472ca4054d9f2d}\label{classmodel_1_1Topology_1_1Specs_a538076c986035848d2472ca4054d9f2d}} 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structmodel_1_1ArithmeticUnits_1_1Specs}{Arithmetic\+Units\+::\+Specs}} $>$ {\bfseries Get\+Arithmetic\+Level} () const
+\item 
+\mbox{\Hypertarget{classmodel_1_1Topology_1_1Specs_a49e443e00d9bc9a538cccb9734d12cef}\label{classmodel_1_1Topology_1_1Specs_a49e443e00d9bc9a538cccb9734d12cef}} 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structmodel_1_1LegacyNetwork_1_1Specs}{Legacy\+Network\+::\+Specs}} $>$ {\bfseries Get\+Inferred\+Network} (unsigned network\+\_\+id) const
+\item 
+\mbox{\Hypertarget{classmodel_1_1Topology_1_1Specs_a76eec8658cb2d79fc79f1ffd3d94fc16}\label{classmodel_1_1Topology_1_1Specs_a76eec8658cb2d79fc79f1ffd3d94fc16}} 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structmodel_1_1NetworkSpecs}{Network\+Specs}} $>$ {\bfseries Get\+Network} (unsigned network\+\_\+id) const
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmodel_1_1Topology_1_1Specs_ac86c74d0df16ecdad4c3c579e403ae37}\label{classmodel_1_1Topology_1_1Specs_ac86c74d0df16ecdad4c3c579e403ae37}} 
+void {\bfseries swap} (\mbox{\hyperlink{classmodel_1_1Topology_1_1Specs}{Specs}} \&first, \mbox{\hyperlink{classmodel_1_1Topology_1_1Specs}{Specs}} \&second)
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/model/topology.\+hpp\item 
+src/model/topology.\+cpp\end{DoxyCompactItemize}

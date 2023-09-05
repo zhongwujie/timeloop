@@ -1,0 +1,51 @@
+digraph "Application"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Application",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" mapping_" ];
+  Node2 [label="Mapping",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structMapping.html",tooltip=" "];
+  Node3 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" datatype_bypass_nest" ];
+  Node3 [label="problem::PerDataSpace\l\< std::bitset\< MaxTilingLevels \> \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classproblem_1_1PerDataSpace.html",tooltip=" "];
+  Node4 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="DynamicArray\< std::\lbitset\< MaxTilingLevels \> \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classDynamicArray.html",tooltip=" "];
+  Node5 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" complete_loop_nest\nloop_nest" ];
+  Node5 [label="loop::Nest",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classloop_1_1Nest.html",tooltip="A nest of loops."];
+  Node6 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" arch_props_" ];
+  Node6 [label="ArchProperties",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classArchProperties.html",tooltip=" "];
+  Node7 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" mapspace_" ];
+  Node7 [label="mapspace::MapSpace",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classmapspace_1_1MapSpace.html",tooltip=" "];
+  Node8 -> Node7 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" arch_specs_" ];
+  Node8 [label="model::Engine::Specs",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structmodel_1_1Engine_1_1Specs.html",tooltip=" "];
+  Node9 -> Node8 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" topology" ];
+  Node9 [label="model::Topology::Specs",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classmodel_1_1Topology_1_1Specs.html",tooltip=" "];
+  Node10 -> Node7 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" workload_" ];
+  Node10 [label="problem::Workload",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classproblem_1_1Workload.html",tooltip=" "];
+  Node11 -> Node10 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" current_shape_\nshape_" ];
+  Node11 [label="problem::Shape",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classproblem_1_1Shape.html",tooltip=" "];
+  Node12 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" sparse_optimizations_" ];
+  Node12 [label="sparse::SparseOptimizationInfo",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structsparse_1_1SparseOptimizationInfo.html",tooltip=" "];
+  Node13 -> Node12 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" compression_info" ];
+  Node13 [label="sparse::CompressionInfo",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structsparse_1_1CompressionInfo.html",tooltip=" "];
+  Node8 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" arch_specs_" ];
+  Node14 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" constraints_" ];
+  Node14 [label="mapping::Constraints",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classmapping_1_1Constraints.html",tooltip=" "];
+  Node6 -> Node14 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" arch_props_" ];
+  Node15 -> Node14 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" bypass_strings_" ];
+  Node15 [label="problem::PerDataSpace\l\< std::string \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classproblem_1_1PerDataSpace.html",tooltip=" "];
+  Node16 -> Node15 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node16 [label="DynamicArray\< std::\lstring \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classDynamicArray.html",tooltip=" "];
+  Node10 -> Node14 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" workload_" ];
+  Node17 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" best_\nglobal_best_" ];
+  Node17 [label="EvaluationResult",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structEvaluationResult.html",tooltip=" "];
+  Node2 -> Node17 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" mapping" ];
+  Node18 -> Node17 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" stats" ];
+  Node18 [label="model::Topology::Stats",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structmodel_1_1Topology_1_1Stats.html",tooltip=" "];
+  Node19 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" engine_" ];
+  Node19 [label="model::Engine",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classmodel_1_1Engine.html",tooltip=" "];
+  Node20 -> Node19 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node20 [label="model::Module",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classmodel_1_1Module.html",tooltip=" "];
+  Node10 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" workload_" ];
+}

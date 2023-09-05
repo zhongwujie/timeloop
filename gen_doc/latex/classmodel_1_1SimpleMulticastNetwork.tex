@@ -1,0 +1,114 @@
+\hypertarget{classmodel_1_1SimpleMulticastNetwork}{}\doxysection{model\+::Simple\+Multicast\+Network Class Reference}
+\label{classmodel_1_1SimpleMulticastNetwork}\index{model::SimpleMulticastNetwork@{model::SimpleMulticastNetwork}}
+
+
+Inheritance diagram for model\+::Simple\+Multicast\+Network\+:
+% FIG 0
+
+
+Collaboration diagram for model\+::Simple\+Multicast\+Network\+:
+% FIG 1
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structmodel_1_1SimpleMulticastNetwork_1_1Specs}{Specs}}
+\item 
+struct \mbox{\hyperlink{structmodel_1_1SimpleMulticastNetwork_1_1Stats}{Stats}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmodel_1_1SimpleMulticastNetwork_a965fd3ae56f172bfc3260120a1e2b325}\label{classmodel_1_1SimpleMulticastNetwork_a965fd3ae56f172bfc3260120a1e2b325}} 
+{\footnotesize template$<$class Archive $>$ }\\void {\bfseries serialize} (Archive \&ar, const unsigned int version=0)
+\item 
+\mbox{\Hypertarget{classmodel_1_1SimpleMulticastNetwork_a40c702c69607c9455d39e416f9659ff9}\label{classmodel_1_1SimpleMulticastNetwork_a40c702c69607c9455d39e416f9659ff9}} 
+{\bfseries Simple\+Multicast\+Network} (const \mbox{\hyperlink{structmodel_1_1SimpleMulticastNetwork_1_1Specs}{Specs}} \&specs)
+\item 
+\mbox{\Hypertarget{classmodel_1_1SimpleMulticastNetwork_aaf63ee2547540a5a9caf111e0d7f8ffc}\label{classmodel_1_1SimpleMulticastNetwork_aaf63ee2547540a5a9caf111e0d7f8ffc}} 
+\mbox{\hyperlink{structmodel_1_1SimpleMulticastNetwork_1_1Specs}{Specs}} \& {\bfseries Get\+Specs} ()
+\item 
+\mbox{\Hypertarget{classmodel_1_1SimpleMulticastNetwork_a8008fbfead9ca8d53ac358121c7ad211}\label{classmodel_1_1SimpleMulticastNetwork_a8008fbfead9ca8d53ac358121c7ad211}} 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classmodel_1_1Network}{Network}} $>$ {\bfseries Clone} () const override
+\item 
+\mbox{\Hypertarget{classmodel_1_1SimpleMulticastNetwork_a72539ec2c776ddf9103a5b487642638a}\label{classmodel_1_1SimpleMulticastNetwork_a72539ec2c776ddf9103a5b487642638a}} 
+void {\bfseries Connect\+Source} (std\+::weak\+\_\+ptr$<$ \mbox{\hyperlink{classmodel_1_1Level}{Level}} $>$ source) override
+\item 
+\mbox{\Hypertarget{classmodel_1_1SimpleMulticastNetwork_a0955d5430b8a6cc0d62823a1df5fc95a}\label{classmodel_1_1SimpleMulticastNetwork_a0955d5430b8a6cc0d62823a1df5fc95a}} 
+void {\bfseries Connect\+Sink} (std\+::weak\+\_\+ptr$<$ \mbox{\hyperlink{classmodel_1_1Level}{Level}} $>$ sink) override
+\item 
+\mbox{\Hypertarget{classmodel_1_1SimpleMulticastNetwork_a3e04155f88cc3d2c9cddf77475f63d30}\label{classmodel_1_1SimpleMulticastNetwork_a3e04155f88cc3d2c9cddf77475f63d30}} 
+void {\bfseries Set\+Name} (std\+::string name) override
+\item 
+\mbox{\Hypertarget{classmodel_1_1SimpleMulticastNetwork_add7b89617f613ed6cb7bd07f84e9b704}\label{classmodel_1_1SimpleMulticastNetwork_add7b89617f613ed6cb7bd07f84e9b704}} 
+std\+::string {\bfseries Name} () const override
+\item 
+\mbox{\Hypertarget{classmodel_1_1SimpleMulticastNetwork_a48c35a6a976c8c24c89882cbec26d329}\label{classmodel_1_1SimpleMulticastNetwork_a48c35a6a976c8c24c89882cbec26d329}} 
+void {\bfseries Add\+Connection\+Type} (Connection\+Type ct) override
+\item 
+\mbox{\Hypertarget{classmodel_1_1SimpleMulticastNetwork_a0bf5d494d9744af06797d348e97f7207}\label{classmodel_1_1SimpleMulticastNetwork_a0bf5d494d9744af06797d348e97f7207}} 
+void {\bfseries Reset\+Connection\+Type} () override
+\item 
+\mbox{\Hypertarget{classmodel_1_1SimpleMulticastNetwork_ab5ad347102d6d2a6f326c724fdc5cd93}\label{classmodel_1_1SimpleMulticastNetwork_ab5ad347102d6d2a6f326c724fdc5cd93}} 
+bool {\bfseries Distributed\+Multicast\+Supported} () const override
+\item 
+\mbox{\Hypertarget{classmodel_1_1SimpleMulticastNetwork_a981200470b75426faf1fbfa35ed12797}\label{classmodel_1_1SimpleMulticastNetwork_a981200470b75426faf1fbfa35ed12797}} 
+void {\bfseries Set\+Tile\+Width} (double width\+\_\+um) override
+\item 
+\mbox{\Hypertarget{classmodel_1_1SimpleMulticastNetwork_ac53d5fb423af440e3fb9127bdee396b3}\label{classmodel_1_1SimpleMulticastNetwork_ac53d5fb423af440e3fb9127bdee396b3}} 
+double {\bfseries Get\+Op\+Energy\+From\+E\+RT} (std\+::uint64\+\_\+t multicast\+\_\+factor, std\+::string operation\+\_\+name)
+\item 
+\mbox{\Hypertarget{classmodel_1_1SimpleMulticastNetwork_a8831923bf08f809c37d12dfbdc3b4075}\label{classmodel_1_1SimpleMulticastNetwork_a8831923bf08f809c37d12dfbdc3b4075}} 
+double {\bfseries Get\+Multicast\+Energy} (std\+::uint64\+\_\+t multicast\+\_\+factor)
+\item 
+\mbox{\Hypertarget{classmodel_1_1SimpleMulticastNetwork_a414a868ec36bd0a2045b2f2e11c28b58}\label{classmodel_1_1SimpleMulticastNetwork_a414a868ec36bd0a2045b2f2e11c28b58}} 
+double {\bfseries Get\+Multicast\+Energy\+By\+Data\+Type} (std\+::uint64\+\_\+t multicast\+\_\+factor, std\+::string data\+\_\+space\+\_\+name)
+\item 
+\mbox{\Hypertarget{classmodel_1_1SimpleMulticastNetwork_ac8829e763fb8194e5b8a2ef3e8e4b1b8}\label{classmodel_1_1SimpleMulticastNetwork_ac8829e763fb8194e5b8a2ef3e8e4b1b8}} 
+\mbox{\hyperlink{structmodel_1_1EvalStatus}{Eval\+Status}} {\bfseries Evaluate} (const \mbox{\hyperlink{structtiling_1_1CompoundTile}{tiling\+::\+Compound\+Tile}} \&tile, const bool break\+\_\+on\+\_\+failure) override
+\item 
+\mbox{\Hypertarget{classmodel_1_1SimpleMulticastNetwork_a84319e4a5eba141f24a504069061078e}\label{classmodel_1_1SimpleMulticastNetwork_a84319e4a5eba141f24a504069061078e}} 
+void {\bfseries Print} (std\+::ostream \&out) const override
+\item 
+\mbox{\Hypertarget{classmodel_1_1SimpleMulticastNetwork_acdd3be9152f72ae6e1a5fdb73d841fe5}\label{classmodel_1_1SimpleMulticastNetwork_acdd3be9152f72ae6e1a5fdb73d841fe5}} 
+std\+::uint64\+\_\+t {\bfseries Word\+Bits} () const override
+\item 
+\mbox{\Hypertarget{classmodel_1_1SimpleMulticastNetwork_ac283455331cd34f3c8af57f0dcd55c4f}\label{classmodel_1_1SimpleMulticastNetwork_ac283455331cd34f3c8af57f0dcd55c4f}} 
+std\+::uint64\+\_\+t {\bfseries Fill\+Latency} () const override
+\item 
+\mbox{\Hypertarget{classmodel_1_1SimpleMulticastNetwork_a1169fee24f449837a52edbaae1ce5e88}\label{classmodel_1_1SimpleMulticastNetwork_a1169fee24f449837a52edbaae1ce5e88}} 
+std\+::uint64\+\_\+t {\bfseries Drain\+Latency} () const override
+\item 
+\mbox{\Hypertarget{classmodel_1_1SimpleMulticastNetwork_a4ab633dc904acf5fa0aa6974c7197516}\label{classmodel_1_1SimpleMulticastNetwork_a4ab633dc904acf5fa0aa6974c7197516}} 
+void {\bfseries Set\+Fill\+Latency} (std\+::uint64\+\_\+t fill\+\_\+latency) override
+\item 
+\mbox{\Hypertarget{classmodel_1_1SimpleMulticastNetwork_a7e0f7ae660b866460e6f085a1994f975}\label{classmodel_1_1SimpleMulticastNetwork_a7e0f7ae660b866460e6f085a1994f975}} 
+void {\bfseries Set\+Drain\+Latency} (std\+::uint64\+\_\+t drain\+\_\+latency) override
+\item 
+\mbox{\Hypertarget{classmodel_1_1SimpleMulticastNetwork_abbef561528272c0c763c0fefd9332f37}\label{classmodel_1_1SimpleMulticastNetwork_abbef561528272c0c763c0fefd9332f37}} 
+{\bfseries S\+T\+A\+T\+\_\+\+A\+C\+C\+E\+S\+S\+O\+R\+\_\+\+H\+E\+A\+D\+ER} (double, Energy) override
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmodel_1_1SimpleMulticastNetwork_a048f3ca80da164ca2c34546c971af1a7}\label{classmodel_1_1SimpleMulticastNetwork_a048f3ca80da164ca2c34546c971af1a7}} 
+static \mbox{\hyperlink{structmodel_1_1SimpleMulticastNetwork_1_1Specs}{Specs}} {\bfseries Parse\+Specs} (\mbox{\hyperlink{classconfig_1_1CompoundConfigNode}{config\+::\+Compound\+Config\+Node}} network, std\+::size\+\_\+t n\+\_\+elements, bool is\+\_\+sparse\+\_\+module)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmodel_1_1SimpleMulticastNetwork_aecb89aa1d75e3e09cdb63d99bf8393ab}\label{classmodel_1_1SimpleMulticastNetwork_aecb89aa1d75e3e09cdb63d99bf8393ab}} 
+\mbox{\hyperlink{structmodel_1_1SimpleMulticastNetwork_1_1Stats}{Stats}} {\bfseries stats\+\_\+}
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmodel_1_1SimpleMulticastNetwork_ac98d07dd8f7b70e16ccb9a01abf56b9c}\label{classmodel_1_1SimpleMulticastNetwork_ac98d07dd8f7b70e16ccb9a01abf56b9c}} 
+class {\bfseries boost\+::serialization\+::access}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/model/network-\/simple-\/multicast.\+hpp\item 
+src/model/network-\/simple-\/multicast.\+cpp\end{DoxyCompactItemize}

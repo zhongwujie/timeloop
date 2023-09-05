@@ -1,0 +1,79 @@
+\hypertarget{structmodel_1_1LegacyNetwork_1_1Specs}{}\doxysection{model\+::Legacy\+Network\+::Specs Struct Reference}
+\label{structmodel_1_1LegacyNetwork_1_1Specs}\index{model::LegacyNetwork::Specs@{model::LegacyNetwork::Specs}}
+
+
+Inheritance diagram for model\+::Legacy\+Network\+::Specs\+:
+% FIG 0
+
+
+Collaboration diagram for model\+::Legacy\+Network\+::Specs\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structmodel_1_1LegacyNetwork_1_1Specs_a7cb08c4a1b3a2b5f905f3741d75ff2b4}\label{structmodel_1_1LegacyNetwork_1_1Specs_a7cb08c4a1b3a2b5f905f3741d75ff2b4}} 
+const std\+::string {\bfseries Type} () const override
+\item 
+\mbox{\Hypertarget{structmodel_1_1LegacyNetwork_1_1Specs_a86910943ca1e5de9da002f31ad905858}\label{structmodel_1_1LegacyNetwork_1_1Specs_a86910943ca1e5de9da002f31ad905858}} 
+bool {\bfseries Support\+Accelergy\+Tables} () const override
+\item 
+\mbox{\Hypertarget{structmodel_1_1LegacyNetwork_1_1Specs_a017c51554908ed56a5a4dd2afb7d90e7}\label{structmodel_1_1LegacyNetwork_1_1Specs_a017c51554908ed56a5a4dd2afb7d90e7}} 
+void {\bfseries Process\+E\+RT} (const \mbox{\hyperlink{classconfig_1_1CompoundConfigNode}{config\+::\+Compound\+Config\+Node}} \&E\+RT) override
+\item 
+\mbox{\Hypertarget{structmodel_1_1LegacyNetwork_1_1Specs_adcebb8596872e6a523f09a91ac7e221c}\label{structmodel_1_1LegacyNetwork_1_1Specs_adcebb8596872e6a523f09a91ac7e221c}} 
+{\footnotesize template$<$class Archive $>$ }\\void {\bfseries serialize} (Archive \&ar, const unsigned int version=0)
+\item 
+\mbox{\Hypertarget{structmodel_1_1LegacyNetwork_1_1Specs_a3f511b914272ba715dab4ad9eb7398ba}\label{structmodel_1_1LegacyNetwork_1_1Specs_a3f511b914272ba715dab4ad9eb7398ba}} 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structmodel_1_1NetworkSpecs}{Network\+Specs}} $>$ {\bfseries Clone} () const override
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structmodel_1_1LegacyNetwork_1_1Specs_ad8919866481c51cff3a2e9ed3541cd04}\label{structmodel_1_1LegacyNetwork_1_1Specs_ad8919866481c51cff3a2e9ed3541cd04}} 
+std\+::string {\bfseries type}
+\item 
+\mbox{\Hypertarget{structmodel_1_1LegacyNetwork_1_1Specs_a93b007be8c54f09b448aed37b0cbc566}\label{structmodel_1_1LegacyNetwork_1_1Specs_a93b007be8c54f09b448aed37b0cbc566}} 
+std\+::string {\bfseries legacy\+\_\+subtype}
+\item 
+\mbox{\Hypertarget{structmodel_1_1LegacyNetwork_1_1Specs_abf81c7cf4a7af4a2fd18ed87627595c5}\label{structmodel_1_1LegacyNetwork_1_1Specs_abf81c7cf4a7af4a2fd18ed87627595c5}} 
+\mbox{\hyperlink{classmodel_1_1Attribute}{Attribute}}$<$ std\+::uint64\+\_\+t $>$ {\bfseries word\+\_\+bits}
+\item 
+\mbox{\Hypertarget{structmodel_1_1LegacyNetwork_1_1Specs_a9bb086c26104de0799f140a24f3ad0da}\label{structmodel_1_1LegacyNetwork_1_1Specs_a9bb086c26104de0799f140a24f3ad0da}} 
+\mbox{\hyperlink{classmodel_1_1Attribute}{Attribute}}$<$ double $>$ {\bfseries router\+\_\+energy}
+\item 
+\mbox{\Hypertarget{structmodel_1_1LegacyNetwork_1_1Specs_ac8e34744a5442988b3f11adf48d0224c}\label{structmodel_1_1LegacyNetwork_1_1Specs_ac8e34744a5442988b3f11adf48d0224c}} 
+\mbox{\hyperlink{classmodel_1_1Attribute}{Attribute}}$<$ double $>$ {\bfseries wire\+\_\+energy}
+\item 
+\mbox{\Hypertarget{structmodel_1_1LegacyNetwork_1_1Specs_afd1c75f516b973c1a2ffbae4c69a16cc}\label{structmodel_1_1LegacyNetwork_1_1Specs_afd1c75f516b973c1a2ffbae4c69a16cc}} 
+\mbox{\hyperlink{classmodel_1_1Attribute}{Attribute}}$<$ double $>$ {\bfseries tile\+\_\+width}
+\item 
+\mbox{\Hypertarget{structmodel_1_1LegacyNetwork_1_1Specs_ae42b66d1390cffb465ca96bd9edbe1b9}\label{structmodel_1_1LegacyNetwork_1_1Specs_ae42b66d1390cffb465ca96bd9edbe1b9}} 
+\mbox{\hyperlink{classmodel_1_1Attribute}{Attribute}}$<$ double $>$ {\bfseries energy\+\_\+per\+\_\+hop}
+\item 
+\mbox{\Hypertarget{structmodel_1_1LegacyNetwork_1_1Specs_ad4cca2fd7837efedb7f57dbfdd309782}\label{structmodel_1_1LegacyNetwork_1_1Specs_ad4cca2fd7837efedb7f57dbfdd309782}} 
+\mbox{\hyperlink{classmodel_1_1Attribute}{Attribute}}$<$ std\+::uint64\+\_\+t $>$ {\bfseries fill\+\_\+latency}
+\item 
+\mbox{\Hypertarget{structmodel_1_1LegacyNetwork_1_1Specs_a2bf07a4a73d0009ac7cb29555b8f52e0}\label{structmodel_1_1LegacyNetwork_1_1Specs_a2bf07a4a73d0009ac7cb29555b8f52e0}} 
+\mbox{\hyperlink{classmodel_1_1Attribute}{Attribute}}$<$ std\+::uint64\+\_\+t $>$ {\bfseries drain\+\_\+latency}
+\item 
+\mbox{\Hypertarget{structmodel_1_1LegacyNetwork_1_1Specs_abf79f3663bf5a0928f8688a7e3581075}\label{structmodel_1_1LegacyNetwork_1_1Specs_abf79f3663bf5a0928f8688a7e3581075}} 
+\mbox{\hyperlink{classmodel_1_1Attribute}{Attribute}}$<$ bool $>$ {\bfseries is\+\_\+sparse\+\_\+module}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structmodel_1_1LegacyNetwork_1_1Specs_ae9d7f47afbc4e95733f7b06b61f7b7cd}\label{structmodel_1_1LegacyNetwork_1_1Specs_ae9d7f47afbc4e95733f7b06b61f7b7cd}} 
+static const std\+::uint64\+\_\+t {\bfseries k\+Default\+Word\+Bits} = 16
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structmodel_1_1LegacyNetwork_1_1Specs_ac98d07dd8f7b70e16ccb9a01abf56b9c}\label{structmodel_1_1LegacyNetwork_1_1Specs_ac98d07dd8f7b70e16ccb9a01abf56b9c}} 
+class {\bfseries boost\+::serialization\+::access}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/model/network-\/legacy.\+hpp\item 
+src/model/network-\/legacy.\+cpp\end{DoxyCompactItemize}

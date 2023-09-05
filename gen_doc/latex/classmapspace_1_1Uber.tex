@@ -1,0 +1,109 @@
+\hypertarget{classmapspace_1_1Uber}{}\doxysection{mapspace\+::Uber Class Reference}
+\label{classmapspace_1_1Uber}\index{mapspace::Uber@{mapspace::Uber}}
+
+
+Inheritance diagram for mapspace\+::Uber\+:
+% FIG 0
+
+
+Collaboration diagram for mapspace\+::Uber\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmapspace_1_1Uber_a7773c85d4697e2708c1cf12e9f36fe7e}\label{classmapspace_1_1Uber_a7773c85d4697e2708c1cf12e9f36fe7e}} 
+{\bfseries Uber} (\mbox{\hyperlink{classconfig_1_1CompoundConfigNode}{config\+::\+Compound\+Config\+Node}} config, \mbox{\hyperlink{classconfig_1_1CompoundConfigNode}{config\+::\+Compound\+Config\+Node}} arch\+\_\+constraints, \mbox{\hyperlink{structmodel_1_1Engine_1_1Specs}{model\+::\+Engine\+::\+Specs}} arch\+\_\+specs, const \mbox{\hyperlink{classproblem_1_1Workload}{problem\+::\+Workload}} \&workload, bool filter\+\_\+spatial\+\_\+fanout=true, bool skip\+\_\+init=false)
+\item 
+\mbox{\Hypertarget{classmapspace_1_1Uber_a3d3362853cb5cbf185c99a788e9c3d76}\label{classmapspace_1_1Uber_a3d3362853cb5cbf185c99a788e9c3d76}} 
+{\bfseries Uber} (const \mbox{\hyperlink{classmapspace_1_1Uber}{Uber}} \&other)=default
+\item 
+\mbox{\Hypertarget{classmapspace_1_1Uber_a8f61ac28d7fe7748f10bfbe73b2a3189}\label{classmapspace_1_1Uber_a8f61ac28d7fe7748f10bfbe73b2a3189}} 
+void {\bfseries Init} (\mbox{\hyperlink{classconfig_1_1CompoundConfigNode}{config\+::\+Compound\+Config\+Node}} config, \mbox{\hyperlink{classconfig_1_1CompoundConfigNode}{config\+::\+Compound\+Config\+Node}} arch\+\_\+constraints)
+\item 
+\mbox{\Hypertarget{classmapspace_1_1Uber_a98971f84ebb6bab43325e0d6575a3895}\label{classmapspace_1_1Uber_a98971f84ebb6bab43325e0d6575a3895}} 
+void {\bfseries Init\+Index\+Factorization\+Space} ()
+\item 
+\mbox{\Hypertarget{classmapspace_1_1Uber_a42df89b9c06202ff0ec94bfe5bc5e791}\label{classmapspace_1_1Uber_a42df89b9c06202ff0ec94bfe5bc5e791}} 
+void {\bfseries Init\+Loop\+Permutation\+Space} (std\+::map$<$ unsigned, std\+::vector$<$ problem\+::\+Shape\+::\+Flattened\+Dimension\+ID $>$$>$ pruned\+\_\+dimensions=\{\})
+\item 
+\mbox{\Hypertarget{classmapspace_1_1Uber_a8ca7a8a64507948e4717e37d5355e468}\label{classmapspace_1_1Uber_a8ca7a8a64507948e4717e37d5355e468}} 
+void {\bfseries Init\+Spatial\+Space} (std\+::map$<$ unsigned, unsigned $>$ unit\+\_\+factors=\{\})
+\item 
+\mbox{\Hypertarget{classmapspace_1_1Uber_a7fd0fb0972d15ce33730111ca0e3e4cb}\label{classmapspace_1_1Uber_a7fd0fb0972d15ce33730111ca0e3e4cb}} 
+void {\bfseries Init\+Datatype\+Bypass\+Nest\+Space} ()
+\item 
+\mbox{\Hypertarget{classmapspace_1_1Uber_a13eae29a4101d77386e45151c3de6983}\label{classmapspace_1_1Uber_a13eae29a4101d77386e45151c3de6983}} 
+void {\bfseries Init\+Pruned} (uint128\+\_\+t index\+\_\+factorization\+\_\+id)
+\item 
+\mbox{\Hypertarget{classmapspace_1_1Uber_a126040c257f4dc692f63e1061db52cc2}\label{classmapspace_1_1Uber_a126040c257f4dc692f63e1061db52cc2}} 
+std\+::vector$<$ \mbox{\hyperlink{classmapspace_1_1MapSpace}{Map\+Space}} $\ast$ $>$ {\bfseries Split} (std\+::uint64\+\_\+t num\+\_\+splits)
+\item 
+\mbox{\Hypertarget{classmapspace_1_1Uber_a7fc6c7db88c5b624cb5d80b16d481683}\label{classmapspace_1_1Uber_a7fc6c7db88c5b624cb5d80b16d481683}} 
+void {\bfseries Init\+Split} (std\+::uint64\+\_\+t split\+\_\+id, uint128\+\_\+t split\+\_\+if\+\_\+size, std\+::uint64\+\_\+t num\+\_\+parent\+\_\+splits)
+\item 
+\mbox{\Hypertarget{classmapspace_1_1Uber_a31f5e8e6db691e1710d16e5daf3929f3}\label{classmapspace_1_1Uber_a31f5e8e6db691e1710d16e5daf3929f3}} 
+bool {\bfseries Is\+Split} ()
+\item 
+\mbox{\Hypertarget{classmapspace_1_1Uber_a9165c330cb4683406e7128ca32658dca}\label{classmapspace_1_1Uber_a9165c330cb4683406e7128ca32658dca}} 
+std\+::vector$<$ \mbox{\hyperlink{structmapspace_1_1Status}{Status}} $>$ {\bfseries Construct\+Mapping} (\mbox{\hyperlink{classCartesianCounter}{mapspace\+::\+ID}} mapping\+\_\+id, \mbox{\hyperlink{structMapping}{Mapping}} $\ast$mapping, bool break\+\_\+on\+\_\+failure=true)
+\item 
+\mbox{\Hypertarget{classmapspace_1_1Uber_a221c69713517affd88e9ac25f158e674}\label{classmapspace_1_1Uber_a221c69713517affd88e9ac25f158e674}} 
+void {\bfseries Init\+Subnests} (loop\+::\+Nest\+Config \&subnests)
+\item 
+\mbox{\Hypertarget{classmapspace_1_1Uber_a4a21c351188160240ea2a7ccfb3f269e}\label{classmapspace_1_1Uber_a4a21c351188160240ea2a7ccfb3f269e}} 
+void {\bfseries Permute\+Subnests} (uint128\+\_\+t mapping\+\_\+permutation\+\_\+id, loop\+::\+Nest\+Config \&subnests)
+\item 
+\mbox{\Hypertarget{classmapspace_1_1Uber_a3cb4558707865b5a1a682ba751b5066a}\label{classmapspace_1_1Uber_a3cb4558707865b5a1a682ba751b5066a}} 
+void {\bfseries Assign\+Index\+Factors} (uint128\+\_\+t mapping\+\_\+index\+\_\+factorization\+\_\+id, loop\+::\+Nest\+Config \&subnests)
+\item 
+\mbox{\Hypertarget{classmapspace_1_1Uber_a6ad929241223ed66579ae3e4e266c0f4}\label{classmapspace_1_1Uber_a6ad929241223ed66579ae3e4e266c0f4}} 
+std\+::vector$<$ \mbox{\hyperlink{structmapspace_1_1Status}{Status}} $>$ {\bfseries Assign\+Spatial\+Tiling\+Directions} (uint128\+\_\+t mapping\+\_\+spatial\+\_\+id, loop\+::\+Nest\+Config \&subnests, \mbox{\hyperlink{classproblem_1_1PerDataSpace}{tiling\+::\+Compound\+Mask\+Nest}} datatype\+\_\+bypass\+\_\+nest, bool break\+\_\+on\+\_\+failure)
+\item 
+\mbox{\Hypertarget{classmapspace_1_1Uber_a390ba8efc6c06dbff9ab6d0eb7987fe0}\label{classmapspace_1_1Uber_a390ba8efc6c06dbff9ab6d0eb7987fe0}} 
+\mbox{\hyperlink{structmapspace_1_1Status}{Status}} {\bfseries Assign\+Spatial\+Tiling\+Directions\+\_\+\+Level\+\_\+\+Expand} (std\+::uint32\+\_\+t spatial\+\_\+split, std\+::vector$<$ \mbox{\hyperlink{classloop_1_1Descriptor}{loop\+::\+Descriptor}} $>$ \&level\+\_\+nest, unsigned tiling\+\_\+level\+\_\+id, double \&fanout\+\_\+utilization)
+\item 
+\mbox{\Hypertarget{classmapspace_1_1Uber_ad122e47b8c5183fd046c044d983f1542}\label{classmapspace_1_1Uber_ad122e47b8c5183fd046c044d983f1542}} 
+\mbox{\hyperlink{classproblem_1_1PerDataSpace}{tiling\+::\+Compound\+Mask\+Nest}} {\bfseries Construct\+Datatype\+Bypass\+Nest} (uint128\+\_\+t mapping\+\_\+datatype\+\_\+bypass\+\_\+id)
+\item 
+\mbox{\Hypertarget{classmapspace_1_1Uber_aaee2ca546ae25f073a2a199d937aef29}\label{classmapspace_1_1Uber_aaee2ca546ae25f073a2a199d937aef29}} 
+void {\bfseries Parse} (\mbox{\hyperlink{classconfig_1_1CompoundConfigNode}{config\+::\+Compound\+Config\+Node}} config, \mbox{\hyperlink{classconfig_1_1CompoundConfigNode}{config\+::\+Compound\+Config\+Node}} arch\+\_\+constraints)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmapspace_1_1Uber_a318901cf635f2e6f6cd91ec33900b942}\label{classmapspace_1_1Uber_a318901cf635f2e6f6cd91ec33900b942}} 
+\mbox{\hyperlink{classmapspace_1_1PermutationSpace}{Permutation\+Space}} {\bfseries permutation\+\_\+space\+\_\+}
+\item 
+\mbox{\Hypertarget{classmapspace_1_1Uber_a5d4feac587d775c5db121c1a1a5dd5cc}\label{classmapspace_1_1Uber_a5d4feac587d775c5db121c1a1a5dd5cc}} 
+\mbox{\hyperlink{classmapspace_1_1IndexFactorizationSpace}{Index\+Factorization\+Space}} {\bfseries index\+\_\+factorization\+\_\+space\+\_\+}
+\item 
+\mbox{\Hypertarget{classmapspace_1_1Uber_a29e13cccf1093476a384b663db2f87fd}\label{classmapspace_1_1Uber_a29e13cccf1093476a384b663db2f87fd}} 
+\mbox{\hyperlink{classmapspace_1_1SpatialSplitSpace}{Spatial\+Split\+Space}} {\bfseries spatial\+\_\+split\+\_\+space\+\_\+}
+\item 
+\mbox{\Hypertarget{classmapspace_1_1Uber_ae3560473abbdde4f8c59156e9dfcb848}\label{classmapspace_1_1Uber_ae3560473abbdde4f8c59156e9dfcb848}} 
+std\+::vector$<$ \mbox{\hyperlink{classproblem_1_1PerDataSpace}{tiling\+::\+Compound\+Mask\+Nest}} $>$ {\bfseries datatype\+\_\+bypass\+\_\+nest\+\_\+space\+\_\+}
+\item 
+\mbox{\Hypertarget{classmapspace_1_1Uber_a4d8195b3765694b1d535761df92aa004}\label{classmapspace_1_1Uber_a4d8195b3765694b1d535761df92aa004}} 
+std\+::vector$<$ \mbox{\hyperlink{classmapspace_1_1Uber}{Uber}} $\ast$ $>$ {\bfseries splits\+\_\+}
+\item 
+\mbox{\Hypertarget{classmapspace_1_1Uber_a88b666f7986bc18c58e961e6f332ac55}\label{classmapspace_1_1Uber_a88b666f7986bc18c58e961e6f332ac55}} 
+std\+::uint64\+\_\+t {\bfseries split\+\_\+id\+\_\+}
+\item 
+\mbox{\Hypertarget{classmapspace_1_1Uber_a9da82ec21e3ae808cb78e3030be0b9e4}\label{classmapspace_1_1Uber_a9da82ec21e3ae808cb78e3030be0b9e4}} 
+std\+::uint64\+\_\+t {\bfseries num\+\_\+parent\+\_\+splits\+\_\+}
+\item 
+\mbox{\Hypertarget{classmapspace_1_1Uber_a83c7f993e283d4aac98ced690956e86e}\label{classmapspace_1_1Uber_a83c7f993e283d4aac98ced690956e86e}} 
+\mbox{\hyperlink{classArchProperties}{Arch\+Properties}} {\bfseries arch\+\_\+props\+\_\+}
+\item 
+\mbox{\Hypertarget{classmapspace_1_1Uber_a961dc6a9aebf22760217fdfe8bf4301c}\label{classmapspace_1_1Uber_a961dc6a9aebf22760217fdfe8bf4301c}} 
+\mbox{\hyperlink{classmapping_1_1Constraints}{mapping\+::\+Constraints}} {\bfseries constraints\+\_\+}
+\item 
+\mbox{\Hypertarget{classmapspace_1_1Uber_a8a755776f0ac02f8bc49e0996cd125aa}\label{classmapspace_1_1Uber_a8a755776f0ac02f8bc49e0996cd125aa}} 
+bool {\bfseries filter\+\_\+spatial\+\_\+fanout\+\_\+}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/mapspaces/uber.\+hpp\item 
+src/mapspaces/uber.\+cpp\end{DoxyCompactItemize}

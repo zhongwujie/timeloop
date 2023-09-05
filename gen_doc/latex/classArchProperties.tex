@@ -1,0 +1,65 @@
+\hypertarget{classArchProperties}{}\doxysection{Arch\+Properties Class Reference}
+\label{classArchProperties}\index{ArchProperties@{ArchProperties}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classArchProperties_abf876338c0e506ccbdff43ac5d90bf8e}\label{classArchProperties_abf876338c0e506ccbdff43ac5d90bf8e}} 
+{\bfseries Arch\+Properties} (const \mbox{\hyperlink{structmodel_1_1Engine_1_1Specs}{model\+::\+Engine\+::\+Specs}} \&arch\+\_\+specs)
+\item 
+\mbox{\Hypertarget{classArchProperties_aa32af1ff71fda050ad07f76e67d594f7}\label{classArchProperties_aa32af1ff71fda050ad07f76e67d594f7}} 
+void {\bfseries Derive\+Fanouts} ()
+\item 
+\mbox{\Hypertarget{classArchProperties_a01e3e6d97c232a7eef4d7ac7b6a36ae8}\label{classArchProperties_a01e3e6d97c232a7eef4d7ac7b6a36ae8}} 
+void {\bfseries Construct} (const \mbox{\hyperlink{structmodel_1_1Engine_1_1Specs}{model\+::\+Engine\+::\+Specs}} \&arch\+\_\+specs)
+\item 
+\mbox{\Hypertarget{classArchProperties_a1aca9476d799d07c2651e40581e3ce54}\label{classArchProperties_a1aca9476d799d07c2651e40581e3ce54}} 
+std\+::uint64\+\_\+t {\bfseries FanoutX} (unsigned storage\+\_\+level\+\_\+id)
+\item 
+\mbox{\Hypertarget{classArchProperties_a6d1e2f49f55df84a75adf5180718d21a}\label{classArchProperties_a6d1e2f49f55df84a75adf5180718d21a}} 
+std\+::uint64\+\_\+t {\bfseries FanoutY} (unsigned storage\+\_\+level\+\_\+id)
+\item 
+\mbox{\Hypertarget{classArchProperties_a5c6b8d621135a6e6f34256f6a9affea3}\label{classArchProperties_a5c6b8d621135a6e6f34256f6a9affea3}} 
+std\+::uint64\+\_\+t {\bfseries Fanout} (unsigned storage\+\_\+level\+\_\+id)
+\item 
+\mbox{\Hypertarget{classArchProperties_add8fe90d5ad3ea165d185dd600db4096}\label{classArchProperties_add8fe90d5ad3ea165d185dd600db4096}} 
+const std\+::map$<$ unsigned, std\+::uint64\+\_\+t $>$ \& {\bfseries FanoutX} () const
+\item 
+\mbox{\Hypertarget{classArchProperties_a914cc2b70ff2acfaf671506c18ba3f35}\label{classArchProperties_a914cc2b70ff2acfaf671506c18ba3f35}} 
+const std\+::map$<$ unsigned, std\+::uint64\+\_\+t $>$ \& {\bfseries FanoutY} () const
+\item 
+\mbox{\Hypertarget{classArchProperties_acce0d0505a01493e9e08c0805fbfb58a}\label{classArchProperties_acce0d0505a01493e9e08c0805fbfb58a}} 
+const unsigned \& {\bfseries Temporal\+To\+Tiling} (const unsigned l) const
+\item 
+\mbox{\Hypertarget{classArchProperties_a4595ffdc0f03cc232b734477014d3223}\label{classArchProperties_a4595ffdc0f03cc232b734477014d3223}} 
+const unsigned \& {\bfseries Spatial\+To\+Tiling} (const unsigned l) const
+\item 
+\mbox{\Hypertarget{classArchProperties_ab63b8cc5e34b6f0d9327ad37b9ae911b}\label{classArchProperties_ab63b8cc5e34b6f0d9327ad37b9ae911b}} 
+const unsigned \& {\bfseries Tiling\+To\+Storage} (const unsigned l) const
+\item 
+\mbox{\Hypertarget{classArchProperties_a5baee6f7a19e970d240e430c3560c25d}\label{classArchProperties_a5baee6f7a19e970d240e430c3560c25d}} 
+unsigned {\bfseries Tiling\+Levels} () const
+\item 
+\mbox{\Hypertarget{classArchProperties_a767aec7f5155faf1ccdb7d10c9582217}\label{classArchProperties_a767aec7f5155faf1ccdb7d10c9582217}} 
+unsigned {\bfseries Storage\+Levels} () const
+\item 
+\mbox{\Hypertarget{classArchProperties_ad0d82696563e951e0919017463a9a20a}\label{classArchProperties_ad0d82696563e951e0919017463a9a20a}} 
+\mbox{\hyperlink{structmodel_1_1Engine_1_1Specs}{model\+::\+Engine\+::\+Specs}} \& {\bfseries Specs} ()
+\item 
+\mbox{\Hypertarget{classArchProperties_a53eff982ce29fb7bf662058dac021cd0}\label{classArchProperties_a53eff982ce29fb7bf662058dac021cd0}} 
+bool {\bfseries Is\+Spatial} (int level) const
+\item 
+\mbox{\Hypertarget{classArchProperties_ad4233a15a3b0d8aee0bfa643971dfa84}\label{classArchProperties_ad4233a15a3b0d8aee0bfa643971dfa84}} 
+bool {\bfseries Is\+Spatial2D} (int level) const
+\item 
+\mbox{\Hypertarget{classArchProperties_a2783c44be6b447829abbf5623b02a9ba}\label{classArchProperties_a2783c44be6b447829abbf5623b02a9ba}} 
+std\+::string {\bfseries Storage\+Level\+Name} (unsigned l) const
+\item 
+\mbox{\Hypertarget{classArchProperties_a93217a252579c27ce5548fefea48bde8}\label{classArchProperties_a93217a252579c27ce5548fefea48bde8}} 
+std\+::string {\bfseries Tiling\+Level\+Name} (unsigned l) const
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/mapping/arch-\/properties.\+hpp\item 
+src/mapping/arch-\/properties.\+cpp\end{DoxyCompactItemize}

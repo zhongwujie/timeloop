@@ -1,0 +1,93 @@
+\hypertarget{structsparse_1_1SparseAnalysisState}{}\doxysection{sparse\+::Sparse\+Analysis\+State Struct Reference}
+\label{structsparse_1_1SparseAnalysisState}\index{sparse::SparseAnalysisState@{sparse::SparseAnalysisState}}
+
+
+Collaboration diagram for sparse\+::Sparse\+Analysis\+State\+:
+% FIG 0
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structsparse_1_1SparseAnalysisState_a1057d11e8ad24b509e5bffc159132a73}\label{structsparse_1_1SparseAnalysisState_a1057d11e8ad24b509e5bffc159132a73}} 
+bool {\bfseries Init} (\mbox{\hyperlink{structsparse_1_1SparseOptimizationInfo}{sparse\+::\+Sparse\+Optimization\+Info}} $\ast$sparse\+\_\+optimization\+\_\+info, \mbox{\hyperlink{classproblem_1_1Workload}{problem\+::\+Workload}} $\ast$workload, \mbox{\hyperlink{structMapping}{Mapping}} mapping, std\+::uint64\+\_\+t num\+\_\+storage\+\_\+levels)
+\item 
+\mbox{\Hypertarget{structsparse_1_1SparseAnalysisState_a7be4f17c4740bfea49c3c647a7196187}\label{structsparse_1_1SparseAnalysisState_a7be4f17c4740bfea49c3c647a7196187}} 
+void {\bfseries Reset} ()
+\item 
+\mbox{\Hypertarget{structsparse_1_1SparseAnalysisState_aeedb275b9d3ad9e1a8a6be65eed309e9}\label{structsparse_1_1SparseAnalysisState_aeedb275b9d3ad9e1a8a6be65eed309e9}} 
+void {\bfseries Collect\+Complete\+Point\+Sets\+And\+Subnests} ()
+\item 
+\mbox{\Hypertarget{structsparse_1_1SparseAnalysisState_ab70d8c047b0d432aa13bccaeaddd1c91}\label{structsparse_1_1SparseAnalysisState_ab70d8c047b0d432aa13bccaeaddd1c91}} 
+{\footnotesize template$<$class Archive $>$ }\\void {\bfseries serialize} (Archive \&ar, const unsigned int version=0)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structsparse_1_1SparseAnalysisState_a79ac286b8b3d8d2570ecb9c8335c7843}\label{structsparse_1_1SparseAnalysisState_a79ac286b8b3d8d2570ecb9c8335c7843}} 
+\mbox{\hyperlink{structsparse_1_1SparseOptimizationInfo}{sparse\+::\+Sparse\+Optimization\+Info}} $\ast$ {\bfseries sparse\+\_\+optimization\+\_\+info\+\_\+} = nullptr
+\item 
+\mbox{\Hypertarget{structsparse_1_1SparseAnalysisState_ab78099c39fd1e97306a3f82719a26c90}\label{structsparse_1_1SparseAnalysisState_ab78099c39fd1e97306a3f82719a26c90}} 
+\mbox{\hyperlink{classproblem_1_1Workload}{problem\+::\+Workload}} $\ast$ {\bfseries workload\+\_\+} = nullptr
+\item 
+\mbox{\Hypertarget{structsparse_1_1SparseAnalysisState_ac9241a35db24753b65b26287560c5e96}\label{structsparse_1_1SparseAnalysisState_ac9241a35db24753b65b26287560c5e96}} 
+std\+::uint64\+\_\+t {\bfseries num\+\_\+storage\+\_\+levels\+\_\+}
+\item 
+\mbox{\Hypertarget{structsparse_1_1SparseAnalysisState_ab12f8933a871255ac02168f557f8076f}\label{structsparse_1_1SparseAnalysisState_ab12f8933a871255ac02168f557f8076f}} 
+\mbox{\hyperlink{structMapping}{Mapping}} {\bfseries mapping\+\_\+}
+\item 
+\mbox{\Hypertarget{structsparse_1_1SparseAnalysisState_a3969c17921dd66d01073d78e91e6e6ad}\label{structsparse_1_1SparseAnalysisState_a3969c17921dd66d01073d78e91e6e6ad}} 
+std\+::vector$<$ std\+::vector$<$ \mbox{\hyperlink{classproblem_1_1OperationPoint}{problem\+::\+Operation\+Point}} $>$ $>$ {\bfseries maxtile\+\_\+molds\+\_\+high\+\_\+}
+\item 
+\mbox{\Hypertarget{structsparse_1_1SparseAnalysisState_aba8f2ec179f7701cbeee547f8bf0ad6b}\label{structsparse_1_1SparseAnalysisState_aba8f2ec179f7701cbeee547f8bf0ad6b}} 
+std\+::vector$<$ std\+::vector$<$ \mbox{\hyperlink{classloop_1_1Descriptor}{loop\+::\+Descriptor}} $>$ $>$ {\bfseries complete\+\_\+subnests\+\_\+}
+\item 
+\mbox{\Hypertarget{structsparse_1_1SparseAnalysisState_a0af30be7ae814b48b88028e84b8560b5}\label{structsparse_1_1SparseAnalysisState_a0af30be7ae814b48b88028e84b8560b5}} 
+std\+::vector$<$ std\+::vector$<$ bool $>$ $>$ {\bfseries trivial\+\_\+nest\+\_\+masks\+\_\+}
+\item 
+\mbox{\Hypertarget{structsparse_1_1SparseAnalysisState_a21b598e02d1ae7121e15bb272a403ea4}\label{structsparse_1_1SparseAnalysisState_a21b598e02d1ae7121e15bb272a403ea4}} 
+std\+::map$<$ unsigned, std\+::map$<$ Data\+Space\+ID, double $>$ $>$ {\bfseries prob\+\_\+explicitly\+\_\+optimized\+\_\+read\+\_\+}
+\item 
+\mbox{\Hypertarget{structsparse_1_1SparseAnalysisState_a9914793666a6b11482d6a1a1e813c728}\label{structsparse_1_1SparseAnalysisState_a9914793666a6b11482d6a1a1e813c728}} 
+std\+::map$<$ unsigned, std\+::map$<$ Data\+Space\+ID, double $>$ $>$ {\bfseries prob\+\_\+explicitly\+\_\+spatially\+\_\+optimized\+\_\+read\+\_\+}
+\item 
+\mbox{\Hypertarget{structsparse_1_1SparseAnalysisState_ad5fa2df8486cbb720fa657d8d243e29f}\label{structsparse_1_1SparseAnalysisState_ad5fa2df8486cbb720fa657d8d243e29f}} 
+std\+::map$<$ std\+::string, List\+Of\+Per\+Data\+Space\+Mask $>$ {\bfseries dspace\+\_\+optimization\+\_\+masks\+\_\+}
+\item 
+\mbox{\Hypertarget{structsparse_1_1SparseAnalysisState_a6cd67de5df2a673e04b1a461ac68f021}\label{structsparse_1_1SparseAnalysisState_a6cd67de5df2a673e04b1a461ac68f021}} 
+std\+::map$<$ std\+::string, List\+Of\+Per\+Data\+Space\+Mask $>$ {\bfseries scalar\+\_\+scalar\+\_\+opt\+\_\+masks\+\_\+}
+\item 
+\mbox{\Hypertarget{structsparse_1_1SparseAnalysisState_a8d8eecc71330956c938196c098fba884}\label{structsparse_1_1SparseAnalysisState_a8d8eecc71330956c938196c098fba884}} 
+std\+::map$<$ unsigned, std\+::map$<$ Data\+Space\+ID, \mbox{\hyperlink{classproblem_1_1OperationPoint}{problem\+::\+Operation\+Point}} $>$ $>$ {\bfseries cond\+\_\+on\+\_\+mold\+\_\+highs\+\_\+}
+\item 
+\mbox{\Hypertarget{structsparse_1_1SparseAnalysisState_ae3515727479283cb91d7115f9ab68805}\label{structsparse_1_1SparseAnalysisState_ae3515727479283cb91d7115f9ab68805}} 
+\mbox{\hyperlink{classproblem_1_1PerDataSpace}{problem\+::\+Per\+Data\+Space}}$<$ std\+::vector$<$ \mbox{\hyperlink{structsparse_1_1SpatialExpansion}{Spatial\+Expansion}} $>$ $>$ {\bfseries max\+\_\+spatial\+\_\+expansion\+\_\+}
+\item 
+\mbox{\Hypertarget{structsparse_1_1SparseAnalysisState_aa0b4bd93c561af3eba743d6666746d3c}\label{structsparse_1_1SparseAnalysisState_aa0b4bd93c561af3eba743d6666746d3c}} 
+\mbox{\hyperlink{classproblem_1_1PerDataSpace}{problem\+::\+Per\+Data\+Space}}$<$ std\+::vector$<$ double $>$ $>$ {\bfseries avg\+\_\+effective\+\_\+expansion\+\_\+ratio\+\_\+}
+\item 
+\mbox{\Hypertarget{structsparse_1_1SparseAnalysisState_a3e4e1c76e8b8cb365d18b88eff2b1ebf}\label{structsparse_1_1SparseAnalysisState_a3e4e1c76e8b8cb365d18b88eff2b1ebf}} 
+std\+::vector$<$ problem\+::\+Shape\+::\+Factorized\+Dimension\+ID $>$ {\bfseries c\+\_\+intersection\+\_\+dims\+\_\+}
+\item 
+\mbox{\Hypertarget{structsparse_1_1SparseAnalysisState_a78cd754eb408c61ddf58c19cd07d6337}\label{structsparse_1_1SparseAnalysisState_a78cd754eb408c61ddf58c19cd07d6337}} 
+std\+::map$<$ Data\+Space\+ID, double $>$ {\bfseries c\+\_\+operand\+\_\+densities\+\_\+}
+\item 
+\mbox{\Hypertarget{structsparse_1_1SparseAnalysisState_ab81ce0d476e9f21504c490133551dc98}\label{structsparse_1_1SparseAnalysisState_ab81ce0d476e9f21504c490133551dc98}} 
+std\+::map$<$ Data\+Space\+ID, bool $>$ {\bfseries storage\+\_\+gs\+\_\+saf\+\_\+}
+\item 
+\mbox{\Hypertarget{structsparse_1_1SparseAnalysisState_a11b57a2747b8ba325faee90930a662f4}\label{structsparse_1_1SparseAnalysisState_a11b57a2747b8ba325faee90930a662f4}} 
+std\+::map$<$ Data\+Space\+ID, double $>$ {\bfseries innermost\+\_\+empty\+\_\+cond\+\_\+on\+\_\+prob\+\_\+}
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structsparse_1_1SparseAnalysisState_ac98d07dd8f7b70e16ccb9a01abf56b9c}\label{structsparse_1_1SparseAnalysisState_ac98d07dd8f7b70e16ccb9a01abf56b9c}} 
+class {\bfseries boost\+::serialization\+::access}
+\item 
+\mbox{\Hypertarget{structsparse_1_1SparseAnalysisState_af63dadeb18aabef4720a2dd156b622bc}\label{structsparse_1_1SparseAnalysisState_af63dadeb18aabef4720a2dd156b622bc}} 
+std\+::ostream \& {\bfseries operator$<$$<$} (std\+::ostream \&out, const \mbox{\hyperlink{structsparse_1_1SparseAnalysisState}{Sparse\+Analysis\+State}} \&n)
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/sparse-\/analysis/state.\+hpp\item 
+src/sparse-\/analysis/state.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,49 @@
+\hypertarget{classmapspace_1_1PermutationSpace}{}\doxysection{mapspace\+::Permutation\+Space Class Reference}
+\label{classmapspace_1_1PermutationSpace}\index{mapspace::PermutationSpace@{mapspace::PermutationSpace}}
+
+
+Inheritance diagram for mapspace\+::Permutation\+Space\+:
+% FIG 0
+
+
+Collaboration diagram for mapspace\+::Permutation\+Space\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmapspace_1_1PermutationSpace_a5fe0d243e894c568e9a7f49dab7ec729}\label{classmapspace_1_1PermutationSpace_a5fe0d243e894c568e9a7f49dab7ec729}} 
+void {\bfseries Init} (uint64\+\_\+t num\+\_\+levels)
+\item 
+\mbox{\Hypertarget{classmapspace_1_1PermutationSpace_ac8d0859aeac5d2516afa7def4a61736c}\label{classmapspace_1_1PermutationSpace_ac8d0859aeac5d2516afa7def4a61736c}} 
+virtual void {\bfseries Init\+Level\+Canonical} (uint64\+\_\+t level)
+\item 
+\mbox{\Hypertarget{classmapspace_1_1PermutationSpace_a17c1ff65046d5478e62f8f75d9becc3b}\label{classmapspace_1_1PermutationSpace_a17c1ff65046d5478e62f8f75d9becc3b}} 
+virtual void {\bfseries Init\+Level} (uint64\+\_\+t level, std\+::vector$<$ problem\+::\+Shape\+::\+Flattened\+Dimension\+ID $>$ user\+\_\+prefix, std\+::vector$<$ problem\+::\+Shape\+::\+Flattened\+Dimension\+ID $>$ user\+\_\+suffix, std\+::vector$<$ problem\+::\+Shape\+::\+Flattened\+Dimension\+ID $>$ pruned\+\_\+dimensions=\{\})
+\item 
+\mbox{\Hypertarget{classmapspace_1_1PermutationSpace_a1dc593e69e141ecf6d4ab5f0af1cc59d}\label{classmapspace_1_1PermutationSpace_a1dc593e69e141ecf6d4ab5f0af1cc59d}} 
+virtual std\+::vector$<$ std\+::vector$<$ problem\+::\+Shape\+::\+Flattened\+Dimension\+ID $>$ $>$ {\bfseries Get\+Patterns} (uint128\+\_\+t id)
+\item 
+\mbox{\Hypertarget{classmapspace_1_1PermutationSpace_aa92d37dae0e3545513addf21c884d160}\label{classmapspace_1_1PermutationSpace_aa92d37dae0e3545513addf21c884d160}} 
+uint128\+\_\+t {\bfseries Size} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmapspace_1_1PermutationSpace_ab24773a2cabbda33d9926ef99c1541ba}\label{classmapspace_1_1PermutationSpace_ab24773a2cabbda33d9926ef99c1541ba}} 
+std\+::uint64\+\_\+t {\bfseries num\+\_\+levels\+\_\+}
+\item 
+\mbox{\Hypertarget{classmapspace_1_1PermutationSpace_aded721b578c0534a331d3d3048033ce7}\label{classmapspace_1_1PermutationSpace_aded721b578c0534a331d3d3048033ce7}} 
+std\+::map$<$ unsigned, Pattern $>$ {\bfseries patterns\+\_\+}
+\item 
+\mbox{\Hypertarget{classmapspace_1_1PermutationSpace_afdc4188dab31c72ab2871ef35edf2c37}\label{classmapspace_1_1PermutationSpace_afdc4188dab31c72ab2871ef35edf2c37}} 
+std\+::map$<$ unsigned, std\+::uint64\+\_\+t $>$ {\bfseries size\+\_\+}
+\item 
+\mbox{\Hypertarget{classmapspace_1_1PermutationSpace_a34b555d03453bf6667cc7850a3ad07d5}\label{classmapspace_1_1PermutationSpace_a34b555d03453bf6667cc7850a3ad07d5}} 
+\mbox{\hyperlink{classFactoradic}{Factoradic}}$<$ problem\+::\+Shape\+::\+Flattened\+Dimension\+ID $>$ {\bfseries factoradic\+\_\+}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/mapspaces/subspaces.\+hpp\item 
+src/mapspaces/subspaces.\+cpp\end{DoxyCompactItemize}

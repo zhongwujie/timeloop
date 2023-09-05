@@ -1,0 +1,179 @@
+\hypertarget{classApplication}{}\doxysection{Application Class Reference}
+\label{classApplication}\index{Application@{Application}}
+
+
+Collaboration diagram for Application\+:
+% FIG 0
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structApplication_1_1Stats}{Stats}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classApplication_a22fb00da59372d71f467fff0c7c5f251}\label{classApplication_a22fb00da59372d71f467fff0c7c5f251}} 
+{\bfseries Application} (\mbox{\hyperlink{classconfig_1_1CompoundConfig}{config\+::\+Compound\+Config}} $\ast$config, std\+::string output\+\_\+dir=\char`\"{}.\char`\"{}, std\+::string name=\char`\"{}timeloop-\/mapper\char`\"{})
+\item 
+\mbox{\Hypertarget{classApplication_afaeec66a8591b6d88049b260133d13fc}\label{classApplication_afaeec66a8591b6d88049b260133d13fc}} 
+{\bfseries Application} (const \mbox{\hyperlink{classApplication}{Application}} \&)=delete
+\item 
+\mbox{\Hypertarget{classApplication_ae0294a5e63103980f4f57c7b104f5f6a}\label{classApplication_ae0294a5e63103980f4f57c7b104f5f6a}} 
+\mbox{\hyperlink{classApplication}{Application}} \& {\bfseries operator=} (const \mbox{\hyperlink{classApplication}{Application}} \&)=delete
+\item 
+\mbox{\Hypertarget{classApplication_ab7f58a0488f5e594c2d4167a58e98d45}\label{classApplication_ab7f58a0488f5e594c2d4167a58e98d45}} 
+\mbox{\hyperlink{structEvaluationResult}{Evaluation\+Result}} {\bfseries Get\+Global\+Best} ()
+\item 
+\mbox{\Hypertarget{classApplication_aaf09cd6cb412086dc039e28cdb059f0d}\label{classApplication_aaf09cd6cb412086dc039e28cdb059f0d}} 
+void {\bfseries Run} ()
+\item 
+\mbox{\Hypertarget{classApplication_a68a6e7ceaa773676cdd460c3b09c694b}\label{classApplication_a68a6e7ceaa773676cdd460c3b09c694b}} 
+{\bfseries Application} (\mbox{\hyperlink{classconfig_1_1CompoundConfig}{config\+::\+Compound\+Config}} $\ast$config)
+\item 
+\mbox{\Hypertarget{classApplication_afaeec66a8591b6d88049b260133d13fc}\label{classApplication_afaeec66a8591b6d88049b260133d13fc}} 
+{\bfseries Application} (const \mbox{\hyperlink{classApplication}{Application}} \&)=delete
+\item 
+\mbox{\Hypertarget{classApplication_ae0294a5e63103980f4f57c7b104f5f6a}\label{classApplication_ae0294a5e63103980f4f57c7b104f5f6a}} 
+\mbox{\hyperlink{classApplication}{Application}} \& {\bfseries operator=} (const \mbox{\hyperlink{classApplication}{Application}} \&)=delete
+\item 
+\mbox{\Hypertarget{classApplication_aaf09cd6cb412086dc039e28cdb059f0d}\label{classApplication_aaf09cd6cb412086dc039e28cdb059f0d}} 
+void {\bfseries Run} ()
+\item 
+\mbox{\Hypertarget{classApplication_a7371408f303c2c9bcbb6a4aca8014685}\label{classApplication_a7371408f303c2c9bcbb6a4aca8014685}} 
+{\bfseries Application} (\mbox{\hyperlink{classconfig_1_1CompoundConfig}{config\+::\+Compound\+Config}} $\ast$config, std\+::string output\+\_\+dir=\char`\"{}.\char`\"{}, std\+::string name=\char`\"{}timeloop-\/model\char`\"{})
+\item 
+\mbox{\Hypertarget{classApplication_afaeec66a8591b6d88049b260133d13fc}\label{classApplication_afaeec66a8591b6d88049b260133d13fc}} 
+{\bfseries Application} (const \mbox{\hyperlink{classApplication}{Application}} \&)=delete
+\item 
+\mbox{\Hypertarget{classApplication_ae0294a5e63103980f4f57c7b104f5f6a}\label{classApplication_ae0294a5e63103980f4f57c7b104f5f6a}} 
+\mbox{\hyperlink{classApplication}{Application}} \& {\bfseries operator=} (const \mbox{\hyperlink{classApplication}{Application}} \&)=delete
+\item 
+\mbox{\Hypertarget{classApplication_a874870707e0643fcd7ea284628a85c66}\label{classApplication_a874870707e0643fcd7ea284628a85c66}} 
+\mbox{\hyperlink{structApplication_1_1Stats}{Stats}} {\bfseries Run} ()
+\item 
+\mbox{\Hypertarget{classApplication_a68a6e7ceaa773676cdd460c3b09c694b}\label{classApplication_a68a6e7ceaa773676cdd460c3b09c694b}} 
+{\bfseries Application} (\mbox{\hyperlink{classconfig_1_1CompoundConfig}{config\+::\+Compound\+Config}} $\ast$config)
+\item 
+\mbox{\Hypertarget{classApplication_aaf09cd6cb412086dc039e28cdb059f0d}\label{classApplication_aaf09cd6cb412086dc039e28cdb059f0d}} 
+void {\bfseries Run} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classApplication_ad4b5c32cf22173c96123c832d9a3611c}\label{classApplication_ad4b5c32cf22173c96123c832d9a3611c}} 
+std\+::string {\bfseries name\+\_\+}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classApplication_a59bddfa5db3687357b73c6fa915cfc4b}\label{classApplication_a59bddfa5db3687357b73c6fa915cfc4b}} 
+\mbox{\hyperlink{classproblem_1_1Workload}{problem\+::\+Workload}} {\bfseries workload\+\_\+}
+\item 
+\mbox{\Hypertarget{classApplication_acbc5452790a4e8485185905e098b969b}\label{classApplication_acbc5452790a4e8485185905e098b969b}} 
+\mbox{\hyperlink{structmodel_1_1Engine_1_1Specs}{model\+::\+Engine\+::\+Specs}} {\bfseries arch\+\_\+specs\+\_\+}
+\item 
+\mbox{\Hypertarget{classApplication_a643c8841308c89f7ca7d58a98def4e76}\label{classApplication_a643c8841308c89f7ca7d58a98def4e76}} 
+\mbox{\hyperlink{classmapspace_1_1MapSpace}{mapspace\+::\+Map\+Space}} $\ast$ {\bfseries mapspace\+\_\+}
+\item 
+\mbox{\Hypertarget{classApplication_a3a80551db9ea71b1fbc37b28ebb72867}\label{classApplication_a3a80551db9ea71b1fbc37b28ebb72867}} 
+std\+::vector$<$ \mbox{\hyperlink{classmapspace_1_1MapSpace}{mapspace\+::\+Map\+Space}} $\ast$ $>$ {\bfseries split\+\_\+mapspaces\+\_\+}
+\item 
+\mbox{\Hypertarget{classApplication_a8f66c5ec6fe768389e238730bffec336}\label{classApplication_a8f66c5ec6fe768389e238730bffec336}} 
+std\+::vector$<$ \mbox{\hyperlink{classsearch_1_1SearchAlgorithm}{search\+::\+Search\+Algorithm}} $\ast$ $>$ {\bfseries search\+\_\+}
+\item 
+\mbox{\Hypertarget{classApplication_adce20e1233af6b8b202a12d9dfe0cd9b}\label{classApplication_adce20e1233af6b8b202a12d9dfe0cd9b}} 
+\mbox{\hyperlink{structsparse_1_1SparseOptimizationInfo}{sparse\+::\+Sparse\+Optimization\+Info}} $\ast$ {\bfseries sparse\+\_\+optimizations\+\_\+}
+\item 
+\mbox{\Hypertarget{classApplication_a7101ac6795afe37838147bced6e7bf8d}\label{classApplication_a7101ac6795afe37838147bced6e7bf8d}} 
+uint128\+\_\+t {\bfseries search\+\_\+size\+\_\+}
+\item 
+\mbox{\Hypertarget{classApplication_a42494721ed698caba9dccb09098c8225}\label{classApplication_a42494721ed698caba9dccb09098c8225}} 
+std\+::uint32\+\_\+t {\bfseries num\+\_\+threads\+\_\+}
+\item 
+\mbox{\Hypertarget{classApplication_aad44961d88e8a00e5e152862d8b3a02b}\label{classApplication_aad44961d88e8a00e5e152862d8b3a02b}} 
+std\+::uint32\+\_\+t {\bfseries timeout\+\_\+}
+\item 
+\mbox{\Hypertarget{classApplication_a66f43c86127f05d14d163aeab1beae7d}\label{classApplication_a66f43c86127f05d14d163aeab1beae7d}} 
+std\+::uint32\+\_\+t {\bfseries victory\+\_\+condition\+\_\+}
+\item 
+\mbox{\Hypertarget{classApplication_a5257d6f46141becbd6b8e486cd379214}\label{classApplication_a5257d6f46141becbd6b8e486cd379214}} 
+uint128\+\_\+t {\bfseries sync\+\_\+interval\+\_\+}
+\item 
+\mbox{\Hypertarget{classApplication_ac2020af126f750889a05398e49062057}\label{classApplication_ac2020af126f750889a05398e49062057}} 
+uint128\+\_\+t {\bfseries log\+\_\+interval\+\_\+}
+\item 
+\mbox{\Hypertarget{classApplication_a3367fb267401f5faf1d7fdc1388c1a4d}\label{classApplication_a3367fb267401f5faf1d7fdc1388c1a4d}} 
+bool {\bfseries log\+\_\+stats\+\_\+}
+\item 
+\mbox{\Hypertarget{classApplication_aadde92e43861956017997381b759b582}\label{classApplication_aadde92e43861956017997381b759b582}} 
+bool {\bfseries log\+\_\+oaves\+\_\+}
+\item 
+\mbox{\Hypertarget{classApplication_a2b229e5d3e337d9d02d989980d864cbc}\label{classApplication_a2b229e5d3e337d9d02d989980d864cbc}} 
+bool {\bfseries log\+\_\+oaves\+\_\+mappings\+\_\+}
+\item 
+\mbox{\Hypertarget{classApplication_a0bbc90022e89907358bb5c6ba8d4a030}\label{classApplication_a0bbc90022e89907358bb5c6ba8d4a030}} 
+bool {\bfseries log\+\_\+suboptimal\+\_\+}
+\item 
+\mbox{\Hypertarget{classApplication_ac0a37bdeacfb0a7d30fd84472a3cddda}\label{classApplication_ac0a37bdeacfb0a7d30fd84472a3cddda}} 
+bool {\bfseries live\+\_\+status\+\_\+}
+\item 
+\mbox{\Hypertarget{classApplication_adc454b7b9c1db3ee49bcc5a311c3ef36}\label{classApplication_adc454b7b9c1db3ee49bcc5a311c3ef36}} 
+bool {\bfseries diagnostics\+\_\+on\+\_\+}
+\item 
+\mbox{\Hypertarget{classApplication_a6450231fe1c18a17571036e169aa59d9}\label{classApplication_a6450231fe1c18a17571036e169aa59d9}} 
+bool {\bfseries penalize\+\_\+consecutive\+\_\+bypass\+\_\+fails\+\_\+}
+\item 
+\mbox{\Hypertarget{classApplication_aeeddec0ef50248eaeb5cc5df69d9c4fc}\label{classApplication_aeeddec0ef50248eaeb5cc5df69d9c4fc}} 
+bool {\bfseries emit\+\_\+whoop\+\_\+nest\+\_\+}
+\item 
+\mbox{\Hypertarget{classApplication_a75707b1a5b0561c3214bc91d7d2347b0}\label{classApplication_a75707b1a5b0561c3214bc91d7d2347b0}} 
+std\+::string {\bfseries out\+\_\+prefix\+\_\+} = \char`\"{}timeloop-\/metric\char`\"{}
+\item 
+\mbox{\Hypertarget{classApplication_a96707bc43da039d065da1a10b223d224}\label{classApplication_a96707bc43da039d065da1a10b223d224}} 
+std\+::vector$<$ std\+::string $>$ {\bfseries optimization\+\_\+metrics\+\_\+}
+\item 
+\mbox{\Hypertarget{classApplication_aa557497aa3e33598a69ad4a317022c55}\label{classApplication_aa557497aa3e33598a69ad4a317022c55}} 
+char $\ast$ {\bfseries cfg\+\_\+string\+\_\+}
+\item 
+\mbox{\Hypertarget{classApplication_a591983ae312709ea46606989ed7ce90f}\label{classApplication_a591983ae312709ea46606989ed7ce90f}} 
+\mbox{\hyperlink{structEvaluationResult}{Evaluation\+Result}} {\bfseries best\+\_\+}
+\item 
+\mbox{\Hypertarget{classApplication_a9134bc9489a255352a6baf4c00cb184e}\label{classApplication_a9134bc9489a255352a6baf4c00cb184e}} 
+\mbox{\hyperlink{structEvaluationResult}{Evaluation\+Result}} {\bfseries global\+\_\+best\+\_\+}
+\item 
+\mbox{\Hypertarget{classApplication_a5a88c476887c46f740244f6997982fce}\label{classApplication_a5a88c476887c46f740244f6997982fce}} 
+\mbox{\hyperlink{classmodel_1_1Engine}{model\+::\+Engine}} {\bfseries engine\+\_\+}
+\item 
+\mbox{\Hypertarget{classApplication_a283a912f2a85ac90a60cc2a96703d454}\label{classApplication_a283a912f2a85ac90a60cc2a96703d454}} 
+\mbox{\hyperlink{structMapping}{Mapping}} $\ast$ {\bfseries mapping\+\_\+}
+\item 
+\mbox{\Hypertarget{classApplication_a182d076dad97c27447b484ab27fd3506}\label{classApplication_a182d076dad97c27447b484ab27fd3506}} 
+\mbox{\hyperlink{classArchProperties}{Arch\+Properties}} $\ast$ {\bfseries arch\+\_\+props\+\_\+}
+\item 
+\mbox{\Hypertarget{classApplication_a93e1b9b5fad1a27dc6aa7d64404df521}\label{classApplication_a93e1b9b5fad1a27dc6aa7d64404df521}} 
+\mbox{\hyperlink{classmapping_1_1Constraints}{mapping\+::\+Constraints}} $\ast$ {\bfseries constraints\+\_\+}
+\item 
+\mbox{\Hypertarget{classApplication_a85da48564e82503ccf473c446a6fcc5f}\label{classApplication_a85da48564e82503ccf473c446a6fcc5f}} 
+bool {\bfseries verbose\+\_\+} = false
+\item 
+\mbox{\Hypertarget{classApplication_a07afd7956a0ce3f74d4458d46adb0d19}\label{classApplication_a07afd7956a0ce3f74d4458d46adb0d19}} 
+bool {\bfseries auto\+\_\+bypass\+\_\+on\+\_\+failure\+\_\+} = false
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classApplication_a4305f269960e8ccc92b19b2f0480b16d}\label{classApplication_a4305f269960e8ccc92b19b2f0480b16d}} 
+class {\bfseries boost\+::serialization\+::access}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/applications/mapper/mapper.\+hpp\item 
+include/applications/metrics/metrics.\+hpp\item 
+include/applications/model/model.\+hpp\item 
+include/applications/simple-\/mapper/simple-\/mapper.\+hpp\item 
+src/applications/mapper/mapper.\+cpp\item 
+src/applications/metrics/metrics.\+cpp\item 
+src/applications/model/model.\+cpp\item 
+src/applications/simple-\/mapper/simple-\/mapper.\+cpp\end{DoxyCompactItemize}

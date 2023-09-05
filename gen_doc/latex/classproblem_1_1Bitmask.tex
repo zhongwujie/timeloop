@@ -1,0 +1,63 @@
+\hypertarget{classproblem_1_1Bitmask}{}\doxysection{problem\+::Bitmask Class Reference}
+\label{classproblem_1_1Bitmask}\index{problem::Bitmask@{problem::Bitmask}}
+
+
+Inheritance diagram for problem\+::Bitmask\+:
+% FIG 0
+
+
+Collaboration diagram for problem\+::Bitmask\+:
+% FIG 1
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structproblem_1_1Bitmask_1_1Specs}{Specs}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classproblem_1_1Bitmask_acdadb591a32d4d470620ec324ababbb0}\label{classproblem_1_1Bitmask_acdadb591a32d4d470620ec324ababbb0}} 
+{\footnotesize template$<$class Archive $>$ }\\void {\bfseries serialize} (Archive \&ar, const unsigned int version=0)
+\item 
+\mbox{\Hypertarget{classproblem_1_1Bitmask_a2107d85298f9b0d87e98356983ada948}\label{classproblem_1_1Bitmask_a2107d85298f9b0d87e98356983ada948}} 
+{\bfseries Bitmask} (const \mbox{\hyperlink{structproblem_1_1Bitmask_1_1Specs}{Specs}} \&specs)
+\item 
+\mbox{\Hypertarget{classproblem_1_1Bitmask_a5c632ab03386e882c3369d78a6bed77a}\label{classproblem_1_1Bitmask_a5c632ab03386e882c3369d78a6bed77a}} 
+\mbox{\hyperlink{structproblem_1_1PerRankMetaDataTileOccupancy}{Per\+Rank\+Meta\+Data\+Tile\+Occupancy}} {\bfseries Get\+Occupancy} (const \mbox{\hyperlink{structproblem_1_1MetaDataOccupancyQuery}{Meta\+Data\+Occupancy\+Query}} \&query) const
+\item 
+\mbox{\Hypertarget{classproblem_1_1Bitmask_a2b055c72c6b08511a0770f0e3b6f6d95}\label{classproblem_1_1Bitmask_a2b055c72c6b08511a0770f0e3b6f6d95}} 
+bool {\bfseries Rank\+Compressed} () const
+\item 
+\mbox{\Hypertarget{classproblem_1_1Bitmask_a9ea4b60b3f58e6a982995b9c58a888df}\label{classproblem_1_1Bitmask_a9ea4b60b3f58e6a982995b9c58a888df}} 
+bool {\bfseries Coordinates\+Implicit} () const
+\item 
+\mbox{\Hypertarget{classproblem_1_1Bitmask_ae729004ac5a4eaa1fe1894e0ce888d4c}\label{classproblem_1_1Bitmask_ae729004ac5a4eaa1fe1894e0ce888d4c}} 
+std\+::vector$<$ problem\+::\+Shape\+::\+Flattened\+Dimension\+ID $>$ {\bfseries Get\+Dimension\+I\+Ds} () const
+\item 
+\mbox{\Hypertarget{classproblem_1_1Bitmask_a4a97149f08829f90eb78f81635388913}\label{classproblem_1_1Bitmask_a4a97149f08829f90eb78f81635388913}} 
+std\+::string {\bfseries Get\+Format\+Name} () const
+\item 
+\mbox{\Hypertarget{classproblem_1_1Bitmask_a61deb6520039f6499a01e141662c7cb8}\label{classproblem_1_1Bitmask_a61deb6520039f6499a01e141662c7cb8}} 
+bool {\bfseries Meta\+Data\+Implicit\+As\+Lowest\+Rank} () const
+\item 
+\mbox{\Hypertarget{classproblem_1_1Bitmask_a8d62de71ad72ca866c7aa52a4f578a06}\label{classproblem_1_1Bitmask_a8d62de71ad72ca866c7aa52a4f578a06}} 
+const \mbox{\hyperlink{structproblem_1_1MetaDataFormatSpecs}{Meta\+Data\+Format\+Specs}} \& {\bfseries Get\+Specs} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classproblem_1_1Bitmask_a871ec614dba11c1368b614bd90e8ec87}\label{classproblem_1_1Bitmask_a871ec614dba11c1368b614bd90e8ec87}} 
+static \mbox{\hyperlink{structproblem_1_1Bitmask_1_1Specs}{Specs}} {\bfseries Parse\+Specs} (\mbox{\hyperlink{classconfig_1_1CompoundConfigNode}{config\+::\+Compound\+Config\+Node}} metadata\+\_\+config)
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classproblem_1_1Bitmask_ac98d07dd8f7b70e16ccb9a01abf56b9c}\label{classproblem_1_1Bitmask_ac98d07dd8f7b70e16ccb9a01abf56b9c}} 
+class {\bfseries boost\+::serialization\+::access}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/workload/format-\/models/bitmask.\+hpp\item 
+src/workload/format-\/models/bitmask.\+cpp\end{DoxyCompactItemize}

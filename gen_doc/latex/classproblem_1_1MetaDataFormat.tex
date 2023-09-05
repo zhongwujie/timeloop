@@ -1,0 +1,42 @@
+\hypertarget{classproblem_1_1MetaDataFormat}{}\doxysection{problem\+::Meta\+Data\+Format Class Reference}
+\label{classproblem_1_1MetaDataFormat}\index{problem::MetaDataFormat@{problem::MetaDataFormat}}
+
+
+Inheritance diagram for problem\+::Meta\+Data\+Format\+:
+% FIG 0
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classproblem_1_1MetaDataFormat_ae85ae2d0b6ecc94ea93f55fe0cfb672a}\label{classproblem_1_1MetaDataFormat_ae85ae2d0b6ecc94ea93f55fe0cfb672a}} 
+virtual \mbox{\hyperlink{structproblem_1_1PerRankMetaDataTileOccupancy}{Per\+Rank\+Meta\+Data\+Tile\+Occupancy}} {\bfseries Get\+Occupancy} (const \mbox{\hyperlink{structproblem_1_1MetaDataOccupancyQuery}{Meta\+Data\+Occupancy\+Query}} \&query) const =0
+\item 
+\mbox{\Hypertarget{classproblem_1_1MetaDataFormat_a47a3155e50456d0f6ee7616fa102e69b}\label{classproblem_1_1MetaDataFormat_a47a3155e50456d0f6ee7616fa102e69b}} 
+virtual bool {\bfseries Rank\+Compressed} () const =0
+\item 
+\mbox{\Hypertarget{classproblem_1_1MetaDataFormat_a0edf5d7de69ef256ce4338c3dcdf6607}\label{classproblem_1_1MetaDataFormat_a0edf5d7de69ef256ce4338c3dcdf6607}} 
+virtual bool {\bfseries Coordinates\+Implicit} () const =0
+\item 
+\mbox{\Hypertarget{classproblem_1_1MetaDataFormat_a728a54364d10ba486389e769a887b563}\label{classproblem_1_1MetaDataFormat_a728a54364d10ba486389e769a887b563}} 
+virtual std\+::vector$<$ problem\+::\+Shape\+::\+Flattened\+Dimension\+ID $>$ {\bfseries Get\+Dimension\+I\+Ds} () const =0
+\item 
+\mbox{\Hypertarget{classproblem_1_1MetaDataFormat_aa184e624c30c1ac0aae7ff9467ceedbc}\label{classproblem_1_1MetaDataFormat_aa184e624c30c1ac0aae7ff9467ceedbc}} 
+virtual std\+::string {\bfseries Get\+Format\+Name} () const =0
+\item 
+\mbox{\Hypertarget{classproblem_1_1MetaDataFormat_a77b3330aed5d9edae98035b3a3eafae7}\label{classproblem_1_1MetaDataFormat_a77b3330aed5d9edae98035b3a3eafae7}} 
+virtual bool {\bfseries Meta\+Data\+Implicit\+As\+Lowest\+Rank} () const =0
+\item 
+\mbox{\Hypertarget{classproblem_1_1MetaDataFormat_a31f319627fea38d68bb54fcdc1793677}\label{classproblem_1_1MetaDataFormat_a31f319627fea38d68bb54fcdc1793677}} 
+{\footnotesize template$<$class Archive $>$ }\\void {\bfseries serialize} (Archive \&ar, const unsigned int version=0)
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classproblem_1_1MetaDataFormat_ac98d07dd8f7b70e16ccb9a01abf56b9c}\label{classproblem_1_1MetaDataFormat_ac98d07dd8f7b70e16ccb9a01abf56b9c}} 
+class {\bfseries boost\+::serialization\+::access}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/workload/format-\/models/metadata-\/format.\+hpp\item 
+src/workload/format-\/models/metadata-\/format.\+cpp\end{DoxyCompactItemize}

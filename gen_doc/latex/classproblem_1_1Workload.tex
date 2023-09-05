@@ -1,0 +1,120 @@
+\hypertarget{classproblem_1_1Workload}{}\doxysection{problem\+::Workload Class Reference}
+\label{classproblem_1_1Workload}\index{problem::Workload@{problem::Workload}}
+
+
+Collaboration diagram for problem\+::Workload\+:
+% FIG 0
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classproblem_1_1Workload_aff72b6693640455fad1148fd621239a9}\label{classproblem_1_1Workload_aff72b6693640455fad1148fd621239a9}} 
+typedef std\+::map$<$ Shape\+::\+Factorized\+Dimension\+ID, Coordinate $>$ {\bfseries Factorized\+Bounds}
+\item 
+\mbox{\Hypertarget{classproblem_1_1Workload_ade2465ab9c9e932bed1901cfeffdfcd5}\label{classproblem_1_1Workload_ade2465ab9c9e932bed1901cfeffdfcd5}} 
+typedef std\+::map$<$ Shape\+::\+Flattened\+Dimension\+ID, Coordinate $>$ {\bfseries Flattened\+Bounds}
+\item 
+\mbox{\Hypertarget{classproblem_1_1Workload_a33cefae584c34a8b56f7c4a469287eb2}\label{classproblem_1_1Workload_a33cefae584c34a8b56f7c4a469287eb2}} 
+typedef std\+::map$<$ Shape\+::\+Coefficient\+ID, int $>$ {\bfseries Coefficients}
+\item 
+\mbox{\Hypertarget{classproblem_1_1Workload_aa39dcf9dff820acb6a4c5a1dd6468ef0}\label{classproblem_1_1Workload_aa39dcf9dff820acb6a4c5a1dd6468ef0}} 
+typedef std\+::map$<$ Shape\+::\+Data\+Space\+ID, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classproblem_1_1DensityDistribution}{Density\+Distribution}} $>$ $>$ {\bfseries Densities}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classproblem_1_1Workload_a99c140122469e58a26f3632127c938b2}\label{classproblem_1_1Workload_a99c140122469e58a26f3632127c938b2}} 
+const \mbox{\hyperlink{classproblem_1_1Shape}{Shape}} $\ast$ {\bfseries Get\+Shape} () const
+\item 
+\mbox{\Hypertarget{classproblem_1_1Workload_a6f611f26425d53e648b7057817a8459c}\label{classproblem_1_1Workload_a6f611f26425d53e648b7057817a8459c}} 
+int {\bfseries Get\+Factorized\+Bound} (Shape\+::\+Factorized\+Dimension\+ID dim) const
+\item 
+\mbox{\Hypertarget{classproblem_1_1Workload_ab7f6b10286ed9d0f945dccbd248c2060}\label{classproblem_1_1Workload_ab7f6b10286ed9d0f945dccbd248c2060}} 
+int {\bfseries Get\+Flattened\+Bound} (Shape\+::\+Flattened\+Dimension\+ID dim) const
+\item 
+\mbox{\Hypertarget{classproblem_1_1Workload_a278aa839605bcd99d998cb029a80d1ea}\label{classproblem_1_1Workload_a278aa839605bcd99d998cb029a80d1ea}} 
+\mbox{\hyperlink{classPoint}{Point}} {\bfseries Get\+Factorized\+Bounds} () const
+\item 
+\mbox{\Hypertarget{classproblem_1_1Workload_a44cc54ca060e29adca370695a9c06873}\label{classproblem_1_1Workload_a44cc54ca060e29adca370695a9c06873}} 
+int {\bfseries Get\+Coefficient} (Shape\+::\+Coefficient\+ID p) const
+\item 
+\mbox{\Hypertarget{classproblem_1_1Workload_ac5a8ac4e83f2586e81eb3d5718dde883}\label{classproblem_1_1Workload_ac5a8ac4e83f2586e81eb3d5718dde883}} 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classproblem_1_1DensityDistribution}{Density\+Distribution}} $>$ {\bfseries Get\+Density} (Shape\+::\+Data\+Space\+ID pv) const
+\item 
+\mbox{\Hypertarget{classproblem_1_1Workload_abfd74962576641d0d420e8fa89e17a72}\label{classproblem_1_1Workload_abfd74962576641d0d420e8fa89e17a72}} 
+bool {\bfseries Get\+Dense\+Default\+Tensor} () const
+\item 
+\mbox{\Hypertarget{classproblem_1_1Workload_a05f2c128aaffa1be860b4ef3edc51456}\label{classproblem_1_1Workload_a05f2c128aaffa1be860b4ef3edc51456}} 
+void {\bfseries Derive\+Flattened\+Bounds} ()
+\item 
+\mbox{\Hypertarget{classproblem_1_1Workload_ab571040469a9c944b3e740861a436196}\label{classproblem_1_1Workload_ab571040469a9c944b3e740861a436196}} 
+void {\bfseries Set\+Factorized\+Bounds} (const Factorized\+Bounds \&factorized\+\_\+bounds)
+\item 
+\mbox{\Hypertarget{classproblem_1_1Workload_ad1923e6753167311cdd11056c823a3ab}\label{classproblem_1_1Workload_ad1923e6753167311cdd11056c823a3ab}} 
+void {\bfseries Set\+Coefficients} (const Coefficients \&coefficients)
+\item 
+\mbox{\Hypertarget{classproblem_1_1Workload_ac474b92f217c6706598c0921f5d2c533}\label{classproblem_1_1Workload_ac474b92f217c6706598c0921f5d2c533}} 
+void {\bfseries Set\+Densities} (const Densities \&densities)
+\item 
+\mbox{\Hypertarget{classproblem_1_1Workload_aee44b70afe045f9dbe98a316e524c75e}\label{classproblem_1_1Workload_aee44b70afe045f9dbe98a316e524c75e}} 
+void {\bfseries Set\+Workload\+Tensor\+Size} (problem\+::\+Shape\+::\+Data\+Space\+ID id, problem\+::\+Data\+Space \&point\+\_\+set)
+\item 
+\mbox{\Hypertarget{classproblem_1_1Workload_a28899b3f121bcea16e9fe9c06986446f}\label{classproblem_1_1Workload_a28899b3f121bcea16e9fe9c06986446f}} 
+bool {\bfseries Is\+Workload\+Tensor\+Sizes\+Set} ()
+\item 
+\mbox{\Hypertarget{classproblem_1_1Workload_a118a6fe6d28a68a0de028c38a5775085}\label{classproblem_1_1Workload_a118a6fe6d28a68a0de028c38a5775085}} 
+void {\bfseries All\+Tensors\+Set} ()
+\item 
+\mbox{\Hypertarget{classproblem_1_1Workload_a15141701279fad62ce5bc63aaa5f1f0d}\label{classproblem_1_1Workload_a15141701279fad62ce5bc63aaa5f1f0d}} 
+void {\bfseries Set\+Default\+Dense\+Tensor\+Flag} (const bool flag)
+\item 
+\mbox{\Hypertarget{classproblem_1_1Workload_ab3340e807e345aacadba62ed07e0ad93}\label{classproblem_1_1Workload_ab3340e807e345aacadba62ed07e0ad93}} 
+void {\bfseries Parse\+Shape} (\mbox{\hyperlink{classconfig_1_1CompoundConfigNode}{config\+::\+Compound\+Config\+Node}} config)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classproblem_1_1Workload_a073ff852722f9c86a40bb10d1b3e4789}\label{classproblem_1_1Workload_a073ff852722f9c86a40bb10d1b3e4789}} 
+Factorized\+Bounds {\bfseries factorized\+\_\+bounds\+\_\+}
+\item 
+\mbox{\Hypertarget{classproblem_1_1Workload_aa5d9544475b149796032659d125a1a2f}\label{classproblem_1_1Workload_aa5d9544475b149796032659d125a1a2f}} 
+Flattened\+Bounds {\bfseries flattened\+\_\+bounds\+\_\+}
+\item 
+\mbox{\Hypertarget{classproblem_1_1Workload_a33678d40a2997b01f6dc29508ef08e43}\label{classproblem_1_1Workload_a33678d40a2997b01f6dc29508ef08e43}} 
+Coefficients {\bfseries coefficients\+\_\+}
+\item 
+\mbox{\Hypertarget{classproblem_1_1Workload_a1336fd9b75817b91a8a5ccbfd3a22c56}\label{classproblem_1_1Workload_a1336fd9b75817b91a8a5ccbfd3a22c56}} 
+Densities {\bfseries densities\+\_\+}
+\item 
+\mbox{\Hypertarget{classproblem_1_1Workload_af335ccf0514c2cd089f515e4060d1414}\label{classproblem_1_1Workload_af335ccf0514c2cd089f515e4060d1414}} 
+bool {\bfseries workload\+\_\+tensor\+\_\+size\+\_\+set\+\_\+} = false
+\item 
+\mbox{\Hypertarget{classproblem_1_1Workload_ad04294b2abc4ba77d88526766ccc190f}\label{classproblem_1_1Workload_ad04294b2abc4ba77d88526766ccc190f}} 
+bool {\bfseries default\+\_\+dense\+\_\+} = true
+\item 
+\mbox{\Hypertarget{classproblem_1_1Workload_ae1c0fb585772855a6f590ab902b10376}\label{classproblem_1_1Workload_ae1c0fb585772855a6f590ab902b10376}} 
+\mbox{\hyperlink{classproblem_1_1Shape}{Shape}} {\bfseries shape\+\_\+}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classproblem_1_1Workload_aa888f4b647a072348b100016a350a1f0}\label{classproblem_1_1Workload_aa888f4b647a072348b100016a350a1f0}} 
+static bool {\bfseries workload\+\_\+alive\+\_\+} = false
+\item 
+\mbox{\Hypertarget{classproblem_1_1Workload_a3fa57acf718522347887b9bf9aa1b31f}\label{classproblem_1_1Workload_a3fa57acf718522347887b9bf9aa1b31f}} 
+static const \mbox{\hyperlink{classproblem_1_1Shape}{Shape}} $\ast$ {\bfseries current\+\_\+shape\+\_\+} = nullptr
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classproblem_1_1Workload_ac98d07dd8f7b70e16ccb9a01abf56b9c}\label{classproblem_1_1Workload_ac98d07dd8f7b70e16ccb9a01abf56b9c}} 
+class {\bfseries boost\+::serialization\+::access}
+\item 
+\mbox{\Hypertarget{classproblem_1_1Workload_a0a0a32eb6d592c1571d6609ee18bad01}\label{classproblem_1_1Workload_a0a0a32eb6d592c1571d6609ee18bad01}} 
+const friend \mbox{\hyperlink{classproblem_1_1Shape}{Shape}} $\ast$ {\bfseries Get\+Shape} ()
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/workload/workload.\+hpp\item 
+src/workload/workload.\+cpp\end{DoxyCompactItemize}

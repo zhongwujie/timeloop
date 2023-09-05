@@ -50,8 +50,9 @@ class Factors
  private:
   unsigned long n_;
   std::vector<unsigned long> all_factors_;
+  // cofactors_ stores the order factor of n_. For example, if n_ is 8 and the 
+  // order is 3. cofactors_ contains {1, 2, 4}, {1, 4, 2}, {1, 1, 8} ...
   std::vector<std::vector<unsigned long>> cofactors_;
-
   unsigned long ISqrt_(unsigned long x);
 
   void CalculateAllFactors_();

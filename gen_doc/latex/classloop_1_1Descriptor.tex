@@ -1,0 +1,59 @@
+\hypertarget{classloop_1_1Descriptor}{}\doxysection{loop\+::Descriptor Class Reference}
+\label{classloop_1_1Descriptor}\index{loop::Descriptor@{loop::Descriptor}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classloop_1_1Descriptor_a098140c6790f316f1da6b0d6dc9c53d7}\label{classloop_1_1Descriptor_a098140c6790f316f1da6b0d6dc9c53d7}} 
+{\bfseries Descriptor} (const problem\+::\+Shape\+::\+Flattened\+Dimension\+ID \+\_\+dimension, const int \+\_\+start, const int \+\_\+end, const int \+\_\+stride, const spacetime\+::\+Dimension \+\_\+spacetime\+\_\+dimension, const int \+\_\+residual\+\_\+end=0)
+\item 
+\mbox{\Hypertarget{classloop_1_1Descriptor_ac797a471886548470630ec3f4384e5f5}\label{classloop_1_1Descriptor_ac797a471886548470630ec3f4384e5f5}} 
+{\bfseries Descriptor} (const problem\+::\+Shape\+::\+Flattened\+Dimension\+ID \+\_\+dimension, const int \+\_\+end, const spacetime\+::\+Dimension \+\_\+spacetime\+\_\+dimension=spacetime\+::\+Dimension\+::\+Time, const int \+\_\+residual\+\_\+end=0)
+\item 
+\mbox{\Hypertarget{classloop_1_1Descriptor_a3984f36740daf3be1726e1c9ca86dae0}\label{classloop_1_1Descriptor_a3984f36740daf3be1726e1c9ca86dae0}} 
+bool {\bfseries operator==} (const \mbox{\hyperlink{classloop_1_1Descriptor}{Descriptor}} \&d) const
+\item 
+\mbox{\Hypertarget{classloop_1_1Descriptor_ad8a83f778238bc0ba324d6e8ab555485}\label{classloop_1_1Descriptor_ad8a83f778238bc0ba324d6e8ab555485}} 
+void {\bfseries Print} (std\+::ostream \&out, bool long\+\_\+form=true) const
+\item 
+\mbox{\Hypertarget{classloop_1_1Descriptor_aba4a1b52b8d20722c40e553a31c96287}\label{classloop_1_1Descriptor_aba4a1b52b8d20722c40e553a31c96287}} 
+void {\bfseries Print\+Whoop} (std\+::ostream \&out, int storage\+\_\+level, std\+::vector$<$ problem\+::\+Shape\+::\+Flattened\+Dimension\+ID $>$ \&dimids, std\+::vector$<$ std\+::string $>$ \&dimnames, std\+::vector$<$ int $>$ \&dimbounds, std\+::vector$<$ std\+::string $>$ \&varnames) const
+\item 
+\mbox{\Hypertarget{classloop_1_1Descriptor_aaf5809d7574bc2d600e21f4ce15fa57e}\label{classloop_1_1Descriptor_aaf5809d7574bc2d600e21f4ce15fa57e}} 
+std\+::string {\bfseries Print\+Compact} () const
+\item 
+\mbox{\Hypertarget{classloop_1_1Descriptor_a2bc18760d8a93086aabc133b6522f40b}\label{classloop_1_1Descriptor_a2bc18760d8a93086aabc133b6522f40b}} 
+{\footnotesize template$<$class Archive $>$ }\\void {\bfseries serialize} (Archive \&ar, const unsigned int version=0)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classloop_1_1Descriptor_aa94a3cb139752cb1babea6d511f7fdd2}\label{classloop_1_1Descriptor_aa94a3cb139752cb1babea6d511f7fdd2}} 
+problem\+::\+Shape\+::\+Flattened\+Dimension\+ID {\bfseries dimension}
+\item 
+\mbox{\Hypertarget{classloop_1_1Descriptor_a4ec933a3031c14b8178d1b6eabcd9664}\label{classloop_1_1Descriptor_a4ec933a3031c14b8178d1b6eabcd9664}} 
+int {\bfseries start}
+\item 
+\mbox{\Hypertarget{classloop_1_1Descriptor_a2f82b33f8165049535db944a6bb7be30}\label{classloop_1_1Descriptor_a2f82b33f8165049535db944a6bb7be30}} 
+int {\bfseries end}
+\item 
+\mbox{\Hypertarget{classloop_1_1Descriptor_a7f645f5b12b465ff769e36985841631f}\label{classloop_1_1Descriptor_a7f645f5b12b465ff769e36985841631f}} 
+int {\bfseries residual\+\_\+end}
+\item 
+\mbox{\Hypertarget{classloop_1_1Descriptor_aede69d3f63678b867a6ef3bb7e09dbbd}\label{classloop_1_1Descriptor_aede69d3f63678b867a6ef3bb7e09dbbd}} 
+int {\bfseries stride}
+\item 
+\mbox{\Hypertarget{classloop_1_1Descriptor_ac2121d95cb7feaf67b169275d7a30e9b}\label{classloop_1_1Descriptor_ac2121d95cb7feaf67b169275d7a30e9b}} 
+spacetime\+::\+Dimension {\bfseries spacetime\+\_\+dimension}
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classloop_1_1Descriptor_ac98d07dd8f7b70e16ccb9a01abf56b9c}\label{classloop_1_1Descriptor_ac98d07dd8f7b70e16ccb9a01abf56b9c}} 
+class {\bfseries boost\+::serialization\+::access}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/mapping/loop.\+hpp\item 
+src/mapping/loop.\+cpp\end{DoxyCompactItemize}

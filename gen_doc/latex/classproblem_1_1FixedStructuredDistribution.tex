@@ -1,0 +1,72 @@
+\hypertarget{classproblem_1_1FixedStructuredDistribution}{}\doxysection{problem\+::Fixed\+Structured\+Distribution Class Reference}
+\label{classproblem_1_1FixedStructuredDistribution}\index{problem::FixedStructuredDistribution@{problem::FixedStructuredDistribution}}
+
+
+Inheritance diagram for problem\+::Fixed\+Structured\+Distribution\+:
+% FIG 0
+
+
+Collaboration diagram for problem\+::Fixed\+Structured\+Distribution\+:
+% FIG 1
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structproblem_1_1FixedStructuredDistribution_1_1Specs}{Specs}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classproblem_1_1FixedStructuredDistribution_af0b57932e3e65d4319ee9480a976454d}\label{classproblem_1_1FixedStructuredDistribution_af0b57932e3e65d4319ee9480a976454d}} 
+{\footnotesize template$<$class Archive $>$ }\\void {\bfseries serialize} (Archive \&ar, const unsigned int version=0)
+\item 
+\mbox{\Hypertarget{classproblem_1_1FixedStructuredDistribution_a51d8101a9e08d1212bfd73986e0107e5}\label{classproblem_1_1FixedStructuredDistribution_a51d8101a9e08d1212bfd73986e0107e5}} 
+{\bfseries Fixed\+Structured\+Distribution} (const \mbox{\hyperlink{structproblem_1_1FixedStructuredDistribution_1_1Specs}{Specs}} \&specs)
+\item 
+\mbox{\Hypertarget{classproblem_1_1FixedStructuredDistribution_aec6bd135eefc4ad0186183e0b4d1c556}\label{classproblem_1_1FixedStructuredDistribution_aec6bd135eefc4ad0186183e0b4d1c556}} 
+void {\bfseries Set\+Workload\+Tensor\+Size} (const Point\+Set \&point\+\_\+set)
+\item 
+\mbox{\Hypertarget{classproblem_1_1FixedStructuredDistribution_a6180593ed5051523423a97b036b93a58}\label{classproblem_1_1FixedStructuredDistribution_a6180593ed5051523423a97b036b93a58}} 
+std\+::uint64\+\_\+t {\bfseries Get\+Workload\+Tensor\+Size} () const
+\item 
+\mbox{\Hypertarget{classproblem_1_1FixedStructuredDistribution_acc89f6d37e2875ad43ae2bbcd0b94bb7}\label{classproblem_1_1FixedStructuredDistribution_acc89f6d37e2875ad43ae2bbcd0b94bb7}} 
+std\+::string {\bfseries Get\+Distribution\+Type} () const
+\item 
+\mbox{\Hypertarget{classproblem_1_1FixedStructuredDistribution_a20d32791e972c7e408e684f1e2344423}\label{classproblem_1_1FixedStructuredDistribution_a20d32791e972c7e408e684f1e2344423}} 
+std\+::uint64\+\_\+t {\bfseries Get\+Max\+Tile\+Occupancy\+By\+Confidence} (const \mbox{\hyperlink{structtiling_1_1CoordinateSpaceTileInfo}{tiling\+::\+Coordinate\+Space\+Tile\+Info}} \&tensor, const double confidence)
+\item 
+\mbox{\Hypertarget{classproblem_1_1FixedStructuredDistribution_a1195d66a8b6b4d4a73f8a1cd354e2474}\label{classproblem_1_1FixedStructuredDistribution_a1195d66a8b6b4d4a73f8a1cd354e2474}} 
+std\+::uint64\+\_\+t {\bfseries Get\+Max\+Tile\+Occupancy\+By\+Confidence\+\_\+\+L\+TW} (const std\+::uint64\+\_\+t tile\+\_\+shape, const double confidence)
+\item 
+\mbox{\Hypertarget{classproblem_1_1FixedStructuredDistribution_a9b1b4a6d19b55f79b6e0f05f51cbc815}\label{classproblem_1_1FixedStructuredDistribution_a9b1b4a6d19b55f79b6e0f05f51cbc815}} 
+std\+::uint64\+\_\+t {\bfseries Get\+Max\+Num\+Element\+By\+Confidence} (const \mbox{\hyperlink{structtiling_1_1CoordinateSpaceTileInfo}{tiling\+::\+Coordinate\+Space\+Tile\+Info}} \&fiber\+\_\+tile, const \mbox{\hyperlink{structtiling_1_1CoordinateSpaceTileInfo}{tiling\+::\+Coordinate\+Space\+Tile\+Info}} \&element\+\_\+tile, const double confidence)
+\item 
+\mbox{\Hypertarget{classproblem_1_1FixedStructuredDistribution_adb0bdce99f1b99d3b25481f833bea8a7}\label{classproblem_1_1FixedStructuredDistribution_adb0bdce99f1b99d3b25481f833bea8a7}} 
+double {\bfseries Get\+Max\+Tile\+Density\+By\+Confidence} (const \mbox{\hyperlink{structtiling_1_1CoordinateSpaceTileInfo}{tiling\+::\+Coordinate\+Space\+Tile\+Info}} tile, const double confidence=1.\+0)
+\item 
+\mbox{\Hypertarget{classproblem_1_1FixedStructuredDistribution_abd63515cc74b9d363900559b69a2ba85}\label{classproblem_1_1FixedStructuredDistribution_abd63515cc74b9d363900559b69a2ba85}} 
+double {\bfseries Get\+Min\+Tile\+Density} (const \mbox{\hyperlink{structtiling_1_1CoordinateSpaceTileInfo}{tiling\+::\+Coordinate\+Space\+Tile\+Info}} tile)
+\item 
+\mbox{\Hypertarget{classproblem_1_1FixedStructuredDistribution_aac62fe24a65d59da5adaecd068520df3}\label{classproblem_1_1FixedStructuredDistribution_aac62fe24a65d59da5adaecd068520df3}} 
+double {\bfseries Get\+Tile\+Occupancy\+Probability} (const \mbox{\hyperlink{structtiling_1_1CoordinateSpaceTileInfo}{tiling\+::\+Coordinate\+Space\+Tile\+Info}} \&tile, const std\+::uint64\+\_\+t occupancy)
+\item 
+\mbox{\Hypertarget{classproblem_1_1FixedStructuredDistribution_a01b5030ac8a3d48668ccdb898c931368}\label{classproblem_1_1FixedStructuredDistribution_a01b5030ac8a3d48668ccdb898c931368}} 
+double {\bfseries Get\+Expected\+Tile\+Occupancy} (const \mbox{\hyperlink{structtiling_1_1CoordinateSpaceTileInfo}{tiling\+::\+Coordinate\+Space\+Tile\+Info}} tile)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classproblem_1_1FixedStructuredDistribution_ac56a59d01854fb2c5c435365d3ade102}\label{classproblem_1_1FixedStructuredDistribution_ac56a59d01854fb2c5c435365d3ade102}} 
+static \mbox{\hyperlink{structproblem_1_1FixedStructuredDistribution_1_1Specs}{Specs}} {\bfseries Parse\+Specs} (\mbox{\hyperlink{classconfig_1_1CompoundConfigNode}{config\+::\+Compound\+Config\+Node}} density\+\_\+config)
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classproblem_1_1FixedStructuredDistribution_ac98d07dd8f7b70e16ccb9a01abf56b9c}\label{classproblem_1_1FixedStructuredDistribution_ac98d07dd8f7b70e16ccb9a01abf56b9c}} 
+class {\bfseries boost\+::serialization\+::access}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/workload/density-\/models/fixed-\/structured-\/distribution.\+hpp\item 
+src/workload/density-\/models/fixed-\/structured-\/distribution.\+cpp\end{DoxyCompactItemize}

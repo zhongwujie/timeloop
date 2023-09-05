@@ -1,0 +1,19 @@
+digraph "MapperThread::Stats"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="MapperThread::Stats",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" index_factor_best\nthread_best" ];
+  Node2 [label="EvaluationResult",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structEvaluationResult.html",tooltip=" "];
+  Node3 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" mapping" ];
+  Node3 [label="Mapping",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structMapping.html",tooltip=" "];
+  Node4 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" datatype_bypass_nest" ];
+  Node4 [label="problem::PerDataSpace\l\< std::bitset\< MaxTilingLevels \> \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classproblem_1_1PerDataSpace.html",tooltip=" "];
+  Node5 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="DynamicArray\< std::\lbitset\< MaxTilingLevels \> \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classDynamicArray.html",tooltip=" "];
+  Node6 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" complete_loop_nest\nloop_nest" ];
+  Node6 [label="loop::Nest",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classloop_1_1Nest.html",tooltip="A nest of loops."];
+  Node7 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" stats" ];
+  Node7 [label="model::Topology::Stats",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structmodel_1_1Topology_1_1Stats.html",tooltip=" "];
+}

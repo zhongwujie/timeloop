@@ -1,0 +1,92 @@
+\hypertarget{classISLPointSet}{}\doxysection{I\+S\+L\+Point\+Set Class Reference}
+\label{classISLPointSet}\index{ISLPointSet@{ISLPointSet}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classISLPointSet_a6c882aac2e686127c3af3e6bfc6f265e}\label{classISLPointSet_a6c882aac2e686127c3af3e6bfc6f265e}} 
+{\bfseries I\+S\+L\+Point\+Set} (std\+::uint32\+\_\+t order)
+\item 
+\mbox{\Hypertarget{classISLPointSet_a35d0c443e3a4d1184ca2274d6011437d}\label{classISLPointSet_a35d0c443e3a4d1184ca2274d6011437d}} 
+{\bfseries I\+S\+L\+Point\+Set} (std\+::uint32\+\_\+t order, isl\+\_\+set $\ast$set)
+\item 
+\mbox{\Hypertarget{classISLPointSet_a2ffcf5224aa3753b429ccdf768353b32}\label{classISLPointSet_a2ffcf5224aa3753b429ccdf768353b32}} 
+{\bfseries I\+S\+L\+Point\+Set} (std\+::uint32\+\_\+t order, const \mbox{\hyperlink{classPoint}{Point}} unit)
+\item 
+\mbox{\Hypertarget{classISLPointSet_a78bab41745132fa9168d91a0c8eb04ed}\label{classISLPointSet_a78bab41745132fa9168d91a0c8eb04ed}} 
+{\bfseries I\+S\+L\+Point\+Set} (std\+::uint32\+\_\+t order, const \mbox{\hyperlink{classPoint}{Point}} min, const \mbox{\hyperlink{classPoint}{Point}} max)
+\item 
+\mbox{\Hypertarget{classISLPointSet_a1ff3262476c7b14c340623c14c12240d}\label{classISLPointSet_a1ff3262476c7b14c340623c14c12240d}} 
+{\bfseries I\+S\+L\+Point\+Set} (const \mbox{\hyperlink{classISLPointSet}{I\+S\+L\+Point\+Set}} \&a)
+\item 
+\mbox{\Hypertarget{classISLPointSet_ae05e6a6141a08b6009b6db0e2885022b}\label{classISLPointSet_ae05e6a6141a08b6009b6db0e2885022b}} 
+\mbox{\hyperlink{classISLPointSet}{I\+S\+L\+Point\+Set}} \& {\bfseries operator=} (\mbox{\hyperlink{classISLPointSet}{I\+S\+L\+Point\+Set}} other)
+\item 
+\mbox{\Hypertarget{classISLPointSet_af418fc8629a7c56d8272086aea59f598}\label{classISLPointSet_af418fc8629a7c56d8272086aea59f598}} 
+std\+::size\+\_\+t {\bfseries size} () const
+\item 
+\mbox{\Hypertarget{classISLPointSet_a38e1b2ead8364c9fcfe150dcc797e54f}\label{classISLPointSet_a38e1b2ead8364c9fcfe150dcc797e54f}} 
+bool {\bfseries empty} () const
+\item 
+\mbox{\Hypertarget{classISLPointSet_adb8df3ef2bfcb053cec33de0e8785a12}\label{classISLPointSet_adb8df3ef2bfcb053cec33de0e8785a12}} 
+void {\bfseries Reset} ()
+\item 
+\mbox{\Hypertarget{classISLPointSet_aee3b2a40ade76724707029928a725f23}\label{classISLPointSet_aee3b2a40ade76724707029928a725f23}} 
+\mbox{\hyperlink{classISLPointSet}{I\+S\+L\+Point\+Set}} \& {\bfseries operator+=} (const \mbox{\hyperlink{classPoint}{Point}} \&p)
+\item 
+\mbox{\Hypertarget{classISLPointSet_a85c499e1d1a882020990212f642d9bcd}\label{classISLPointSet_a85c499e1d1a882020990212f642d9bcd}} 
+\mbox{\hyperlink{classISLPointSet}{I\+S\+L\+Point\+Set}} {\bfseries operator-\/} (const \mbox{\hyperlink{classISLPointSet}{I\+S\+L\+Point\+Set}} \&s)
+\item 
+\mbox{\Hypertarget{classISLPointSet_abd958f82777904b9ee8c0bc61fe409c1}\label{classISLPointSet_abd958f82777904b9ee8c0bc61fe409c1}} 
+bool {\bfseries operator==} (const \mbox{\hyperlink{classISLPointSet}{I\+S\+L\+Point\+Set}} \&s) const
+\item 
+\mbox{\Hypertarget{classISLPointSet_a93f97d749c212ceaaef94812723b6721}\label{classISLPointSet_a93f97d749c212ceaaef94812723b6721}} 
+\mbox{\hyperlink{classPoint}{Point}} {\bfseries Get\+Translation} (const \mbox{\hyperlink{classISLPointSet}{I\+S\+L\+Point\+Set}} \&s) const
+\item 
+\mbox{\Hypertarget{classISLPointSet_a09b23557b0421ddfa6e452a56eae6e6c}\label{classISLPointSet_a09b23557b0421ddfa6e452a56eae6e6c}} 
+void {\bfseries Translate} (const \mbox{\hyperlink{classPoint}{Point}} \&p)
+\item 
+\mbox{\Hypertarget{classISLPointSet_ab68c0fbf9d48b222b671b6a8f157e3ef}\label{classISLPointSet_ab68c0fbf9d48b222b671b6a8f157e3ef}} 
+void {\bfseries Print} (std\+::ostream \&out=std\+::cout) const
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classISLPointSet_a18b24bcf212be1db8e072c9373131eb7}\label{classISLPointSet_a18b24bcf212be1db8e072c9373131eb7}} 
+isl\+\_\+point $\ast$ {\bfseries To\+I\+SL} (const \mbox{\hyperlink{classPoint}{Point}} p)
+\item 
+\mbox{\Hypertarget{classISLPointSet_aa056a918016d7e67f698ea7c77770c57}\label{classISLPointSet_aa056a918016d7e67f698ea7c77770c57}} 
+isl\+\_\+ctx $\ast$ {\bfseries Context} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classISLPointSet_a46e155d306300cf69bc541921a177451}\label{classISLPointSet_a46e155d306300cf69bc541921a177451}} 
+std\+::uint32\+\_\+t {\bfseries order\+\_\+}
+\item 
+\mbox{\Hypertarget{classISLPointSet_a930db4238036174d8519339af536cfef}\label{classISLPointSet_a930db4238036174d8519339af536cfef}} 
+isl\+\_\+set $\ast$ {\bfseries set\+\_\+}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classISLPointSet_a4052208753df819c2462a3e47c5a2fdf}\label{classISLPointSet_a4052208753df819c2462a3e47c5a2fdf}} 
+static std\+::mutex {\bfseries mutex}
+\item 
+\mbox{\Hypertarget{classISLPointSet_aabb9405c89b56a8f2ae4fd0569e8bc80}\label{classISLPointSet_aabb9405c89b56a8f2ae4fd0569e8bc80}} 
+static std\+::unordered\+\_\+map$<$ pthread\+\_\+t, isl\+\_\+ctx $\ast$ $>$ {\bfseries contexts}
+\item 
+\mbox{\Hypertarget{classISLPointSet_aac1cc75d50a46601efb209dcc29b5717}\label{classISLPointSet_aac1cc75d50a46601efb209dcc29b5717}} 
+static std\+::unordered\+\_\+map$<$ pthread\+\_\+t, isl\+\_\+printer $\ast$ $>$ {\bfseries consoles}
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classISLPointSet_a3035e9e26e885b75b9fff299742ddb5c}\label{classISLPointSet_a3035e9e26e885b75b9fff299742ddb5c}} 
+void {\bfseries swap} (\mbox{\hyperlink{classISLPointSet}{I\+S\+L\+Point\+Set}} \&first, \mbox{\hyperlink{classISLPointSet}{I\+S\+L\+Point\+Set}} \&second)
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/loop-\/analysis/point-\/set-\/isl.\+hpp\item 
+src/loop-\/analysis/point-\/set-\/isl.\+cpp\end{DoxyCompactItemize}

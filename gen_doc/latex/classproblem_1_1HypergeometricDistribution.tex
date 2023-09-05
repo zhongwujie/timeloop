@@ -1,0 +1,75 @@
+\hypertarget{classproblem_1_1HypergeometricDistribution}{}\doxysection{problem\+::Hypergeometric\+Distribution Class Reference}
+\label{classproblem_1_1HypergeometricDistribution}\index{problem::HypergeometricDistribution@{problem::HypergeometricDistribution}}
+
+
+Inheritance diagram for problem\+::Hypergeometric\+Distribution\+:
+% FIG 0
+
+
+Collaboration diagram for problem\+::Hypergeometric\+Distribution\+:
+% FIG 1
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structproblem_1_1HypergeometricDistribution_1_1Specs}{Specs}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classproblem_1_1HypergeometricDistribution_af9a2259d7a5f410e91b5342d41b8a17e}\label{classproblem_1_1HypergeometricDistribution_af9a2259d7a5f410e91b5342d41b8a17e}} 
+{\footnotesize template$<$class Archive $>$ }\\void {\bfseries serialize} (Archive \&ar, const unsigned int version=0)
+\item 
+\mbox{\Hypertarget{classproblem_1_1HypergeometricDistribution_ad7c73df00ef8d50d9b9d5f77d8e4117d}\label{classproblem_1_1HypergeometricDistribution_ad7c73df00ef8d50d9b9d5f77d8e4117d}} 
+{\bfseries Hypergeometric\+Distribution} (const \mbox{\hyperlink{structproblem_1_1HypergeometricDistribution_1_1Specs}{Specs}} \&specs)
+\item 
+\mbox{\Hypertarget{classproblem_1_1HypergeometricDistribution_a9a339c7267fef4ac14845b9afe11be36}\label{classproblem_1_1HypergeometricDistribution_a9a339c7267fef4ac14845b9afe11be36}} 
+void {\bfseries Set\+Workload\+Tensor\+Size} (const Point\+Set \&point\+\_\+set)
+\item 
+\mbox{\Hypertarget{classproblem_1_1HypergeometricDistribution_a6483fe65da921ad84c9ec7bb0d2965b5}\label{classproblem_1_1HypergeometricDistribution_a6483fe65da921ad84c9ec7bb0d2965b5}} 
+std\+::uint64\+\_\+t {\bfseries Get\+Workload\+Tensor\+Size} () const
+\item 
+\mbox{\Hypertarget{classproblem_1_1HypergeometricDistribution_a45138e156b7ed5095c4f4133a1a58a4c}\label{classproblem_1_1HypergeometricDistribution_a45138e156b7ed5095c4f4133a1a58a4c}} 
+std\+::string {\bfseries Get\+Distribution\+Type} () const
+\item 
+\mbox{\Hypertarget{classproblem_1_1HypergeometricDistribution_a4c9e119b134aead9bafd51c81771d8ca}\label{classproblem_1_1HypergeometricDistribution_a4c9e119b134aead9bafd51c81771d8ca}} 
+std\+::uint64\+\_\+t {\bfseries Get\+Max\+Tile\+Occupancy\+By\+Confidence} (const \mbox{\hyperlink{structtiling_1_1CoordinateSpaceTileInfo}{tiling\+::\+Coordinate\+Space\+Tile\+Info}} \&tensor, const double confidence)
+\item 
+\mbox{\Hypertarget{classproblem_1_1HypergeometricDistribution_ab197d1798bc53f18b81f771c89c9fbf5}\label{classproblem_1_1HypergeometricDistribution_ab197d1798bc53f18b81f771c89c9fbf5}} 
+std\+::uint64\+\_\+t {\bfseries Get\+Max\+Tile\+Occupancy\+By\+Confidence\+\_\+\+L\+TW} (const std\+::uint64\+\_\+t tile\+\_\+shape, const double confidence)
+\item 
+\mbox{\Hypertarget{classproblem_1_1HypergeometricDistribution_ab274fb679053e2e0597a5e3ebd2defcb}\label{classproblem_1_1HypergeometricDistribution_ab274fb679053e2e0597a5e3ebd2defcb}} 
+std\+::uint64\+\_\+t {\bfseries Get\+Max\+Num\+Element\+By\+Confidence} (const \mbox{\hyperlink{structtiling_1_1CoordinateSpaceTileInfo}{tiling\+::\+Coordinate\+Space\+Tile\+Info}} \&fiber\+\_\+tile, const \mbox{\hyperlink{structtiling_1_1CoordinateSpaceTileInfo}{tiling\+::\+Coordinate\+Space\+Tile\+Info}} \&element\+\_\+tile, const double confidence)
+\item 
+\mbox{\Hypertarget{classproblem_1_1HypergeometricDistribution_a75472a81416b6adba4c6e98425e3dcae}\label{classproblem_1_1HypergeometricDistribution_a75472a81416b6adba4c6e98425e3dcae}} 
+double {\bfseries Get\+Max\+Tile\+Density\+By\+Confidence} (const \mbox{\hyperlink{structtiling_1_1CoordinateSpaceTileInfo}{tiling\+::\+Coordinate\+Space\+Tile\+Info}} tile, const double confidence=1.\+0)
+\item 
+\mbox{\Hypertarget{classproblem_1_1HypergeometricDistribution_a95de190269aa64563792c61da7ed0c07}\label{classproblem_1_1HypergeometricDistribution_a95de190269aa64563792c61da7ed0c07}} 
+double {\bfseries Get\+Min\+Tile\+Density} (const \mbox{\hyperlink{structtiling_1_1CoordinateSpaceTileInfo}{tiling\+::\+Coordinate\+Space\+Tile\+Info}} tile)
+\item 
+\mbox{\Hypertarget{classproblem_1_1HypergeometricDistribution_a667a56964aaf706679f80320a089f5a4}\label{classproblem_1_1HypergeometricDistribution_a667a56964aaf706679f80320a089f5a4}} 
+double {\bfseries Calculate\+Probability} (const std\+::uint64\+\_\+t nnz\+\_\+vals, const std\+::uint64\+\_\+t r, const std\+::uint64\+\_\+t n, const std\+::uint64\+\_\+t N) const
+\item 
+\mbox{\Hypertarget{classproblem_1_1HypergeometricDistribution_a27c79778e0f70e1ed0844eb284ec7f32}\label{classproblem_1_1HypergeometricDistribution_a27c79778e0f70e1ed0844eb284ec7f32}} 
+double {\bfseries Get\+Tile\+Occupancy\+Probability} (const \mbox{\hyperlink{structtiling_1_1CoordinateSpaceTileInfo}{tiling\+::\+Coordinate\+Space\+Tile\+Info}} \&tile, const std\+::uint64\+\_\+t occupancy)
+\item 
+\mbox{\Hypertarget{classproblem_1_1HypergeometricDistribution_a173261897fd436e0a0ac49f94bee6a9b}\label{classproblem_1_1HypergeometricDistribution_a173261897fd436e0a0ac49f94bee6a9b}} 
+double {\bfseries Get\+Expected\+Tile\+Occupancy} (const \mbox{\hyperlink{structtiling_1_1CoordinateSpaceTileInfo}{tiling\+::\+Coordinate\+Space\+Tile\+Info}} tile)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classproblem_1_1HypergeometricDistribution_a10f319b68e05fc39c381225aacdd50d5}\label{classproblem_1_1HypergeometricDistribution_a10f319b68e05fc39c381225aacdd50d5}} 
+static \mbox{\hyperlink{structproblem_1_1HypergeometricDistribution_1_1Specs}{Specs}} {\bfseries Parse\+Specs} (\mbox{\hyperlink{classconfig_1_1CompoundConfigNode}{config\+::\+Compound\+Config\+Node}} density\+\_\+config)
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classproblem_1_1HypergeometricDistribution_ac98d07dd8f7b70e16ccb9a01abf56b9c}\label{classproblem_1_1HypergeometricDistribution_ac98d07dd8f7b70e16ccb9a01abf56b9c}} 
+class {\bfseries boost\+::serialization\+::access}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/workload/density-\/models/hypergeometric-\/distribution.\+hpp\item 
+src/workload/density-\/models/hypergeometric-\/distribution.\+cpp\end{DoxyCompactItemize}

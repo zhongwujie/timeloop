@@ -1,0 +1,72 @@
+\hypertarget{structMapping}{}\doxysection{Mapping Struct Reference}
+\label{structMapping}\index{Mapping@{Mapping}}
+
+
+Collaboration diagram for Mapping\+:
+% FIG 0
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structMapping_ab1dcef7fa39c8f45c00684de495761ba}\label{structMapping_ab1dcef7fa39c8f45c00684de495761ba}} 
+{\footnotesize template$<$class Archive $>$ }\\void {\bfseries serialize} (Archive \&ar, const unsigned int version=0)
+\item 
+\mbox{\Hypertarget{structMapping_a86da74b2aa4513ba055a07bb58a3fda6}\label{structMapping_a86da74b2aa4513ba055a07bb58a3fda6}} 
+void {\bfseries Format\+As\+Constraints} (libconfig\+::\+Setting \&mapspace)
+\item 
+\mbox{\Hypertarget{structMapping_a88bb2774612cacbdbedc2c2e699f9236}\label{structMapping_a88bb2774612cacbdbedc2c2e699f9236}} 
+void {\bfseries Format\+As\+Lib\+Config} (libconfig\+::\+Setting \&mapping, const std\+::vector$<$ std\+::string $>$ \&storage\+\_\+level\+\_\+names)
+\item 
+\mbox{\Hypertarget{structMapping_abb6380071e79abd3b81ef82719123ca5}\label{structMapping_abb6380071e79abd3b81ef82719123ca5}} 
+void {\bfseries Format\+As\+Yaml} (Y\+A\+M\+L\+::\+Emitter \&yaml\+\_\+mapping, const std\+::vector$<$ std\+::string $>$ \&storage\+\_\+level\+\_\+names)
+\item 
+\mbox{\Hypertarget{structMapping_aa79a9e41dd59c3ab546882affcc19fcb}\label{structMapping_aa79a9e41dd59c3ab546882affcc19fcb}} 
+void {\bfseries Print\+As\+Constraints} (std\+::string filename)
+\item 
+\mbox{\Hypertarget{structMapping_a14c8c181cbac356f0cfee14febb5dc05}\label{structMapping_a14c8c181cbac356f0cfee14febb5dc05}} 
+void {\bfseries Pretty\+Print} (std\+::ostream \&out, const std\+::vector$<$ std\+::string $>$ \&storage\+\_\+level\+\_\+names, const std\+::vector$<$ \mbox{\hyperlink{classproblem_1_1PerDataSpace}{problem\+::\+Per\+Data\+Space}}$<$ std\+::uint64\+\_\+t $>$$>$ \&utlized\+\_\+capacities=\{\}, const std\+::vector$<$ \mbox{\hyperlink{classproblem_1_1PerDataSpace}{problem\+::\+Per\+Data\+Space}}$<$ std\+::uint64\+\_\+t $>$$>$ \&tile\+\_\+sizes=\{\}, const std\+::string \+\_\+indent=\char`\"{}\char`\"{})
+\item 
+\mbox{\Hypertarget{structMapping_adfb42aab56a921f09d539b6be1414d3a}\label{structMapping_adfb42aab56a921f09d539b6be1414d3a}} 
+void {\bfseries Print\+Whoop\+Nest} (std\+::ostream \&out, const std\+::vector$<$ std\+::string $>$ \&storage\+\_\+level\+\_\+names, const std\+::vector$<$ \mbox{\hyperlink{classproblem_1_1PerDataSpace}{problem\+::\+Per\+Data\+Space}}$<$ std\+::uint64\+\_\+t $>$$>$ \&tile\+\_\+sizes, const std\+::vector$<$ \mbox{\hyperlink{classproblem_1_1PerDataSpace}{problem\+::\+Per\+Data\+Space}}$<$ std\+::uint64\+\_\+t $>$$>$ \&utilized\+\_\+instances)
+\item 
+\mbox{\Hypertarget{structMapping_a08d7a5f93f1cf803042983c3b931752b}\label{structMapping_a08d7a5f93f1cf803042983c3b931752b}} 
+std\+::string {\bfseries Print\+Compact} ()
+\item 
+\mbox{\Hypertarget{structMapping_a67c215d505b967a6a718985829453e68}\label{structMapping_a67c215d505b967a6a718985829453e68}} 
+void {\bfseries Print\+Tenssella} (std\+::ostream \&out)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structMapping_a4993116e9bb99201bf9b10e2799c4042}\label{structMapping_a4993116e9bb99201bf9b10e2799c4042}} 
+uint128\+\_\+t {\bfseries id}
+\item 
+\mbox{\Hypertarget{structMapping_aca3434e51aec10622dd397f7c2f7393d}\label{structMapping_aca3434e51aec10622dd397f7c2f7393d}} 
+\mbox{\hyperlink{classloop_1_1Nest}{loop\+::\+Nest}} {\bfseries loop\+\_\+nest}
+\item 
+\mbox{\Hypertarget{structMapping_ab58424f7cb52f640f978d8649619f6f6}\label{structMapping_ab58424f7cb52f640f978d8649619f6f6}} 
+\mbox{\hyperlink{classloop_1_1Nest}{loop\+::\+Nest}} {\bfseries complete\+\_\+loop\+\_\+nest}
+\item 
+\mbox{\Hypertarget{structMapping_a3d39ea39fe408b4ca335dde9121df3c4}\label{structMapping_a3d39ea39fe408b4ca335dde9121df3c4}} 
+\mbox{\hyperlink{classproblem_1_1PerDataSpace}{tiling\+::\+Compound\+Mask\+Nest}} {\bfseries datatype\+\_\+bypass\+\_\+nest}
+\item 
+\mbox{\Hypertarget{structMapping_ac475b5b46102b616d15b65fa750df641}\label{structMapping_ac475b5b46102b616d15b65fa750df641}} 
+std\+::map$<$ unsigned, double $>$ {\bfseries confidence\+\_\+thresholds}
+\item 
+\mbox{\Hypertarget{structMapping_af80e99eb12f17a9a1026b1d1344ddc89}\label{structMapping_af80e99eb12f17a9a1026b1d1344ddc89}} 
+std\+::map$<$ unsigned, std\+::uint64\+\_\+t $>$ {\bfseries fanout\+X\+\_\+map}
+\item 
+\mbox{\Hypertarget{structMapping_a86080d6f739ea3bb2e97aa5d3d63f952}\label{structMapping_a86080d6f739ea3bb2e97aa5d3d63f952}} 
+std\+::map$<$ unsigned, std\+::uint64\+\_\+t $>$ {\bfseries fanout\+Y\+\_\+map}
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structMapping_ac98d07dd8f7b70e16ccb9a01abf56b9c}\label{structMapping_ac98d07dd8f7b70e16ccb9a01abf56b9c}} 
+class {\bfseries boost\+::serialization\+::access}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/mapping/mapping.\+hpp\item 
+src/mapping/mapping.\+cpp\end{DoxyCompactItemize}

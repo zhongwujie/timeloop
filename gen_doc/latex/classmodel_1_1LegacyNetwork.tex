@@ -1,0 +1,129 @@
+\hypertarget{classmodel_1_1LegacyNetwork}{}\doxysection{model\+::Legacy\+Network Class Reference}
+\label{classmodel_1_1LegacyNetwork}\index{model::LegacyNetwork@{model::LegacyNetwork}}
+
+
+Inheritance diagram for model\+::Legacy\+Network\+:
+% FIG 0
+
+
+Collaboration diagram for model\+::Legacy\+Network\+:
+% FIG 1
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structmodel_1_1LegacyNetwork_1_1Specs}{Specs}}
+\item 
+struct \mbox{\hyperlink{structmodel_1_1LegacyNetwork_1_1Stats}{Stats}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmodel_1_1LegacyNetwork_aed379f30f990c7338611624204b0dd86}\label{classmodel_1_1LegacyNetwork_aed379f30f990c7338611624204b0dd86}} 
+{\footnotesize template$<$class Archive $>$ }\\void {\bfseries serialize} (Archive \&ar, const unsigned int version=0)
+\item 
+\mbox{\Hypertarget{classmodel_1_1LegacyNetwork_acad045751338a4584bcad6eb0e599042}\label{classmodel_1_1LegacyNetwork_acad045751338a4584bcad6eb0e599042}} 
+{\bfseries Legacy\+Network} (const \mbox{\hyperlink{structmodel_1_1LegacyNetwork_1_1Specs}{Specs}} \&specs)
+\item 
+\mbox{\Hypertarget{classmodel_1_1LegacyNetwork_aead175a674ed65edf21bee7716495020}\label{classmodel_1_1LegacyNetwork_aead175a674ed65edf21bee7716495020}} 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classmodel_1_1Network}{Network}} $>$ {\bfseries Clone} () const override
+\item 
+\mbox{\Hypertarget{classmodel_1_1LegacyNetwork_a0f1c8e94508218f17829aef4f915d165}\label{classmodel_1_1LegacyNetwork_a0f1c8e94508218f17829aef4f915d165}} 
+\mbox{\hyperlink{structmodel_1_1LegacyNetwork_1_1Specs}{Specs}} \& {\bfseries Get\+Specs} ()
+\item 
+\mbox{\Hypertarget{classmodel_1_1LegacyNetwork_aaaf6ac5265a1b9a6b7b21eadf73af4b2}\label{classmodel_1_1LegacyNetwork_aaaf6ac5265a1b9a6b7b21eadf73af4b2}} 
+void {\bfseries Connect\+Source} (std\+::weak\+\_\+ptr$<$ \mbox{\hyperlink{classmodel_1_1Level}{Level}} $>$ source) override
+\item 
+\mbox{\Hypertarget{classmodel_1_1LegacyNetwork_a771accbed329df1a69b67db156393b4b}\label{classmodel_1_1LegacyNetwork_a771accbed329df1a69b67db156393b4b}} 
+void {\bfseries Connect\+Sink} (std\+::weak\+\_\+ptr$<$ \mbox{\hyperlink{classmodel_1_1Level}{Level}} $>$ sink) override
+\item 
+\mbox{\Hypertarget{classmodel_1_1LegacyNetwork_ae16646267b0128db7c23a1682e024651}\label{classmodel_1_1LegacyNetwork_ae16646267b0128db7c23a1682e024651}} 
+void {\bfseries Set\+Name} (std\+::string name) override
+\item 
+\mbox{\Hypertarget{classmodel_1_1LegacyNetwork_aae091cc66eaeff4603398300985c67bd}\label{classmodel_1_1LegacyNetwork_aae091cc66eaeff4603398300985c67bd}} 
+std\+::string {\bfseries Name} () const override
+\item 
+\mbox{\Hypertarget{classmodel_1_1LegacyNetwork_a2138923dde9d5443a8696a6eec0d16c9}\label{classmodel_1_1LegacyNetwork_a2138923dde9d5443a8696a6eec0d16c9}} 
+void {\bfseries Add\+Connection\+Type} (Connection\+Type ct) override
+\item 
+\mbox{\Hypertarget{classmodel_1_1LegacyNetwork_a82bac6b993fc884c00c1c4c5676fc19c}\label{classmodel_1_1LegacyNetwork_a82bac6b993fc884c00c1c4c5676fc19c}} 
+void {\bfseries Reset\+Connection\+Type} () override
+\item 
+\mbox{\Hypertarget{classmodel_1_1LegacyNetwork_a71fce0d4a51cfc07e4c4ea1b91f6b65e}\label{classmodel_1_1LegacyNetwork_a71fce0d4a51cfc07e4c4ea1b91f6b65e}} 
+bool {\bfseries Distributed\+Multicast\+Supported} () const override
+\item 
+\mbox{\Hypertarget{classmodel_1_1LegacyNetwork_ae37417242889ff9b3261a7c43a02ef6a}\label{classmodel_1_1LegacyNetwork_ae37417242889ff9b3261a7c43a02ef6a}} 
+void {\bfseries Set\+Tile\+Width} (double width\+\_\+um) override
+\item 
+\mbox{\Hypertarget{classmodel_1_1LegacyNetwork_a43810d4ec3bb14cf6ae5d25c2659fefc}\label{classmodel_1_1LegacyNetwork_a43810d4ec3bb14cf6ae5d25c2659fefc}} 
+\mbox{\hyperlink{structmodel_1_1EvalStatus}{Eval\+Status}} {\bfseries Evaluate} (const \mbox{\hyperlink{structtiling_1_1CompoundTile}{tiling\+::\+Compound\+Tile}} \&tile, const bool break\+\_\+on\+\_\+failure) override
+\item 
+\mbox{\Hypertarget{classmodel_1_1LegacyNetwork_af0bd84edf8301c3fc4cb06eff507aa8b}\label{classmodel_1_1LegacyNetwork_af0bd84edf8301c3fc4cb06eff507aa8b}} 
+\mbox{\hyperlink{structmodel_1_1EvalStatus}{Eval\+Status}} {\bfseries Compute\+Accesses} (const \mbox{\hyperlink{classproblem_1_1PerDataSpace}{tiling\+::\+Compound\+Data\+Movement\+Info}} \&tile, const bool break\+\_\+on\+\_\+failure)
+\item 
+\mbox{\Hypertarget{classmodel_1_1LegacyNetwork_a2f635453f415a1815c18acbe07f5e967}\label{classmodel_1_1LegacyNetwork_a2f635453f415a1815c18acbe07f5e967}} 
+void {\bfseries Compute\+Network\+Energy} ()
+\item 
+\mbox{\Hypertarget{classmodel_1_1LegacyNetwork_a3f825bd19eac213d2312e70f82dbc468}\label{classmodel_1_1LegacyNetwork_a3f825bd19eac213d2312e70f82dbc468}} 
+void {\bfseries Compute\+Spatial\+Reduction\+Energy} ()
+\item 
+\mbox{\Hypertarget{classmodel_1_1LegacyNetwork_aff7f67d5de793a264f50479b6956ee2d}\label{classmodel_1_1LegacyNetwork_aff7f67d5de793a264f50479b6956ee2d}} 
+void {\bfseries Compute\+Performance} ()
+\item 
+\mbox{\Hypertarget{classmodel_1_1LegacyNetwork_a0bc07adc141b86c0a9d64b93afc128a3}\label{classmodel_1_1LegacyNetwork_a0bc07adc141b86c0a9d64b93afc128a3}} 
+std\+::uint64\+\_\+t {\bfseries Word\+Bits} () const override
+\item 
+\mbox{\Hypertarget{classmodel_1_1LegacyNetwork_aa3345c595beaee7c9093b2f09243b1d2}\label{classmodel_1_1LegacyNetwork_aa3345c595beaee7c9093b2f09243b1d2}} 
+std\+::uint64\+\_\+t {\bfseries Fill\+Latency} () const override
+\item 
+\mbox{\Hypertarget{classmodel_1_1LegacyNetwork_ad833002b86023219f034ac7594f8ca38}\label{classmodel_1_1LegacyNetwork_ad833002b86023219f034ac7594f8ca38}} 
+std\+::uint64\+\_\+t {\bfseries Drain\+Latency} () const override
+\item 
+\mbox{\Hypertarget{classmodel_1_1LegacyNetwork_a80a69c3842ce9646646645b2e56306f6}\label{classmodel_1_1LegacyNetwork_a80a69c3842ce9646646645b2e56306f6}} 
+void {\bfseries Set\+Fill\+Latency} (std\+::uint64\+\_\+t fill\+\_\+latency) override
+\item 
+\mbox{\Hypertarget{classmodel_1_1LegacyNetwork_a0b8af319217610ce860620f1ec593c80}\label{classmodel_1_1LegacyNetwork_a0b8af319217610ce860620f1ec593c80}} 
+void {\bfseries Set\+Drain\+Latency} (std\+::uint64\+\_\+t drain\+\_\+latency) override
+\item 
+\mbox{\Hypertarget{classmodel_1_1LegacyNetwork_ae9b764cce65d1b08e667ba0986e4f483}\label{classmodel_1_1LegacyNetwork_ae9b764cce65d1b08e667ba0986e4f483}} 
+void {\bfseries Print} (std\+::ostream \&out) const override
+\item 
+\mbox{\Hypertarget{classmodel_1_1LegacyNetwork_a87540514556081f8fdb4f1ad8b59950d}\label{classmodel_1_1LegacyNetwork_a87540514556081f8fdb4f1ad8b59950d}} 
+{\bfseries S\+T\+A\+T\+\_\+\+A\+C\+C\+E\+S\+S\+O\+R\+\_\+\+H\+E\+A\+D\+ER} (double, Network\+Energy)
+\item 
+\mbox{\Hypertarget{classmodel_1_1LegacyNetwork_aa8cf499143703e892754a1327b633e3a}\label{classmodel_1_1LegacyNetwork_aa8cf499143703e892754a1327b633e3a}} 
+{\bfseries S\+T\+A\+T\+\_\+\+A\+C\+C\+E\+S\+S\+O\+R\+\_\+\+H\+E\+A\+D\+ER} (double, Spatial\+Reduction\+Energy)
+\item 
+\mbox{\Hypertarget{classmodel_1_1LegacyNetwork_ac26aa8b7bf296834a27915659c55c143}\label{classmodel_1_1LegacyNetwork_ac26aa8b7bf296834a27915659c55c143}} 
+{\bfseries S\+T\+A\+T\+\_\+\+A\+C\+C\+E\+S\+S\+O\+R\+\_\+\+H\+E\+A\+D\+ER} (double, Energy) override
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmodel_1_1LegacyNetwork_a9b4868e03c1b5c68598655b0727383a7}\label{classmodel_1_1LegacyNetwork_a9b4868e03c1b5c68598655b0727383a7}} 
+static \mbox{\hyperlink{structmodel_1_1LegacyNetwork_1_1Specs}{Specs}} {\bfseries Parse\+Specs} (\mbox{\hyperlink{classconfig_1_1CompoundConfigNode}{config\+::\+Compound\+Config\+Node}} network, std\+::size\+\_\+t n\+\_\+elements, bool is\+\_\+sparse\+\_\+module)
+\item 
+\mbox{\Hypertarget{classmodel_1_1LegacyNetwork_a6b35f7b8d5d5655e005b48dba9126320}\label{classmodel_1_1LegacyNetwork_a6b35f7b8d5d5655e005b48dba9126320}} 
+static double {\bfseries Wire\+Energy\+Per\+Hop} (std\+::uint64\+\_\+t word\+\_\+bits, const double hop\+\_\+distance, double wire\+\_\+energy\+\_\+override)
+\item 
+\mbox{\Hypertarget{classmodel_1_1LegacyNetwork_aac96c083f427b98dd518a21ed2077e2c}\label{classmodel_1_1LegacyNetwork_aac96c083f427b98dd518a21ed2077e2c}} 
+static double {\bfseries Num\+Hops} (std\+::uint32\+\_\+t multicast\+\_\+factor, std\+::uint32\+\_\+t fanout)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmodel_1_1LegacyNetwork_a618757841dacde95f25563b903a58cda}\label{classmodel_1_1LegacyNetwork_a618757841dacde95f25563b903a58cda}} 
+\mbox{\hyperlink{structmodel_1_1LegacyNetwork_1_1Stats}{Stats}} {\bfseries stats\+\_\+}
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmodel_1_1LegacyNetwork_ac98d07dd8f7b70e16ccb9a01abf56b9c}\label{classmodel_1_1LegacyNetwork_ac98d07dd8f7b70e16ccb9a01abf56b9c}} 
+class {\bfseries boost\+::serialization\+::access}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/model/network-\/legacy.\+hpp\item 
+src/model/network-\/legacy.\+cpp\end{DoxyCompactItemize}
