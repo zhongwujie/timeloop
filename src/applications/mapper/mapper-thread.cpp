@@ -516,12 +516,12 @@ void MapperThread::Run()
     //          because the space of *legal* mappings isn't dense (unfortunately),
     //          so a mapping ID may point to an illegal mapping.
     Mapping mapping;
-
+    // diagnostics_on_ is false by default
     auto construction_status = mapspace_->ConstructMapping(mapping_id, &mapping, !diagnostics_on_);
     success &= std::accumulate(construction_status.begin(), construction_status.end(), true,
                                [](bool cur, const mapspace::Status& status)
                                { return cur && status.success; });
-
+    // success is true when all the elements of construction_status are true
     total_mappings++;
 
     if (!success)

@@ -632,7 +632,7 @@ class RandomGenerator128 final : public PatternGenerator128
  private:
   bool use_two_generators_;
 
-  std::default_random_engine engine_;
+  std::default_random_engine engine_; // use the default seed
   std::uniform_int_distribution<std::uint64_t> low_gen_;
   std::uniform_int_distribution<std::uint64_t> high_gen_;
 
