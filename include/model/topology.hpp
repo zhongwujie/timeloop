@@ -108,7 +108,9 @@ bool isNetworkClass(std::string className);
 class Topology : public Module
 {
  public:
-
+  std::shared_ptr<BufferLevel> ExposeStorageLevel(unsigned storage_level_id) const{
+    return GetStorageLevel(storage_level_id);
+  }
   //
   // Specs.
   //
