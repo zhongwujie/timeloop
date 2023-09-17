@@ -1,4 +1,4 @@
-input file: ./sample.yaml
+input file: ./eyeriss-256.yaml
   _______                __                
  /_  __(_)___ ___  ___  / /___  ____  ____ 
   / / / / __ `__ \/ _ \/ / __ \/ __ \/ __ \
@@ -6,87 +6,95 @@ input file: ./sample.yaml
 /_/ /_/_/ /_/ /_/\___/_/\____/\____/ .___/ 
                                   /_/      
 
-MESSAGE: attempting to read problem shape from file: /home/zhong/code/simulators/timeloop/problem-shapes/cnn-layer.yaml
+WARNING: found neither a problem shape description nor a string corresponding to a to a pre-existing shape description. Assuming shape: cnn-layer.
+MESSAGE: attempting to read problem shape from file: /home/zhong/code/simulators/timeloop-simulators/timeloop/problem-shapes/cnn-layer.yaml
 Problem configuration complete.
-WARNING: bandwidth is deprecated. Assuming read_bandwidth = write_bandwidth = bandwidth/2
 Architecture configuration complete.
 Sparse optimization configuration complete.
 Using all available hardware threads = 20
+WARNING: no optimization metric(s) specified, using edp as default.
 Mapper configuration complete.
-WARNING: Constraint C=64 exceeds problem dimension C=1, ignoring.
+WARNING: Interpreting 0 to mean full problem dimension instead of residue.
+Parsing permutation: NPQR SCK
+token: N token: P token: Q token: R token: S token: C token: K 
+Parsing permutation: NCPRS QK
+token: N token: C token: P token: R token: S token: Q token: K 
+Parsing permutation: NCPQRS K
+token: N token: C token: P token: Q token: R token: S token: K 
+WARNING: Interpreting 0 to mean full problem dimension instead of residue.
+Parsing permutation: NKPQS CR
+token: N token: K token: P token: Q token: S token: C token: R 
+Parsing permutation: NKCPQRS
+token: N token: K token: C token: P token: Q token: R token: S 
+Parsing permutation: NKCPQRS
+token: N token: K token: C token: P token: Q token: R token: S 
+WARNING: Interpreting 0 to mean full problem dimension instead of residue.
+Parsing permutation: QRSC PNK
+token: Q token: R token: S token: C token: P token: N token: K 
+Parsing permutation: RSP CKNQ
+token: R token: S token: P token: C token: K token: N token: Q 
 user max factors are empty
 Initializing Index Factorization subspace.
-  Factorization options along problem dimension R = 2
-  Factorization options along problem dimension S = 2
-  Factorization options along problem dimension P = 10
-  Factorization options along problem dimension Q = 24
-  Factorization options along problem dimension C = 1
-  Factorization options along problem dimension K = 1
+  Factorization options along problem dimension R = 1
+  Factorization options along problem dimension S = 1
+  Factorization options along problem dimension P = 1
+  Factorization options along problem dimension Q = 8
+  Factorization options along problem dimension C = 45
+  Factorization options along problem dimension K = 495
   Factorization options along problem dimension N = 1
-Mapspace Dimension [IndexFactorization] Size: 960
-Mapspace Dimension [LoopPermutation] Size: 25401600
-Mapspace Dimension [Spatial] Size: 64
-Mapspace Dimension [DatatypeBypass] Size: 8
-Mapspace split! Per-split Mapping Dimension [IndexFactorization] Size: 48 Residue: 0
+Mapspace Dimension [IndexFactorization] Size: 178200
+Mapspace Dimension [LoopPermutation] Size: 1
+Mapspace Dimension [Spatial] Size: 1
+Mapspace Dimension [DatatypeBypass] Size: 1
+Mapspace split! Per-split Mapping Dimension [IndexFactorization] Size: 8910 Residue: 0
 Mapspace construction complete.
 Search configuration complete.
-[  1] Utilization = 0.02 | pJ/Compute =   23.487 | L3[WIO] Q480 R3 - L2[WI] S3 K16X - L1[O] N1 - L0[] P48 
-[  0] Utilization = 0.02 | pJ/Compute =   19.723 | L3[WIO] Q480 - L2[WI] S3 R3 K16X - L1[O] N1 - L0[] P48 
-[  2] Utilization = 0.02 | pJ/Compute =   23.487 | L3[WIO] Q480 S3 - L2[WI] R3 K16X - L1[O] N1 - L0[] P48 
-[  3] Utilization = 0.02 | pJ/Compute =   23.487 | L3[WIO] Q480 S3 R3 - L2[WI] N1 K16X - L1[O] N1 - L0[] P48 
-[  5] Utilization = 0.00 | pJ/Compute =  132.541 | L3[WIO] Q480 P48 R3 - L2[WI] S3 K16X - L1[O] N1 - L0[] N1 
-[  4] Utilization = 0.02 | pJ/Compute =   21.266 | L3[WIO] Q480 P48 - L2[WI] S3 R3 K16X - L1[O] N1 - L0[] N1 
-[  1] Utilization = 0.02 | pJ/Compute =   17.211 | L3[WIO] Q480 R3 - L2[WI] S3 K16X - L1[O] N1 - L0[W] P48 
-[  0] Utilization = 0.02 | pJ/Compute =   13.447 | L3[WIO] Q480 - L2[WI] S3 R3 K16X - L1[O] N1 - L0[W] P48 
-[  2] Utilization = 0.02 | pJ/Compute =   17.211 | L3[WIO] Q480 S3 - L2[WI] R3 K16X - L1[O] N1 - L0[W] P48 
-[  3] Utilization = 0.02 | pJ/Compute =   17.211 | L3[WIO] Q480 S3 R3 - L2[WI] N1 K16X - L1[O] N1 - L0[W] P48 
-[ 13] Utilization = 0.01 | pJ/Compute =   75.788 | L3[WIO] Q480 P24 R3 - L2[WI] S3 K16X - L1[O] N1 - L0[] P2 
-[  8] Utilization = 0.02 | pJ/Compute =   21.266 | L3[WIO] Q480 P2 - L2[WI] S3 R3 K16X - L1[O] N1 - L0[] P24 
-[ 13] Utilization = 0.01 | pJ/Compute =   73.061 | L3[WIO] Q480 P24 R3 - L2[WI] S3 K16X - L1[O] N1 - L0[W] P2 
-[ 17] Utilization = 0.02 | pJ/Compute =   28.128 | L3[WIO] Q480 P3 R3 - L2[WI] S3 K16X - L1[O] N1 - L0[] P16 
-[ 14] Utilization = 0.01 | pJ/Compute =   76.854 | L3[WIO] Q480 P24 S3 - L2[WI] R3 K16X - L1[O] N1 - L0[] P2 
-[ 19] Utilization = 0.02 | pJ/Compute =   28.128 | L3[WIO] Q480 P3 S3 R3 - L2[WI] N1 K16X - L1[O] N1 - L0[] P16 
-[  6] Utilization = 0.00 | pJ/Compute =  132.541 | L3[WIO] Q480 P48 S3 - L2[WI] R3 K16X - L1[O] N1 - L0[] N1 
-[ 18] Utilization = 0.02 | pJ/Compute =   28.128 | L3[WIO] Q480 P3 S3 - L2[WI] R3 K16X - L1[O] N1 - L0[] P16 
-[  8] Utilization = 0.02 | pJ/Compute =   15.144 | L3[WIO] Q480 P2 - L2[WI] S3 R3 K16X - L1[O] N1 - L0[W] P24 
-[ 12] Utilization = 0.02 | pJ/Compute =   21.266 | L3[WIO] Q480 P24 - L2[WI] S3 R3 K16X - L1[O] N1 - L0[] P2 
-[ 16] Utilization = 0.02 | pJ/Compute =   21.266 | L3[WIO] Q480 P3 - L2[WI] S3 R3 K16X - L1[O] N1 - L0[] P16 
-[  7] Utilization = 0.00 | pJ/Compute =  132.541 | L3[WIO] Q480 P48 S3 R3 - L2[WI] N1 K16X - L1[O] N1 - L0[] N1 
-[ 11] Utilization = 0.02 | pJ/Compute =   25.807 | L3[WIO] Q480 P2 S3 R3 - L2[WI] N1 K16X - L1[O] N1 - L0[] P24 
-[  9] Utilization = 0.02 | pJ/Compute =   25.807 | L3[WIO] Q480 P2 R3 - L2[WI] S3 K16X - L1[O] N1 - L0[] P24 
-[ 15] Utilization = 0.01 | pJ/Compute =   76.854 | L3[WIO] Q480 P24 S3 R3 - L2[WI] N1 K16X - L1[O] N1 - L0[] P2 
-[ 17] Utilization = 0.02 | pJ/Compute =   22.160 | L3[WIO] Q480 P3 R3 - L2[WI] S3 K16X - L1[O] N1 - L0[W] P16 
-[ 14] Utilization = 0.01 | pJ/Compute =   74.128 | L3[WIO] Q480 P24 S3 - L2[WI] R3 K16X - L1[O] N1 - L0[W] P2 
-[ 19] Utilization = 0.02 | pJ/Compute =   22.160 | L3[WIO] Q480 P3 S3 R3 - L2[WI] N1 K16X - L1[O] N1 - L0[W] P16 
-[ 18] Utilization = 0.02 | pJ/Compute =   22.160 | L3[WIO] Q480 P3 S3 - L2[WI] R3 K16X - L1[O] N1 - L0[W] P16 
-[ 12] Utilization = 0.02 | pJ/Compute =   18.539 | L3[WIO] Q480 P24 - L2[WI] S3 R3 K16X - L1[O] N1 - L0[W] P2 
-[ 16] Utilization = 0.02 | pJ/Compute =   15.298 | L3[WIO] Q480 P3 - L2[WI] S3 R3 K16X - L1[O] N1 - L0[W] P16 
-[ 11] Utilization = 0.02 | pJ/Compute =   19.685 | L3[WIO] Q480 P2 S3 R3 - L2[WI] N1 K16X - L1[O] N1 - L0[W] P24 
-[ 15] Utilization = 0.01 | pJ/Compute =   74.128 | L3[WIO] Q480 P24 S3 R3 - L2[WI] N1 K16X - L1[O] N1 - L0[W] P2 
-[  9] Utilization = 0.02 | pJ/Compute =   19.685 | L3[WIO] Q480 P2 R3 - L2[WI] S3 K16X - L1[O] N1 - L0[W] P24 
-[ 10] Utilization = 0.02 | pJ/Compute =   25.807 | L3[WIO] Q480 P2 S3 - L2[WI] R3 K16X - L1[O] N1 - L0[] P24 
-[ 10] Utilization = 0.02 | pJ/Compute =   19.685 | L3[WIO] Q480 P2 S3 - L2[WI] R3 K16X - L1[O] N1 - L0[W] P24 
-[  1] STATEMENT: 100 suboptimal mappings found since the last upgrade, terminating search.
-[ 12] STATEMENT: 100 suboptimal mappings found since the last upgrade, terminating search.
-[  0] STATEMENT: 100 suboptimal mappings found since the last upgrade, terminating search.
-[  2] STATEMENT: 100 suboptimal mappings found since the last upgrade, terminating search.
-[  8] STATEMENT: 100 suboptimal mappings found since the last upgrade, terminating search.
-[ 13] STATEMENT: 100 suboptimal mappings found since the last upgrade, terminating search.
-[ 16] STATEMENT: 100 suboptimal mappings found since the last upgrade, terminating search.
-[ 14] STATEMENT: 100 suboptimal mappings found since the last upgrade, terminating search.
-[ 17] STATEMENT: 100 suboptimal mappings found since the last upgrade, terminating search.
-[ 15] STATEMENT: 100 suboptimal mappings found since the last upgrade, terminating search.
-[ 18] STATEMENT: 100 suboptimal mappings found since the last upgrade, terminating search.
-[ 10] STATEMENT: 100 suboptimal mappings found since the last upgrade, terminating search.
-[ 19] STATEMENT: 100 suboptimal mappings found since the last upgrade, terminating search.
-[  9] STATEMENT: 100 suboptimal mappings found since the last upgrade, terminating search.
-[  3] STATEMENT: 100 suboptimal mappings found since the last upgrade, terminating search.
-[ 11] STATEMENT: 100 suboptimal mappings found since the last upgrade, terminating search.
-[  4] STATEMENT: 100 suboptimal mappings found since the last upgrade, terminating search.
-[  7] STATEMENT: 100 suboptimal mappings found since the last upgrade, terminating search.
-[  5] STATEMENT: 100 suboptimal mappings found since the last upgrade, terminating search.
-[  6] STATEMENT: 100 suboptimal mappings found since the last upgrade, terminating search.
+[  7] Utilization = 0.38 | pJ/Compute =    8.010 | L5[WIO] Q28 C128 - L4[IO] P56 K4X Q2X - L3[] N1 K4Y S3Y - L2[I] N1 - L1[W] R3 C2 - L0[O] K16 
+[  5] Utilization = 0.19 | pJ/Compute =    9.889 | L5[WIO] Q56 C128 - L4[IO] P56 K4X - L3[] N1 K4Y S3Y - L2[I] N1 - L1[W] R3 C2 - L0[O] K16 
+[ 15] Utilization = 0.38 | pJ/Compute =    8.996 | L5[WIO] Q28 C256 - L4[IO] P56 K4X Q2X - L3[] N1 K4Y S3Y - L2[I] N1 - L1[W] R3 - L0[O] K16 
+[ 17] Utilization = 0.56 | pJ/Compute =    8.057 | L5[WIO] Q14 C256 - L4[IO] P56 K4X Q4X - L3[] N1 K4Y S3Y - L2[I] N1 - L1[W] R3 - L0[O] K16 
+[ 13] Utilization = 0.19 | pJ/Compute =   10.875 | L5[WIO] Q56 C256 - L4[IO] P56 K4X - L3[] N1 K4Y S3Y - L2[I] N1 - L1[W] R3 - L0[O] K16 
+[  9] Utilization = 0.75 | pJ/Compute =    7.071 | L5[WIO] Q14 C128 - L4[IO] P56 K4X Q4X - L3[] N1 K4Y S3Y - L2[I] N1 - L1[W] R3 C2 - L0[O] K16 
+[  1] Utilization = 0.75 | pJ/Compute =    6.578 | L5[WIO] Q14 C64 - L4[IO] P56 K4X Q4X - L3[] N1 K4Y S3Y - L2[I] N1 - L1[W] R3 C4 - L0[O] K16 
+[ 14] STATEMENT: 1000 invalid mappings (955 fanout, 45 capacity) found since the last valid mapping, terminating search.
+[ 13] Utilization = 0.38 | pJ/Compute =   10.050 | L5[WIO] Q56 C128 - L4[IO] P56 K8X - L3[] N1 K2Y C2Y S3Y - L2[I] N1 - L1[W] R3 - L0[O] K16 
+[ 10] STATEMENT: 1000 invalid mappings (970 fanout, 30 capacity) found since the last valid mapping, terminating search.
+[  0] STATEMENT: 1000 invalid mappings (974 fanout, 26 capacity) found since the last valid mapping, terminating search.
+[  5] Utilization = 0.38 | pJ/Compute =    9.475 | L5[WIO] Q56 C64 - L4[IO] P56 K8X - L3[] N1 K2Y C2Y S3Y - L2[I] N1 - L1[W] R3 C2 - L0[O] K16 
+[ 12] STATEMENT: 1000 invalid mappings (973 fanout, 27 capacity) found since the last valid mapping, terminating search.
+[  6] STATEMENT: 1000 invalid mappings (942 fanout, 58 capacity) found since the last valid mapping, terminating search.
+[ 15] Utilization = 0.75 | pJ/Compute =    8.171 | L5[WIO] Q28 C128 - L4[IO] P56 K8X Q2X - L3[] N1 K2Y C2Y S3Y - L2[I] N1 - L1[W] R3 - L0[O] K16 
+[  7] Utilization = 0.75 | pJ/Compute =    7.596 | L5[WIO] Q28 C64 - L4[IO] P56 K8X Q2X - L3[] N1 K2Y C2Y S3Y - L2[I] N1 - L1[W] R3 C2 - L0[O] K16 
+[ 16] STATEMENT: 1000 invalid mappings (982 fanout, 18 capacity) found since the last valid mapping, terminating search.
+[  2] STATEMENT: 1000 invalid mappings (957 fanout, 43 capacity) found since the last valid mapping, terminating search.
+[  4] STATEMENT: 1000 invalid mappings (965 fanout, 35 capacity) found since the last valid mapping, terminating search.
+[  8] STATEMENT: 1000 invalid mappings (982 fanout, 18 capacity) found since the last valid mapping, terminating search.
+[ 18] STATEMENT: 1000 invalid mappings (969 fanout, 31 capacity) found since the last valid mapping, terminating search.
+[ 11] STATEMENT: 1000 invalid mappings (903 fanout, 97 capacity) found since the last valid mapping, terminating search.
+[ 19] Utilization = 0.38 | pJ/Compute =    7.518 | L5[WIO] Q28 C64 - L4[IO] P56 K4X Q2X - L3[] N1 K4Y S3Y - L2[I] N1 - L1[W] R3 C4 - L0[O] K16 
+[  3] STATEMENT: 1000 invalid mappings (869 fanout, 131 capacity) found since the last valid mapping, terminating search.
+[ 19] Utilization = 0.75 | pJ/Compute =    7.309 | L5[WIO] Q28 C32 - L4[IO] P56 K8X Q2X - L3[] N1 K2Y C2Y S3Y - L2[I] N1 - L1[W] R3 C4 - L0[O] K16 
+[ 17] Utilization = 0.75 | pJ/Compute =    9.080 | L5[WIO] Q56 C16 - L4[IO] P56 K16X - L3[] N1 C4Y S3Y - L2[I] N1 - L1[W] R3 C4 - L0[O] K16 
+[ 13] Utilization = 0.75 | pJ/Compute =    9.633 | L5[WIO] Q56 C64 - L4[IO] P56 K16X - L3[] N1 C4Y S3Y - L2[I] N1 - L1[W] R3 - L0[O] K16 
+[  5] Utilization = 0.75 | pJ/Compute =    9.265 | L5[WIO] Q56 C32 - L4[IO] P56 K16X - L3[] N1 C4Y S3Y - L2[I] N1 - L1[W] R3 C2 - L0[O] K16 
+[  9] Utilization = 0.75 | pJ/Compute =    6.667 | L5[WIO] Q14 C64 - L4[IO] K2 P56 K4X Q4X - L3[] N1 K2Y C2Y S3Y - L2[I] N1 - L1[W] R3 C2 - L0[O] K16 
+[  1] Utilization = 0.75 | pJ/Compute =    6.380 | L5[WIO] Q14 C32 - L4[IO] K2 P56 K4X Q4X - L3[] N1 K2Y C2Y S3Y - L2[I] N1 - L1[W] R3 C4 - L0[O] K16 
+[ 17] Utilization = 0.75 | pJ/Compute =    7.241 | L5[WIO] Q14 C128 - L4[IO] K2 P56 K4X Q4X - L3[] N1 K2Y C2Y S3Y - L2[I] N1 - L1[W] R3 - L0[O] K16 
+[ 19] Utilization = 0.75 | pJ/Compute =    7.211 | L5[WIO] Q28 C16 - L4[IO] K2 P56 K8X Q2X - L3[] N1 C4Y S3Y - L2[I] N1 - L1[W] R3 C4 - L0[O] K16 
+[ 15] Utilization = 0.75 | pJ/Compute =    7.764 | L5[WIO] Q28 C64 - L4[IO] K2 P56 K8X Q2X - L3[] N1 C4Y S3Y - L2[I] N1 - L1[W] R3 - L0[O] K16 
+[  7] Utilization = 0.75 | pJ/Compute =    7.396 | L5[WIO] Q28 C32 - L4[IO] K2 P56 K8X Q2X - L3[] N1 C4Y S3Y - L2[I] N1 - L1[W] R3 C2 - L0[O] K16 
+[  9] Utilization = 0.75 | pJ/Compute =    6.476 | L5[WIO] Q14 C32 - L4[IO] K4 P56 K4X Q4X - L3[] N1 C4Y S3Y - L2[I] N1 - L1[W] R3 C2 - L0[O] K16 
+[  1] Utilization = 0.75 | pJ/Compute =    6.292 | L5[WIO] Q14 C16 - L4[IO] K4 P56 K4X Q4X - L3[] N1 C4Y S3Y - L2[I] N1 - L1[W] R3 C4 - L0[O] K16 
+[ 17] Utilization = 0.75 | pJ/Compute =    6.845 | L5[WIO] Q14 C64 - L4[IO] K4 P56 K4X Q4X - L3[] N1 C4Y S3Y - L2[I] N1 - L1[W] R3 - L0[O] K16 
+[ 13] STATEMENT: 500 suboptimal mappings found since the last upgrade, terminating search.
+[ 17] STATEMENT: 500 suboptimal mappings found since the last upgrade, terminating search.
+[  5] STATEMENT: 500 suboptimal mappings found since the last upgrade, terminating search.
+[ 15] STATEMENT: 500 suboptimal mappings found since the last upgrade, terminating search.
+[ 19] STATEMENT: 500 suboptimal mappings found since the last upgrade, terminating search.
+[  1] STATEMENT: search algorithm is done, terminating search.
+[  9] STATEMENT: search algorithm is done, terminating search.
+[  7] STATEMENT: 500 suboptimal mappings found since the last upgrade, terminating search.
 
 
 Summary stats for best mapping found by mapper:
-  Utilization = 0.02 | pJ/Compute =   13.447
+  Utilization = 0.75 | pJ/Compute =    6.292

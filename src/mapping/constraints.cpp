@@ -1036,7 +1036,6 @@ Constraints::ParsePermutations(config::CompoundConfigNode constraint)
   if (constraint.lookupValue("permutation", buffer))
   {
     buffer = buffer.substr(0, buffer.find("#"));
-
     std::istringstream iss(buffer);
     char token;
     bool separator_seen = false;
